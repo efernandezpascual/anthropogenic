@@ -1,8 +1,8 @@
 library(tidyverse); library(vegan)
 
-read.csv("data/urban-header.csv", fileEncoding = "latin1") -> header
+read.csv("data/urban-header-revised10.csv", fileEncoding = "latin1") -> header
 
-read.csv("data/urban-species.csv", fileEncoding = "latin1") %>%
+read.csv("data/urban-species-revised5.csv", fileEncoding = "latin1") %>%
   filter(SIVIMID %in% header$SIVIMID) -> species
 
 ### 1st twinspan
@@ -147,10 +147,10 @@ header2 %>%
 
 ### Walls - separate from classification
 
-read.csv("data/urban-header.csv", fileEncoding = "latin1") %>% 
+read.csv("data/urban-header-revised9.csv", fileEncoding = "latin1") %>% 
   filter(Class == "Cymbalario-Parietarietea diffusae") %>%
   mutate(EUNISL1 = "Walls") %>%
-  merge(read.csv("data/urban-species.csv", fileEncoding = "latin1"), by = "SIVIMID") %>%
+  merge(read.csv("data/urban-species-revised5.csv", fileEncoding = "latin1"), by = "SIVIMID") %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
   spread(Analysis.Names, Cover.percent, fill = 0) %>%
   column_to_rownames(var = "SIVIMID") -> df1
@@ -162,7 +162,7 @@ twinspanR::twinspan(df1, modif = T, clusters = 2) %>% ## IR INCREMENTANDO EL NUM
   rename("Cluster" = ".") %>%
   rownames_to_column(var = "SIVIMID") -> kclusters
 
-read.csv("data/urban-header.csv", fileEncoding = "latin1") %>% 
+read.csv("data/urban-header-revised9.csv", fileEncoding = "latin1") %>% 
   filter(Class == "Cymbalario-Parietarietea diffusae") %>%
   mutate(EUNISL1 = "Walls")  %>%
   merge(kclusters, by = "SIVIMID") -> header2
@@ -189,8 +189,32 @@ rbind(header3A, header3B, header3C, header3D) -> header4
 read.csv("data/species.csv", fileEncoding = "latin1") %>% 
   filter(SIVIMID %in% header4$SIVIMID) -> species4
 
-read.csv("data/urban-header.csv", fileEncoding = "latin1") -> header4
-read.csv("data/urban-species.csv", fileEncoding = "latin1") -> species4
+write.csv(header4, "data/urban-header10.csv", row.names = FALSE, fileEncoding = "latin1")
+write.csv(species4, "data/urban-species10.csv", row.names = FALSE, fileEncoding = "latin1")
+
+
+read.csv("data/urban-header10.csv", fileEncoding = "latin1") -> header4
+read.csv("data/urban-species10.csv", fileEncoding = "latin1") -> species4
+
+
+### Format for JUICE
+
+header4 %>%
+  rownames_to_column(var = "Relevé number") %>%
+  select(`Relevé number`, SIVIMID, EUNIS_REVISED, EUNIS2020, 
+         EUNISL1, EUNISL2, PCluster, 
+         Class, Order, Alliance, Sintaxon,
+         Aspect, Slope, Area, 
+         Year, DEG_LON, DEG_LAT,
+         Accuracy, Elevation) -> headerJUICE
+
+species4 %>%
+  merge(headerJUICE, by = "SIVIMID") %>%
+  select(`Relevé number`, SIVIMID, Original.Taxon, 
+         Analysis.Names, Cover, Cover.percent) -> speciesJUICE
+
+write.csv(headerJUICE, "results/headerJUICE10.csv", row.names = FALSE, fileEncoding = "latin1")
+write.csv(speciesJUICE, "results/speciesJUICE10.csv", row.names = FALSE, fileEncoding = "latin1")
 
 ### Map
 
@@ -239,7 +263,7 @@ s1$sites %>%
   rownames_to_column("SIVIMID") %>%
   merge(header4, by = "SIVIMID") -> header4NMDS
 
-# write.csv(header4NMDS, "data/urban-header-nmds.csv", fileEncoding = "latin1", row.names = FALSE)
+write.csv(header4NMDS, "data/urban-header10-nmds.csv", fileEncoding = "latin1", row.names = FALSE)
   
 header4NMDS %>%
   ggplot(aes(x = NMDS1, y = NMDS2)) +
