@@ -113,3 +113,52 @@ cwms %>%
   summarise(CWM = mean(CWM)) %>%
   spread(EUNISL2, CWM) %>%
   write.csv("results/CWMs.csv")
+
+### PCA
+
+cwms %>%
+  spread(Trait, CWM) -> matriz
+
+matriz %>%
+  group_by() %>%
+  select(-c(SIVIMID, EUNISL2, flowering1:flowering2, heightMAX)) %>%
+  FactoMineR::PCA() -> pca1
+
+
+cbind((matriz %>%  dplyr::select(EUNISL2)), data.frame(pca1$ind$coord[, 1:2])) -> pcaInds
+
+pca1$var$coord[, 1:2] %>%
+  data.frame %>%
+  rownames_to_column(var = "Variable") -> pcaVars
+
+### Plot PCA
+
+ggplot(pcaInds, aes(x = Dim.1, y = Dim.2)) +
+  coord_fixed() +
+  geom_hline(yintercept = 0, linetype = "dashed") +
+  geom_vline(xintercept = 0, linetype = "dashed") +
+  geom_point(aes(color = EUNISL2), size = 3, alpha = .6) +
+  geom_segment(data = pcaVars, aes(x = 0, y = 0, xend = 4.5*Dim.1, yend = 4.5*Dim.2)) +
+  geom_label(data = pcaVars, aes(x = 4.5*Dim.1, y = 4.5*Dim.2, label = Variable),  show.legend = FALSE, size = 4) +
+  ggthemes::theme_tufte() + 
+  theme(text = element_text(family = "sans"),
+        legend.position = "right", 
+        legend.title = element_blank(),
+        legend.text = element_text(size = 12, color = "black"),
+        panel.background = element_rect(color = "black", fill = NULL),
+        axis.title = element_text(size = 12),
+        axis.text = element_text(size = 12, color = "black"),
+        plot.margin = unit(c(0, 0.1, 0, 0), "cm")) +
+  guides(fill = guide_legend(override.aes = list(shape = 22))) +
+  scale_x_continuous(name = paste("Axis 1 (", round(pca1$eig[1, 2], 0),
+                                  "% variance explained)", sep = "")) + 
+  scale_y_continuous(name = paste("Axis 2 (", round(pca1$eig[2, 2], 0), 
+                                  "% variance explained)", sep = "")) -> f1; f1
+
+pca1$eig
+pca1$var
+
+### Save figure
+
+ggsave(f1, file = "results/PCA.png", 
+       path = NULL, scale = 1, width = 182, height = 182, units = "mm", dpi = 600)
