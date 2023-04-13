@@ -1,0 +1,23 @@
+   1 Sequence No
+   5 Turboveg No
+  10 Group No
+  12 Relevé number
+  19 SIVIMID
+  28 EUNIS_REVISED
+  32 EUNIS2020
+  36 EUNISL1
+  44 EUNISL2
+  49 PCluster
+  51 Class
+  76 Order
+ 105 Alliance
+ 144 Sintaxon
+ 212 Aspect
+ 217 Slope
+ 222 Area
+ 226 Year
+ 231 DEG_LON
+ 244 DEG_LAT
+ 256 Accuracy
+ 281 Elevation
+ 286 EUNIS_VGG
