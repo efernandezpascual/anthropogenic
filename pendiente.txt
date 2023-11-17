@@ -8,8 +8,8 @@
   -> W2 = revisar a Cymbalario-Asplenion (sintaxones originales asignados al revés que nosotros, revisar)
 
   -> Buscar inventarios que falten = 
-       + Linario polygalifoliae-Vulpion alopecuri
-       + Bidention tripartitae + Paspalo-Agrostion semiverticillati 
+       + Linario polygalifoliae-Vulpion alopecuri (= Linario polygalifoliae-Vulpion alopecuroris)
+       + Bidention tripartitae + Paspalo-Agrostion semiverticillati (= Paspalo-Agrostion verticillati)
        + Epilobion angustifolii + Fragarion vescae (= Atropion belladonae)
        + Poion supinae 
 
