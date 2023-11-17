@@ -4,6 +4,7 @@
   -> V37 + V38d = juntar en 1: Sisymbrion officinalis (V37)
   -> V38a + V38b = juntar en 1: Cirsion richterano-chodati (V38) (Carduo carpetani-Cirsion odontolepidis no está en Cantabrian Mixed Forest)
   -> V39abcdef = juntar y dividir en 5: Geranio pusilli-Anthriscion caucalidis(V37) + Geo urbani-Alliarion officinalis (V39) + Arction lappae (V39) + Balloto-Conion maculati (V39) + Aegopodion podagrariae (V39)
+  
   -> W1 = revisar a Galio valantiae-Parietarion judaicae (sintaxones originales asignados al revés que nosotros, revisar)
   -> W2 = revisar a Cymbalario-Asplenion (sintaxones originales asignados al revés que nosotros, revisar)
 
