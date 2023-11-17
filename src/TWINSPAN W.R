@@ -37,12 +37,18 @@ header2 %>%
 ### Sintaxa
 
 header2 %>%
-  group_by(Cluster, Sintaxon) %>%
+  group_by(Cluster, Alliance) %>%
   tally %>%
   arrange(Cluster, -n) %>%
   data.frame
 
 ### Constant
+
+species %>% 
+  merge(header2) %>%
+  group_by(Analysis.Names) %>%
+  summarise(F = length(Analysis.Names)) %>%
+  slice_max(F, n = 10)
 
 species %>% 
   merge(header2) %>%
@@ -52,6 +58,12 @@ species %>%
   slice_max(F, n = 4) %>% data.frame
 
 ### Dominant
+
+species %>% 
+  merge(header2) %>%
+  group_by(Analysis.Names) %>%
+  summarise(D = sum(Cover.percent)) %>%
+  slice_max(D, n = 10)
 
 species %>% 
   merge(header2) %>%
@@ -87,3 +99,10 @@ data.frame(Community = indicators$maxcls, Indicator = indicators$indcls,
 
 ### C1 Parietario + Cymbalarion
 ### Polypodietum
+### Las dos alianzas son indistinguibles en base a composición florística
+
+header2 %>%
+  select(SIVIMID, Cluster) %>%
+  mutate(Revised.sintaxon = "Cymbalario-Asplenion") %>%
+  select(-Cluster) %>%
+  write.csv("results/Revised W.csv", row.names = FALSE, fileEncoding = "Latin1") 

@@ -85,3 +85,11 @@ data.frame(Community = indicators$maxcls, Indicator = indicators$indcls,
 
 ### C1 Spergulo-Erodion
 ### C2 Scleranthion
+
+header2 %>%
+  select(SIVIMID, Cluster) %>%
+  mutate(Revised.sintaxon = fct_recode(as.factor(Cluster), 
+                                       "Spergulo arvensis-Erodion cicutariae" = "1",
+                                       "Scleranthion annui" = "2")) %>%
+  select(-Cluster) %>%
+  write.csv("results/Revised V1.csv", row.names = FALSE, fileEncoding = "Latin1") 

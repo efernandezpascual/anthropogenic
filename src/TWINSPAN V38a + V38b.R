@@ -85,3 +85,9 @@ data.frame(Community = indicators$maxcls, Indicator = indicators$indcls,
 
 ### C1 Cirsion richterano-chodati
 ### C2 Cirsion richterano-chodati
+
+header2 %>%
+  select(SIVIMID, Cluster) %>%
+  mutate(Revised.sintaxon = "Cirsion richterano-chodati") %>%
+  select(-Cluster) %>%
+  write.csv("results/Revised V38 Cirsion.csv", row.names = FALSE, fileEncoding = "Latin1") 
