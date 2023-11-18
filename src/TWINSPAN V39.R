@@ -3,7 +3,8 @@ library(tidyverse); library(vegan)
 ### Relevés
 
 read.csv("data/header-revised.csv", fileEncoding = "latin1") %>%
-  filter(CODE %in% c("V39a", "V39b", "V39c", "V39d", "V39e", "V39f")) -> header
+  filter(SIVIMID != "R-P20727") %>% # Polygono maritimi-Elytrigietum athericae (halonitrófila)
+  filter(CODE %in% c("V38a", "V38b", "V39a", "V39b", "V39c", "V39d", "V39e", "V39f")) -> header
 
 read.csv("data/urban-species.csv", fileEncoding = "latin1") %>%
   filter(SIVIMID %in% header$SIVIMID) -> species
@@ -15,7 +16,7 @@ species %>%
   spread(Analysis.Names, Cover.percent, fill = 0) %>%
   column_to_rownames(var = "SIVIMID") -> df1
 
-twinspanR::twinspan(df1, modif = T, clusters = 6) %>% ## IR INCREMENTANDO EL NUMERO DE CLUSTERS
+twinspanR::twinspan(df1, modif = T, clusters = 8) %>% ## IR INCREMENTANDO EL NUMERO DE CLUSTERS
   cut() %>%
   cbind(df1) %>%
   select(".") %>%
@@ -37,6 +38,14 @@ header2 %>%
 
 header2 %>%
   group_by(Cluster, Alliance) %>%
+  tally %>%
+  arrange(Cluster, -n) %>%
+  data.frame
+
+### Code
+
+header2 %>%
+  group_by(Cluster, CODE) %>%
   tally %>%
   arrange(Cluster, -n) %>%
   data.frame
@@ -74,32 +83,61 @@ plots %>%
 levels(groups) -> group.labels
 
 plots %>%
-  select(-SIVIMID, Cluster) %>%
+  select(-c(SIVIMID, Cluster)) %>%
   indval(groups, numitr = 10000) -> indicators
 
 data.frame(Community = indicators$maxcls, Indicator = indicators$indcls,
            p = indicators$pval, p_adj = p.adjust(indicators$pval, "holm")) %>%
   rownames_to_column(var = "Species") %>%
   group_by(Community) %>%
-  slice_max(Indicator, n = 4) %>%
+  slice_max(Indicator, n = 5) %>%
   data.frame
 
-### C1 Geo urbani-Alliarion officinalis
-### C2 Geranio pusilli-Anthriscion caucalidis
-### C3 Balloto-Conion maculati
-### C4 Arction lappae
-### C5 Polygono maritimi-Elytrigietum athericae (halonitrófila)
+### NMDS
+
+library(vegan)
+
+header2 %>%
+  merge(species, by = "SIVIMID") %>%
+  select(SIVIMID, Analysis.Names, Cover.percent) %>%
+  spread(Analysis.Names, Cover.percent, fill = 0) %>%
+  column_to_rownames(var = "SIVIMID") %>%
+  metaMDS(trymax = 200, k = 2) ->
+  nmds # Ordination output
+
+vegan::scores(nmds) -> s1
+
+s1$sites %>%
+  data.frame() %>%
+  rownames_to_column("SIVIMID") %>%
+  merge(header2, by = "SIVIMID") -> header2NMDS
+
+# write.csv(header4NMDS, "data/urban-header-nmds.csv", fileEncoding = "latin1", row.names = FALSE)
+
+header2NMDS %>%
+  ggplot(aes(x = NMDS1, y = NMDS2)) +
+  geom_point(aes(color = as.factor(Cluster)), show.legend = T)
+
+### C1 Balloto-Conion maculati
+### C2 Arction lappae (spp de Cirsion pero overlaps con Arction en NMDS)
+### C3 Arction lappae
+### C4 Geo urbani-Alliarion officinalis
+### C5 Geranio pusilli-Anthriscion caucalidis
 ### C6 Geo urbani-Alliarion officinalis
+### C7 Cirsion richterano-chodati
+### C8 Cirsion richterano-chodati
 
 header2 %>%
   select(SIVIMID, Cluster) %>%
   mutate(Revised.sintaxon = fct_recode(as.factor(Cluster), 
-                                      "Geo urbani-Alliarion officinalis" = "1",
-                                      "Geranio pusilli-Anthriscion caucalidis" = "2",
-                                      "Balloto-Conion maculati" = "3",
-                                      "Arction lappae" = "4",
-                                      "Polygono maritimi-Elytrigietum athericae" = "5",
-                                      "Geo urbani-Alliarion officinalis"  = "6")) %>%
+                                      "Balloto-Conion maculati" = "1",
+                                      "Arction lappae" = "2",
+                                      "Arction lappae" = "3",
+                                      "Geo urbani-Alliarion officinalis" = "4",
+                                      "Geranio pusilli-Anthriscion caucalidis" = "5",
+                                      "Geo urbani-Alliarion officinalis"  = "6",
+                                      "Cirsion richterano-chodati"  = "7",
+                                      "Cirsion richterano-chodati"  = "8")) %>%
   select(-Cluster) %>%
   write.csv("results/Revised V39.csv", row.names = FALSE, fileEncoding = "Latin1") 
 

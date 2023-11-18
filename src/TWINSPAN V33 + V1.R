@@ -74,7 +74,7 @@ plots %>%
 levels(groups) -> group.labels
 
 plots %>%
-  select(-SIVIMID, Cluster) %>%
+  select(-c(SIVIMID, Cluster)) %>%
   indval(groups, numitr = 10000) -> indicators
 
 data.frame(Community = indicators$maxcls, Indicator = indicators$indcls,
@@ -83,5 +83,38 @@ data.frame(Community = indicators$maxcls, Indicator = indicators$indcls,
   group_by(Community) %>%
   slice_max(Indicator, n = 5)
 
-### C1 Spergulo-Erodion
+### NMDS
+
+library(vegan)
+
+header2 %>%
+  merge(species, by = "SIVIMID") %>%
+  select(SIVIMID, Analysis.Names, Cover.percent) %>%
+  spread(Analysis.Names, Cover.percent, fill = 0) %>%
+  column_to_rownames(var = "SIVIMID") %>%
+  metaMDS(trymax = 50, k = 2) ->
+  nmds # Ordination output
+
+vegan::scores(nmds) -> s1
+
+s1$sites %>%
+  data.frame() %>%
+  rownames_to_column("SIVIMID") %>%
+  merge(header2, by = "SIVIMID") -> header2NMDS
+
+# write.csv(header4NMDS, "data/urban-header-nmds.csv", fileEncoding = "latin1", row.names = FALSE)
+
+header2NMDS %>%
+  ggplot(aes(x = NMDS1, y = NMDS2)) +
+  geom_point(aes(color = as.factor(Cluster)), show.legend = T)
+
+### C1 Oxalidion europaeae
 ### C2 Scleranthion
+
+header2 %>%
+  select(SIVIMID, Cluster) %>%
+  mutate(Revised.sintaxon = fct_recode(as.factor(Cluster), 
+                                       "Oxalidion europaeae" = "1",
+                                       "Scleranthion annui" = "2")) %>%
+  select(-Cluster) %>%
+  write.csv("results/Revised V1.csv", row.names = FALSE, fileEncoding = "Latin1") 

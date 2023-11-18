@@ -74,7 +74,7 @@ plots %>%
 levels(groups) -> group.labels
 
 plots %>%
-  select(-SIVIMID, Cluster) %>%
+  select(-c(SIVIMID, Cluster)) %>%
   indval(groups, numitr = 10000) -> indicators
 
 data.frame(Community = indicators$maxcls, Indicator = indicators$indcls,
@@ -85,3 +85,9 @@ data.frame(Community = indicators$maxcls, Indicator = indicators$indcls,
 
 ### C1 Sisymbrion officinalis
 ### C2 Sisymbrion officinalis
+
+header2 %>%
+  select(SIVIMID, Cluster) %>%
+  mutate(Revised.sintaxon = "Sisymbrion officinalis") %>%
+  select(-Cluster) %>%
+  write.csv("results/Revised V37 Sisymbrion.csv", row.names = FALSE, fileEncoding = "Latin1") 
