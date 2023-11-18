@@ -114,14 +114,7 @@ header2NMDS %>%
 header2 %>%
   select(SIVIMID, Cluster) %>%
   mutate(Revised.sintaxon = fct_recode(as.factor(Cluster), 
-<<<<<<< HEAD
                                        "Oxalidion europaeae" = "1",
                                        "Scleranthion annui" = "2")) %>%
   select(-Cluster) %>%
   write.csv("results/Revised V1.csv", row.names = FALSE, fileEncoding = "Latin1") 
-=======
-                                       "Spergulo arvensis-Erodion cicutariae" = "1",
-                                       "Scleranthion annui" = "2")) %>%
-  select(-Cluster) %>%
-  write.csv("results/Revised V1.csv", row.names = FALSE, fileEncoding = "Latin1") 
->>>>>>> ae1d2b9520c8f02c81a80e60ad1026557de2e387
