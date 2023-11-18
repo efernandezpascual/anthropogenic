@@ -97,6 +97,7 @@ data.frame(Community = indicators$maxcls, Indicator = indicators$indcls,
   slice_max(Indicator, n = 4) %>%
   data.frame
 
+<<<<<<< HEAD
 ### NMDS
 
 library(vegan)
@@ -135,5 +136,14 @@ header2 %>%
                                        "Cymbalario-Asplenion" = "2",
                                        "Geranio pusilli-Anthriscion caucalidis" = "3",
                                        "Cymbalario-Asplenion" = "4")) %>%
+=======
+### C1 Parietario + Cymbalarion
+### Polypodietum
+### Las dos alianzas son indistinguibles en base a composición florística
+
+header2 %>%
+  select(SIVIMID, Cluster) %>%
+  mutate(Revised.sintaxon = "Cymbalario-Asplenion") %>%
+>>>>>>> ae1d2b9520c8f02c81a80e60ad1026557de2e387
   select(-Cluster) %>%
   write.csv("results/Revised W.csv", row.names = FALSE, fileEncoding = "Latin1") 
