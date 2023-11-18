@@ -3,7 +3,7 @@ library(tidyverse); library(vegan)
 ### Relevés
 
 read.csv("data/header-revised.csv", fileEncoding = "latin1") %>%
-  filter(CODE %in% c("V37", "V38d")) -> header
+  filter(CODE == "V38c") -> header
 
 read.csv("data/urban-species.csv", fileEncoding = "latin1") %>%
   filter(SIVIMID %in% header$SIVIMID) -> species
@@ -15,7 +15,7 @@ species %>%
   spread(Analysis.Names, Cover.percent, fill = 0) %>%
   column_to_rownames(var = "SIVIMID") -> df1
 
-twinspanR::twinspan(df1, modif = T, clusters = 2) %>% ## IR INCREMENTANDO EL NUMERO DE CLUSTERS
+twinspanR::twinspan(df1, modif = T, clusters = 4) %>% ## IR INCREMENTANDO EL NUMERO DE CLUSTERS
   cut() %>%
   cbind(df1) %>%
   select(".") %>%
@@ -82,12 +82,44 @@ header %>%
 #   rownames_to_column(var = "Species") %>%
 #   group_by(Community) %>%
 #   slice_max(Indicator, n = 5)
+# 
+# ### C1 Dauco-Melilotion
+# ### C2 Dauco-Melilotion (solapa en NMDS)
+# ### C3 Dauco-Melilotion (solapa en NMDS)
+# ### C4 Dauco-Melilotion (solapa en NMDS)
+# 
+# ### NMDS
+# 
+# library(vegan)
+# 
+# header2 %>%
+#   merge(species, by = "SIVIMID") %>%
+#   select(SIVIMID, Analysis.Names, Cover.percent) %>%
+#   spread(Analysis.Names, Cover.percent, fill = 0) %>%
+#   column_to_rownames(var = "SIVIMID") %>%
+#   metaMDS(trymax = 200, k = 2) ->
+#   nmds # Ordination output
+# 
+# vegan::scores(nmds) -> s1
+# 
+# s1$sites %>%
+#   data.frame() %>%
+#   rownames_to_column("SIVIMID") %>%
+#   merge(header2, by = "SIVIMID") -> header2NMDS
+# 
+# # write.csv(header4NMDS, "data/urban-header-nmds.csv", fileEncoding = "latin1", row.names = FALSE)
+# 
+# header2NMDS %>%
+#   ggplot(aes(x = NMDS1, y = NMDS2)) +
+#   geom_point(aes(color = as.factor(Cluster)), show.legend = T)
 
-### C1 Sisymbrion officinalis
-### C2 Sisymbrion officinalis
 
 header2 %>%
   select(SIVIMID, Cluster) %>%
-  mutate(Revised.sintaxon = "Sisymbrion officinalis") %>%
+  mutate(Revised.sintaxon = fct_recode(as.factor(Cluster), 
+                                       "Dauco-Melilotion" = "1",
+                                       "Dauco-Melilotion" = "2",
+                                       "Dauco-Melilotion" = "3",
+                                       "Dauco-Melilotion" = "4")) %>%
   select(-Cluster) %>%
-  write.csv("results/Revised V37 Sisymbrion.csv", row.names = FALSE, fileEncoding = "Latin1") 
+  write.csv("results/Revised V38 Dauco.csv", row.names = FALSE, fileEncoding = "Latin1") 

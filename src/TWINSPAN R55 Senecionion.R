@@ -3,7 +3,7 @@ library(tidyverse); library(vegan)
 ### Relevés
 
 read.csv("data/header-revised.csv", fileEncoding = "latin1") %>%
-  filter(CODE == "V31") -> header
+  filter(CODE == "Q51") -> header
 
 read.csv("data/urban-species.csv", fileEncoding = "latin1") %>%
   filter(SIVIMID %in% header$SIVIMID) -> species
@@ -15,7 +15,7 @@ species %>%
   spread(Analysis.Names, Cover.percent, fill = 0) %>%
   column_to_rownames(var = "SIVIMID") -> df1
 
-twinspanR::twinspan(df1, modif = T, clusters = 3) %>% ## IR INCREMENTANDO EL NUMERO DE CLUSTERS
+twinspanR::twinspan(df1, modif = T, clusters = 2) %>% ## IR INCREMENTANDO EL NUMERO DE CLUSTERS
   cut() %>%
   cbind(df1) %>%
   select(".") %>%
@@ -25,42 +25,42 @@ twinspanR::twinspan(df1, modif = T, clusters = 3) %>% ## IR INCREMENTANDO EL NUM
 header %>%
   merge(kclusters, by = "SIVIMID") -> header2
 
-# ### Expert system
-# 
-# header2 %>%
-#   group_by(Cluster, EUNIS2020) %>%
-#   tally %>%
-#   arrange(Cluster, -n) %>%
-#   data.frame
-# 
-# ### Sintaxa
-# 
-# header2 %>%
-#   group_by(Cluster, Alliance) %>%
-#   tally %>%
-#   arrange(Cluster, -n) %>%
-#   data.frame
-# 
-# ### Constant
-# 
-# species %>% 
-#   merge(header2) %>%
-#   group_by(Cluster, Analysis.Names) %>%
-#   summarise(F = length(Analysis.Names)) %>%
-#   group_by(Cluster) %>%
-#   slice_max(F, n = 5)
-# 
-# ### Dominant
-# 
-# species %>% 
-#   merge(header2) %>%
-#   group_by(Cluster, Analysis.Names) %>%
-#   summarise(D = sum(Cover.percent)) %>%
-#   group_by(Cluster) %>%
-#   slice_max(D, n = 5)
-# 
-# ### Indicator spp
-# 
+### Expert system
+
+header2 %>%
+  group_by(Cluster, EUNIS2020) %>%
+  tally %>%
+  arrange(Cluster, -n) %>%
+  data.frame
+
+### Sintaxa
+
+header2 %>%
+  group_by(Cluster, Alliance) %>%
+  tally %>%
+  arrange(Cluster, -n) %>%
+  data.frame
+
+### Constant
+
+species %>% 
+  merge(header2) %>%
+  group_by(Cluster, Analysis.Names) %>%
+  summarise(F = length(Analysis.Names)) %>%
+  group_by(Cluster) %>%
+  slice_max(F, n = 5)
+
+### Dominant
+
+species %>% 
+  merge(header2) %>%
+  group_by(Cluster, Analysis.Names) %>%
+  summarise(D = sum(Cover.percent)) %>%
+  group_by(Cluster) %>%
+  slice_max(D, n = 5)
+
+### Indicator spp
+
 # library(labdsv)
 # 
 # species %>%
@@ -82,13 +82,12 @@ header %>%
 #   rownames_to_column(var = "Species") %>%
 #   group_by(Community) %>%
 #   slice_max(Indicator, n = 5)
-# 
-# ### C1 Polygono-Coronopodion
-# ### C2 Polygono-Coronopodion
-# ### C3 Polygono-Coronopodion
-# 
-# ### NMDS
-# 
+
+### C1 Senecionion fluviatilis
+### C2 Senecionion fluviatilis
+
+### NMDS
+
 # library(vegan)
 # 
 # header2 %>%
@@ -105,9 +104,9 @@ header %>%
 #   data.frame() %>%
 #   rownames_to_column("SIVIMID") %>%
 #   merge(header2, by = "SIVIMID") -> header2NMDS
-# 
-# # write.csv(header4NMDS, "data/urban-header-nmds.csv", fileEncoding = "latin1", row.names = FALSE)
-# 
+
+# write.csv(header4NMDS, "data/urban-header-nmds.csv", fileEncoding = "latin1", row.names = FALSE)
+
 # header2NMDS %>%
 #   ggplot(aes(x = NMDS1, y = NMDS2)) +
 #   geom_point(aes(color = as.factor(Cluster)), show.legend = T)
@@ -116,8 +115,7 @@ header %>%
 header2 %>%
   select(SIVIMID, Cluster) %>%
   mutate(Revised.sintaxon = fct_recode(as.factor(Cluster), 
-                                       "Polygono-Coronopodion" = "1",
-                                       "Polygono-Coronopodion" = "2",
-                                       "Polygono-Coronopodion" = "3")) %>%
+                                       "Senecionion fluviatilis" = "1",
+                                       "Senecionion fluviatilis" = "2")) %>%
   select(-Cluster) %>%
-  write.csv("results/Revised V34.csv", row.names = FALSE, fileEncoding = "Latin1") 
+  write.csv("results/Revised R55 Senecionion.csv", row.names = FALSE, fileEncoding = "Latin1") 
