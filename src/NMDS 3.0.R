@@ -49,3 +49,9 @@ headerNMDS %>% filter(NMDS1 > 0.5) %>% select(SIVIMID) %>% merge(species) %>%
 
 headerNMDS %>% filter(NMDS2 < -0.05)
 headerNMDS %>% filter(NMDS2 > 0.05)
+
+headerNMDS %>%
+  group_by(Revised.alliance) %>%
+  summarise(NMDS1 = mean(NMDS1), NMDS2 = mean(NMDS2)) %>%
+  ggplot(aes(x = NMDS1, y = NMDS2)) +
+  geom_text(aes(label = Revised.alliance, color = as.factor(Revised.alliance)), show.legend = T) 
