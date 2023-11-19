@@ -1,17 +1,6 @@
 
-  -> V31 = dividir en 2: Polygono-Coronopodion (V34) + Potentillion anserinae (V31)
-  -> V33 + V1abc = juntar y dividir en 2: Spergulo arvensis-Erodion cicutariae (V1) + Scleranthion annui (V1) (Echio-Galactition tomentosae no está en Cantabrian Mixed Forest) (PERO, buscar y revisar Oxalidion europeae = Spergulo-Oxalidion)
-  -> V37 + V38d = juntar en 1: Sisymbrion officinalis (V37)
-  -> V38a + V38b = juntar en 1: Cirsion richterano-chodati (V38) (Carduo carpetani-Cirsion odontolepidis no está en Cantabrian Mixed Forest)
-  -> V39abcdef = juntar y dividir en 5: Geranio pusilli-Anthriscion caucalidis(V37) + Geo urbani-Alliarion officinalis (V39) + Arction lappae (V39) + Balloto-Conion maculati (V39) + Aegopodion podagrariae (V39)
+  -> Revisar nombres de especies, puede que estén en CHECKLIST SIVIM1 y CHECKLIST SIVIM2
+  -> Repetir la clasificación semi-supervisada, usando como puntos clasificados los que llevan Semisupervisada = 1 (los que coincide la alianza original con la asignada en 3.0)
   
-  -> W1 = revisar a Galio valantiae-Parietarion judaicae (sintaxones originales asignados al revés que nosotros, revisar)
-  -> W2 = revisar a Cymbalario-Asplenion (sintaxones originales asignados al revés que nosotros, revisar)
-
-  -> Buscar inventarios que falten = 
-       + Linario polygalifoliae-Vulpion alopecuri (= Linario polygalifoliae-Vulpion alopecuroris)
-       + Bidention tripartitae + Paspalo-Agrostion semiverticillati (= Paspalo-Agrostion verticillati)
-       + Epilobion angustifolii + Fragarion vescae (= Atropion belladonae)
-       + Poion supinae 
 
 

@@ -16,6 +16,9 @@ header %>%
   metaMDS(trymax = 1000, k = 2) ->
   nmds # Ordination output
 
+
+save(nmds, file = "results/NMDS3.0.RData")
+
 vegan::scores(nmds) -> s1
 
 s1$sites %>%
@@ -23,6 +26,26 @@ s1$sites %>%
   rownames_to_column("SIVIMID") %>%
   merge(header, by = "SIVIMID") -> headerNMDS
 
+write.csv(headerNMDS, "results/NMDS3.0.RData.csv")
+
 headerNMDS %>%
   ggplot(aes(x = NMDS1, y = NMDS2)) +
   geom_point(aes(color = as.factor(Revised.alliance)), show.legend = T)
+
+headerNMDS %>%
+  ggplot(aes(x = NMDS1, y = NMDS2)) +
+  geom_point(aes(color = as.factor(Revised.alliance)), show.legend = T) +
+  coord_cartesian(xlim = c(-.5, .5))
+
+headerNMDS %>% filter(NMDS1 < -0.05)
+
+headerNMDS %>% filter(NMDS1 < -0.1) %>% select(SIVIMID) %>% merge(species) %>%
+  arrange(SIVIMID, -Cover.percent)
+
+headerNMDS %>% filter(NMDS1 > 0.05)
+
+headerNMDS %>% filter(NMDS1 > 0.5) %>% select(SIVIMID) %>% merge(species) %>%
+  arrange(SIVIMID, -Cover.percent)
+
+headerNMDS %>% filter(NMDS2 < -0.05)
+headerNMDS %>% filter(NMDS2 > 0.05)
