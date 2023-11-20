@@ -37,10 +37,48 @@ rbind(read.csv("data/urban-header-3.1A.csv", fileEncoding = "latin1"),
          Class.Twinspan = Cluster1) -> 
   header
 
-write.csv(header, "data/urban-header-4.0.csv", fileEncoding = "latin1", row.names = FALSE)
+# write.csv(header, "data/urban-header-4.0.csv", fileEncoding = "latin1", row.names = FALSE)
 
 read.csv("data/urban-species-3.0.csv", fileEncoding = "latin1") %>%
   filter(SIVIMID %in% header$SIVIMID) -> species
+
+### Permanova
+
+species %>%
+  select(SIVIMID, Analysis.Names, Cover.percent) %>%
+  spread(Analysis.Names, Cover.percent, fill = 0) %>%
+  column_to_rownames(var = "SIVIMID") -> df1
+
+df1 %>% rownames_to_column(var = "SIVIMID") %>% merge(header, by = "SIVIMID") -> df1b
+RVAideMemoire::pairwise.perm.manova(dist(df1, "euclidian"), df1b$Alliance.revised, nperm = 9999, p.method = "holm")
+adonis2(df1 ~ Alliance.revised, data = df1b, permutations = 9999)
+anova(betadisper(vegdist(df1, method = "euclidean"), df1b$Alliance.revised))
+
+### NMDS
+
+library(vegan)
+
+header %>%
+  merge(species, by = "SIVIMID") %>%
+  select(SIVIMID, Analysis.Names, Cover.percent) %>%
+  spread(Analysis.Names, Cover.percent, fill = 0) %>%
+  column_to_rownames(var = "SIVIMID") %>%
+  metaMDS(trymax = 10000, k = 2) ->
+  nmds # Ordination output
+
+vegan::scores(nmds) -> s1
+
+s1$sites %>%
+  data.frame() %>%
+  rownames_to_column("SIVIMID") %>%
+  merge(header, by = "SIVIMID") -> headerNMDS
+
+write.csv(headerNMDS, "results/4.0-nmds.csv", fileEncoding = "latin1", row.names = FALSE)
+save(nmds, file = "results/4NMDS.RData")
+
+headerNMDS %>%
+  ggplot(aes(x = NMDS1, y = NMDS2)) +
+  geom_point(aes(color = as.factor(Cluster)), show.legend = T)
 
 ### Sintaxa
 

@@ -1,6 +1,0 @@
-
-  -> Revisar nombres de especies, puede que estén en CHECKLIST SIVIM1 y CHECKLIST SIVIM2
-  -> Repetir la clasificación semi-supervisada, usando como puntos clasificados los que llevan Semisupervisada = 1 (los que coincide la alianza original con la asignada en 3.0)
-  
-
-
