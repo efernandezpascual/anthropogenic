@@ -1,10 +1,10 @@
-Relevé number;RelevéID;Locality;Municipality;Plant.Cover;Aspect;Slope;Area;DEG_LON;DEG_LAT;Elevation;Date
-11;CS11;Polígono Industrial Silvota;Llanera;100;NA;0;49;43.41379;-5.808613;151;20/10/2022
-12;CS12;La Venta del Gallo;Llanera;75;NA;0;49;43.41451;-5.81737;151;20/10/2022
-13;CS13;Rotonda cerca de la Fresneda;Siero;100;W;0;49;43.408169;-5.796054;158;20/10/2022
-21;CS21;Polígono Maqua;Gozón;95;N;1;49;43.600859;-5.907661;6;24/10/2022
-22;CS22;Zeluán;Avilés;100;SW;0;49;43.590716;-5.915966;4;24/10/2022
-23;CS23;Cerca de Endasa;Avilés;100;NA;0;49;43.5866468;-5.913889;15;24/10/2022
-31;CS31;Faro de Cabo Peñas;Gozón;100;N;1;49;43.655831;-5.850439;96;24/10/2022
-32;CS32;Faro de Cabo Peñas;Gozón;100;NW;5;49;43.654466;-5.848792;94;24/10/2022
-33;CS33;La Panadería-Bañugues;Gozón;100;SW;3;49;43.637201;-5.831285;81;24/10/2022
+Relevé number,RelevéID,Locality,Municipality,Plant.Cover,Aspect,Slope,Area,DEG_LON,DEG_LAT,Elevation,Date
+11,CS11,Polígono Industrial Silvota,Llanera,100,NA,0,49,43.41379,-5.808613,151,20/10/2022
+12,CS12,La Venta del Gallo,Llanera,75,NA,0,49,43.41451,-5.81737,151,20/10/2022
+13,CS13,Rotonda cerca de la Fresneda,Siero,100,W,0,49,43.408169,-5.796054,158,20/10/2022
+21,CS21,Polígono Maqua,Gozón,95,N,1,49,43.600859,-5.907661,6,24/10/2022
+22,CS22,Zeluán,Avilés,100,SW,0,49,43.590716,-5.915966,4,24/10/2022
+23,CS23,Cerca de Endasa,Avilés,100,NA,0,49,43.5866468,-5.913889,15,24/10/2022
+31,CS31,Faro de Cabo Peñas,Gozón,100,N,1,49,43.655831,-5.850439,96,24/10/2022
+32,CS32,Faro de Cabo Peñas,Gozón,100,NW,5,49,43.654466,-5.848792,94,24/10/2022
+33,CS33,La Panadería-Bañugues,Gozón,100,SW,3,49,43.637201,-5.831285,81,24/10/2022

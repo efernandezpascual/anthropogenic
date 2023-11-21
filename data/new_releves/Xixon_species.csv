@@ -1,0 +1,800 @@
+releve_number,id,Original.name,Analysis.name,layer,cover_percent
+2501,Xixon01,Galactites tomentosus,Galactites tomentosus,Main,80
+2501,Xixon01,Helminthotheca echioides,Helminthotheca echioides,Main,20
+2501,Xixon01,Euphorbia platyphyllos,Euphorbia platyphyllos,Main,10
+2501,Xixon01,Anagallis arvensis,Anagallis arvensis,Main,5
+2501,Xixon01,Holcus lanatus,Holcus lanatus,Main,5
+2501,Xixon01,Dactylis glomerata,Dactylis glomerata,Main,2
+2501,Xixon01,Equisetum telmateia,Equisetum telmateia,Main,2
+2501,Xixon01,Brassica nigra,Brassica nigra,Main,1
+2501,Xixon01,Calystegia sepium,Calystegia sepium,Main,1
+2501,Xixon01,Carex divulsa,Carex divulsa,Main,1
+2501,Xixon01,Cirsium arvense,Cirsium arvense,Main,1
+2501,Xixon01,Conium maculatum,Conium maculatum,Main,1
+2501,Xixon01,Dittrichia viscosa,Dittrichia viscosa,Main,1
+2501,Xixon01,Rumex conglomeratus,Rumex conglomeratus,Main,1
+2501,Xixon01,Rumex crispus,Rumex crispus,Main,1
+2501,Xixon01,Centaurea nigra,Centaurea nigra,Main,0.1
+2501,Xixon01,Cerastium glomeratum,Cerastium glomeratum,Main,0.1
+2501,Xixon01,Cirsium vulgare,Cirsium vulgare,Main,0.1
+2501,Xixon01,Erigeron sumatrensis,Erigeron sumatrensis,Main,0.1
+2501,Xixon01,Geranium dissectum,Geranium dissectum,Main,0.1
+2501,Xixon01,Hedera helix s.l.,Hedera helix aggr.,Main,0.1
+2501,Xixon01,Hypericum perforatum,Hypericum perforatum,Main,0.1
+2501,Xixon01,Juncus bufonius,Juncus bufonius,Main,0.1
+2501,Xixon01,Lathyrus pratensis,Lathyrus pratensis,Main,0.1
+2501,Xixon01,Leucanthemum vulgare s.l.,Leucanthemum vulgare,Main,0.1
+2501,Xixon01,Oxalis corniculata,Oxalis corniculata,Main,0.1
+2501,Xixon01,Plantago lanceolata,Plantago lanceolata,Main,0.1
+2501,Xixon01,Poa pratensis,Poa pratensis,Main,0.1
+2501,Xixon01,Potentilla reptans,Potentilla reptans,Main,0.1
+2501,Xixon01,Prunella vulgaris,Prunella vulgaris,Main,0.1
+2501,Xixon01,Rubia peregrina,Rubia peregrina,Main,0.1
+2501,Xixon01,Trifolium pratense,Trifolium pratense,Main,0.1
+2501,Xixon01,Trifolium repens,Trifolium repens,Main,0.1
+2501,Xixon01,Trifolium squamosum,Trifolium squamosum,Main,0.1
+2501,Xixon01,Urtica dioica,Urtica dioica,Main,0.1
+2501,Xixon01,Veronica persica,Veronica persica,Main,0.1
+2502,Xixon02,Dactylis glomerata,Dactylis glomerata,Main,60
+2502,Xixon02,Schedonorus arundinaceus,Schedonorus arundinaceus,Main,60
+2502,Xixon02,Convolvulus arvensis,Convolvulus arvensis,Main,20
+2502,Xixon02,Holcus lanatus,Holcus lanatus,Main,20
+2502,Xixon02,Lathyrus pratensis,Lathyrus pratensis,Main,10
+2502,Xixon02,Rubus sp.,Rubus,Main,5
+2502,Xixon02,Potentilla reptans,Potentilla reptans,Main,2
+2502,Xixon02,Rosa sp.,Rosa,Main,2
+2502,Xixon02,Geranium dissectum,Geranium dissectum,Main,1
+2502,Xixon02,Plantago lanceolata,Plantago lanceolata,Main,1
+2502,Xixon02,Vicia sativa,Vicia sativa aggr.,Main,1
+2502,Xixon02,Epilobium hirsutum,Epilobium hirsutum,Main,0.1
+2502,Xixon02,Geranium molle,Geranium molle,Main,0.1
+2502,Xixon02,Lotus corniculatus,Lotus corniculatus,Main,0.1
+2503,Xixon03,Quercus robur,Quercus robur,Canopy,80
+2503,Xixon03,Laurus nobilis,Laurus nobilis,Canopy,70
+2503,Xixon03,Hedera helix s.l.,Hedera helix aggr.,Main,60
+2503,Xixon03,Laurus nobilis,Laurus nobilis,Seedlings,5
+2503,Xixon03,Lonicera periclymenum,Lonicera periclymenum,Main,5
+2503,Xixon03,Rubia peregrina,Rubia peregrina,Main,5
+2503,Xixon03,Ilex aquifolium,Ilex aquifolium,Seedlings,2
+2503,Xixon03,Pteridium aquilinum,Pteridium aquilinum,Main,2
+2503,Xixon03,Physospermum cornubiense,Physospermum cornubiense,Main,1
+2503,Xixon03,Rosa sp.,Rosa,Main,1
+2503,Xixon03,Rubus sp.,Rubus,Main,1
+2503,Xixon03,Ajuga reptans,Ajuga reptans,Main,0.1
+2503,Xixon03,Polypodium vulgare,Polypodium vulgare,Main,0.1
+2503,Xixon03,Pulmonaria longifolia,Pulmonaria longifolia,Main,0.1
+2503,Xixon03,Ruscus aculeatus,Ruscus aculeatus,Main,0.1
+2503,Xixon03,Acer pseudoplatanus,Acer pseudoplatanus,Seedlings,0.01
+2503,Xixon03,Fraxinus excelsior,Fraxinus excelsior,Seedlings,0.01
+2504,Xixon04,Schedonorus arundinaceus,Schedonorus arundinaceus,Main,80
+2504,Xixon04,Lotus corniculatus,Lotus corniculatus,Main,40
+2504,Xixon04,Holcus lanatus,Holcus lanatus,Main,20
+2504,Xixon04,Trifolium pratense,Trifolium pratense,Main,10
+2504,Xixon04,Dactylis glomerata,Dactylis glomerata,Main,5
+2504,Xixon04,Medicago lupulina,Medicago lupulina,Main,5
+2504,Xixon04,Plantago lanceolata,Plantago lanceolata,Main,5
+2504,Xixon04,Centaurea nigra,Centaurea nigra,Main,2
+2504,Xixon04,Linum bienne,Linum bienne,Main,1
+2504,Xixon04,Lolium perenne,Lolium perenne,Main,1
+2504,Xixon04,Vicia sativa,Vicia sativa aggr.,Main,1
+2504,Xixon04,Carex divulsa,Carex divulsa,Main,0.1
+2504,Xixon04,Carex flacca,Carex flacca,Main,0.1
+2504,Xixon04,Daucus carota,Daucus carota,Main,0.1
+2504,Xixon04,Lathyrus pratensis,Lathyrus pratensis,Main,0.1
+2504,Xixon04,Leucanthemum vulgare s.l.,Leucanthemum vulgare,Main,0.1
+2504,Xixon04,Poa pratensis,Poa pratensis,Main,0.1
+2504,Xixon04,Trifolium repens,Trifolium repens,Main,0.1
+2504,Xixon04,Verbena officinalis,Verbena officinalis,Main,0.1
+2505,Xixon05,Conium maculatum,Conium maculatum,Main,40
+2505,Xixon05,Galactites tomentosus,Galactites tomentosus,Main,20
+2505,Xixon05,Calystegia sepium,Calystegia sepium,Main,10
+2505,Xixon05,Centaurea nigra,Centaurea nigra,Main,10
+2505,Xixon05,Elytrigia repens,Elytrigia repens,Main,10
+2505,Xixon05,Rumex crispus,Rumex crispus,Main,10
+2505,Xixon05,Dittrichia viscosa,Dittrichia viscosa,Main,5
+2505,Xixon05,Helminthotheca echioides,Helminthotheca echioides,Main,5
+2505,Xixon05,Rubus sp.,Rubus,Main,5
+2505,Xixon05,Urtica dioica,Urtica dioica,Main,5
+2505,Xixon05,Carex cuprina,Carex cuprina,Main,2
+2505,Xixon05,Cirsium vulgare,Cirsium vulgare,Main,2
+2505,Xixon05,Lamium maculatum,Lamium maculatum,Main,2
+2505,Xixon05,Leucanthemum vulgare s.l.,Leucanthemum vulgare,Main,2
+2505,Xixon05,Brachypodium pinnatum,Brachypodium pinnatum aggr.,Main,1
+2505,Xixon05,Carex divulsa,Carex divulsa,Main,1
+2505,Xixon05,Dactylis glomerata,Dactylis glomerata,Main,1
+2505,Xixon05,Daucus carota,Daucus carota,Main,1
+2505,Xixon05,Dipsacus fullonum,Dipsacus fullonum,Main,1
+2505,Xixon05,Holcus lanatus,Holcus lanatus,Main,1
+2505,Xixon05,Juncus inflexus,Juncus inflexus,Main,1
+2505,Xixon05,Oenanthe crocata,Oenanthe crocata,Main,1
+2505,Xixon05,Poa pratensis,Poa pratensis,Main,1
+2505,Xixon05,Potentilla reptans,Potentilla reptans,Main,1
+2505,Xixon05,Schedonorus arundinaceus,Schedonorus arundinaceus,Main,1
+2505,Xixon05,Galium verum,Galium verum,Main,0.1
+2505,Xixon05,Plantago lanceolata,Plantago lanceolata,Main,0.1
+2505,Xixon05,Prunella vulgaris,Prunella vulgaris,Main,0.1
+2505,Xixon05,Sonchus oleraceus,Sonchus oleraceus,Main,0.1
+2505,Xixon05,Verbena officinalis,Verbena officinalis,Main,0.1
+2506,Xixon06,Bryonia dioica,Bryonia dioica,Main,40
+2506,Xixon06,Dactylis glomerata,Dactylis glomerata,Main,40
+2506,Xixon06,Raphanus raphanistrum,Raphanus raphanistrum aggr.,Main,10
+2506,Xixon06,Conium maculatum,Conium maculatum,Main,5
+2506,Xixon06,Rubus sp.,Rubus,Main,5
+2506,Xixon06,Convolvulus arvensis,Convolvulus arvensis,Main,2
+2506,Xixon06,Hedera helix s.l.,Hedera helix aggr.,Main,2
+2506,Xixon06,Ceratochloa cathartica,Ceratochloa cathartica,Main,1
+2506,Xixon06,Galium aparine,Galium aparine,Main,1
+2506,Xixon06,Geranium purpureum,Geranium purpureum,Main,1
+2506,Xixon06,Rubia peregrina,Rubia peregrina,Main,1
+2506,Xixon06,Anagallis arvensis,Anagallis arvensis,Main,0.1
+2506,Xixon06,Daucus carota,Daucus carota,Main,0.1
+2506,Xixon06,Geranium dissectum,Geranium dissectum,Main,0.1
+2506,Xixon06,Hordeum murinum,Hordeum murinum,Main,0.1
+2506,Xixon06,Hypochaeris radicata,Hypochaeris radicata,Main,0.1
+2506,Xixon06,Sonchus tenerrimus,Sonchus tenerrimus,Main,0.1
+2507,Xixon07,Briza media,Briza media,Main,20
+2507,Xixon07,Lotus corniculatus,Lotus corniculatus,Main,20
+2507,Xixon07,Schedonorus arundinaceus,Schedonorus arundinaceus,Main,20
+2507,Xixon07,Anthoxanthum odoratum,Anthoxanthum odoratum,Main,10
+2507,Xixon07,Daucus carota,Daucus carota,Main,10
+2507,Xixon07,Holcus lanatus,Holcus lanatus,Main,10
+2507,Xixon07,Brachypodium pinnatum,Brachypodium pinnatum aggr.,Main,5
+2507,Xixon07,Cynosurus cristatus,Cynosurus cristatus,Main,5
+2507,Xixon07,Allium vineale,Allium vineale,Main,2
+2507,Xixon07,Calystegia sepium,Calystegia sepium,Main,2
+2507,Xixon07,Carex caryophyllea,Carex caryophyllea,Main,2
+2507,Xixon07,Carex flacca,Carex flacca,Main,2
+2507,Xixon07,Centaurea nigra,Centaurea nigra,Main,2
+2507,Xixon07,Festuca rubra,Festuca rubra aggr.,Main,2
+2507,Xixon07,Galium verum,Galium verum,Main,2
+2507,Xixon07,Leucanthemum vulgare s.l.,Leucanthemum vulgare,Main,2
+2507,Xixon07,Ophrys apifera,Ophrys apifera,Main,2
+2507,Xixon07,Plantago lanceolata,Plantago lanceolata,Main,2
+2507,Xixon07,Ranunculus bulbosus,Ranunculus bulbosus,Main,2
+2507,Xixon07,Carex divulsa,Carex divulsa,Main,1
+2507,Xixon07,Carex panicea,Carex panicea,Main,1
+2507,Xixon07,Crepis vesicaria,Crepis vesicaria,Main,1
+2507,Xixon07,Gaudinia fragilis,Gaudinia fragilis,Main,1
+2507,Xixon07,Lathyrus pratensis,Lathyrus pratensis,Main,1
+2507,Xixon07,Luzula campestris,Luzula campestris,Main,1
+2507,Xixon07,Medicago lupulina,Medicago lupulina,Main,1
+2507,Xixon07,Prunella vulgaris,Prunella vulgaris,Main,1
+2507,Xixon07,Rhinanthus angustifolius,Rhinanthus angustifolius,Main,1
+2507,Xixon07,Trifolium pratense,Trifolium pratense,Main,1
+2507,Xixon07,Trisetum flavescens,Trisetum flavescens,Main,1
+2507,Xixon07,Cerastium glomeratum,Cerastium glomeratum,Main,0.1
+2507,Xixon07,Dactylis glomerata,Dactylis glomerata,Main,0.1
+2507,Xixon07,Linum bienne,Linum bienne,Main,0.1
+2507,Xixon07,Oenanthe crocata,Oenanthe crocata,Main,0.1
+2507,Xixon07,Pimpinella saxifraga,Pimpinella saxifraga,Main,0.1
+2507,Xixon07,Scilla verna,Scilla verna,Main,0.1
+2507,Xixon07,Trifolium repens,Trifolium repens,Main,0.1
+2508,Xixon08,Centaurea nigra,Centaurea nigra,Main,30
+2508,Xixon08,Holcus lanatus,Holcus lanatus,Main,30
+2508,Xixon08,Plantago lanceolata,Plantago lanceolata,Main,30
+2508,Xixon08,Dittrichia viscosa,Dittrichia viscosa,Main,20
+2508,Xixon08,Pulicaria dysenterica,Pulicaria dysenterica,Main,20
+2508,Xixon08,Calystegia sepium,Calystegia sepium,Main,10
+2508,Xixon08,Carex cuprina,Carex cuprina,Main,10
+2508,Xixon08,Dactylis glomerata,Dactylis glomerata,Main,10
+2508,Xixon08,Helminthotheca echioides,Helminthotheca echioides,Main,5
+2508,Xixon08,Prunella vulgaris,Prunella vulgaris,Main,5
+2508,Xixon08,Rumex crispus,Rumex crispus,Main,5
+2508,Xixon08,Schedonorus arundinaceus,Schedonorus arundinaceus,Main,5
+2508,Xixon08,Daucus carota,Daucus carota,Main,2
+2508,Xixon08,Dipsacus fullonum,Dipsacus fullonum,Main,1
+2508,Xixon08,Lotus pedunculatus,Lotus pedunculatus,Main,1
+2508,Xixon08,Plantago major,Plantago major,Main,1
+2508,Xixon08,Poa pratensis,Poa pratensis,Main,1
+2508,Xixon08,Ranunculus acris,Ranunculus acris,Main,1
+2508,Xixon08,Scrophularia auriculata,Scrophularia auriculata,Main,1
+2508,Xixon08,Anagallis arvensis,Anagallis arvensis,Main,0.1
+2508,Xixon08,Carex divulsa,Carex divulsa,Main,0.1
+2508,Xixon08,Cirsium vulgare,Cirsium vulgare,Main,0.1
+2508,Xixon08,Lathyrus pratensis,Lathyrus pratensis,Main,0.1
+2508,Xixon08,Rubus sp.,Rubus,Main,0.1
+2508,Xixon08,Verbena officinalis,Verbena officinalis,Main,0.1
+2509,Xixon09,Lathyrus pratensis,Lathyrus pratensis,Main,50
+2509,Xixon09,Helminthotheca echioides,Helminthotheca echioides,Main,40
+2509,Xixon09,Avena barbata,Avena barbata,Main,30
+2509,Xixon09,Holcus lanatus,Holcus lanatus,Main,10
+2509,Xixon09,Ranunculus acris,Ranunculus acris,Main,10
+2509,Xixon09,Dactylis glomerata,Dactylis glomerata,Main,5
+2509,Xixon09,Schedonorus arundinaceus,Schedonorus arundinaceus,Main,5
+2509,Xixon09,Calystegia sepium,Calystegia sepium,Main,2
+2509,Xixon09,Geranium dissectum,Geranium dissectum,Main,2
+2509,Xixon09,Centaurea nigra,Centaurea nigra,Main,1
+2509,Xixon09,Lolium perenne,Lolium perenne,Main,1
+2509,Xixon09,Trifolium pratense,Trifolium pratense,Main,1
+2509,Xixon09,Carex divulsa,Carex divulsa,Main,0.1
+2509,Xixon09,Centaurium erythraea,Centaurium erythraea,Main,0.1
+2509,Xixon09,Rubus sp.,Rubus,Main,0.1
+2509,Xixon09,Rumex crispus,Rumex crispus,Main,0.1
+2510,Xixon10,Schedonorus arundinaceus,Schedonorus arundinaceus,Main,60
+2510,Xixon10,Equisetum telmateia,Equisetum telmateia,Main,30
+2510,Xixon10,Centaurea nigra,Centaurea nigra,Main,20
+2510,Xixon10,Holcus lanatus,Holcus lanatus,Main,10
+2510,Xixon10,Lotus corniculatus,Lotus corniculatus,Main,10
+2510,Xixon10,Trifolium pratense,Trifolium pratense,Main,10
+2510,Xixon10,Cynosurus cristatus,Cynosurus cristatus,Main,2
+2510,Xixon10,Dactylis glomerata,Dactylis glomerata,Main,2
+2510,Xixon10,Lathyrus pratensis,Lathyrus pratensis,Main,2
+2510,Xixon10,Plantago lanceolata,Plantago lanceolata,Main,2
+2510,Xixon10,Poa pratensis,Poa pratensis,Main,1
+2510,Xixon10,Avena barbata,Avena barbata,Main,0.1
+2510,Xixon10,Crepis vesicaria,Crepis vesicaria,Main,0.1
+2510,Xixon10,Helminthotheca echioides,Helminthotheca echioides,Main,0.1
+2510,Xixon10,Leucanthemum vulgare s.l.,Leucanthemum vulgare,Main,0.1
+2511,Xixon11,Schedonorus arundinaceus,Schedonorus arundinaceus,Main,50
+2511,Xixon11,Blackstonia perfoliata,Blackstonia perfoliata aggr.,Main,5
+2511,Xixon11,Medicago sativa,Medicago sativa,Main,5
+2511,Xixon11,Cortaderia selloana,Cortaderia selloana,Main,2
+2511,Xixon11,Centaurium tenuiflorum,Centaurium tenuiflorum,Main,1
+2511,Xixon11,Lotus corniculatus,Lotus corniculatus,Main,1
+2511,Xixon11,Potentilla reptans,Potentilla reptans,Main,1
+2511,Xixon11,Centaurium erythraea,Centaurium erythraea,Main,0.1
+2511,Xixon11,Daucus carota,Daucus carota,Main,0.1
+2511,Xixon11,Dittrichia viscosa,Dittrichia viscosa,Main,0.1
+2511,Xixon11,Erigeron acris,Erigeron acris,Main,0.1
+2511,Xixon11,Holcus lanatus,Holcus lanatus,Main,0.1
+2511,Xixon11,Laurus nobilis,Laurus nobilis,Seedlings,0.1
+2511,Xixon11,Leucanthemum vulgare s.l.,Leucanthemum vulgare,Main,0.1
+2511,Xixon11,Linum strictum,Linum strictum,Main,0.1
+2511,Xixon11,Serapias lingua,Serapias lingua,Main,0.1
+2511,Xixon11,Serapias parviflora,Serapias parviflora,Main,0.1
+2512,Xixon12,Cyperus longus,Cyperus longus,Main,30
+2512,Xixon12,Plantago lanceolata,Plantago lanceolata,Main,30
+2512,Xixon12,Holcus lanatus,Holcus lanatus,Main,20
+2512,Xixon12,Ochlopoa annua,Ochlopoa annua,Main,20
+2512,Xixon12,Lotus corniculatus,Lotus corniculatus,Main,10
+2512,Xixon12,Lolium perenne,Lolium perenne,Main,5
+2512,Xixon12,Trifolium repens,Trifolium repens,Main,5
+2512,Xixon12,Geranium dissectum,Geranium dissectum,Main,2
+2512,Xixon12,Helminthotheca echioides,Helminthotheca echioides,Main,2
+2512,Xixon12,Paspalum dilatatum,Paspalum dilatatum,Main,1
+2512,Xixon12,Potentilla reptans,Potentilla reptans,Main,1
+2512,Xixon12,Prunella vulgaris,Prunella vulgaris,Main,1
+2512,Xixon12,Carex divulsa,Carex divulsa,Main,0.1
+2512,Xixon12,Cerastium glomeratum,Cerastium glomeratum,Main,0.1
+2512,Xixon12,Pulicaria dysenterica,Pulicaria dysenterica,Main,0.1
+2512,Xixon12,Taraxacum gr. officinale,Taraxacum sect. Taraxacum,Main,0.1
+2513,Xixon13,Holcus lanatus,Holcus lanatus,Main,40
+2513,Xixon13,Dactylis glomerata,Dactylis glomerata,Main,30
+2513,Xixon13,Helminthotheca echioides,Helminthotheca echioides,Main,20
+2513,Xixon13,Ochlopoa annua,Ochlopoa annua,Main,20
+2513,Xixon13,Plantago lanceolata,Plantago lanceolata,Main,20
+2513,Xixon13,Rumex conglomeratus,Rumex conglomeratus,Main,20
+2513,Xixon13,Calystegia silvatica,Calystegia silvatica,Main,10
+2513,Xixon13,Kickxia elatine,Kickxia elatine,Main,5
+2513,Xixon13,Lolium perenne,Lolium perenne,Main,5
+2513,Xixon13,Lotus pedunculatus,Lotus pedunculatus,Main,2
+2513,Xixon13,Malva sylvestris,Malva sylvestris,Main,2
+2513,Xixon13,Medicago lupulina,Medicago lupulina,Main,2
+2513,Xixon13,Carex divulsa,Carex divulsa,Main,1
+2513,Xixon13,Carex pendula,Carex pendula,Main,1
+2513,Xixon13,Cirsium vulgare,Cirsium vulgare,Main,1
+2513,Xixon13,Euphorbia platyphyllos,Euphorbia platyphyllos,Main,1
+2513,Xixon13,Galactites tomentosus,Galactites tomentosus,Main,1
+2513,Xixon13,Lactuca virosa,Lactuca virosa,Main,1
+2513,Xixon13,Schedonorus arundinaceus,Schedonorus arundinaceus,Main,1
+2513,Xixon13,Brassica nigra,Brassica nigra,Main,0.1
+2513,Xixon13,Bromus racemosus,Bromus racemosus,Main,0.1
+2513,Xixon13,Centaurea nigra,Centaurea nigra,Main,0.1
+2513,Xixon13,Daucus carota,Daucus carota,Main,0.1
+2513,Xixon13,Geranium robertianum,Geranium robertianum,Main,0.1
+2513,Xixon13,Hypericum perforatum,Hypericum perforatum,Main,0.1
+2513,Xixon13,Lythrum junceum,Lythrum junceum,Main,0.1
+2513,Xixon13,Poa pratensis,Poa pratensis,Main,0.1
+2513,Xixon13,Rubus sp.,Rubus,Main,0.1
+2513,Xixon13,Vicia sativa,Vicia sativa aggr.,Main,0.1
+2514,Xixon14,Lotus corniculatus,Lotus corniculatus,Main,50
+2514,Xixon14,Dactylis glomerata,Dactylis glomerata,Main,40
+2514,Xixon14,Holcus lanatus,Holcus lanatus,Main,30
+2514,Xixon14,Agrostis capillaris,Agrostis capillaris,Main,20
+2514,Xixon14,Brachypodium pinnatum,Brachypodium pinnatum aggr.,Main,20
+2514,Xixon14,Schedonorus arundinaceus,Schedonorus arundinaceus,Main,20
+2514,Xixon14,Plantago lanceolata,Plantago lanceolata,Main,10
+2514,Xixon14,Trifolium pratense,Trifolium pratense,Main,5
+2514,Xixon14,Anthoxanthum odoratum,Anthoxanthum odoratum,Main,2
+2514,Xixon14,Lolium perenne,Lolium perenne,Main,2
+2514,Xixon14,Potentilla sterilis,Potentilla sterilis,Main,2
+2514,Xixon14,Briza maxima,Briza maxima,Main,1
+2514,Xixon14,Centaurea nigra,Centaurea nigra,Main,1
+2514,Xixon14,Danthonia decumbens,Danthonia decumbens,Main,1
+2514,Xixon14,Leontodon hispidus,Leontodon hispidus,Main,1
+2514,Xixon14,Prunella vulgaris,Prunella vulgaris,Main,1
+2514,Xixon14,Ranunculus bulbosus,Ranunculus bulbosus,Main,1
+2514,Xixon14,Trifolium repens,Trifolium repens,Main,1
+2514,Xixon14,Bromus hordeaceus,Bromus hordeaceus aggr.,Main,0.1
+2514,Xixon14,Cynosurus cristatus,Cynosurus cristatus,Main,0.1
+2514,Xixon14,Daucus carota,Daucus carota,Main,0.1
+2514,Xixon14,Hypochaeris radicata,Hypochaeris radicata,Main,0.1
+2514,Xixon14,Luzula campestris,Luzula campestris,Main,0.1
+2514,Xixon14,Medicago lupulina,Medicago lupulina,Main,0.1
+2514,Xixon14,Polygala vulgaris,Polygala vulgaris,Main,0.1
+2514,Xixon14,Potentilla reptans,Potentilla reptans,Main,0.1
+2514,Xixon14,Viola reichenbachiana s.l.,Viola riviniana aggr.,Main,0.1
+2514,Xixon14,Vulpia bromoides,Vulpia bromoides,Main,0.1
+2515,Xixon15,Anthoxanthum odoratum,Anthoxanthum odoratum,Main,20
+2515,Xixon15,Brachypodium pinnatum,Brachypodium pinnatum aggr.,Main,20
+2515,Xixon15,Briza media,Briza media,Main,20
+2515,Xixon15,Carex flacca,Carex flacca,Main,20
+2515,Xixon15,Festuca rubra,Festuca rubra aggr.,Main,20
+2515,Xixon15,Schedonorus arundinaceus,Schedonorus arundinaceus,Main,20
+2515,Xixon15,Centaurea nigra,Centaurea nigra,Main,10
+2515,Xixon15,Holcus lanatus,Holcus lanatus,Main,10
+2515,Xixon15,Leontodon hispidus,Leontodon hispidus,Main,10
+2515,Xixon15,Lotus corniculatus,Lotus corniculatus,Main,10
+2515,Xixon15,Trisetum flavescens,Trisetum flavescens,Main,10
+2515,Xixon15,Blackstonia perfoliata,Blackstonia perfoliata aggr.,Main,5
+2515,Xixon15,Hedera helix s.l.,Hedera helix aggr.,Main,5
+2515,Xixon15,Leucanthemum vulgare s.l.,Leucanthemum vulgare,Main,5
+2515,Xixon15,Vicia pubescens,Vicia pubescens,Main,5
+2515,Xixon15,Carex pendula,Carex pendula,Main,2
+2515,Xixon15,Dactylorhiza elata,Dactylorhiza elata,Main,2
+2515,Xixon15,Dittrichia viscosa,Dittrichia viscosa,Main,2
+2515,Xixon15,Equisetum telmateia,Equisetum telmateia,Main,2
+2515,Xixon15,Plantago lanceolata,Plantago lanceolata,Main,2
+2515,Xixon15,Anthyllis vulneraria,Anthyllis vulneraria,Main,1
+2515,Xixon15,Centaurium tenuiflorum,Centaurium tenuiflorum,Main,1
+2515,Xixon15,Daucus carota,Daucus carota,Main,1
+2515,Xixon15,Linum catharticum,Linum catharticum,Main,1
+2515,Xixon15,Ulex europaeus,Ulex europaeus,Main,1
+2515,Xixon15,Anagallis arvensis,Anagallis arvensis,Main,0.1
+2515,Xixon15,Dactylis glomerata,Dactylis glomerata,Main,0.1
+2515,Xixon15,Fraxinus excelsior,Fraxinus excelsior,Seedlings,0.1
+2515,Xixon15,Medicago lupulina,Medicago lupulina,Main,0.1
+2515,Xixon15,Medicago sativa,Medicago sativa,Main,0.1
+2515,Xixon15,Pulicaria dysenterica,Pulicaria dysenterica,Main,0.1
+2515,Xixon15,Serapias lingua,Serapias lingua,Main,0.1
+2515,Xixon15,Trifolium campestre,Trifolium campestre,Main,0.1
+2515,Xixon15,Trifolium repens,Trifolium repens,Main,0.1
+2516,Xixon16,Brachypodium pinnatum,Brachypodium pinnatum aggr.,Main,20
+2516,Xixon16,Lotus corniculatus,Lotus corniculatus,Main,20
+2516,Xixon16,Plantago lanceolata,Plantago lanceolata,Main,20
+2516,Xixon16,Avena barbata,Avena barbata,Main,10
+2516,Xixon16,Helminthotheca echioides,Helminthotheca echioides,Main,10
+2516,Xixon16,Potentilla reptans,Potentilla reptans,Main,2
+2516,Xixon16,Sonchus tenerrimus,Sonchus tenerrimus,Main,2
+2516,Xixon16,Carex divulsa,Carex divulsa,Main,1
+2516,Xixon16,Festuca rubra,Festuca rubra aggr.,Main,1
+2516,Xixon16,Petrorhagia nanteuilii,Petrorhagia nanteuilii,Main,1
+2516,Xixon16,Schedonorus arundinaceus,Schedonorus arundinaceus,Main,1
+2516,Xixon16,Anagallis arvensis,Anagallis arvensis,Main,0.1
+2516,Xixon16,Anthyllis vulneraria,Anthyllis vulneraria,Main,0.1
+2516,Xixon16,Galium parisiense,Galium parisiense,Main,0.1
+2516,Xixon16,Lactuca serriola,Lactuca serriola,Main,0.1
+2516,Xixon16,Leontodon hispidus,Leontodon hispidus,Main,0.1
+2516,Xixon16,Medicago lupulina,Medicago lupulina,Main,0.1
+2516,Xixon16,Sporobolus indicus,Sporobolus indicus,Main,0.1
+2517,Xixon17,Dittrichia viscosa,Dittrichia viscosa,Main,30
+2517,Xixon17,Cortaderia selloana,Cortaderia selloana,Main,20
+2517,Xixon17,Knautia arvensis,Knautia arvensis,Main,20
+2517,Xixon17,Hypericum perforatum,Hypericum perforatum,Main,10
+2517,Xixon17,Plantago lanceolata,Plantago lanceolata,Main,10
+2517,Xixon17,Schedonorus arundinaceus,Schedonorus arundinaceus,Main,10
+2517,Xixon17,Avena barbata,Avena barbata,Main,2
+2517,Xixon17,Dactylis glomerata,Dactylis glomerata,Main,2
+2517,Xixon17,Blackstonia perfoliata,Blackstonia perfoliata aggr.,Main,1
+2517,Xixon17,Centaurea nigra,Centaurea nigra,Main,1
+2517,Xixon17,Cirsium vulgare,Cirsium vulgare,Main,1
+2517,Xixon17,Convolvulus arvensis,Convolvulus arvensis,Main,1
+2517,Xixon17,Galactites tomentosus,Galactites tomentosus,Main,1
+2517,Xixon17,Helminthotheca echioides,Helminthotheca echioides,Main,1
+2517,Xixon17,Holcus lanatus,Holcus lanatus,Main,1
+2517,Xixon17,Leucanthemum vulgare s.l.,Leucanthemum vulgare,Main,1
+2517,Xixon17,Pulicaria dysenterica,Pulicaria dysenterica,Main,1
+2517,Xixon17,Sonchus tenerrimus,Sonchus tenerrimus,Main,1
+2517,Xixon17,Vicia cracca,Vicia cracca,Main,1
+2517,Xixon17,Agrostis capillaris,Agrostis capillaris,Main,0.1
+2517,Xixon17,Anisantha madritensis,Anisantha madritensis,Main,0.1
+2517,Xixon17,Carex cuprina,Carex cuprina,Main,0.1
+2517,Xixon17,Carex divulsa,Carex divulsa,Main,0.1
+2517,Xixon17,Centaurium tenuiflorum,Centaurium tenuiflorum,Main,0.1
+2517,Xixon17,Erigeron sumatrensis,Erigeron sumatrensis,Main,0.1
+2517,Xixon17,Galium parisiense,Galium parisiense,Main,0.1
+2517,Xixon17,Gnaphalium coarctatum,Gnaphalium coarctatum,Main,0.1
+2517,Xixon17,Linum bienne,Linum bienne,Main,0.1
+2517,Xixon17,Oxalis corniculata,Oxalis corniculata,Main,0.1
+2517,Xixon17,Parietaria judaica,Parietaria judaica aggr.,Main,0.1
+2517,Xixon17,Potentilla reptans,Potentilla reptans,Main,0.1
+2517,Xixon17,Prunella vulgaris,Prunella vulgaris,Main,0.1
+2517,Xixon17,Reichardia picroides,Reichardia picroides,Main,0.1
+2517,Xixon17,Scrophularia auriculata,Scrophularia auriculata,Main,0.1
+2517,Xixon17,Sherardia arvensis,Sherardia arvensis,Main,0.1
+2518,Xixon18,Ochlopoa annua,Ochlopoa annua,Main,70
+2518,Xixon18,Lolium perenne,Lolium perenne,Main,10
+2518,Xixon18,Trifolium repens,Trifolium repens,Main,10
+2518,Xixon18,Hordeum murinum,Hordeum murinum,Main,5
+2518,Xixon18,Trifolium pratense,Trifolium pratense,Main,5
+2518,Xixon18,Bellis perennis,Bellis perennis,Main,1
+2518,Xixon18,Dactylis glomerata,Dactylis glomerata,Main,1
+2518,Xixon18,Erodium moschatum,Erodium moschatum,Main,1
+2518,Xixon18,Holcus lanatus,Holcus lanatus,Main,1
+2518,Xixon18,Convolvulus arvensis,Convolvulus arvensis,Main,0.1
+2518,Xixon18,Geranium molle,Geranium molle,Main,0.1
+2518,Xixon18,Medicago lupulina,Medicago lupulina,Main,0.1
+2518,Xixon18,Plantago lanceolata,Plantago lanceolata,Main,0.1
+2518,Xixon18,Populus alba,Populus alba,Seedlings,0.1
+2518,Xixon18,Potentilla reptans,Potentilla reptans,Main,0.1
+2518,Xixon18,Prunella vulgaris,Prunella vulgaris,Main,0.1
+2518,Xixon18,Taraxacum gr. officinale,Taraxacum sect. Taraxacum,Main,0.1
+2518,Xixon18,Veronica persica,Veronica persica,Main,0.1
+2519,Xixon19,Melilotus albus,Melilotus albus,Main,50
+2519,Xixon19,Dittrichia viscosa,Dittrichia viscosa,Main,10
+2519,Xixon19,Holcus lanatus,Holcus lanatus,Main,10
+2519,Xixon19,Cortaderia selloana,Cortaderia selloana,Main,5
+2519,Xixon19,Helminthotheca echioides,Helminthotheca echioides,Main,5
+2519,Xixon19,Medicago lupulina,Medicago lupulina,Main,5
+2519,Xixon19,Trifolium repens,Trifolium repens,Main,5
+2519,Xixon19,Centaurium tenuiflorum,Centaurium tenuiflorum,Main,2
+2519,Xixon19,Plantago lanceolata,Plantago lanceolata,Main,2
+2519,Xixon19,Trifolium pratense,Trifolium pratense,Main,2
+2519,Xixon19,Vulpia bromoides,Vulpia bromoides,Main,2
+2519,Xixon19,Anagallis arvensis,Anagallis arvensis,Main,1
+2519,Xixon19,Blackstonia perfoliata,Blackstonia perfoliata aggr.,Main,1
+2519,Xixon19,Daucus carota,Daucus carota,Main,1
+2519,Xixon19,Linum strictum,Linum strictum,Main,1
+2519,Xixon19,Lotus corniculatus,Lotus corniculatus,Main,1
+2519,Xixon19,Prunella vulgaris,Prunella vulgaris,Main,1
+2519,Xixon19,Vicia sativa,Vicia sativa aggr.,Main,1
+2519,Xixon19,Agrostis stolonifera,Agrostis stolonifera,Main,0.1
+2519,Xixon19,Anisantha madritensis,Anisantha madritensis,Main,0.1
+2519,Xixon19,Carex divulsa,Carex divulsa,Main,0.1
+2519,Xixon19,Catapodium rigidum,Catapodium rigidum,Main,0.1
+2519,Xixon19,Centaurium erythraea,Centaurium erythraea,Main,0.1
+2519,Xixon19,Fraxinus excelsior,Fraxinus excelsior,Seedlings,0.1
+2519,Xixon19,Hedera helix s.l.,Hedera helix aggr.,Main,0.1
+2519,Xixon19,Laurus nobilis,Laurus nobilis,Seedlings,0.1
+2519,Xixon19,Pulicaria dysenterica,Pulicaria dysenterica,Main,0.1
+2519,Xixon19,Rubus sp.,Rubus,Main,0.1
+2519,Xixon19,Sonchus oleraceus,Sonchus oleraceus,Main,0.1
+2520,Xixon20,Buddleja davidii,Buddleja davidii,Main,20
+2520,Xixon20,Cortaderia selloana,Cortaderia selloana,Main,20
+2520,Xixon20,Dittrichia viscosa,Dittrichia viscosa,Main,20
+2520,Xixon20,Medicago lupulina,Medicago lupulina,Main,10
+2520,Xixon20,Melilotus albus,Melilotus albus,Main,10
+2520,Xixon20,Mentha suaveolens,Mentha suaveolens,Main,10
+2520,Xixon20,Plantago lanceolata,Plantago lanceolata,Main,10
+2520,Xixon20,Vulpia bromoides,Vulpia bromoides,Main,10
+2520,Xixon20,Hypochaeris radicata,Hypochaeris radicata,Main,5
+2520,Xixon20,Silene gallica,Silene gallica,Main,5
+2520,Xixon20,Sonchus oleraceus,Sonchus oleraceus,Main,5
+2520,Xixon20,Bellardia trixago,Bellardia trixago,Main,2
+2520,Xixon20,Blackstonia perfoliata,Blackstonia perfoliata aggr.,Main,2
+2520,Xixon20,Helminthotheca echioides,Helminthotheca echioides,Main,2
+2520,Xixon20,Orobanche minor,Orobanche minor,Main,2
+2520,Xixon20,Parentucellia viscosa,Parentucellia viscosa,Main,2
+2520,Xixon20,Sonchus tenerrimus,Sonchus tenerrimus,Main,2
+2520,Xixon20,Agrostis capillaris,Agrostis capillaris,Main,1
+2520,Xixon20,Anisantha madritensis,Anisantha madritensis,Main,1
+2520,Xixon20,Erigeron sumatrensis,Erigeron sumatrensis,Main,1
+2520,Xixon20,Parietaria judaica,Parietaria judaica aggr.,Main,1
+2520,Xixon20,Anagallis arvensis,Anagallis arvensis,Main,0.1
+2520,Xixon20,Cotoneaster coriaceus,Cotoneaster coriaceus,Main,0.1
+2520,Xixon20,Geranium purpureum,Geranium purpureum,Main,0.1
+2520,Xixon20,Hirschfeldia incana,Hirschfeldia incana,Main,0.1
+2520,Xixon20,Hypericum perforatum,Hypericum perforatum,Main,0.1
+2520,Xixon20,Linum bienne,Linum bienne,Main,0.1
+2520,Xixon20,Lycopus europaeus,Lycopus europaeus,Main,0.1
+2520,Xixon20,Medicago polymorpha,Medicago polymorpha,Main,0.1
+2520,Xixon20,Paspalum dilatatum,Paspalum dilatatum,Main,0.1
+2520,Xixon20,Plantago coronopus,Plantago coronopus,Main,0.1
+2520,Xixon20,Rubus sp.,Rubus,Main,0.1
+2520,Xixon20,Serapias lingua,Serapias lingua,Main,0.1
+2520,Xixon20,Serapias parviflora,Serapias parviflora,Main,0.1
+2520,Xixon20,Setaria pumila,Setaria pumila,Main,0.1
+2520,Xixon20,Solanum chenopodioides,Solanum chenopodioides,Main,0.1
+2520,Xixon20,Sporobolus indicus,Sporobolus indicus,Main,0.1
+2520,Xixon20,Verbena officinalis,Verbena officinalis,Main,0.1
+2521,Xixon21,Helminthotheca echioides,Helminthotheca echioides,Main,20
+2521,Xixon21,Hirschfeldia incana,Hirschfeldia incana,Main,20
+2521,Xixon21,Dittrichia viscosa,Dittrichia viscosa,Main,10
+2521,Xixon21,Foeniculum vulgare,Foeniculum vulgare,Main,10
+2521,Xixon21,Galactites tomentosus,Galactites tomentosus,Main,10
+2521,Xixon21,Melilotus albus,Melilotus albus,Main,10
+2521,Xixon21,Medicago lupulina,Medicago lupulina,Main,5
+2521,Xixon21,Rubus sp.,Rubus,Main,5
+2521,Xixon21,Cynosurus cristatus,Cynosurus cristatus,Main,2
+2521,Xixon21,Daucus carota,Daucus carota,Main,2
+2521,Xixon21,Holcus lanatus,Holcus lanatus,Main,2
+2521,Xixon21,Plantago lanceolata,Plantago lanceolata,Main,2
+2521,Xixon21,Vulpia bromoides,Vulpia bromoides,Main,2
+2521,Xixon21,Galium parisiense,Galium parisiense,Main,1
+2521,Xixon21,Leontodon hispidus,Leontodon hispidus,Main,1
+2521,Xixon21,Parentucellia viscosa,Parentucellia viscosa,Main,1
+2521,Xixon21,Petrorhagia nanteuilii,Petrorhagia nanteuilii,Main,1
+2521,Xixon21,Trifolium pratense,Trifolium pratense,Main,1
+2521,Xixon21,Agrostis capillaris,Agrostis capillaris,Main,0.1
+2521,Xixon21,Anagallis arvensis,Anagallis arvensis,Main,0.1
+2521,Xixon21,Anthemis cotula,Anthemis cotula,Main,0.1
+2521,Xixon21,Avena barbata,Avena barbata,Main,0.1
+2521,Xixon21,Blackstonia perfoliata,Blackstonia perfoliata aggr.,Main,0.1
+2521,Xixon21,Clinopodium vulgare,Clinopodium vulgare,Main,0.1
+2521,Xixon21,Erigeron sumatrensis,Erigeron sumatrensis,Main,0.1
+2521,Xixon21,Geranium dissectum,Geranium dissectum,Main,0.1
+2521,Xixon21,Geranium robertianum,Geranium robertianum,Main,0.1
+2521,Xixon21,Linum bienne,Linum bienne,Main,0.1
+2521,Xixon21,Lotus corniculatus,Lotus corniculatus,Main,0.1
+2521,Xixon21,Medicago polymorpha,Medicago polymorpha,Main,0.1
+2521,Xixon21,Oxalis corniculata,Oxalis corniculata,Main,0.1
+2521,Xixon21,Teucrium scorodonia,Teucrium scorodonia,Main,0.1
+2522,Xixon22,Agrostis stolonifera,Agrostis stolonifera,Main,30
+2522,Xixon22,Avena barbata,Avena barbata,Main,30
+2522,Xixon22,Anthyllis vulneraria,Anthyllis vulneraria,Main,10
+2522,Xixon22,Cortaderia selloana,Cortaderia selloana,Main,10
+2522,Xixon22,Dittrichia viscosa,Dittrichia viscosa,Main,10
+2522,Xixon22,Buddleja davidii,Buddleja davidii,Main,5
+2522,Xixon22,Dactylis glomerata,Dactylis glomerata,Main,1
+2522,Xixon22,Daucus carota,Daucus carota,Main,1
+2522,Xixon22,Helminthotheca echioides,Helminthotheca echioides,Main,1
+2522,Xixon22,Sonchus tenerrimus,Sonchus tenerrimus,Main,1
+2522,Xixon22,Anagallis arvensis,Anagallis arvensis,Main,0.1
+2522,Xixon22,Anthoxanthum odoratum,Anthoxanthum odoratum,Main,0.1
+2522,Xixon22,Catapodium rigidum,Catapodium rigidum,Main,0.1
+2522,Xixon22,Hedera helix s.l.,Hedera helix aggr.,Main,0.1
+2522,Xixon22,Holcus lanatus,Holcus lanatus,Main,0.1
+2522,Xixon22,Hypericum perforatum,Hypericum perforatum,Main,0.1
+2522,Xixon22,Medicago lupulina,Medicago lupulina,Main,0.1
+2522,Xixon22,Oxalis latifolia,Oxalis latifolia,Main,0.1
+2522,Xixon22,Picris hieracioides,Picris hieracioides,Main,0.1
+2522,Xixon22,Rhamnus alaternus,Rhamnus alaternus,Seedlings,0.1
+2522,Xixon22,Rubus sp.,Rubus,Main,0.1
+2522,Xixon22,Salix cinerea subsp. oleifolia,Salix atrocinerea,Seedlings,0.1
+2522,Xixon22,Vulpia bromoides,Vulpia bromoides,Main,0.1
+2523,Xixon23,Melilotus albus,Melilotus albus,Main,40
+2523,Xixon23,Dittrichia viscosa,Dittrichia viscosa,Main,20
+2523,Xixon23,Cortaderia selloana,Cortaderia selloana,Main,10
+2523,Xixon23,Lotus corniculatus,Lotus corniculatus,Main,10
+2523,Xixon23,Avena barbata,Avena barbata,Main,5
+2523,Xixon23,Centaurium tenuiflorum,Centaurium tenuiflorum,Main,2
+2523,Xixon23,Prunella vulgaris,Prunella vulgaris,Main,2
+2523,Xixon23,Blackstonia perfoliata,Blackstonia perfoliata aggr.,Main,1
+2523,Xixon23,Daucus carota,Daucus carota,Main,1
+2523,Xixon23,Helminthotheca echioides,Helminthotheca echioides,Main,1
+2523,Xixon23,Holcus lanatus,Holcus lanatus,Main,1
+2523,Xixon23,Plantago lanceolata,Plantago lanceolata,Main,1
+2523,Xixon23,Pulicaria dysenterica,Pulicaria dysenterica,Main,1
+2523,Xixon23,Reichardia picroides,Reichardia picroides,Main,1
+2523,Xixon23,Agrostis stolonifera,Agrostis stolonifera,Main,0.1
+2523,Xixon23,Anagallis arvensis,Anagallis arvensis,Main,0.1
+2523,Xixon23,Anthoxanthum odoratum,Anthoxanthum odoratum,Main,0.1
+2523,Xixon23,Centaurium pulchellum,Centaurium pulchellum,Main,0.1
+2523,Xixon23,Cornus sanguinea,Cornus sanguinea,Seedlings,0.1
+2523,Xixon23,Elytrigia repens,Elytrigia repens,Main,0.1
+2523,Xixon23,Laurus nobilis,Laurus nobilis,Seedlings,0.1
+2523,Xixon23,Linum bienne,Linum bienne,Main,0.1
+2523,Xixon23,Schedonorus arundinaceus,Schedonorus arundinaceus,Main,0.1
+2523,Xixon23,Vulpia bromoides,Vulpia bromoides,Main,0.1
+2524,Xixon24,Quercus robur,Quercus robur,Canopy,60
+2524,Xixon24,Laurus nobilis,Laurus nobilis,Canopy,50
+2524,Xixon24,Hedera helix s.l.,Hedera helix aggr.,Main,30
+2524,Xixon24,Laurus nobilis,Laurus nobilis,Seedlings,20
+2524,Xixon24,Pteridium aquilinum,Pteridium aquilinum,Main,10
+2524,Xixon24,Castanea sativa,Castanea sativa,Canopy,5
+2524,Xixon24,Viola reichenbachiana s.l.,Viola riviniana aggr.,Main,5
+2524,Xixon24,Lonicera periclymenum,Lonicera periclymenum,Main,2
+2524,Xixon24,Rubus sp.,Rubus,Main,2
+2524,Xixon24,Dryopteris filix-mas,Dryopteris filix-mas,Main,1
+2524,Xixon24,Hypericum pulchrum,Hypericum pulchrum,Main,1
+2524,Xixon24,Rubia peregrina,Rubia peregrina,Main,1
+2524,Xixon24,Brachypodium sylvaticum,Brachypodium sylvaticum,Main,0.1
+2524,Xixon24,Carex divulsa,Carex divulsa,Main,0.1
+2524,Xixon24,Castanea sativa,Castanea sativa,Seedlings,0.1
+2524,Xixon24,Cornus sanguinea,Cornus sanguinea,Seedlings,0.1
+2524,Xixon24,Crataegus monogyna,Crataegus monogyna,Seedlings,0.1
+2524,Xixon24,Dioscorea communis,Dioscorea communis,Main,0.1
+2524,Xixon24,Geranium robertianum,Geranium robertianum,Main,0.1
+2524,Xixon24,Hieracium sp.,Hieracium,Main,0.1
+2524,Xixon24,Prunus domestica subsp. insititia,Prunus insititia,Seedlings,0.1
+2524,Xixon24,Ranunculus parviflorus,Ranunculus parviflorus,Main,0.1
+2524,Xixon24,Rhamnus alaternus,Rhamnus alaternus,Seedlings,0.1
+2524,Xixon24,Smilax aspera,Smilax aspera,Main,0.1
+2525,Xixon25,Lolium perenne,Lolium perenne,Main,60
+2525,Xixon25,Trifolium pratense,Trifolium pratense,Main,30
+2525,Xixon25,Holcus lanatus,Holcus lanatus,Main,20
+2525,Xixon25,Ochlopoa annua,Ochlopoa annua,Main,20
+2525,Xixon25,Crepis vesicaria,Crepis vesicaria,Main,5
+2525,Xixon25,Lotus corniculatus,Lotus corniculatus,Main,5
+2525,Xixon25,Trifolium repens,Trifolium repens,Main,5
+2525,Xixon25,Erodium moschatum,Erodium moschatum,Main,2
+2525,Xixon25,Hordeum murinum,Hordeum murinum,Main,2
+2525,Xixon25,Taraxacum gr. officinale,Taraxacum sect. Taraxacum,Main,2
+2525,Xixon25,Torilis nodosa,Torilis nodosa,Main,2
+2525,Xixon25,Bellis perennis,Bellis perennis,Main,1
+2525,Xixon25,Oxalis latifolia,Oxalis latifolia,Main,1
+2525,Xixon25,Paspalum dilatatum,Paspalum dilatatum,Main,1
+2525,Xixon25,Plantago major,Plantago major,Main,1
+2525,Xixon25,Potentilla reptans,Potentilla reptans,Main,1
+2525,Xixon25,Capsella bursa-pastoris,Capsella bursa-pastoris,Main,0.1
+2525,Xixon25,Convolvulus arvensis,Convolvulus arvensis,Main,0.1
+2525,Xixon25,Helminthotheca echioides,Helminthotheca echioides,Main,0.1
+2525,Xixon25,Oxalis corniculata,Oxalis corniculata,Main,0.1
+2525,Xixon25,Rumex crispus,Rumex crispus,Main,0.1
+2526,Xixon26,Lolium perenne,Lolium perenne,Main,60
+2526,Xixon26,Trifolium repens,Trifolium repens,Main,30
+2526,Xixon26,Erodium moschatum,Erodium moschatum,Main,10
+2526,Xixon26,Ochlopoa annua,Ochlopoa annua,Main,10
+2526,Xixon26,Capsella bursa-pastoris,Capsella bursa-pastoris,Main,5
+2526,Xixon26,Cyperus longus,Cyperus longus,Main,2
+2526,Xixon26,Geranium dissectum,Geranium dissectum,Main,2
+2526,Xixon26,Plantago coronopus,Plantago coronopus,Main,2
+2526,Xixon26,Plantago lanceolata,Plantago lanceolata,Main,2
+2526,Xixon26,Trifolium tomentosum,Trifolium tomentosum,Main,2
+2526,Xixon26,Bellis perennis,Bellis perennis,Main,1
+2526,Xixon26,Holcus lanatus,Holcus lanatus,Main,1
+2526,Xixon26,Lepidium didymum,Lepidium didymum,Main,1
+2526,Xixon26,Taraxacum gr. officinale,Taraxacum sect. Taraxacum,Main,1
+2526,Xixon26,Convolvulus arvensis,Convolvulus arvensis,Main,0.1
+2526,Xixon26,Leontodon hispidus,Leontodon hispidus,Main,0.1
+2526,Xixon26,Paspalum dilatatum,Paspalum dilatatum,Main,0.1
+2526,Xixon26,Plantago major,Plantago major,Main,0.1
+2526,Xixon26,Potentilla reptans,Potentilla reptans,Main,0.1
+2526,Xixon26,Veronica arvensis,Veronica arvensis,Main,0.1
+2527,Xixon27,Agrostis stolonifera,Agrostis stolonifera,Main,30
+2527,Xixon27,Cynodon dactylon,Cynodon dactylon,Main,20
+2527,Xixon27,Lotus corniculatus,Lotus corniculatus,Main,20
+2527,Xixon27,Paspalum dilatatum,Paspalum dilatatum,Main,20
+2527,Xixon27,Prunella vulgaris,Prunella vulgaris,Main,10
+2527,Xixon27,Carex leporina,Carex leporina,Main,5
+2527,Xixon27,Lolium perenne,Lolium perenne,Main,5
+2527,Xixon27,Ochlopoa annua,Ochlopoa annua,Main,5
+2527,Xixon27,Potentilla reptans,Potentilla reptans,Main,2
+2527,Xixon27,Taraxacum gr. officinale,Taraxacum sect. Taraxacum,Main,2
+2527,Xixon27,Trifolium pratense,Trifolium pratense,Main,2
+2527,Xixon27,Geranium dissectum,Geranium dissectum,Main,1
+2527,Xixon27,Helminthotheca echioides,Helminthotheca echioides,Main,1
+2527,Xixon27,Holcus lanatus,Holcus lanatus,Main,1
+2527,Xixon27,Hypericum perforatum,Hypericum perforatum,Main,1
+2527,Xixon27,Leucanthemum vulgare s.l.,Leucanthemum vulgare,Main,1
+2527,Xixon27,Medicago lupulina,Medicago lupulina,Main,1
+2527,Xixon27,Medicago sativa,Medicago sativa,Main,1
+2527,Xixon27,Trifolium repens,Trifolium repens,Main,1
+2527,Xixon27,Anagallis arvensis,Anagallis arvensis,Main,0.1
+2527,Xixon27,Bellis perennis,Bellis perennis,Main,0.1
+2527,Xixon27,Cerastium glomeratum,Cerastium glomeratum,Main,0.1
+2527,Xixon27,Leontodon hispidus,Leontodon hispidus,Main,0.1
+2527,Xixon27,Lythrum hyssopifolia,Lythrum hyssopifolia,Main,0.1
+2527,Xixon27,Plantago lanceolata,Plantago lanceolata,Main,0.1
+2527,Xixon27,Sherardia arvensis,Sherardia arvensis,Main,0.1
+2527,Xixon27,Veronica chamaedrys,Veronica chamaedrys,Main,0.1
+2528,Xixon28,Glechoma hederacea,Glechoma hederacea,Main,50
+2528,Xixon28,Alnus glutinosa,Alnus glutinosa aggr.,Main,40
+2528,Xixon28,Carex pendula,Carex pendula,Main,40
+2528,Xixon28,Salix cinerea subsp. oleifolia,Salix atrocinerea,Canopy,30
+2528,Xixon28,Salix eleagnos,Salix eleagnos,Canopy,30
+2528,Xixon28,Tradescantia fluminensis,Tradescantia fluminensis,Main,20
+2528,Xixon28,Brachypodium sylvaticum,Brachypodium sylvaticum,Main,10
+2528,Xixon28,Melica uniflora,Melica uniflora,Main,5
+2528,Xixon28,Angelica sylvestris,Angelica sylvestris,Main,2
+2528,Xixon28,Carex divulsa,Carex divulsa,Main,2
+2528,Xixon28,Persicaria hydropiper,Persicaria hydropiper,Main,2
+2528,Xixon28,Ranunculus repens,Ranunculus repens,Main,2
+2528,Xixon28,Rumex sanguineus,Rumex sanguineus,Main,2
+2528,Xixon28,Urtica dioica,Urtica dioica,Main,2
+2528,Xixon28,Circaea lutetiana,Circaea lutetiana,Main,1
+2528,Xixon28,Cyperus eragrostis,Cyperus eragrostis,Main,1
+2528,Xixon28,Hedera helix s.l.,Hedera helix aggr.,Main,1
+2528,Xixon28,Laurus nobilis,Laurus nobilis,Seedlings,1
+2528,Xixon28,Mentha aquatica,Mentha aquatica,Main,1
+2528,Xixon28,Acer pseudoplatanus,Acer pseudoplatanus,Seedlings,0.1
+2528,Xixon28,Agrostis stolonifera,Agrostis stolonifera,Main,0.1
+2528,Xixon28,Alnus glutinosa,Alnus glutinosa aggr.,Main,0.1
+2528,Xixon28,Cardamine flexuosa,Cardamine flexuosa,Main,0.1
+2528,Xixon28,Geum urbanum,Geum urbanum,Main,0.1
+2528,Xixon28,Rubia peregrina,Rubia peregrina,Main,0.1
+2528,Xixon28,Rubus sp.,Rubus,Main,0.1
+2528,Xixon28,Rumex obtusifolius,Rumex obtusifolius,Main,0.1
+2528,Xixon28,Veronica montana,Veronica montana,Main,0.1
+2528,Xixon28,Viola reichenbachiana s.l.,Viola riviniana aggr.,Main,0.1
+2529,Xixon29,Laurus nobilis,Laurus nobilis,Canopy,70
+2529,Xixon29,Quercus robur,Quercus robur,Canopy,60
+2529,Xixon29,Hedera helix s.l.,Hedera helix aggr.,Main,50
+2529,Xixon29,Laurus nobilis,Laurus nobilis,Seedlings,50
+2529,Xixon29,Acer pseudoplatanus,Acer pseudoplatanus,Canopy,30
+2529,Xixon29,Hedera helix s.l.,Hedera helix aggr.,Canopy,20
+2529,Xixon29,Ilex aquifolium,Ilex aquifolium,Main,20
+2529,Xixon29,Crataegus monogyna,Crataegus monogyna,Main,5
+2529,Xixon29,Acer pseudoplatanus,Acer pseudoplatanus,Seedlings,2
+2529,Xixon29,Corylus avellana,Corylus avellana,Main,2
+2529,Xixon29,Fraxinus excelsior,Fraxinus excelsior,Seedlings,2
+2529,Xixon29,Prunus domestica subsp. insititia,Prunus insititia,Seedlings,1
+2529,Xixon29,Geranium robertianum,Geranium robertianum,Main,0.1
+2529,Xixon29,Lonicera periclymenum,Lonicera periclymenum,Main,0.1
+2529,Xixon29,Stachys officinalis,Stachys officinalis,Main,0.1
+2530,Xixon30,Corylus avellana,Corylus avellana,Seedlings,80
+2530,Xixon30,Hedera helix s.l.,Hedera helix aggr.,Main,60
+2530,Xixon30,Mercurialis perennis,Mercurialis perennis,Main,40
+2530,Xixon30,Laurus nobilis,Laurus nobilis,Seedlings,10
+2530,Xixon30,Lilium pyrenaicum,Lilium pyrenaicum,Main,10
+2530,Xixon30,Smilax aspera,Smilax aspera,Main,5
+2530,Xixon30,Dioscorea communis,Dioscorea communis,Main,2
+2530,Xixon30,Prunus domestica subsp. insititia,Prunus insititia,Seedlings,1
+2530,Xixon30,Rubia peregrina,Rubia peregrina,Main,0.1
+2530,Xixon30,Rubus sp.,Rubus,Main,0.1
+2531,Xixon31,Parietaria judaica,Parietaria judaica aggr.,Main,10
+2531,Xixon31,Agrostis capillaris,Agrostis capillaris,Main,5
+2531,Xixon31,Cymbalaria muralis,Cymbalaria muralis,Main,5
+2531,Xixon31,Polypogon viridis,Polypogon viridis,Main,2
+2531,Xixon31,Asplenium trichomanes,Asplenium trichomanes,Main,1
+2531,Xixon31,Blackstonia perfoliata,Blackstonia perfoliata aggr.,Main,1
+2531,Xixon31,Erigeron sumatrensis,Erigeron sumatrensis,Main,1
+2531,Xixon31,Oxalis corniculata,Oxalis corniculata,Main,1
+2531,Xixon31,Pteridium aquilinum,Pteridium aquilinum,Main,1
+2531,Xixon31,Salicornia procumbens,Salicornia procumbens,Main,1
+2531,Xixon31,Asplenium ruta-muraria,Asplenium ruta-muraria,Main,0.1
+2531,Xixon31,Euphorbia peplus,Euphorbia peplus,Main,0.1
+2531,Xixon31,Geranium robertianum,Geranium robertianum,Main,0.1
+2531,Xixon31,Helminthotheca echioides,Helminthotheca echioides,Main,0.1
+2531,Xixon31,Polycarpon tetraphyllum,Polycarpon tetraphyllum,Main,0.1
+2531,Xixon31,Polygonum aviculare,Polygonum aviculare,Main,0.1
+2531,Xixon31,Sonchus tenerrimus,Sonchus tenerrimus,Main,0.1
+2532,Xixon32,Erodium cicutarium,Erodium cicutarium,Main,2
+2532,Xixon32,Polycarpon tetraphyllum,Polycarpon tetraphyllum,Main,2
+2532,Xixon32,Sporobolus indicus,Sporobolus indicus,Main,2
+2532,Xixon32,Oxalis corniculata,Oxalis corniculata,Main,1
+2532,Xixon32,Silene gallica,Silene gallica,Main,1
+2532,Xixon32,Carex divulsa,Carex divulsa,Main,0.1
+2532,Xixon32,Crepis vesicaria,Crepis vesicaria,Main,0.1
+2532,Xixon32,Erigeron sumatrensis,Erigeron sumatrensis,Main,0.1
+2532,Xixon32,Helminthotheca echioides,Helminthotheca echioides,Main,0.1
+2532,Xixon32,Hirschfeldia incana,Hirschfeldia incana,Main,0.1
+2532,Xixon32,Ochlopoa annua,Ochlopoa annua,Main,0.1
+2532,Xixon32,Polygonum aviculare,Polygonum aviculare,Main,0.1
+2532,Xixon32,Sagina apetala,Sagina apetala,Main,0.1
+2532,Xixon32,Taraxacum gr. officinale,Taraxacum sect. Taraxacum,Main,0.1
+2533,Xixon33,Digitaria sanguinalis,Digitaria sanguinalis,Main,5
+2533,Xixon33,Helminthotheca echioides,Helminthotheca echioides,Main,2
+2533,Xixon33,Anagallis arvensis,Anagallis arvensis,Main,1
+2533,Xixon33,Asplenium ruta-muraria,Asplenium ruta-muraria,Main,0.1
+2533,Xixon33,Asplenium trichomanes,Asplenium trichomanes,Main,0.1
+2533,Xixon33,Cirsium vulgare,Cirsium vulgare,Main,0.1
+2533,Xixon33,Dittrichia viscosa,Dittrichia viscosa,Main,0.1
+2533,Xixon33,Epilobium parviflorum,Epilobium parviflorum,Main,0.1
+2533,Xixon33,Erigeron sumatrensis,Erigeron sumatrensis,Main,0.1
+2533,Xixon33,Oxalis corniculata,Oxalis corniculata,Main,0.1
+2533,Xixon33,Polycarpon tetraphyllum,Polycarpon tetraphyllum,Main,0.1
+2533,Xixon33,Polypodium cambricum,Polypodium cambricum,Main,0.1
+2533,Xixon33,Prunella vulgaris,Prunella vulgaris,Main,0.1
+2533,Xixon33,Senecio vulgaris,Senecio vulgaris,Main,0.1
+2533,Xixon33,Taraxacum gr. officinale,Taraxacum sect. Taraxacum,Main,0.1
+2534,Xixon34,Cymbalaria muralis,Cymbalaria muralis,Main,2
+2534,Xixon34,Sporobolus indicus,Sporobolus indicus,Main,2
+2534,Xixon34,Medicago lupulina,Medicago lupulina,Main,1
+2534,Xixon34,Parietaria judaica,Parietaria judaica aggr.,Main,1
+2534,Xixon34,Polycarpon tetraphyllum,Polycarpon tetraphyllum,Main,1
+2534,Xixon34,Epilobium tetragonum,Epilobium tetragonum,Main,0.1
+2534,Xixon34,Erigeron sumatrensis,Erigeron sumatrensis,Main,0.1
+2534,Xixon34,Oxalis corniculata,Oxalis corniculata,Main,0.1
+2534,Xixon34,Paspalum dilatatum,Paspalum dilatatum,Main,0.1
+2534,Xixon34,Potentilla reptans,Potentilla reptans,Main,0.1
+2534,Xixon34,Salicornia procumbens,Salicornia procumbens,Main,0.1
+2534,Xixon34,Solanum nigrum,Solanum nigrum,Main,0.1
+2534,Xixon34,Sonchus oleraceus,Sonchus oleraceus,Main,0.1
+2534,Xixon34,Sonchus tenerrimus,Sonchus tenerrimus,Main,0.1
+2534,Xixon34,Symphyotrichum squamatum,Symphyotrichum squamatum,Main,0.1
+2534,Xixon34,Trifolium repens,Trifolium repens,Main,0.1
+2535,Xixon35,Gnaphalium coarctatum,Gnaphalium coarctatum,Main,10
+2535,Xixon35,Dichondra micrantha,Dichondra micrantha,Main,5
+2535,Xixon35,Plantago coronopus,Plantago coronopus,Main,5
+2535,Xixon35,Plantago major,Plantago major,Main,2
+2535,Xixon35,Cortaderia selloana,Cortaderia selloana,Main,1
+2535,Xixon35,Erigeron karvinskianus,Erigeron karvinskianus,Main,1
+2535,Xixon35,Medicago lupulina,Medicago lupulina,Main,1
+2535,Xixon35,Plantago media,Plantago media,Main,1
+2535,Xixon35,Rostraria cristata,Rostraria cristata,Main,1
+2535,Xixon35,Sporobolus indicus,Sporobolus indicus,Main,1
+2535,Xixon35,Digitaria sanguinalis,Digitaria sanguinalis,Main,0.1
+2535,Xixon35,Erigeron sumatrensis,Erigeron sumatrensis,Main,0.1
+2535,Xixon35,Euphorbia maculata,Euphorbia maculata,Main,0.1
+2535,Xixon35,Euphorbia prostrata,Euphorbia prostrata,Main,0.1
+2535,Xixon35,Helminthotheca echioides,Helminthotheca echioides,Main,0.1
+2535,Xixon35,Lythrum hyssopifolia,Lythrum hyssopifolia,Main,0.1
+2535,Xixon35,Oxalis corniculata,Oxalis corniculata,Main,0.1
+2535,Xixon35,Polycarpon tetraphyllum,Polycarpon tetraphyllum,Main,0.1
+2535,Xixon35,Prunella vulgaris,Prunella vulgaris,Main,0.1
+2535,Xixon35,Sagina apetala,Sagina apetala,Main,0.1
+2535,Xixon35,Sherardia arvensis,Sherardia arvensis,Main,0.1
+2535,Xixon35,Sonchus oleraceus,Sonchus oleraceus,Main,0.1
+2535,Xixon35,Trifolium tomentosum,Trifolium tomentosum,Main,0.1
+2535,Xixon35,Verbena officinalis,Verbena officinalis,Main,0.1
