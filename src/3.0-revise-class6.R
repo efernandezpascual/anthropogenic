@@ -5,7 +5,7 @@ rm(list = ls())
 read.csv("data/urban-header-3.1.csv", fileEncoding = "latin1") %>%
   filter(!SIVIMID %in% c("T-P15401", "T-P15400", "R-P22338")) %>% # Mediterranean region
   filter(Revised.class == "Cymbalario-Parietarietea diffusae") %>%
-  filter(! Sintaxon %in% c("Hedero-Polypodietum cambrici")) -> # Not vertical walls, made by one author, always cluster separatelly
+  filter(! Sintaxon %in% c("Hedero-Polypodietum cambrici")) -> # Not vertical walls, made by one author, always cluster separately
   header
 
 read.csv("data/urban-species-3.0.csv", fileEncoding = "latin1") %>%
