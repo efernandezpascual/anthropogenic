@@ -1893,7 +1893,7 @@ header5.1 %>%
   group_by(L1) %>%
   tally %>% data.frame
 
-write.csv(header7, "data/urban-header-5.1.csv", row.names = FALSE, fileEncoding = "latin1")
+write.csv(header5.1, "data/urban-header-5.1.csv", row.names = FALSE, fileEncoding = "latin1")
 
 ### Test significance of classification
 
