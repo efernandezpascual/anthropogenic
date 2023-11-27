@@ -37,3 +37,20 @@ species %>%
   merge(cantchecklist, all.x = TRUE, by = "Analysis.Names") %>%
   merge(eivs, all.x = TRUE, by = "Analysis.Names")  %>%
   merge(deivs, all.x = TRUE, by = "Analysis.Names") -> traits
+
+### 5.2 missing
+
+openxlsx::read.xlsx("data/urban-traits.xlsx") -> traits
+
+read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") -> species
+
+read.csv("data/urban-header-5.2.csv", fileEncoding = "latin1") -> header
+
+species %>%
+  filter(SIVIMID %in% header$SIVIMID) %>%
+  filter(! Analysis.Names %in% traits$Analysis.Names) %>%
+  select(Analysis.Names) %>% 
+  arrange(Analysis.Names) %>%
+  unique %>%
+  write.csv("lol.csv", fileEncoding = "latin1")
+
