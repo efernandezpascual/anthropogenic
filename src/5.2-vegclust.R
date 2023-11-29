@@ -113,6 +113,8 @@ header2 %>%
 read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") -> species
 
 species %>%
+  merge(header2) %>%
+  filter(Cluster != "N") %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
   spread(Analysis.Names, Cover.percent, fill = 0) %>%
   column_to_rownames(var = "SIVIMID") -> df1
