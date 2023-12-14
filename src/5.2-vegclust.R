@@ -16,7 +16,7 @@ read.csv("data/urban-header-5.1.csv", fileEncoding = "latin1") %>%
 
 ### Prepare community composition matrices
 
-read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% 
+read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>% 
   filter(SIVIMID %in% headerClassified$SIVIMID) %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
   spread(Analysis.Names, Cover.percent, fill = 0) %>%
@@ -24,7 +24,7 @@ read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>%
   decostand("normalize") -> # Chord transformation of community data
   dfClassified
 
-read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% 
+read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>% 
   filter(SIVIMID %in% headerUnclassified$SIVIMID) %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
   spread(Analysis.Names, Cover.percent, fill = 0) %>%
@@ -110,7 +110,7 @@ header2 %>%
 
 ### DCA of new groups
 
-read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") -> species
+read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") -> species
 
 species %>%
   merge(header2) %>%
@@ -200,7 +200,7 @@ header2 %>%
   filter(Cluster %in% c("M1")) -> 
   headerUnclassifiedM
 
-read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% 
+read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>% 
   filter(SIVIMID %in% headerClassifiedM$SIVIMID) %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
   spread(Analysis.Names, Cover.percent, fill = 0) %>%
@@ -208,7 +208,7 @@ read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>%
   decostand("normalize") -> # Chord transformation of community data
   dfClassifiedM
 
-read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% 
+read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>% 
   filter(SIVIMID %in% headerUnclassifiedM$SIVIMID) %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
   spread(Analysis.Names, Cover.percent, fill = 0) %>%
@@ -265,7 +265,7 @@ header3 %>%
 
 ### DCA of new groups
 
-read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") -> species
+read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") -> species
 
 species %>%
   merge(header3) %>%

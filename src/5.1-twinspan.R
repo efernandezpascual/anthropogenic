@@ -11,7 +11,7 @@ openxlsx::read.xlsx("data/urban-sintaxa.xlsx", sheet = 2) %>%
 read.csv("data/urban-header-5.0.csv", fileEncoding = "latin1") %>%
   filter(Alliance %in% alliances) -> header
 
-read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") -> species
+read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") -> species
 
 species %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
@@ -124,7 +124,7 @@ data.frame(Community = indicators$maxcls, Indicator = indicators$indcls,
 
 header2 %>% filter(Cluster == 1) %>% select(-Cluster) -> header3
 
-read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
+read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
 
 species %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
@@ -239,7 +239,7 @@ header4 %>%
 
 header2 %>% filter(Cluster == 2) %>% select(-Cluster) -> header3
 
-read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
+read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
 
 species %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
@@ -357,7 +357,7 @@ header4 %>%
 
 header2 %>% filter(Cluster == 3) %>% select(-Cluster) -> header3
 
-read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
+read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
 
 species %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
@@ -473,7 +473,7 @@ header4 %>%
 
 header2 %>% filter(Cluster == 4) %>% select(-Cluster) -> header3
 
-read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
+read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
 
 species %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
@@ -591,7 +591,7 @@ header4 %>%
 
 header2 %>% filter(Cluster == 5) %>% select(-Cluster) -> header3
 
-read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
+read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
 
 species %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
@@ -707,7 +707,7 @@ header4 %>%
 
 header2 %>% filter(Cluster == 6) %>% select(-Cluster) -> header3
 
-read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
+read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
 
 species %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
@@ -824,7 +824,7 @@ header4 %>%
 
 header2 %>% filter(Cluster == 7) %>% select(-Cluster) -> header3
 
-read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
+read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
 
 species %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
@@ -942,7 +942,7 @@ header4 %>%
 
 header2 %>% filter(Cluster == 8) %>% select(-Cluster) -> header3
 
-read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
+read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
 
 species %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
@@ -1062,7 +1062,7 @@ header4 %>%
 
 header2 %>% filter(Cluster == 9) %>% select(-Cluster) -> header3
 
-read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
+read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
 
 species %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
@@ -1178,7 +1178,7 @@ header4 %>%
 
 header2 %>% filter(Cluster == 10) %>% select(-Cluster) -> header3
 
-read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
+read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
 
 species %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
@@ -1296,7 +1296,7 @@ header4 %>%
 
 header2 %>% filter(Cluster == 11) %>% select(-Cluster) -> header3
 
-read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
+read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
 
 species %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
@@ -1412,7 +1412,7 @@ header4 %>%
 
 header2 %>% filter(Cluster == 12) %>% select(-Cluster) -> header3
 
-read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
+read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
 
 species %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
@@ -1529,7 +1529,7 @@ header4 %>%
 
 header2 %>% filter(Cluster == 13) %>% select(-Cluster) -> header3
 
-read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
+read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
 
 species %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
@@ -1644,7 +1644,7 @@ header4 %>%
 
 header2 %>% filter(Cluster == 14) %>% select(-Cluster) -> header3
 
-read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
+read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
 
 species %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
@@ -1759,7 +1759,7 @@ header4 %>%
 
 header2 %>% filter(Cluster == 15) %>% select(-Cluster) -> header3
 
-read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
+read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
 
 species %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
