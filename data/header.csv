@@ -697,7 +697,6 @@
 "U-P15845","V34Y","Gnaphaliio luteo-albi-Polycarpetum tetraphylli","Polycarpion tetraphylli","Polygono arenastri-Poetalia annuae","Polygono-Poetea annuae",4,1990,-8.305358617,41.47829442,"3 - UTM10x10 + Elevation",200
 "Q-P09991","V34Y","Crassulo tillaeae-Saginetum apetalae","Polycarpion tetraphylli","Polygono arenastri-Poetalia annuae","Polygono-Poetea annuae",2,2000,-6.61857634,41.83535117,"4 - UTM10x10 + Centroid",620
 "T-P15261","V34Y","Poo annuae-Spergularietum salinae","Polycarpion tetraphylli","Polygono arenastri-Poetalia annuae","Polygono-Poetea annuae",1,1988,-6.090129678,43.53291119,"4 - UTM10x10 + Centroid",122
-"U-P16371","V34Y","Polycarpo tetraphylli-Cotuletum australis","Polycarpion tetraphylli","Polygono arenastri-Poetalia annuae","Polygono-Poetea annuae",1,1993,-4.778709145,43.02349469,"4 - UTM10x10 + Centroid",1741
 "U-P15822","V34Y","Polycarpo tetraphylli-Cotuletum australis","Polycarpion tetraphylli","Polygono arenastri-Poetalia annuae","Polygono-Poetea annuae",4,1990,-8.558109648,42.04967039,"3 - UTM10x10 + Elevation",3
 "T-P15250","V34Y","Poo annuae-Spergularietum salinae","Polycarpion tetraphylli","Polygono arenastri-Poetalia annuae","Polygono-Poetea annuae",1,1988,-3.222548315,43.36756967,"4 - UTM10x10 + Centroid",52
 "R-P24605","V34Y","Crassulo tillaeae-Saginetum apetalae","Polycarpion tetraphylli","Polygono arenastri-Poetalia annuae","Polygono-Poetea annuae",1,2012,-6.8092218,42.41655453,"1 - UTM1x1 + Elevation",416
@@ -2141,7 +2140,6 @@
 "Q-P07850",NA,"Associació-Desconeguda","Noise",NA,NA,NA,1953,-4.116472128,42.87622565,"4 - UTM10x10 + Centroid",999.5
 "Q-P07851",NA,"Associació-Desconeguda","Noise",NA,NA,NA,1953,-4.116472128,42.87622565,"4 - UTM10x10 + Centroid",999.5
 "Q-P07852",NA,"Associació-Desconeguda","Noise",NA,NA,NA,1953,-4.116472128,42.87622565,"4 - UTM10x10 + Centroid",999.5
-"Q-P08150",NA,"Polycarpo tetraphylli-Coronopodetum squamati","Noise",NA,NA,1,2004,-8.555662357,41.10094791,"3 - UTM10x10 + Elevation",40
 "Q-P08687",NA,"Alliarion petiolatae","Noise",NA,NA,15,1990,-4.602567992,42.90454586,"3 - UTM10x10 + Elevation",1160
 "R-P22204",NA,"Lolio perennis-Plantaginetum maioris","Noise",NA,NA,2,1999,-7.91905333,41.90786144,"1 - UTM1x1 + Elevation",875
 "Q-P08736",NA,"Centaureo cyani-Raphanetum microcarpae","Noise",NA,NA,40,1990,-4.509713355,42.81395656,"3 - UTM10x10 + Elevation",1040

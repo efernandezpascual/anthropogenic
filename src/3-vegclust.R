@@ -404,6 +404,7 @@ header3 %>%
 ### Prepare files for manuscript stage
 
 read.csv("data/urban-header-5.2.csv", fileEncoding = "latin1") %>%
+  filter(! SIVIMID %in% IDs) %>%
   rename(Original = Sintaxon,
          Alliance = Semisupervised) %>%
   select(-c(ESEUNIS, Twinspan, Aspect, Slope)) -> header
