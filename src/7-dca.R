@@ -177,5 +177,5 @@ df2 %>%
 cowplot::plot_grid(Fig1A, Fig1B, ncol = 2) -> Fig1
 
 ggsave(Fig1, file = "results/figures/dca.png", bg = "white", 
-       path = NULL, scale = 1, width = 179, height = 90,units = "mm", dpi = 600)
+       path = NULL, scale = 1, width = 179, height = 90, units = "mm", dpi = 600)
 

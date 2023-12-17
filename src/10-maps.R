@@ -4,7 +4,7 @@ library(tidyverse); library(vegan)
 
 read.csv("data/header.csv", fileEncoding = "latin1") %>%
   filter(! Alliance %in% "Noise") %>%
-  mutate(Class = fct_relevel(Class, 
+  mutate(Class = fct_relevel(Class,
                              "Cymbalario-Parietarietea diffusae",
                              "Polygono-Poetea annuae",
                              "Papaveretea rhoeadis",
@@ -14,6 +14,13 @@ read.csv("data/header.csv", fileEncoding = "latin1") %>%
                              "Artemisietea vulgaris",
                              "Epilobietea angustifolii",
                              "Bidentetea")) %>%
+  mutate(Class = fct_recode(Class, 
+                            "Artemisietea" = "Artemisietea vulgaris",
+                            "Parietarietea" = "Cymbalario-Parietarietea diffusae",
+                            "Digitario-Eragrostietea" = "Digitario sanguinalis-Eragrostietea minoris",
+                            "Epilobietea" = "Epilobietea angustifolii",
+                            "Papaveretea" = "Papaveretea rhoeadis",
+                            "Polygono-Poetea" = "Polygono-Poetea annuae"))%>%
   mutate(Alliance = fct_relevel(Alliance, 
                              "Galio valantiae-Parietarion judaicae",
                              "Cymbalario-Asplenion",
@@ -73,19 +80,19 @@ read.csv("data/header.csv", fileEncoding = "latin1") %>%
 rgdal::readOGR(dsn = "data/map", layer = "IberoAtlantic") -> Ecoregions # Map files are in my home drive
 
 header %>%
-  ggplot(aes(Longitude, Latitude, color = as.factor(Class))) +
+  ggplot(aes(Longitude, Latitude)) +
   facet_wrap( ~ Alliance, ncol = 5) +
   geom_polygon(data = Ecoregions, aes(x = long, y = lat, group = group), 
                color = "black", fill = "gainsboro", size = 0.25, show.legend = FALSE) +
-  geom_point(show.legend = FALSE, alpha = 0.4) +
+  geom_point(aes(color = Class), show.legend = TRUE, alpha = 0.4) +
   ggthemes::theme_tufte() +
   coord_fixed() +
   xlab("Longitude (º)") + ylab("Latitude (º)") +
   theme(text = element_text(family = "sans"),
         strip.background = element_blank(),
         legend.position = "bottom", 
-        legend.direction = "vertical",
-        legend.title = element_blank(),
+        #legend.direction = "vertical",
+        legend.title = element_text(size = 10),
         legend.margin = margin(0, 0, 0, 0),
         legend.spacing.x = unit(0, "mm"),
         legend.spacing.y = unit(0, "mm"),
@@ -98,16 +105,18 @@ header %>%
         axis.text.x = element_text(size = 8, color = "black"),
         axis.text.y = element_text(size = 8, color = "black"),
         plot.margin = unit(c(0,0.2,0,0.2), "cm")) +
-  scale_color_manual(values = c("grey40",
+  scale_color_manual(name = "Vegetation class",
+                     values = c("grey40",
                                 "cadetblue4",
-                                "chocolate1",
-                                "chocolate4", 
-                                "firebrick3", 
+                                "chocolate1", 
+                                "chocolate4",
+                                "firebrick3",
                                 "khaki1",
-                                "darkmagenta",  
+                                "darkmagenta", 
                                 "limegreen",
-                                "goldenrod1")) -> Fig2; Fig2
+                                "goldenrod1")) +
+  guides(colour = guide_legend(override.aes = list(alpha = 1))) -> Fig2; Fig2
 
 ggsave(Fig2, file = "results/figures/maps.png", bg = "white", 
-       path = NULL, scale = 1, width = 179, height = 130, units = "mm", dpi = 600)
+       path = NULL, scale = 1, width = 179, height = 150, units = "mm", dpi = 600)
 

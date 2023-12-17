@@ -12,13 +12,13 @@ library(tidyverse)
 #   merge(read.csv("data/species.csv", fileEncoding = "latin1")) %>%
 #   group_by(SIVIMID, Trait) %>%
 #   summarise(Value = weighted.mean(Value, Cover.percent)) -> plotmeans
-# 
+#
 # read.csv("data/species.csv", fileEncoding = "latin1") %>%
 #   merge(plotmeans) %>%
 #   group_by(Analysis.Names, Trait) %>%
 #   summarise(Value = weighted.mean(Value, Cover.percent)) %>%
 #   rename(ravalue = Value) -> sppmeans
-# 
+#
 # read.csv("data/traits.csv", fileEncoding = "latin1") %>%
 #   select(Analysis.Names,
 #          EIVE1.M:Soil.Disturbance) %>%
@@ -27,13 +27,13 @@ library(tidyverse)
 #   mutate(value = ifelse(is.na(Value), ravalue, Value)) %>%
 #   select(-c(Value, ravalue)) %>%
 #   spread(Trait, value) -> raspp
-# 
+#
 # read.csv("data/traits.csv", fileEncoding = "latin1") %>%
 #   select(-c(EIVE1.M:Soil.Disturbance)) %>%
 #   merge(raspp) -> traits
-# 
+#
 # ### CwMs
-# 
+#
 # traits %>%
 #   gather(Trait, Value, -Analysis.Names) %>%
 #   merge(read.csv("data/species.csv", fileEncoding = "latin1")) %>%
@@ -41,7 +41,7 @@ library(tidyverse)
 #   summarise(Value = weighted.mean(Value, Cover.percent)) %>%
 #   spread(Trait, Value) %>%
 #   merge(read.csv("data/header.csv", fileEncoding = "latin1")) -> cwms
-# 
+#
 # save(cwms, file = "results/cwms/cwms.RData")
 
 rm(list = ls())
@@ -78,10 +78,10 @@ cwms %>%
          Grazing.Pressure,
          Mowing.Frequency,
          Soil.Disturbance,
-         #EIVE1.M,
+         EIVE1.M,
          EIVE1.N,
-         #EIVE1.R,
-         #EIVE1.T,
+         EIVE1.R,
+         EIVE1.T,
          EIVE1.L) %>%
   column_to_rownames(var = "SIVIMID") %>%
   FactoMineR::PCA(graph = TRUE) -> pca2
@@ -104,6 +104,16 @@ cwms %>%
             rownames_to_column(var = "SIVIMID") %>%
             select(SIVIMID, Dim.1, Dim.2) %>%
             mutate(PCA = "(B) PCA of species preferences: plots"))) %>%
+  mutate(Class = fct_relevel(Class,
+                             "Cymbalario-Parietarietea diffusae",
+                             "Polygono-Poetea annuae",
+                             "Papaveretea rhoeadis",
+                             "Digitario sanguinalis-Eragrostietea minoris",
+                             "Chenopodietea",
+                             "Sisymbrietea",
+                             "Artemisietea vulgaris",
+                             "Epilobietea angustifolii",
+                             "Bidentetea")) %>%
   mutate(Class = fct_recode(Class, 
                               "Artemisietea" = "Artemisietea vulgaris",
                               "Parietarietea" = "Cymbalario-Parietarietea diffusae",
@@ -130,6 +140,9 @@ rbind(pca1$var$coord %>%
                                "thero-\nphytes" = "therophyte", 
                                "nutrients" = "EIVE1.N", 
                                "light" = "EIVE1.L", 
+                               "temperature" = "EIVE1.T", 
+                               "moisture" = "EIVE1.M", 
+                               "soil\nreaction" = "EIVE1.R", 
                                "dist. severity" = "Disturbance.Severity", 
                                "dist. frequency" = "Disturbance.Frequency", 
                                "mowing" = "Mowing.Frequency", 
@@ -155,15 +168,16 @@ ggplot(inds, aes(Dim.1, Dim.2)) +
   geom_hline(yintercept = 0, linetype = "dashed", color = "grey40") +
   geom_vline(xintercept = 0, linetype = "dashed", color = "grey40") +
   facet_wrap(~ PCA, scales = "free") +
-  scale_color_manual(values = c("darkmagenta",  
-                                "goldenrod1", 
-                                "firebrick3", 
-                                "grey40",
-                                "chocolate4", 
+  scale_color_manual(name = "Vegetation class",
+                     values = c("grey40",
+                                "cadetblue4",
+                                "chocolate1", 
+                                "chocolate4",
+                                "firebrick3",
+                                "khaki1",
+                                "darkmagenta", 
                                 "limegreen",
-                                "chocolate1",  
-                                "cadetblue4", 
-                                "khaki1")) +
+                                "goldenrod1")) +
   #coord_fixed() +
   geom_segment(data = segs, 
                mapping = aes(xend = oDim.1, yend = oDim.2, color = Class), 
@@ -175,11 +189,11 @@ ggplot(inds, aes(Dim.1, Dim.2)) +
         strip.background = element_blank(),
         legend.position = "bottom", 
         #legend.direction = "vertical",
-        legend.title = element_blank(),
+        legend.title = element_text(size = 10),
         legend.margin = margin(0, 0, 0, 0),
         legend.spacing.x = unit(0, "mm"),
         legend.spacing.y = unit(0, "mm"),
-        legend.text = element_text(size = 12, face = "italic"), 
+        legend.text = element_text(size = 9, face = "italic"), 
         panel.background = element_rect(color = "black", fill = NULL),
         # strip.text = element_text(size = 12, hjust = 0, margin = margin(l = 0, b = 4)),
         strip.text = element_blank(),
@@ -226,5 +240,4 @@ ggplot(vars, aes(Dim.1, Dim.2)) +
 cowplot::plot_grid(Fig3B, Fig3A, ncol = 1) -> Fig3
 
 ggsave(Fig3, file = "results/figures/cwms.png", bg = "white", 
-       path = NULL, scale = 1, width = 200, height = 200, units = "mm", dpi = 600)
-
+       path = NULL, scale = 1, width = 179, height = 140, units = "mm", dpi = 600)
