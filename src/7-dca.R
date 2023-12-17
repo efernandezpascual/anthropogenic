@@ -42,7 +42,9 @@ merge(df2, setNames(cent, c("Cluster", "oDCA1", "oDCA2")), by = "Cluster", sort 
 
 df2 %>%
   ggplot(aes(x = DCA1, y = DCA2)) + 
-  geom_segment(data = segs, mapping = aes(xend = oDCA1, yend = oDCA2, color = Cluster), show.legend = FALSE, alpha = 0.2) +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "grey40") +
+  geom_vline(xintercept = 0, linetype = "dashed", color = "grey40") +
+  geom_segment(data = segs, mapping = aes(xend = oDCA1, yend = oDCA2, color = Cluster), show.legend = FALSE, alpha = 0.5) +
   geom_text(data = cent, aes(label = Cluster), size = 2.5) +
   ggthemes::theme_tufte() +
   coord_fixed() +
@@ -80,21 +82,51 @@ vegan::scores(dca1) %>%
   rownames_to_column("SIVIMID") %>%
   merge(header) %>%
   mutate(Cluster = as.factor(Alliance)) %>%
+  mutate(Cluster = fct_relevel(Cluster, 
+                                "Galio valantiae-Parietarion judaicae",
+                                "Cymbalario-Asplenion",
+                                "Polycarpion tetraphylli",
+                                "Polygono-Coronopodion",
+                                "Saginion procumbentis",
+                                "Scleranthion annui",
+                                "Oxalidion europeae",
+                                "Spergulo arvensis-Erodion cicutariae",
+                                "Allion triquetri",
+                                "Geranio pusilli-Anthriscion caucalidis",
+                                "Echio-Galactition tomentosae",
+                                "Linario polygalifoliae-Vulpion alopecuri",
+                                "Sisymbrion officinalis",
+                                "Carduo carpetani-Cirsion odontolepidis",
+                                "Cirsion richterano-chodati",
+                                "Dauco-Melilotion",
+                                "Geo urbani-Alliarion officinalis",
+                                "Arction lappae",
+                                "Balloto-Conion maculati",
+                                "Aegopodion podagrariae",
+                                "Epilobion angustifolii",
+                                "Cynancho-Convolvulion sepium",
+                                "Senecionion fluviatilis",
+                                "Bidention tripartitae",
+                                "Paspalo-Agrostion semiverticillati")) %>%
   mutate(Cluster = as.numeric(Cluster)) -> df2
 
 aggregate(cbind(DCA1, DCA2) ~ Cluster, data = df2, FUN = mean) %>%
-  mutate(DCA1 = ifelse(Cluster == 1, DCA1-.1, DCA1)) %>%
-  mutate(DCA1 = ifelse(Cluster == 4, DCA1+.03, DCA1))%>%
-  mutate(DCA2 = ifelse(Cluster == 1, DCA2+.03, DCA2))%>%
-  mutate(DCA2 = ifelse(Cluster == 4, DCA2-.03, DCA2)) -> cent
+  mutate(DCA1 = ifelse(Cluster == 20, DCA1-.3, DCA1)) %>%
+  mutate(DCA1 = ifelse(Cluster == 19, DCA1+.00, DCA1))%>%
+  mutate(DCA1 = ifelse(Cluster == 22, DCA1-.1, DCA1)) %>%
+  mutate(DCA1 = ifelse(Cluster == 15, DCA1+.03, DCA1))%>%
+  mutate(DCA2 = ifelse(Cluster == 24, DCA2+.03, DCA2))%>%
+  mutate(DCA2 = ifelse(Cluster == 25, DCA2-.03, DCA2)) -> cent
 merge(df2, setNames(cent, c("Cluster", "oDCA1", "oDCA2")), by = "Cluster", sort = FALSE) %>%
   mutate(Group = paste(Cluster, Alliance)) %>%
   mutate(Group = fct_reorder(Group, Cluster)) -> segs
 
 df2 %>%
   ggplot(aes(x = DCA1, y = DCA2)) + 
-  geom_segment(data = segs, mapping = aes(xend = oDCA1, yend = oDCA2, color = Group), show.legend = TRUE, alpha = 0.2, key_glyph = "blank") +
-  geom_text(data = cent, aes(label = Cluster), size = 2.5) +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "grey40") +
+  geom_vline(xintercept = 0, linetype = "dashed", color = "grey40") +
+  geom_segment(data = segs, mapping = aes(xend = oDCA1, yend = oDCA2, color = Group), show.legend = TRUE, alpha = 0.4, key_glyph = "blank") +
+  geom_text(data = cent, aes(label = Cluster), size = 2) +
   ggthemes::theme_tufte() +
   coord_fixed() +
   labs(title = "(B) Vegetation alliances") +
@@ -114,56 +146,31 @@ df2 %>%
         axis.text.x = element_text(size = 10, color = "black"),
         axis.text.y = element_text(size = 10, color = "black"),
         plot.margin = unit(c(0,0.2,0,0.2), "cm")) +
-#  scale_color_manual(values = c("lawngreen",  
-  #                                "firebrick1", 
-  #                             "forestgreen", 
-  #                             "limegreen",
-  #                             "goldenrod1", 
-  #                             "mediumorchid",
-  #                             "darkorchid",  
-  #                             "grey60", 
-  #                             "seagreen1", 
-  #                             "darkmagenta",
-  #                             "firebrick3", 
-#                             "lightgreen",
-#                               "grey40",  
-#                               "olivedrab", 
-#                           "firebrick4", 
-#                             "indianred",
-#                               "chocolate1", 
-#                               "goldenrod4",
-#                            "cadetblue1",  
-#                              "cadetblue3", 
-#                              "cadetblue4", 
-#                             "chocolate3",
-#                               "seagreen3", 
-#                               "khaki1",
-#                               "chocolate4")) +
-  scale_color_manual(values = c("limegreen",  
-                                "firebrick3", 
-                                "limegreen", 
-                                "limegreen",
-                                "goldenrod1", 
-                                "darkmagenta",
-                                "darkmagenta",  
-                                "grey40", 
-                                "limegreen", 
-                                "darkmagenta",
-                                "firebrick3", 
-                                "limegreen",
-                                "grey40",  
-                                "limegreen", 
+  scale_color_manual(values = c("grey40",
+                                "grey40",
+                                "cadetblue4",
+                                "cadetblue4",
+                                "cadetblue4",
+                                "chocolate1",
+                                "chocolate1",
+                                "chocolate4", 
                                 "firebrick3", 
                                 "firebrick3",
-                                "chocolate1", 
-                                "goldenrod1",
-                                "cadetblue4",  
-                                "cadetblue4", 
-                                "cadetblue4", 
-                                "chocolate1",
-                                "limegreen", 
+                                "firebrick3",
+                                "firebrick3",
                                 "khaki1",
-                                "chocolate4"))-> Fig1B; Fig1B
+                                "darkmagenta",  
+                                "darkmagenta",
+                                "darkmagenta",
+                                "limegreen",
+                                "limegreen",
+                                "limegreen",
+                                "limegreen",
+                                "limegreen",
+                                "limegreen",
+                                "limegreen",
+                                "goldenrod1",
+                                "goldenrod1")) -> Fig1B; Fig1B
 
 ### Merge
 
