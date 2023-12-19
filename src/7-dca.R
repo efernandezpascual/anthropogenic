@@ -88,15 +88,19 @@ vegan::scores(dca1) %>%
                                 "Polycarpion tetraphylli",
                                 "Polygono-Coronopodion",
                                 "Saginion procumbentis",
+                                "Caucalidion lappulae",
                                 "Scleranthion annui",
                                 "Oxalidion europeae",
                                 "Spergulo arvensis-Erodion cicutariae",
                                 "Allion triquetri",
                                 "Geranio pusilli-Anthriscion caucalidis",
+                                "Chenopodion muralis",
                                 "Echio-Galactition tomentosae",
                                 "Linario polygalifoliae-Vulpion alopecuri",
                                 "Sisymbrion officinalis",
+                                "Convolvulo arvensis-Agropyrion repentis",
                                 "Carduo carpetani-Cirsion odontolepidis",
+                                "Silybo mariani-Urticion piluliferae", 
                                 "Cirsion richterano-chodati",
                                 "Dauco-Melilotion",
                                 "Geo urbani-Alliarion officinalis",
@@ -111,12 +115,12 @@ vegan::scores(dca1) %>%
   mutate(Cluster = as.numeric(Cluster)) -> df2
 
 aggregate(cbind(DCA1, DCA2) ~ Cluster, data = df2, FUN = mean) %>%
-  mutate(DCA1 = ifelse(Cluster == 20, DCA1-.3, DCA1)) %>%
+  mutate(DCA1 = ifelse(Cluster == 26, DCA1-.3, DCA1)) %>%
   mutate(DCA1 = ifelse(Cluster == 19, DCA1+.00, DCA1))%>%
-  mutate(DCA1 = ifelse(Cluster == 22, DCA1-.1, DCA1)) %>%
-  mutate(DCA1 = ifelse(Cluster == 15, DCA1+.03, DCA1))%>%
-  mutate(DCA2 = ifelse(Cluster == 24, DCA2+.03, DCA2))%>%
-  mutate(DCA2 = ifelse(Cluster == 25, DCA2-.03, DCA2)) -> cent
+  mutate(DCA1 = ifelse(Cluster == 18, DCA1-.15, DCA1)) %>%
+  mutate(DCA1 = ifelse(Cluster == 20, DCA1+.03, DCA1))%>%
+  mutate(DCA1 = ifelse(Cluster == 24, DCA1+.2, DCA1))%>%
+  mutate(DCA1 = ifelse(Cluster == 23, DCA1-.2, DCA1)) -> cent
 merge(df2, setNames(cent, c("Cluster", "oDCA1", "oDCA2")), by = "Cluster", sort = FALSE) %>%
   mutate(Group = paste(Cluster, Alliance)) %>%
   mutate(Group = fct_reorder(Group, Cluster)) -> segs
@@ -153,12 +157,16 @@ df2 %>%
                                 "cadetblue4",
                                 "chocolate1",
                                 "chocolate1",
+                                "chocolate1",
                                 "chocolate4", 
                                 "firebrick3", 
                                 "firebrick3",
                                 "firebrick3",
                                 "firebrick3",
+                                "firebrick3",
                                 "khaki1",
+                                "darkmagenta", 
+                                "darkmagenta",  
                                 "darkmagenta",  
                                 "darkmagenta",
                                 "darkmagenta",

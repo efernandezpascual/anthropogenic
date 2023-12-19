@@ -12,13 +12,13 @@ library(tidyverse)
 #   merge(read.csv("data/species.csv", fileEncoding = "latin1")) %>%
 #   group_by(SIVIMID, Trait) %>%
 #   summarise(Value = weighted.mean(Value, Cover.percent)) -> plotmeans
-#
+# 
 # read.csv("data/species.csv", fileEncoding = "latin1") %>%
 #   merge(plotmeans) %>%
 #   group_by(Analysis.Names, Trait) %>%
 #   summarise(Value = weighted.mean(Value, Cover.percent)) %>%
 #   rename(ravalue = Value) -> sppmeans
-#
+# 
 # read.csv("data/traits.csv", fileEncoding = "latin1") %>%
 #   select(Analysis.Names,
 #          EIVE1.M:Soil.Disturbance) %>%
@@ -27,13 +27,13 @@ library(tidyverse)
 #   mutate(value = ifelse(is.na(Value), ravalue, Value)) %>%
 #   select(-c(Value, ravalue)) %>%
 #   spread(Trait, value) -> raspp
-#
+# 
 # read.csv("data/traits.csv", fileEncoding = "latin1") %>%
 #   select(-c(EIVE1.M:Soil.Disturbance)) %>%
 #   merge(raspp) -> traits
-#
+# 
 # ### CwMs
-#
+# 
 # traits %>%
 #   gather(Trait, Value, -Analysis.Names) %>%
 #   merge(read.csv("data/species.csv", fileEncoding = "latin1")) %>%
@@ -41,7 +41,7 @@ library(tidyverse)
 #   summarise(Value = weighted.mean(Value, Cover.percent)) %>%
 #   spread(Trait, Value) %>%
 #   merge(read.csv("data/header.csv", fileEncoding = "latin1")) -> cwms
-#
+# 
 # save(cwms, file = "results/cwms/cwms.RData")
 
 rm(list = ls())
@@ -209,8 +209,8 @@ ggplot(vars, aes(Dim.1, Dim.2)) +
   geom_hline(yintercept = 0, linetype = "dashed", color = "grey40") +
   geom_vline(xintercept = 0, linetype = "dashed", color = "grey40") +
   facet_wrap(~ PCA, scales = "free") +
-  geom_segment(aes(x = 0, y = 0, xend = Dim.1, yend = Dim.2), arrow = arrow(length = unit(1/2, "picas"))) +
-  ggrepel::geom_label_repel(aes(x = Dim.1, y = Dim.2, label = Variable),  show.legend = FALSE, size = 3) +
+  geom_segment(aes(x = 0, y = 0, xend = Dim.1, yend = Dim.2), arrow = arrow(length = unit(1/2, "picas")), color = "grey60") +
+  ggrepel::geom_text_repel(aes(x = Dim.1, y = Dim.2, label = Variable),  show.legend = FALSE, size = 3) +
   #coord_fixed() +
   ggthemes::theme_tufte() +
   xlab("PCA1") + ylab("PCA2") +
@@ -241,3 +241,4 @@ cowplot::plot_grid(Fig3B, Fig3A, ncol = 1) -> Fig3
 
 ggsave(Fig3, file = "results/figures/cwms.png", bg = "white", 
        path = NULL, scale = 1, width = 179, height = 140, units = "mm", dpi = 600)
+

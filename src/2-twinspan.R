@@ -2,16 +2,17 @@ library(tidyverse); library(vegan); library(labdsv)
 
 rm(list = ls())
 
-openxlsx::read.xlsx("data/urban-sintaxa.xlsx", sheet = 2) %>%
-  filter(Manmade == "Yes") %>%
-  filter(Assigned != "Not Cantabrian") %>%
+read.csv("results/sintaxonomy/original-sintaxonomy.csv", fileEncoding = "latin1") %>%
+  filter(Anthropogenic == "Yes") %>%
+  #filter(Assigned != "Not Cantabrian") %>%
   pull(Alliance) %>%
   unique -> alliances
 
 read.csv("data/urban-header-5.0.csv", fileEncoding = "latin1") %>%
   filter(Alliance %in% alliances) -> header
 
-read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") -> species
+read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>%
+  filter(SIVIMID %in% header$SIVIMID) -> species
 
 species %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
@@ -124,7 +125,7 @@ data.frame(Community = indicators$maxcls, Indicator = indicators$indcls,
 
 header2 %>% filter(Cluster == 1) %>% select(-Cluster) -> header3
 
-read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
+read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
 
 species %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
@@ -138,7 +139,7 @@ twinspanR::twinspan(
   modif = TRUE,
   cut.levels = c(0, 15, 25),
   min.group.size = 10,
-  clusters = 2,
+  clusters = 10,
   diss = "multi.sorensen",
   mean.median = "mean",
   show.output.on.console = FALSE,
@@ -170,12 +171,6 @@ df2 %>%
   geom_point(data = cent, shape = 21, size = 5, aes(fill = Cluster), show.legend = T)
 
 ### Sintaxa
-
-header4 %>%
-  group_by(Cluster, Class) %>%
-  tally %>%
-  arrange(Cluster, -n) %>%
-  data.frame
 
 header4 %>%
   group_by(Cluster, Alliance) %>%
@@ -231,7 +226,15 @@ data.frame(Community = indicators$maxcls, Indicator = indicators$indcls,
 header4 %>%
   mutate(L1 = fct_recode(as.factor(Cluster),
                          "Oxalidion europeae" = "1",
-                         "Scleranthion annui" = "2")) %>%
+                         "Oxalidion europeae" = "2",
+                         "Oxalidion europeae" = "3",
+                         "Oxalidion europeae" = "4",
+                         "Oxalidion europeae" = "5",
+                         "Sisymbrion officinalis" = "6",
+                         "Sisymbrion officinalis" = "7",
+                         "Chenopodion muralis" = "8",
+                         "Echio-Galactition tomentosae" = "9",
+                         "Scleranthion annui" = "10")) %>%
   select(-Cluster) %>%
   write.csv("data/urban-header-5.1A.csv", fileEncoding = "latin1")
 
@@ -239,7 +242,7 @@ header4 %>%
 
 header2 %>% filter(Cluster == 2) %>% select(-Cluster) -> header3
 
-read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
+read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
 
 species %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
@@ -285,130 +288,6 @@ df2 %>%
   geom_point(data = cent, shape = 21, size = 5, aes(fill = Cluster), show.legend = T)
 
 ### Sintaxa
-
-header4 %>%
-  group_by(Cluster, Class) %>%
-  tally %>%
-  arrange(Cluster, -n) %>%
-  data.frame
-
-header4 %>%
-  group_by(Cluster, Alliance) %>%
-  tally %>%
-  arrange(Cluster, -n) %>%
-  data.frame
-
-### Dominant
-
-species %>%
-  merge(header4, by = "SIVIMID") %>%
-  group_by(Cluster, Analysis.Names) %>%
-  summarise(D = sum(Cover.percent)) %>%
-  group_by(Cluster) %>%
-  slice_max(D, n = 5) %>%
-  data.frame
-
-### Constant
-
-species %>%
-  merge(header4, by = "SIVIMID") %>%
-  group_by(Cluster, Analysis.Names) %>%
-  summarise(F = length(Analysis.Names)) %>%
-  group_by(Cluster) %>%
-  slice_max(F, n = 5) %>%
-  data.frame
-
-### Indicator spp
-
-species %>%
-  merge(header4, by = "SIVIMID") %>%
-  select(Cluster, SIVIMID, Analysis.Names, Cover.percent) %>%
-  spread(Analysis.Names, Cover.percent, fill = 0) -> plots
-
-plots %>%
-  pull(Cluster) -> groups
-
-levels(groups) -> group.labels
-
-plots %>%
-  select(-c(SIVIMID, Cluster)) %>%
-  indval(groups, numitr = 10000) -> indicators
-
-data.frame(Community = indicators$maxcls, Indicator = indicators$indcls,
-           p = indicators$pval, p_adj = p.adjust(indicators$pval, "holm")) %>%
-  rownames_to_column(var = "Species") %>%
-  group_by(Community) %>%
-  slice_max(Indicator, n = 4) %>%
-  data.frame
-
-### Save
-
-header4 %>%
-  mutate(L1 = fct_recode(as.factor(Cluster),
-                         "Echio-Galactition tomentosae" = "1",
-                         "Scleranthion annui" = "2",
-                         "Scleranthion annui" = "3",
-                         "Scleranthion annui" = "4",
-                         "Scleranthion annui" = "5")) %>%
-  select(-Cluster) %>%
-  write.csv("data/urban-header-5.1B.csv", fileEncoding = "latin1")
-
-#### Cluster 3
-
-header2 %>% filter(Cluster == 3) %>% select(-Cluster) -> header3
-
-read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
-
-species %>%
-  select(SIVIMID, Analysis.Names, Cover.percent) %>%
-  spread(Analysis.Names, Cover.percent, fill = 0) %>%
-  column_to_rownames(var = "SIVIMID") -> df1
-
-### Twinspan 
-
-twinspanR::twinspan(
-  df1,
-  modif = TRUE,
-  cut.levels = c(0, 15, 25),
-  min.group.size = 10,
-  clusters = 3,
-  diss = "multi.sorensen",
-  mean.median = "mean",
-  show.output.on.console = FALSE,
-  quiet = TRUE) %>%
-  cut() %>%
-  cbind(df1) %>%
-  select(".") %>%
-  rename("Cluster" = ".") %>%
-  rownames_to_column(var = "SIVIMID") -> kclusters
-
-header %>% merge(kclusters, by = "SIVIMID") -> header4
-
-### DCA
-
-decorana(df1) -> dca1
-
-vegan::scores(dca1) %>%
-  data.frame() %>%
-  rownames_to_column("SIVIMID") %>%
-  merge(header4) %>%
-  mutate(Cluster = as.factor(Cluster)) -> df2
-
-cent <- aggregate(cbind(DCA1, DCA2) ~ Cluster, data = df2, FUN = mean)
-segs <- merge(df2, setNames(cent, c("Cluster", "oDCA1", "oDCA2")), by = "Cluster", sort = FALSE)
-
-df2 %>%
-  ggplot(aes(x = DCA1, y = DCA2)) + 
-  geom_segment(data = segs, mapping = aes(xend = oDCA1, yend = oDCA2, color = Cluster), show.legend = F) +
-  geom_point(data = cent, shape = 21, size = 5, aes(fill = Cluster), show.legend = T)
-
-### Sintaxa
-
-header4 %>%
-  group_by(Cluster, Sintaxon) %>%
-  tally %>%
-  arrange(Cluster, -n) %>%
-  data.frame
 
 header4 %>%
   group_by(Cluster, Alliance) %>%
@@ -464,134 +343,18 @@ data.frame(Community = indicators$maxcls, Indicator = indicators$indcls,
 header4 %>%
   mutate(L1 = fct_recode(as.factor(Cluster),
                          "Spergulo arvensis-Erodion cicutariae" = "1",
-                         "Spergulo arvensis-Erodion cicutariae" = "2",
-                         "Spergulo arvensis-Erodion cicutariae" = "3")) %>%
+                         "Chenopodion muralis" = "2",
+                         "Spergulo arvensis-Erodion cicutariae" = "3",
+                         "Oxalidion europeae" = "4",
+                         "Spergulo arvensis-Erodion cicutariae" = "5")) %>%
   select(-Cluster) %>%
-  write.csv("data/urban-header-5.1C.csv", fileEncoding = "latin1")
+  write.csv("data/urban-header-5.1B.csv", fileEncoding = "latin1")
 
-#### Cluster 4
+#### Cluster 3
 
-header2 %>% filter(Cluster == 4) %>% select(-Cluster) -> header3
+header2 %>% filter(Cluster == 3) %>% select(-Cluster) -> header3
 
-read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
-
-species %>%
-  select(SIVIMID, Analysis.Names, Cover.percent) %>%
-  spread(Analysis.Names, Cover.percent, fill = 0) %>%
-  column_to_rownames(var = "SIVIMID") -> df1
-
-### Twinspan 
-
-twinspanR::twinspan(
-  df1,
-  modif = TRUE,
-  cut.levels = c(0, 15, 25),
-  min.group.size = 10,
-  clusters = 5,
-  diss = "multi.sorensen",
-  mean.median = "mean",
-  show.output.on.console = FALSE,
-  quiet = TRUE) %>%
-  cut() %>%
-  cbind(df1) %>%
-  select(".") %>%
-  rename("Cluster" = ".") %>%
-  rownames_to_column(var = "SIVIMID") -> kclusters
-
-header %>% merge(kclusters, by = "SIVIMID") -> header4
-
-### DCA
-
-decorana(df1) -> dca1
-
-vegan::scores(dca1) %>%
-  data.frame() %>%
-  rownames_to_column("SIVIMID") %>%
-  merge(header4) %>%
-  mutate(Cluster = as.factor(Cluster)) -> df2
-
-cent <- aggregate(cbind(DCA1, DCA2) ~ Cluster, data = df2, FUN = mean)
-segs <- merge(df2, setNames(cent, c("Cluster", "oDCA1", "oDCA2")), by = "Cluster", sort = FALSE)
-
-df2 %>%
-  ggplot(aes(x = DCA1, y = DCA2)) + 
-  geom_segment(data = segs, mapping = aes(xend = oDCA1, yend = oDCA2, color = Cluster), show.legend = F) +
-  geom_point(data = cent, shape = 21, size = 5, aes(fill = Cluster), show.legend = T)
-
-### Sintaxa
-
-header4 %>%
-  group_by(Cluster, Sintaxon) %>%
-  tally %>%
-  arrange(Cluster, -n) %>%
-  data.frame
-
-header4 %>%
-  group_by(Cluster, Alliance) %>%
-  tally %>%
-  arrange(Cluster, -n) %>%
-  data.frame
-
-### Dominant
-
-species %>%
-  merge(header4, by = "SIVIMID") %>%
-  group_by(Cluster, Analysis.Names) %>%
-  summarise(D = sum(Cover.percent)) %>%
-  group_by(Cluster) %>%
-  slice_max(D, n = 5) %>%
-  data.frame
-
-### Constant
-
-species %>%
-  merge(header4, by = "SIVIMID") %>%
-  group_by(Cluster, Analysis.Names) %>%
-  summarise(F = length(Analysis.Names)) %>%
-  group_by(Cluster) %>%
-  slice_max(F, n = 5) %>%
-  data.frame
-
-### Indicator spp
-
-species %>%
-  merge(header4, by = "SIVIMID") %>%
-  select(Cluster, SIVIMID, Analysis.Names, Cover.percent) %>%
-  spread(Analysis.Names, Cover.percent, fill = 0) -> plots
-
-plots %>%
-  pull(Cluster) -> groups
-
-levels(groups) -> group.labels
-
-plots %>%
-  select(-c(SIVIMID, Cluster)) %>%
-  indval(groups, numitr = 10000) -> indicators
-
-data.frame(Community = indicators$maxcls, Indicator = indicators$indcls,
-           p = indicators$pval, p_adj = p.adjust(indicators$pval, "holm")) %>%
-  rownames_to_column(var = "Species") %>%
-  group_by(Community) %>%
-  slice_max(Indicator, n = 4) %>%
-  data.frame
-
-### Save
-
-header4 %>%
-  mutate(L1 = fct_recode(as.factor(Cluster),
-                         "Polygono-Coronopodion" = "1",
-                         "Polygono-Coronopodion" = "2",
-                         "Unassigned" = "3",
-                         "Saginion procumbentis" = "4",
-                         "Polycarpion tetraphylli" = "5")) %>%
-  select(-Cluster) %>%
-  write.csv("data/urban-header-5.1D.csv", fileEncoding = "latin1")
-
-#### Cluster 5
-
-header2 %>% filter(Cluster == 5) %>% select(-Cluster) -> header3
-
-read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
+read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
 
 species %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
@@ -639,12 +402,6 @@ df2 %>%
 ### Sintaxa
 
 header4 %>%
-  group_by(Cluster, Class) %>%
-  tally %>%
-  arrange(Cluster, -n) %>%
-  data.frame
-
-header4 %>%
   group_by(Cluster, Alliance) %>%
   tally %>%
   arrange(Cluster, -n) %>%
@@ -697,17 +454,17 @@ data.frame(Community = indicators$maxcls, Indicator = indicators$indcls,
 
 header4 %>%
   mutate(L1 = fct_recode(as.factor(Cluster),
-                         "Sisymbrion officinalis" = "1",
-                         "Sisymbrion officinalis" = "2",
-                         "Sisymbrion officinalis" = "3")) %>%
+                         "Scleranthion annui" = "1",
+                         "Scleranthion annui" = "2",
+                         "Scleranthion annui" = "3")) %>%
   select(-Cluster) %>%
-  write.csv("data/urban-header-5.1E.csv", fileEncoding = "latin1")
+  write.csv("data/urban-header-5.1C.csv", fileEncoding = "latin1")
 
-#### Cluster 6
+#### Cluster 4
 
-header2 %>% filter(Cluster == 6) %>% select(-Cluster) -> header3
+header2 %>% filter(Cluster == 4) %>% select(-Cluster) -> header3
 
-read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
+read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
 
 species %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
@@ -721,7 +478,7 @@ twinspanR::twinspan(
   modif = TRUE,
   cut.levels = c(0, 15, 25),
   min.group.size = 10,
-  clusters = 4,
+  clusters = 5,
   diss = "multi.sorensen",
   mean.median = "mean",
   show.output.on.console = FALSE,
@@ -753,12 +510,6 @@ df2 %>%
   geom_point(data = cent, shape = 21, size = 5, aes(fill = Cluster), show.legend = T)
 
 ### Sintaxa
-
-header4 %>%
-  group_by(Cluster, Sintaxon) %>%
-  tally %>%
-  arrange(Cluster, -n) %>%
-  data.frame
 
 header4 %>%
   group_by(Cluster, Alliance) %>%
@@ -815,16 +566,17 @@ header4 %>%
   mutate(L1 = fct_recode(as.factor(Cluster),
                          "Bidention tripartitae" = "1",
                          "Bidention tripartitae" = "2",
-                         "Paspalo-Agrostion semiverticillati" = "3",
-                         "Bidention tripartitae" = "4")) %>%
+                         "Bidention tripartitae" = "3",
+                         "Bidention tripartitae" = "4",
+                         "Paspalo-Agrostion semiverticillati" = "5")) %>%
   select(-Cluster) %>%
-  write.csv("data/urban-header-5.1F.csv", fileEncoding = "latin1")
+  write.csv("data/urban-header-5.1D.csv", fileEncoding = "latin1")
 
-#### Cluster 7
+#### Cluster 5
 
-header2 %>% filter(Cluster == 7) %>% select(-Cluster) -> header3
+header2 %>% filter(Cluster == 5) %>% select(-Cluster) -> header3
 
-read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
+read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
 
 species %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
@@ -838,7 +590,7 @@ twinspanR::twinspan(
   modif = TRUE,
   cut.levels = c(0, 15, 25),
   min.group.size = 10,
-  clusters = 5,
+  clusters = 3,
   diss = "multi.sorensen",
   mean.median = "mean",
   show.output.on.console = FALSE,
@@ -872,10 +624,114 @@ df2 %>%
 ### Sintaxa
 
 header4 %>%
-  group_by(Cluster, Sintaxon) %>%
+  group_by(Cluster, Alliance) %>%
   tally %>%
   arrange(Cluster, -n) %>%
   data.frame
+
+### Dominant
+
+species %>%
+  merge(header4, by = "SIVIMID") %>%
+  group_by(Cluster, Analysis.Names) %>%
+  summarise(D = sum(Cover.percent)) %>%
+  group_by(Cluster) %>%
+  slice_max(D, n = 5) %>%
+  data.frame
+
+### Constant
+
+species %>%
+  merge(header4, by = "SIVIMID") %>%
+  group_by(Cluster, Analysis.Names) %>%
+  summarise(F = length(Analysis.Names)) %>%
+  group_by(Cluster) %>%
+  slice_max(F, n = 5) %>%
+  data.frame
+
+### Indicator spp
+
+species %>%
+  merge(header4, by = "SIVIMID") %>%
+  select(Cluster, SIVIMID, Analysis.Names, Cover.percent) %>%
+  spread(Analysis.Names, Cover.percent, fill = 0) -> plots
+
+plots %>%
+  pull(Cluster) -> groups
+
+levels(groups) -> group.labels
+
+plots %>%
+  select(-c(SIVIMID, Cluster)) %>%
+  indval(groups, numitr = 10000) -> indicators
+
+data.frame(Community = indicators$maxcls, Indicator = indicators$indcls,
+           p = indicators$pval, p_adj = p.adjust(indicators$pval, "holm")) %>%
+  rownames_to_column(var = "Species") %>%
+  group_by(Community) %>%
+  slice_max(Indicator, n = 4) %>%
+  data.frame
+
+### Save
+
+header4 %>%
+  mutate(L1 = fct_recode(as.factor(Cluster),
+                         "Polygono-Coronopodion" = "1",
+                         "Saginion procumbentis" = "2",
+                         "Polycarpion tetraphylli" = "3")) %>%
+  select(-Cluster) %>%
+  write.csv("data/urban-header-5.1E.csv", fileEncoding = "latin1")
+
+#### Cluster 6
+
+header2 %>% filter(Cluster == 6) %>% select(-Cluster) -> header3
+
+read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
+
+species %>%
+  select(SIVIMID, Analysis.Names, Cover.percent) %>%
+  spread(Analysis.Names, Cover.percent, fill = 0) %>%
+  column_to_rownames(var = "SIVIMID") -> df1
+
+### Twinspan 
+
+twinspanR::twinspan(
+  df1,
+  modif = TRUE,
+  cut.levels = c(0, 15, 25),
+  min.group.size = 10,
+  clusters = 10,
+  diss = "multi.sorensen",
+  mean.median = "mean",
+  show.output.on.console = FALSE,
+  quiet = TRUE) %>%
+  cut() %>%
+  cbind(df1) %>%
+  select(".") %>%
+  rename("Cluster" = ".") %>%
+  rownames_to_column(var = "SIVIMID") -> kclusters
+
+header %>% merge(kclusters, by = "SIVIMID") -> header4
+
+### DCA
+
+decorana(df1) -> dca1
+
+vegan::scores(dca1) %>%
+  data.frame() %>%
+  rownames_to_column("SIVIMID") %>%
+  merge(header4) %>%
+  mutate(Cluster = as.factor(Cluster)) -> df2
+
+cent <- aggregate(cbind(DCA1, DCA2) ~ Cluster, data = df2, FUN = mean)
+segs <- merge(df2, setNames(cent, c("Cluster", "oDCA1", "oDCA2")), by = "Cluster", sort = FALSE)
+
+df2 %>%
+  ggplot(aes(x = DCA1, y = DCA2)) + 
+  geom_segment(data = segs, mapping = aes(xend = oDCA1, yend = oDCA2, color = Cluster), show.legend = F) +
+  geom_point(data = cent, shape = 21, size = 5, aes(fill = Cluster), show.legend = T)
+
+### Sintaxa
 
 header4 %>%
   group_by(Cluster, Alliance) %>%
@@ -933,16 +789,21 @@ header4 %>%
                          "Balloto-Conion maculati" = "1",
                          "Balloto-Conion maculati" = "2",
                          "Balloto-Conion maculati" = "3",
-                         "Arction lappae" = "4",
-                         "Cirsion richterano-chodati" = "5")) %>%
+                         "Balloto-Conion maculati" = "4",
+                         "Senecionion fluviatilis" = "5",
+                         "Balloto-Conion maculati" = "6",
+                         "Aegopodion podagrariae" = "7",
+                         "Balloto-Conion maculati" = "8",
+                         "Cirsion richterano-chodati" = "9",
+                         "Arction lappae" = "10")) %>%
   select(-Cluster) %>%
-  write.csv("data/urban-header-5.1G.csv", fileEncoding = "latin1")
+  write.csv("data/urban-header-5.1F.csv", fileEncoding = "latin1")
 
-#### Cluster 8
+#### Cluster 7
 
-header2 %>% filter(Cluster == 8) %>% select(-Cluster) -> header3
+header2 %>% filter(Cluster == 7) %>% select(-Cluster) -> header3
 
-read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
+read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
 
 species %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
@@ -956,7 +817,7 @@ twinspanR::twinspan(
   modif = TRUE,
   cut.levels = c(0, 15, 25),
   min.group.size = 10,
-  clusters = 7,
+  clusters = 5,
   diss = "multi.sorensen",
   mean.median = "mean",
   show.output.on.console = FALSE,
@@ -988,12 +849,6 @@ df2 %>%
   geom_point(data = cent, shape = 21, size = 5, aes(fill = Cluster), show.legend = T)
 
 ### Sintaxa
-
-header4 %>%
-  group_by(Cluster, Sintaxon) %>%
-  tally %>%
-  arrange(Cluster, -n) %>%
-  data.frame
 
 header4 %>%
   group_by(Cluster, Alliance) %>%
@@ -1050,10 +905,122 @@ header4 %>%
   mutate(L1 = fct_recode(as.factor(Cluster),
                          "Geo urbani-Alliarion officinalis" = "1",
                          "Geo urbani-Alliarion officinalis" = "2",
-                         "Allion triquetri" = "3",
+                         "Geo urbani-Alliarion officinalis" = "3",
                          "Geo urbani-Alliarion officinalis" = "4",
-                         "Aegopodion podagrariae" = "5",
-                         "Geranio pusilli-Anthriscion caucalidis" = "6",
+                         "Geranio pusilli-Anthriscion caucalidis" = "5")) %>%
+  select(-Cluster) %>%
+  write.csv("data/urban-header-5.1G.csv", fileEncoding = "latin1")
+
+#### Cluster 8
+
+header2 %>% filter(Cluster == 8) %>% select(-Cluster) -> header3
+
+read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
+
+species %>%
+  select(SIVIMID, Analysis.Names, Cover.percent) %>%
+  spread(Analysis.Names, Cover.percent, fill = 0) %>%
+  column_to_rownames(var = "SIVIMID") -> df1
+
+### Twinspan 
+
+twinspanR::twinspan(
+  df1,
+  modif = TRUE,
+  cut.levels = c(0, 15, 25),
+  min.group.size = 10,
+  clusters = 7,
+  diss = "multi.sorensen",
+  mean.median = "mean",
+  show.output.on.console = FALSE,
+  quiet = TRUE) %>%
+  cut() %>%
+  cbind(df1) %>%
+  select(".") %>%
+  rename("Cluster" = ".") %>%
+  rownames_to_column(var = "SIVIMID") -> kclusters
+
+header %>% merge(kclusters, by = "SIVIMID") -> header4
+
+### DCA
+
+decorana(df1) -> dca1
+
+vegan::scores(dca1) %>%
+  data.frame() %>%
+  rownames_to_column("SIVIMID") %>%
+  merge(header4) %>%
+  mutate(Cluster = as.factor(Cluster)) -> df2
+
+cent <- aggregate(cbind(DCA1, DCA2) ~ Cluster, data = df2, FUN = mean)
+segs <- merge(df2, setNames(cent, c("Cluster", "oDCA1", "oDCA2")), by = "Cluster", sort = FALSE)
+
+df2 %>%
+  ggplot(aes(x = DCA1, y = DCA2)) + 
+  geom_segment(data = segs, mapping = aes(xend = oDCA1, yend = oDCA2, color = Cluster), show.legend = F) +
+  geom_point(data = cent, shape = 21, size = 5, aes(fill = Cluster), show.legend = T)
+
+### Sintaxa
+
+header4 %>%
+  group_by(Cluster, Alliance) %>%
+  tally %>%
+  arrange(Cluster, -n) %>%
+  data.frame
+
+### Dominant
+
+species %>%
+  merge(header4, by = "SIVIMID") %>%
+  group_by(Cluster, Analysis.Names) %>%
+  summarise(D = sum(Cover.percent)) %>%
+  group_by(Cluster) %>%
+  slice_max(D, n = 5) %>%
+  data.frame
+
+### Constant
+
+species %>%
+  merge(header4, by = "SIVIMID") %>%
+  group_by(Cluster, Analysis.Names) %>%
+  summarise(F = length(Analysis.Names)) %>%
+  group_by(Cluster) %>%
+  slice_max(F, n = 5) %>%
+  data.frame
+
+### Indicator spp
+
+species %>%
+  merge(header4, by = "SIVIMID") %>%
+  select(Cluster, SIVIMID, Analysis.Names, Cover.percent) %>%
+  spread(Analysis.Names, Cover.percent, fill = 0) -> plots
+
+plots %>%
+  pull(Cluster) -> groups
+
+levels(groups) -> group.labels
+
+plots %>%
+  select(-c(SIVIMID, Cluster)) %>%
+  indval(groups, numitr = 10000) -> indicators
+
+data.frame(Community = indicators$maxcls, Indicator = indicators$indcls,
+           p = indicators$pval, p_adj = p.adjust(indicators$pval, "holm")) %>%
+  rownames_to_column(var = "Species") %>%
+  group_by(Community) %>%
+  slice_max(Indicator, n = 4) %>%
+  data.frame
+
+### Save
+
+header4 %>%
+  mutate(L1 = fct_recode(as.factor(Cluster),
+                         "Allion triquetri" = "1",
+                         "Allion triquetri" = "2",
+                         "Senecionion fluviatilis" = "3",
+                         "Arction lappae" = "4",
+                         "Cynancho-Convolvulion sepium" = "5",
+                         "Senecionion fluviatilis" = "6",
                          "Arction lappae" = "7")) %>%
   select(-Cluster) %>%
   write.csv("data/urban-header-5.1H.csv", fileEncoding = "latin1")
@@ -1062,7 +1029,7 @@ header4 %>%
 
 header2 %>% filter(Cluster == 9) %>% select(-Cluster) -> header3
 
-read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
+read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
 
 species %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
@@ -1178,7 +1145,7 @@ header4 %>%
 
 header2 %>% filter(Cluster == 10) %>% select(-Cluster) -> header3
 
-read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
+read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
 
 species %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
@@ -1192,7 +1159,7 @@ twinspanR::twinspan(
   modif = TRUE,
   cut.levels = c(0, 15, 25),
   min.group.size = 10,
-  clusters = 5,
+  clusters = 12,
   diss = "multi.sorensen",
   mean.median = "mean",
   show.output.on.console = FALSE,
@@ -1224,12 +1191,6 @@ df2 %>%
   geom_point(data = cent, shape = 21, size = 5, aes(fill = Cluster), show.legend = T)
 
 ### Sintaxa
-
-header4 %>%
-  group_by(Cluster, Sintaxon) %>%
-  tally %>%
-  arrange(Cluster, -n) %>%
-  data.frame
 
 header4 %>%
   group_by(Cluster, Alliance) %>%
@@ -1286,9 +1247,16 @@ header4 %>%
   mutate(L1 = fct_recode(as.factor(Cluster),
                          "Sisymbrion officinalis" = "1",
                          "Sisymbrion officinalis" = "2",
-                         "Sisymbrion officinalis" = "3",
-                         "Balloto-Conion maculati" = "4",
-                         "Arction lappae" = "5")) %>%
+                         "Caucalidion lappulae" = "3",
+                         "Sisymbrion officinalisi" = "4",
+                         "Sisymbrion officinalis" = "5",
+                         "Balloto-Conion maculati" = "6",
+                         "Echio-Galactition tomentosae" = "7",
+                         "Arction lappae" = "8",
+                         "Silybo mariani-Urticion piluliferae" = "9",
+                         "Arction lappae" = "10",
+                         "Dauco-Melilotion" = "11",
+                         "Convolvulo arvensis-Agropyrion repentis" = "12")) %>%
   select(-Cluster) %>%
   write.csv("data/urban-header-5.1J.csv", fileEncoding = "latin1")
 
@@ -1296,123 +1264,7 @@ header4 %>%
 
 header2 %>% filter(Cluster == 11) %>% select(-Cluster) -> header3
 
-read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
-
-species %>%
-  select(SIVIMID, Analysis.Names, Cover.percent) %>%
-  spread(Analysis.Names, Cover.percent, fill = 0) %>%
-  column_to_rownames(var = "SIVIMID") -> df1
-
-### Twinspan 
-
-twinspanR::twinspan(
-  df1,
-  modif = TRUE,
-  cut.levels = c(0, 15, 25),
-  min.group.size = 10,
-  clusters = 3,
-  diss = "multi.sorensen",
-  mean.median = "mean",
-  show.output.on.console = FALSE,
-  quiet = TRUE) %>% 
-  cut() %>%
-  cbind(df1) %>%
-  select(".") %>%
-  rename("Cluster" = ".") %>%
-  rownames_to_column(var = "SIVIMID") -> kclusters
-
-header %>% merge(kclusters, by = "SIVIMID") -> header4
-
-### DCA
-
-decorana(df1) -> dca1
-
-vegan::scores(dca1) %>%
-  data.frame() %>%
-  rownames_to_column("SIVIMID") %>%
-  merge(header4) %>%
-  mutate(Cluster = as.factor(Cluster)) -> df2
-
-cent <- aggregate(cbind(DCA1, DCA2) ~ Cluster, data = df2, FUN = mean)
-segs <- merge(df2, setNames(cent, c("Cluster", "oDCA1", "oDCA2")), by = "Cluster", sort = FALSE)
-
-df2 %>%
-  ggplot(aes(x = DCA1, y = DCA2)) + 
-  geom_segment(data = segs, mapping = aes(xend = oDCA1, yend = oDCA2, color = Cluster), show.legend = F) +
-  geom_point(data = cent, shape = 21, size = 5, aes(fill = Cluster), show.legend = T)
-
-### Sintaxa
-
-header4 %>%
-  group_by(Cluster, Sintaxon) %>%
-  tally %>%
-  arrange(Cluster, -n) %>%
-  data.frame
-
-header4 %>%
-  group_by(Cluster, Alliance) %>%
-  tally %>%
-  arrange(Cluster, -n) %>%
-  data.frame
-
-### Dominant
-
-species %>%
-  merge(header4, by = "SIVIMID") %>%
-  group_by(Cluster, Analysis.Names) %>%
-  summarise(D = sum(Cover.percent)) %>%
-  group_by(Cluster) %>%
-  slice_max(D, n = 5) %>%
-  data.frame
-
-### Constant
-
-species %>%
-  merge(header4, by = "SIVIMID") %>%
-  group_by(Cluster, Analysis.Names) %>%
-  summarise(F = length(Analysis.Names)) %>%
-  group_by(Cluster) %>%
-  slice_max(F, n = 5) %>%
-  data.frame
-
-### Indicator spp
-
-species %>%
-  merge(header4, by = "SIVIMID") %>%
-  select(Cluster, SIVIMID, Analysis.Names, Cover.percent) %>%
-  spread(Analysis.Names, Cover.percent, fill = 0) -> plots
-
-plots %>%
-  pull(Cluster) -> groups
-
-levels(groups) -> group.labels
-
-plots %>%
-  select(-c(SIVIMID, Cluster)) %>%
-  indval(groups, numitr = 10000) -> indicators
-
-data.frame(Community = indicators$maxcls, Indicator = indicators$indcls,
-           p = indicators$pval, p_adj = p.adjust(indicators$pval, "holm")) %>%
-  rownames_to_column(var = "Species") %>%
-  group_by(Community) %>%
-  slice_max(Indicator, n = 4) %>%
-  data.frame
-
-### Save
-
-header4 %>%
-  mutate(L1 = fct_recode(as.factor(Cluster),
-                         "Dauco-Melilotion" = "1",
-                         "Echio-Galactition tomentosae" = "2",
-                         "Cynancho-Convolvulion sepium" = "3")) %>%
-  select(-Cluster) %>%
-  write.csv("data/urban-header-5.1K.csv", fileEncoding = "latin1")
-
-#### Cluster 12
-
-header2 %>% filter(Cluster == 12) %>% select(-Cluster) -> header3
-
-read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
+read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
 
 species %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
@@ -1458,12 +1310,6 @@ df2 %>%
   geom_point(data = cent, shape = 21, size = 5, aes(fill = Cluster), show.legend = T)
 
 ### Sintaxa
-
-header4 %>%
-  group_by(Cluster, Sintaxon) %>%
-  tally %>%
-  arrange(Cluster, -n) %>%
-  data.frame
 
 header4 %>%
   group_by(Cluster, Alliance) %>%
@@ -1519,9 +1365,120 @@ data.frame(Community = indicators$maxcls, Indicator = indicators$indcls,
 header4 %>%
   mutate(L1 = fct_recode(as.factor(Cluster),
                          "Cirsion richterano-chodati" = "1",
-                         "Carduo carpetani-Cirsion odontolepidis" = "2",
-                         "Cirsion richterano-chodati" = "3",
+                         "Cirsion richterano-chodati" = "2",
+                         "Carduo carpetani-Cirsion odontolepidis" = "3",
                          "Cirsion richterano-chodati" = "4")) %>%
+  select(-Cluster) %>%
+  write.csv("data/urban-header-5.1K.csv", fileEncoding = "latin1")
+
+#### Cluster 12
+
+header2 %>% filter(Cluster == 12) %>% select(-Cluster) -> header3
+
+read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
+
+species %>%
+  select(SIVIMID, Analysis.Names, Cover.percent) %>%
+  spread(Analysis.Names, Cover.percent, fill = 0) %>%
+  column_to_rownames(var = "SIVIMID") -> df1
+
+### Twinspan 
+
+twinspanR::twinspan(
+  df1,
+  modif = TRUE,
+  cut.levels = c(0, 15, 25),
+  min.group.size = 10,
+  clusters = 4,
+  diss = "multi.sorensen",
+  mean.median = "mean",
+  show.output.on.console = FALSE,
+  quiet = TRUE) %>% 
+  cut() %>%
+  cbind(df1) %>%
+  select(".") %>%
+  rename("Cluster" = ".") %>%
+  rownames_to_column(var = "SIVIMID") -> kclusters
+
+header %>% merge(kclusters, by = "SIVIMID") -> header4
+
+### DCA
+
+decorana(df1) -> dca1
+
+vegan::scores(dca1) %>%
+  data.frame() %>%
+  rownames_to_column("SIVIMID") %>%
+  merge(header4) %>%
+  mutate(Cluster = as.factor(Cluster)) -> df2
+
+cent <- aggregate(cbind(DCA1, DCA2) ~ Cluster, data = df2, FUN = mean)
+segs <- merge(df2, setNames(cent, c("Cluster", "oDCA1", "oDCA2")), by = "Cluster", sort = FALSE)
+
+df2 %>%
+  ggplot(aes(x = DCA1, y = DCA2)) + 
+  geom_segment(data = segs, mapping = aes(xend = oDCA1, yend = oDCA2, color = Cluster), show.legend = F) +
+  geom_point(data = cent, shape = 21, size = 5, aes(fill = Cluster), show.legend = T)
+
+### Sintaxa
+
+header4 %>%
+  group_by(Cluster, Alliance) %>%
+  tally %>%
+  arrange(Cluster, -n) %>%
+  data.frame
+
+### Dominant
+
+species %>%
+  merge(header4, by = "SIVIMID") %>%
+  group_by(Cluster, Analysis.Names) %>%
+  summarise(D = sum(Cover.percent)) %>%
+  group_by(Cluster) %>%
+  slice_max(D, n = 5) %>%
+  data.frame
+
+### Constant
+
+species %>%
+  merge(header4, by = "SIVIMID") %>%
+  group_by(Cluster, Analysis.Names) %>%
+  summarise(F = length(Analysis.Names)) %>%
+  group_by(Cluster) %>%
+  slice_max(F, n = 5) %>%
+  data.frame
+
+### Indicator spp
+
+species %>%
+  merge(header4, by = "SIVIMID") %>%
+  select(Cluster, SIVIMID, Analysis.Names, Cover.percent) %>%
+  spread(Analysis.Names, Cover.percent, fill = 0) -> plots
+
+plots %>%
+  pull(Cluster) -> groups
+
+levels(groups) -> group.labels
+
+plots %>%
+  select(-c(SIVIMID, Cluster)) %>%
+  indval(groups, numitr = 10000) -> indicators
+
+data.frame(Community = indicators$maxcls, Indicator = indicators$indcls,
+           p = indicators$pval, p_adj = p.adjust(indicators$pval, "holm")) %>%
+  rownames_to_column(var = "Species") %>%
+  group_by(Community) %>%
+  slice_max(Indicator, n = 4) %>%
+  data.frame
+
+### Save
+
+header4 %>%
+  mutate(L1 = fct_recode(as.factor(Cluster),
+                         "Bidention tripartitae" = "1",
+                         "Bidention tripartitae" = "2",
+                         "Bidention tripartitae" = "3",
+                         "Senecionion fluviatilis" = "4")) %>%
   select(-Cluster) %>%
   write.csv("data/urban-header-5.1L.csv", fileEncoding = "latin1")
 
@@ -1529,7 +1486,7 @@ header4 %>%
 
 header2 %>% filter(Cluster == 13) %>% select(-Cluster) -> header3
 
-read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
+read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
 
 species %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
@@ -1577,10 +1534,112 @@ df2 %>%
 ### Sintaxa
 
 header4 %>%
-  group_by(Cluster, Sintaxon) %>%
+  group_by(Cluster, Alliance) %>%
   tally %>%
   arrange(Cluster, -n) %>%
   data.frame
+
+### Dominant
+
+species %>%
+  merge(header4, by = "SIVIMID") %>%
+  group_by(Cluster, Analysis.Names) %>%
+  summarise(D = sum(Cover.percent)) %>%
+  group_by(Cluster) %>%
+  slice_max(D, n = 5) %>%
+  data.frame
+
+### Constant
+
+species %>%
+  merge(header4, by = "SIVIMID") %>%
+  group_by(Cluster, Analysis.Names) %>%
+  summarise(F = length(Analysis.Names)) %>%
+  group_by(Cluster) %>%
+  slice_max(F, n = 5) %>%
+  data.frame
+
+### Indicator spp
+
+species %>%
+  merge(header4, by = "SIVIMID") %>%
+  select(Cluster, SIVIMID, Analysis.Names, Cover.percent) %>%
+  spread(Analysis.Names, Cover.percent, fill = 0) -> plots
+
+plots %>%
+  pull(Cluster) -> groups
+
+levels(groups) -> group.labels
+
+plots %>%
+  select(-c(SIVIMID, Cluster)) %>%
+  indval(groups, numitr = 10000) -> indicators
+
+data.frame(Community = indicators$maxcls, Indicator = indicators$indcls,
+           p = indicators$pval, p_adj = p.adjust(indicators$pval, "holm")) %>%
+  rownames_to_column(var = "Species") %>%
+  group_by(Community) %>%
+  slice_max(Indicator, n = 4) %>%
+  data.frame
+
+### Save
+
+header4 %>%
+  mutate(L1 = fct_recode(as.factor(Cluster),
+                         "Epilobion angustifolii" = "1")) %>%
+  select(-Cluster) %>%
+  write.csv("data/urban-header-5.1M.csv", fileEncoding = "latin1")
+
+#### Cluster 14
+
+header2 %>% filter(Cluster == 14) %>% select(-Cluster) -> header3
+
+read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
+
+species %>%
+  select(SIVIMID, Analysis.Names, Cover.percent) %>%
+  spread(Analysis.Names, Cover.percent, fill = 0) %>%
+  column_to_rownames(var = "SIVIMID") -> df1
+
+### Twinspan 
+
+twinspanR::twinspan(
+  df1,
+  modif = TRUE,
+  cut.levels = c(0, 15, 25),
+  min.group.size = 10,
+  clusters = 3,
+  diss = "multi.sorensen",
+  mean.median = "mean",
+  show.output.on.console = FALSE,
+  quiet = TRUE) %>%
+  cut() %>%
+  cbind(df1) %>%
+  select(".") %>%
+  rename("Cluster" = ".") %>%
+  rownames_to_column(var = "SIVIMID") -> kclusters
+
+header %>% merge(kclusters, by = "SIVIMID") -> header4
+
+### DCA
+
+decorana(df1) -> dca1
+
+vegan::scores(dca1) %>%
+  data.frame() %>%
+  rownames_to_column("SIVIMID") %>%
+  merge(header4) %>%
+  mutate(Cluster = as.factor(Cluster)) -> df2
+
+cent <- aggregate(cbind(DCA1, DCA2) ~ Cluster, data = df2, FUN = mean)
+segs <- merge(df2, setNames(cent, c("Cluster", "oDCA1", "oDCA2")), by = "Cluster", sort = FALSE)
+
+df2 %>%
+  ggplot(aes(x = DCA1, y = DCA2)) + 
+  geom_segment(data = segs, mapping = aes(xend = oDCA1, yend = oDCA2, color = Cluster), show.legend = F) +
+  geom_point(data = cent, shape = 21, size = 5, aes(fill = Cluster), show.legend = T)
+
+### Sintaxa
 
 header4 %>%
   group_by(Cluster, Alliance) %>%
@@ -1636,122 +1695,8 @@ data.frame(Community = indicators$maxcls, Indicator = indicators$indcls,
 header4 %>%
   mutate(L1 = fct_recode(as.factor(Cluster),
                          "Galio valantiae-Parietarion judaicae" = "1",
-                         "Cymbalario-Asplenion" = "2")) %>%
-  select(-Cluster) %>%
-  write.csv("data/urban-header-5.1M.csv", fileEncoding = "latin1")
-
-#### Cluster 14
-
-header2 %>% filter(Cluster == 14) %>% select(-Cluster) -> header3
-
-read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
-
-species %>%
-  select(SIVIMID, Analysis.Names, Cover.percent) %>%
-  spread(Analysis.Names, Cover.percent, fill = 0) %>%
-  column_to_rownames(var = "SIVIMID") -> df1
-
-### Twinspan 
-
-twinspanR::twinspan(
-  df1,
-  modif = TRUE,
-  cut.levels = c(0, 15, 25),
-  min.group.size = 10,
-  clusters = 2,
-  diss = "multi.sorensen",
-  mean.median = "mean",
-  show.output.on.console = FALSE,
-  quiet = TRUE) %>%
-  cut() %>%
-  cbind(df1) %>%
-  select(".") %>%
-  rename("Cluster" = ".") %>%
-  rownames_to_column(var = "SIVIMID") -> kclusters
-
-header %>% merge(kclusters, by = "SIVIMID") -> header4
-
-### DCA
-
-decorana(df1) -> dca1
-
-vegan::scores(dca1) %>%
-  data.frame() %>%
-  rownames_to_column("SIVIMID") %>%
-  merge(header4) %>%
-  mutate(Cluster = as.factor(Cluster)) -> df2
-
-cent <- aggregate(cbind(DCA1, DCA2) ~ Cluster, data = df2, FUN = mean)
-segs <- merge(df2, setNames(cent, c("Cluster", "oDCA1", "oDCA2")), by = "Cluster", sort = FALSE)
-
-df2 %>%
-  ggplot(aes(x = DCA1, y = DCA2)) + 
-  geom_segment(data = segs, mapping = aes(xend = oDCA1, yend = oDCA2, color = Cluster), show.legend = F) +
-  geom_point(data = cent, shape = 21, size = 5, aes(fill = Cluster), show.legend = T)
-
-### Sintaxa
-
-header4 %>%
-  group_by(Cluster, Sintaxon) %>%
-  tally %>%
-  arrange(Cluster, -n) %>%
-  data.frame
-
-header4 %>%
-  group_by(Cluster, Alliance) %>%
-  tally %>%
-  arrange(Cluster, -n) %>%
-  data.frame
-
-### Dominant
-
-species %>%
-  merge(header4, by = "SIVIMID") %>%
-  group_by(Cluster, Analysis.Names) %>%
-  summarise(D = sum(Cover.percent)) %>%
-  group_by(Cluster) %>%
-  slice_max(D, n = 5) %>%
-  data.frame
-
-### Constant
-
-species %>%
-  merge(header4, by = "SIVIMID") %>%
-  group_by(Cluster, Analysis.Names) %>%
-  summarise(F = length(Analysis.Names)) %>%
-  group_by(Cluster) %>%
-  slice_max(F, n = 5) %>%
-  data.frame
-
-### Indicator spp
-
-species %>%
-  merge(header4, by = "SIVIMID") %>%
-  select(Cluster, SIVIMID, Analysis.Names, Cover.percent) %>%
-  spread(Analysis.Names, Cover.percent, fill = 0) -> plots
-
-plots %>%
-  pull(Cluster) -> groups
-
-levels(groups) -> group.labels
-
-plots %>%
-  select(-c(SIVIMID, Cluster)) %>%
-  indval(groups, numitr = 10000) -> indicators
-
-data.frame(Community = indicators$maxcls, Indicator = indicators$indcls,
-           p = indicators$pval, p_adj = p.adjust(indicators$pval, "holm")) %>%
-  rownames_to_column(var = "Species") %>%
-  group_by(Community) %>%
-  slice_max(Indicator, n = 4) %>%
-  data.frame
-
-### Save
-
-header4 %>%
-  mutate(L1 = fct_recode(as.factor(Cluster),
-                         "Epilobion angustifolii" = "1",
-                         "Epilobion angustifolii" = "2")) %>%
+                         "Galio valantiae-Parietarion judaicae" = "2",
+                         "Cymbalario-Asplenion" = "3")) %>%
   select(-Cluster) %>%
   write.csv("data/urban-header-5.1N.csv", fileEncoding = "latin1")
 
@@ -1759,7 +1704,7 @@ header4 %>%
 
 header2 %>% filter(Cluster == 15) %>% select(-Cluster) -> header3
 
-read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
+read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header3$SIVIMID) -> species
 
 species %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
@@ -1807,12 +1752,6 @@ df2 %>%
 ### Sintaxa
 
 header4 %>%
-  group_by(Cluster, Sintaxon) %>%
-  tally %>%
-  arrange(Cluster, -n) %>%
-  data.frame
-
-header4 %>%
   group_by(Cluster, Alliance) %>%
   tally %>%
   arrange(Cluster, -n) %>%
@@ -1865,15 +1804,15 @@ data.frame(Community = indicators$maxcls, Indicator = indicators$indcls,
 
 header4 %>%
   mutate(L1 = fct_recode(as.factor(Cluster),
-                         "Scleranthion annui" = "1",
-                         "Polycarpion tetraphylli" = "2",
-                         "Linario polygalifoliae-Vulpion alopecuri" = "3")) %>%
+                         "Linario polygalifoliae-Vulpion alopecuri" = "1",
+                         "Linario polygalifoliae-Vulpion alopecuri" = "2",
+                         "Polycarpion tetraphylli" = "3")) %>%
   select(-Cluster) %>%
   write.csv("data/urban-header-5.1O.csv", fileEncoding = "latin1")
 
 ### Update header with clusters
 
-openxlsx::read.xlsx("data/urban-sintaxa.xlsx", sheet = 2) %>%
+read.csv("results/sintaxonomy/original-sintaxonomy.csv", fileEncoding = "latin1") %>%
   select(Alliance, Class) %>%
   rename(L1 = Alliance, L0 = Class) %>%
   unique -> alliances
@@ -1912,5 +1851,11 @@ header5.1 %>%
   group_by(L1) %>%
   tally %>% 
   data.frame 
+
+
+header5.1 %>%
+  group_by(Fixed) %>%
+  tally
+
 
 write.csv(header5.1, "data/urban-header-5.1.csv", row.names = FALSE, fileEncoding = "latin1")

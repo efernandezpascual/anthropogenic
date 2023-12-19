@@ -16,7 +16,7 @@ read.csv("data/urban-header-5.1.csv", fileEncoding = "latin1") %>%
 
 ### Prepare community composition matrices
 
-read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>% 
+read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% 
   filter(SIVIMID %in% headerClassified$SIVIMID) %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
   spread(Analysis.Names, Cover.percent, fill = 0) %>%
@@ -24,7 +24,7 @@ read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>%
   decostand("normalize") -> # Chord transformation of community data
   dfClassified
 
-read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>% 
+read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% 
   filter(SIVIMID %in% headerUnclassified$SIVIMID) %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
   spread(Analysis.Names, Cover.percent, fill = 0) %>%
@@ -103,14 +103,14 @@ header2 %>%
   print(n = 500)
 
 header2 %>%
-  group_by(Sintaxon, Cluster) %>%
+  group_by(Original, Cluster) %>%
   tally %>%
   arrange(Cluster, -n) %>%
   print(n = 500)
 
 ### DCA of new groups
 
-read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") -> species
+read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") -> species
 
 species %>%
   merge(header2) %>%
@@ -200,7 +200,7 @@ header2 %>%
   filter(Cluster %in% c("M1")) -> 
   headerUnclassifiedM
 
-read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>% 
+read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% 
   filter(SIVIMID %in% headerClassifiedM$SIVIMID) %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
   spread(Analysis.Names, Cover.percent, fill = 0) %>%
@@ -208,7 +208,7 @@ read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>%
   decostand("normalize") -> # Chord transformation of community data
   dfClassifiedM
 
-read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>% 
+read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% 
   filter(SIVIMID %in% headerUnclassifiedM$SIVIMID) %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
   spread(Analysis.Names, Cover.percent, fill = 0) %>%
@@ -347,16 +347,16 @@ data.frame(Community = indicators$maxcls, Indicator = indicators$indcls,
 
 ### Update groups names
 
-openxlsx::read.xlsx("data/urban-sintaxa.xlsx", sheet = 2) %>%
-  filter(Manmade == "Yes") %>%
+read.csv("results/sintaxonomy/original-sintaxonomy.csv", fileEncoding = "latin1") %>%
+  filter(Anthropogenic == "Yes") %>%
   filter(Assigned != "Not Cantabrian") %>%
   select(Alliance, Order, Class, CANTEUNIS) %>%
   unique %>% 
   rename(Semisupervised = Alliance) -> alliances
 
-header3 %>% filter(Cluster == "N") %>% group_by(Sintaxon) %>% tally %>% arrange(-n) %>%
-  merge(header3 %>% filter(Cluster != "N") %>% group_by(Sintaxon) %>% tally %>% arrange(-n), 
-        by = "Sintaxon", all.x = TRUE) %>%
+header3 %>% filter(Cluster == "N") %>% group_by(Original) %>% tally %>% arrange(-n) %>%
+  merge(header3 %>% filter(Cluster != "N") %>% group_by(Original) %>% tally %>% arrange(-n), 
+        by = "Original", all.x = TRUE) %>%
   mutate(n.y = ifelse(is.na(n.y), 0, n.y)) %>%
   mutate(ratio = n.x/(n.x +n.y)) %>%
   filter(n.x >9) %>%
@@ -366,69 +366,72 @@ header3 %>%
   mutate(Longitude = ifelse(Accuracy == "5 - UTMs missing from DEM", NA, Longitude)) %>%
   mutate(Latitude = ifelse(Accuracy == "5 - UTMs missing from DEM", NA, Latitude)) %>%
   mutate(Semisupervised = fct_recode(Cluster,
-                         "Cynancho-Convolvulion sepium" = "F10",
-                         "Dauco-Melilotion" = "F11",
-                         "Echio-Galactition tomentosae" = "F12",
-                         "Epilobion angustifolii" = "F13",
-                         "Galio valantiae-Parietarion judaicae" = "F14",
-                         "Geo urbani-Alliarion officinalis" = "F15",
-                         "Geranio pusilli-Anthriscion caucalidis" = "F16",
-                         "Linario polygalifoliae-Vulpion alopecuri" = "F17",
-                         "Oxalidion europeae" = "F18",
-                         "Paspalo-Agrostion semiverticillati" = "F19",
+                         "Cirsion richterano-chodati" = "F10",
+                         "Convolvulo arvensis-Agropyrion repentis" = "F11",
+                         "Cymbalario-Asplenion" = "F12",
+                         "Cynancho-Convolvulion sepium" = "F13",
+                         "Dauco-Melilotion" = "F14",
+                         "Echio-Galactition tomentosae" = "F15",
+                         "Epilobion angustifolii" = "F16",
+                         "Galio valantiae-Parietarion judaicae" = "F17",
+                         "Geo urbani-Alliarion officinalis" = "F18",
+                         "Geranio pusilli-Anthriscion caucalidis" = "F19",
                          "Aegopodion podagrariae" = "F2",
-                         "Polycarpion tetraphylli" = "F20",
-                         "Polygono-Coronopodion" = "F21",
-                         "Saginion procumbentis" = "F22",
-                         "Scleranthion annui" = "F23",
-                         "Senecionion fluviatilis" = "F24",
-                         "Sisymbrion officinalis" = "F25",
-                         "Spergulo arvensis-Erodion cicutariae" = "F26",
+                         "Linario polygalifoliae-Vulpion alopecuri" = "F20",
+                         "Oxalidion europeae" = "F21",
+                         "Paspalo-Agrostion semiverticillati" = "F22",
+                         "Polycarpion tetraphylli" = "F23",
+                         "Polygono-Coronopodion" = "F24",
+                         "Saginion procumbentis" = "F25",
+                         "Scleranthion annui" = "F26",
+                         "Senecionion fluviatilis" = "F27",
+                         "Silybo mariani-Urticion piluliferae" = "F28",
+                         "Sisymbrion officinalis" = "F29",
                          "Allion triquetri" = "F3",
+                         "Spergulo arvensis-Erodion cicutariae" = "F30",
                          "Arction lappae" = "F4",
                          "Balloto-Conion maculati" = "F5",
                          "Bidention tripartitae" = "F6",
                          "Carduo carpetani-Cirsion odontolepidis" = "F7",
-                         "Cirsion richterano-chodati" = "F8",
-                         "Cymbalario-Asplenion" = "F9",
+                         "Caucalidion lappulae" = "F8",
+                         "Chenopodion muralis" = "F9",
                          #"Unclassified" = "M1",
                          "Noise" = "N")) %>% 
   rename(Twinspan = L1,
          ESEUNIS = EUNIS) %>%
   select(-c(Cluster, L0, Alliance, Class)) %>%
   merge(alliances, by = "Semisupervised", all.x = TRUE) %>%
-  select(SIVIMID, CANTEUNIS, ESEUNIS, Sintaxon, Twinspan, Semisupervised, Order, Class,
+  select(SIVIMID, CANTEUNIS, ESEUNIS, Original, Twinspan, Semisupervised, Order, Class,
          Area, Year, Longitude, Latitude, Accuracy, Elevation, Aspect, Slope) %>%
   write.csv("data/urban-header-5.2.csv", fileEncoding = "latin1", row.names = FALSE)
 
 ### Prepare files for manuscript stage
 
 read.csv("data/urban-header-5.2.csv", fileEncoding = "latin1") %>%
-  filter(! SIVIMID %in% IDs) %>%
-  rename(Original = Sintaxon,
-         Alliance = Semisupervised) %>%
+  rename(Alliance = Semisupervised) %>%
   select(-c(ESEUNIS, Twinspan, Aspect, Slope)) -> header
   
-read.csv("data/urban-species-5.2.csv", fileEncoding = "latin1") %>%
+read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>%
+  mutate(Analysis.Names = ifelse(Analysis.Names == "Polygonum calcatum", "Polygonum arenastrum", Analysis.Names)) %>%
   filter(SIVIMID %in% header$SIVIMID) -> species
 
 header %>% group_by(SIVIMID) %>% filter(!SIVIMID %in% species$SIVIMID)
 species %>% group_by(SIVIMID) %>% filter(!SIVIMID %in% header$SIVIMID)
   
-openxlsx::read.xlsx("data/urban-sintaxa.xlsx", sheet = 1) %>%
-  rename(Original = Sintaxon) %>%
-  select(Original, Alliance) %>%
-  arrange(Original) -> original
+# openxlsx::read.xlsx("data/urban-sintaxa.xlsx", sheet = 1) %>%
+#   rename(Original = Sintaxon) %>%
+#   select(Original, Alliance) %>%
+#   arrange(Original) -> original
 
-openxlsx::read.xlsx("data/urban-sintaxa.xlsx", sheet = 2) %>% 
-  merge(original, all = TRUE) %>%
-  rename(Anthropogenic = Manmade) %>%
-  select(Vegetation, Class, Order, Alliance, Original, Anthropogenic, Assigned, EUNIS, CANTEUNIS) %>%
-  arrange(Vegetation, Class, Order, Alliance) %>%
-  write.csv("results/sintaxonomy/original-sintaxonomy.csv", fileEncoding = "latin1", row.names = FALSE)
+# openxlsx::read.xlsx("data/urban-sintaxa.xlsx", sheet = 2) %>% 
+#   merge(original, all = TRUE) %>%
+#   rename(Anthropogenic = Manmade) %>%
+#   select(Vegetation, Class, Order, Alliance, Original, Anthropogenic, Assigned, EUNIS, CANTEUNIS) %>%
+#   arrange(Vegetation, Class, Order, Alliance) %>%
+#   write.csv("results/sintaxonomy/original-sintaxonomy.csv", fileEncoding = "latin1", row.names = FALSE)
 
-openxlsx::read.xlsx("data/urban-sintaxa.xlsx", sheet = 3) %>%
-  write.csv("results/sintaxonomy/associations.csv", fileEncoding = "latin1", row.names = FALSE)
+# openxlsx::read.xlsx("data/urban-sintaxa.xlsx", sheet = 3) %>%
+#   write.csv("results/sintaxonomy/associations.csv", fileEncoding = "latin1", row.names = FALSE)
 
 
 write.csv(header, "data/header.csv", fileEncoding = "latin1", row.names = FALSE)

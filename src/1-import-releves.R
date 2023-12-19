@@ -1,16 +1,15 @@
 library(tidyverse)
 
-openxlsx::read.xlsx("data/urban-sintaxa.xlsx", sheet = 2) %>%
-  select(Manmade, Alliance, Class) %>%
+read.csv("results/sintaxonomy/original-sintaxonomy.csv") %>%
+  select(Anthropogenic, Alliance, Class, Original) %>%
   unique %>%
-  merge(openxlsx::read.xlsx("data/urban-sintaxa.xlsx", sheet = 1)) %>% 
-  arrange(Sintaxon) -> sintaxa 
+  arrange(Original) -> sintaxa 
 
 read.csv("../canteunis/results/SIVIM/header2.3.csv", fileEncoding = "latin1") %>%
   mutate(EUNISL1 = substring(EUNIS2.3, 1, 1)) %>%
   filter(EUNISL1 == "V" | # manmade EUNIS habitats
            EUNIS2.3 %in% c("R55", "R57") | # Epilobietea fringes not in EUNIS V
-           Sintaxon %in% pull(filter(sintaxa, Manmade == "Yes"), Sintaxon)) %>% # SIVIM sintaxa belonging to anthropogenic classes
+           Sintaxon %in% pull(filter(sintaxa, Anthropogenic == "Yes"), Original)) %>% # SIVIM sintaxa belonging to anthropogenic classes
   filter(!SIVIMID %in% pull(read.csv("data/new_releves/not-manmade-cantabrian.csv", fileEncoding = "latin1"), SIVIMID)) %>%
   data.frame %>%
   select(SIVIMID, Sintaxon, EUNIS2.3, Area, Year, DEG_LON, DEG_LAT, Accuracy, ALTITUDE..M., Aspect, Slope) %>%
@@ -19,6 +18,7 @@ read.csv("../canteunis/results/SIVIM/header2.3.csv", fileEncoding = "latin1") %>
          Longitude = DEG_LON,
          Latitude = DEG_LAT) %>%
   rbind(read.csv("data/new_releves/header-additions.csv", fileEncoding = "latin1")) %>%
+  rename(Original = Sintaxon) %>%
   merge(sintaxa, all.x = TRUE) %>%
   filter(! Class %in% c("Trifolio-Geranietea sanguinei",
                         "Mulgedio-Aconitetea",
@@ -30,7 +30,7 @@ read.csv("../canteunis/results/SIVIM/header2.3.csv", fileEncoding = "latin1") %>
                         "Isoëto-Nanojuncetea",
                         "Juncetea maritimi",
                         "Potamogetonetea")) %>%
-  select(SIVIMID, Sintaxon, Alliance, Class, EUNIS:Slope) %>%
+  select(SIVIMID, Original, Alliance, Class, EUNIS:Slope) %>%
   mutate(Alliance = ifelse(is.na(Alliance), "Unknown", Alliance)) %>%
   unique -> header
 
