@@ -63,15 +63,14 @@ species %>%
 
 load(file = "results/characteristic-spp/indval.RData")
 
-header %>%
-  filter(!Alliance %in% "Noise") %>%
+read.csv("data/header.csv", fileEncoding = "latin1") %>%
   select(Alliance) %>%
   unique %>%
   mutate(Community = as.numeric(as.factor(Alliance))) -> communities
 
 data.frame(Community = indicators$maxcls, Indicator = indicators$indcls,
            p = indicators$pval, p_adj = p.adjust(indicators$pval, "holm")) %>%
-  rownames_to_column(var = "Species") %>%
+  rownames_to_column(var = "Species") %>% 
   filter(p_adj < 0.05) %>%
   merge(communities) %>%
   select(-c(Community, p)) %>%
@@ -127,11 +126,12 @@ species %>%
 
 species %>%
   merge(header, by = "SIVIMID") %>%
+  filter(Cover.percent > 25) %>%
   group_by(Alliance, Analysis.Names) %>%
   summarise(F = length(Analysis.Names)) %>%
   merge(ns) %>%
   mutate(Frequency = F/n) %>%
-  filter(Frequency >= .50) %>%
+  filter(Frequency >= .05) %>%
   mutate(Species = Analysis.Names,
          Type = "Dominant",
          Value = Frequency*100) %>%
