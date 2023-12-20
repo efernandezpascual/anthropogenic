@@ -6,8 +6,8 @@ Anthropogenic plant communities of the Iberian Atlantic ecoregion
 We performed all data analyses with R version 4.3.1 ([R Core Team
 2023](#ref-RN5387)), using the R package ‘tidyverse’ ([Wickham et al.
 2019](#ref-RN4662)) for data processing and visualization. The original
-datasets, R code for the analysis and creation of the manuscript can be
-accessed at the GitHub repository
+datasets, as well as R code for analysis and creation of the manuscript
+can be accessed at the GitHub repository
 <https://github.com/efernandezpascual/manmade>.
 
 ## Study ecoregion
@@ -16,11 +16,10 @@ We studied the anthropogenic plant communities of the Iberian Atlantic
 ecoregion, i.e. the territories with a temperate climate in the
 north-western Iberian Peninsula. Our study ecoregion broadly corresponds
 with the Cantabrian Mixed Forests ecoregion *sensu* Olson *et al.*
-([Olson et al. 2001](#ref-RN4667)), with the Iberian part of the
-European Atlantic province *sensu* Rivas-Martínez *et al.*
-([Rivas-Martínez et al. 2017](#ref-RN4699)) and with the Iberian section
-of the Atlantic biogeographical region of the European Environmental
-Agency
+([2001](#ref-RN4667)), with the Iberian part of the European Atlantic
+province *sensu* Rivas-Martínez *et al.* ([2017](#ref-RN4699)) and with
+the Iberian section of the Atlantic biogeographical region of the
+European Environmental Agency
 (<https://www.eea.europa.eu/data-and-maps/figures/biogeographical-regions-in-europe-2>).
 To define in detail the study ecoregion we did a fine-scale revision of
 its geographic borders at high spatial resolution using the most recent
@@ -32,42 +31,41 @@ ranging from 6 to 20°C, and with total annual precipitation between
 1,100 and 2,600 mm, with some areas having warm-dry summers but without
 the distinctive 2-month drought of the Mediterranean climate ([Moreno et
 al. 1990](#ref-RN5373)). Nonetheless, the Iberian Atlantic ecoregion is
-located at the transition between the Mediterranean and the temperate
-climatic zones in SW Europe.
+located at the transition between the temperate and the Mediterranean
+climates in southern Europe.
 
 ## Definition of anthropogenic vegetation
 
 To define our target vegetation, we followed the definitions of
 anthropogenic vegetation in the recent classification of the vegetation
-of Europe by Mucina *et al.* ([Mucina et al. 2016](#ref-RN4698)). In our
-study area, this potentially includes the vegetation classes
-*Polygono-Poetea annuae*, *Papaveretea rhoeadis*, *Digitario
-sanguinalis-Eragrostietea minoris*, *Chenopodietea*, *Sisymbrietea*,
-*Artemisietea vulgaris*, *Epilobietea angustifolii* and *Bidentetea*. To
-these, we added the class *Cymbalario-Parietarietea diffusae* included
-by Mucina *et al.* ([Mucina et al. 2016](#ref-RN4698)) in the vegetation
-of rock crevices and screes, since this class encompasses the vegetation
-of human-made walls in our ecoregion. For the nomenclature of sintaxa we
-follow Mucina *et al.* ([Mucina et al. 2016](#ref-RN4698)) for alliances
-and higher ranks, and Rivas-Martínez *et al.* ([Rivas-Martínez et al.
-2001](#ref-RN4697)) for associations.
+of Europe by Mucina *et al.* ([2016](#ref-RN4698)). In our study area,
+this potentially includes the vegetation classes *Polygono-Poetea
+annuae*, *Papaveretea rhoeadis*, *Digitario sanguinalis-Eragrostietea
+minoris*, *Chenopodietea*, *Sisymbrietea*, *Artemisietea vulgaris*,
+*Epilobietea angustifolii* and *Bidentetea*. For a complete synthesis,
+we added the class *Cymbalario-Parietarietea diffusae* included by
+Mucina *et al.* ([2016](#ref-RN4698)) in the vegetation of rock crevices
+and screes, since this class encompasses the vegetation of human-made
+walls in our ecoregion. For the nomenclature of sintaxa we follow Mucina
+*et al.* ([2016](#ref-RN4698)) for alliances and higher ranks, and
+Rivas-Martínez *et al.* ([2001](#ref-RN4697)) for associations.
 
 ## Vegetation data
 
 As vegetation data for our analyses, we obtained all vegetation relevés
 (i.e. records of plant species coexisting in a given sampling plot at a
 given date) from our study ecoregion that were available in SIVIM, the
-Iberian and Macarnformation System ([Font et al. 2012](#ref-RN5374)).
-These were 28,775 relevés representing all vegetation types
-(i.e. anthropogenic, semi-natural and natural). Since these relevés were
-sampled by different authors throughout the decades, there was no
-taxonomical consistency among them, so we homogenised all taxon names
-for all dataset. We followed the methodology applied by Jiménez-Alfaro
-*et al.* ([Jiménez-Alfaro González et al. 2021](#ref-RN5375)) to the
-Cantabrian Mountains, an area within the study ecoregion which includes
-c. 80% of the ecoregional flora, to create a new taxonomical checklist
-for the ecoregion based on the Euro+Med Plantbase (Euro+Med 2022). For
-vascular plants not included in Euro+Med (e.g. several *Quercus* or
+Iberian and Macaronesian Vegetation Information System ([Font et al.
+2012](#ref-RN5374)). These were 28,775 relevés representing all
+vegetation types (i.e. anthropogenic, semi-natural and natural). Since
+these relevés were sampled by different authors throughout the decades,
+there was no taxonomical consistency among them, so we homogenized all
+taxon names for the whole dataset. We followed the methodology applied
+by Jiménez-Alfaro *et al.* ([2021](#ref-RN5375)) to the Cantabrian
+Mountains, an area within the study ecoregion which includes c. 80% of
+the ecoregional flora, to create a new taxonomical checklist for the
+ecoregion based on the Euro+Med Plantbase ([**RN5044?**](#ref-RN5044)).
+For vascular plants not included in Euro+Med (e.g. several *Quercus* or
 *Salix* hybrids, non-native species, etc.), as well as for bryophytes,
 we followed Plants of the World Online ([POWO 2023](#ref-RN5376)). We
 removed Fungi and algae. For analytical purposes, we merged taxa into
@@ -81,7 +79,7 @@ identify or recognize infraspecific taxa (e.g. all *Narcissus
 pseudonarcissus* subspecies and varieties = *Narcissus pseudonarcissus*
 aggr.).
 
-For mapping purposes we improved the geographical information of the
+For mapping purposes, we improved the geographical information of the
 SIVIM relevés using a downscaling procedure. The original position of
 vegetation relevés in SIVIM was recorded as 10 km x 10 km (52.2%) and 1
 km x 1 km (47.8%) grid cells. We assigned more precise geographic
@@ -119,7 +117,7 @@ Two-Way Indicator Species Analysis (TWINSPAN) ([Roleček et al.
 2009](#ref-RN5379)), we identified 652 outlier relevés which either did
 not belong to the target anthropogenic classes or to the geographical
 area of the ecoregion. We removed these, leaving a dataset of 2,508
-relevés for further analysi: 2,419 relevés from SIVIM, originally
+relevés for further analysis: 2,419 relevés from SIVIM, originally
 recorded in 89 publications see (**Supplementary 2**); plus 89 relevés
 added by us.
 
@@ -141,30 +139,26 @@ the relevés into the *a priori* defined checklist of 38 alliances. We
 used 3 pseudospecies cut levels (0, 15, 25) with a minimum group size of
 10 plots and Sørensen’s average dissimilarity, and the R package
 ‘twinspanR’ ([Zelený 2021](#ref-RN5380)) to do the TWINSPANs. To start,
-we performed TWINSPAN followed by pairwise PERMANOVA (with 9,999
-iterations, euclidean distances and Holm’s p-value correction) fitted
-with the R package ‘RVAideMemoire’ ([Herve 2023](#ref-RN5381)) to detect
-the maximum number of mutually different clusters in the filtered
-dataset. The number was 15, so we kept a TWINSPAN classification into 15
-clusters, followed by separate TWINSPANS within each clusters. This
-iterative process allowed us to validate 29 alliances and assign 1,719
-relevés to them, leaving 789 relevés as unclassified.
+we did a TWINSPAN classification into 15 clusters, followed by separate
+TWINSPANS within each cluster. This iterative process allowed us to
+validate 28 alliances and assign 1,725 relevés to them, leaving 783
+relevés as unclassified.
 
 ## Semi-supervised classification
 
-Next we applied a semi-supervised classification to assign the so far
-unclassified relevés to one of the validated 29 alliances.
-Semi-supervised classification uses previously defined existing groups
-of data to assign the unclassified relevés to them (as in supervised
+Next, we applied a semi-supervised classification to assign the so far
+unclassified relevés to one of the validated 28 alliances.
+Semi-supervised classification uses previously defined groups of data to
+assign the unclassified relevés to them (as in supervised
 classification) but also creates new groups to place the data points
 that do not match the already existing groups (as in unsupervised
 classification), allowing to detect new groups and to update the
-previous classification (De Cáceres et al. 2010, Tichý et al. 2014). We
-used the 1,719 relevés that we had already re-classified into the 29
+previous classification ([De Cáceres et al. 2010](#ref-RN5383)). We used
+the 1,719 relevés that we had already re-classified into the 28
 alliances as a training set for the semi-supervised classification.
 Attempts by the classification to create new groups resulted on new
 groups with no ecological significance, and thus we kept the results of
-the classification into the 29 *a priori* alliances. For the
+the classification into the 28 *a priori* alliances. For the
 classification, we applied a noise clustering fuzzy algorithm, which
 allows the relevés to be classified either into the *a priori* groups or
 into a ‘noise’ group which includes outliers and transitional relevés
@@ -173,53 +167,55 @@ coefficient to a low value (m = 1) to accommodate a high number of
 transitional relevés; and we set the distance to the noise class to d
 = 1. We performed this analysis with the R package ‘vegclust’ ([De
 Cáceres et al. 2010](#ref-RN5383)). The semi-supervised classification
-with noise clustering resulted in the final classification of 2,085
-relevés into 29 alliances and 423 relevés left in the noise group. We
-used pair-wise PERMANOVA in the same conditions as reported above to
-test the significance of the 29 resulting groups; and Detrended
-Correspondence Analysis (DCA) as implemented in the R package ‘vegan’
-([Oksanen et al. 2022](#ref-RN5386)) to visualize the relationships
-between the vegetation groups.
+with noise clustering resulted in the final classification of 2,081
+relevés into 28 alliances and 427 relevés left in the noise group. We
+used pairwise PERMANOVA (with 100,000 iterations, Euclidean distances
+and Holm’s p-value correction) fitted with the R package ‘RVAideMemoire’
+([Herve 2023](#ref-RN5381)) to detect the maximum number of mutually
+different clusters in the filtered dataset; and Detrended Correspondence
+Analysis (DCA) as implemented in the R package ‘vegan’ ([Oksanen et al.
+2022](#ref-RN5386)) to visualize the relationships between the
+vegetation groups.
 
 ## Characteristic species
 
 We calculated sets of characteristic species ([Chytrý et al.
-2020](#ref-RN5061)) for each of the 29 alliances. We defined dominant
+2020](#ref-RN5061)) for each of the 28 alliances. We defined dominant
 species as species with more than 25% cover in at least 5% of the
 relevés of the alliance; constant species as species with a frequency
 higher than 50% in the alliance; and diagnostic species as species with
-an ‘IndVal’ value with a p-value lower than 0.01, as calculated with the
+an ‘IndVal’ value with a p-value lower than 0.05, as calculated with the
 R package ‘labdsv’ ([Roberts 2016](#ref-RN2311)) using 1.000.000
 iterations.
 
 ## Community traits and ecological requirements
 
-To describe the resulting 29 alliances we compiled a dataset of species
+To describe the resulting 28 alliances, we compiled a dataset of species
 traits and ecological preferences for the species pool of the 2,508
 classified relevés. For each species, we extracted from *Flora iberica*
 ([1987](#ref-RN3243)) its maximum height, its median month of flowering,
 the length of the flowering period, and whether it was a neophyte or
-not. From FloraVeg.EU ([2023](#ref-RN5385)) we extracted the species’s
-life forms, and kept ‘therophyte’ and ‘geophyte’ for further analysis
-since these categories had the largest contribution to variance as per
-an exploratory Principal Component Analysis (PCA) performed using the R
-package ‘FactoMineR’ ([Lê et al. 2008](#ref-RN3166)). We also extracted
-the ecological indicator values ([Dengler et al. 2023](#ref-RN5384)) and
-the disturbance indicator values ([Midolo et al. 2023](#ref-RN5101)) of
-each species. In the case of the ecological and disturbance indicators,
-we assigned values to species lacking them by (1) calculating weighted
-average values of the species with values for each plot (weighting by
-species cover), and (2) assigning to the missing species the weighted
-average values of the plots where they were present (weighting by
-species cover). Then, for each relevé we calculated its
+not. From FloraVeg.EU ([2023](#ref-RN5385)) we extracted the species’
+life forms and kept ‘therophyte’ and ‘geophyte’ for further analysis
+since these two categories had the largest contribution to variance as
+per an exploratory Principal Component Analysis (PCA) performed using
+the R package ‘FactoMineR’ ([Lê et al. 2008](#ref-RN3166)). We also
+extracted the ecological indicator values ([Dengler et al.
+2023](#ref-RN5384)) and the disturbance indicator values ([Midolo et al.
+2023](#ref-RN5101)) of each species. In the case of the ecological and
+disturbance indicators, we assigned values to species lacking them by
+(1) calculating weighted average values of the species with values for
+each plot (weighting by species cover), and (2) assigning to the missing
+species the weighted average values of the plots where they were present
+(weighting by species cover). Then, for each relevé we calculated its
 community-weighted mean (weighting by species cover) for each trait and
 ecological preference, and explored the main axes of variation using
 PCA, separately for species traits and ecological preferences.
 
 # Data availability
 
-The original datasets, R code for the analysis and creation of the
-manuscript can be accessed at the GitHub repository
+The original datasets, as well as R code for analysis and creation of
+the manuscript can be accessed at the GitHub repository
 <https://github.com/efernandezpascual/manmade>. Upon publication, a
 version of record of the repository will be deposited in Zenodo.
 

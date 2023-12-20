@@ -4,7 +4,7 @@ rm(list = ls())
 
 library(tidyverse); library(indicspecies); library(labdsv)
 
-read.csv("data/header.csv", fileEncoding = "latin1") -> 
+read.csv("data/header.csv", fileEncoding = "latin1") %>% filter(! Alliance %in% "Noise")-> 
   header
 
 read.csv("data/species.csv", fileEncoding = "latin1") %>% 
@@ -22,7 +22,7 @@ species %>%
 # df1 %>% 
 #   rownames_to_column(var = "SIVIMID") %>% 
 #   merge(header, by = "SIVIMID") %>% 
-#   pull(Semisupervised) -> groups
+#   pull(Alliance) -> groups
 # 
 # ### Transform relevés to presence/absence
 # 
@@ -47,16 +47,16 @@ species %>%
 
 # species %>%
 #   merge(header, by = "SIVIMID") %>%
-#   select(Semisupervised, SIVIMID, Analysis.Names, Cover.percent) %>%
+#   select(Alliance, SIVIMID, Analysis.Names, Cover.percent) %>%
 #   spread(Analysis.Names, Cover.percent, fill = 0) -> plots
 # 
 # plots %>%
-#   pull(Semisupervised) -> groups
+#   pull(Alliance) -> groups
 # 
 # levels(groups) -> group.labels
 # 
 # plots %>%
-#   select(-c(SIVIMID, Semisupervised)) %>%
+#   select(-c(SIVIMID, Alliance)) %>%
 #   indval(groups, numitr = 1000000) -> indicators
 # 
 # save(indicators, file = "results/characteristic-spp/indval.RData")
@@ -64,6 +64,7 @@ species %>%
 load(file = "results/characteristic-spp/indval.RData")
 
 header %>%
+  filter(!Alliance %in% "Noise") %>%
   select(Alliance) %>%
   unique %>%
   mutate(Community = as.numeric(as.factor(Alliance))) -> communities
@@ -71,7 +72,7 @@ header %>%
 data.frame(Community = indicators$maxcls, Indicator = indicators$indcls,
            p = indicators$pval, p_adj = p.adjust(indicators$pval, "holm")) %>%
   rownames_to_column(var = "Species") %>%
-  filter(p_adj < 0.01) %>%
+  filter(p_adj < 0.05) %>%
   merge(communities) %>%
   select(-c(Community, p)) %>%
   arrange(Alliance, -Indicator) %>%

@@ -87,7 +87,7 @@ rgdal::readOGR(dsn = "data/map", layer = "IberoAtlantic") -> Ecoregions # Map fi
 
 header %>%
   ggplot(aes(Longitude, Latitude)) +
-  facet_wrap( ~ Alliance, ncol = 5) +
+  facet_wrap( ~ Alliance, ncol = 4) +
   geom_polygon(data = Ecoregions, aes(x = long, y = lat, group = group), 
                color = "black", fill = "gainsboro", size = 0.25, show.legend = FALSE) +
   geom_point(aes(color = Class), show.legend = TRUE, alpha = 0.4) +
@@ -124,5 +124,5 @@ header %>%
   guides(colour = guide_legend(override.aes = list(alpha = 1))) -> Fig2; Fig2
 
 ggsave(Fig2, file = "results/figures/maps.png", bg = "white", 
-       path = NULL, scale = 1, width = 179, height = 160, units = "mm", dpi = 600)
+       path = NULL, scale = 1, width = 179, height = 215, units = "mm", dpi = 600)
 

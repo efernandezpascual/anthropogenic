@@ -1133,6 +1133,10 @@ data.frame(Community = indicators$maxcls, Indicator = indicators$indcls,
 
 ### Save
 
+# header3 %>%
+#   mutate(L1 = "Epilobion angustifolii") %>%
+#   write.csv("data/urban-header-5.1I.csv", fileEncoding = "latin1")
+
 header4 %>%
   mutate(L1 = fct_recode(as.factor(Cluster),
                          "Allion triquetri" = "1",
@@ -1253,7 +1257,7 @@ header4 %>%
                          "Balloto-Conion maculati" = "6",
                          "Echio-Galactition tomentosae" = "7",
                          "Arction lappae" = "8",
-                         "Silybo mariani-Urticion piluliferae" = "9",
+                         "Dauco-Melilotion" = "9",
                          "Arction lappae" = "10",
                          "Dauco-Melilotion" = "11",
                          "Convolvulo arvensis-Agropyrion repentis" = "12")) %>%
@@ -1278,7 +1282,7 @@ twinspanR::twinspan(
   modif = TRUE,
   cut.levels = c(0, 15, 25),
   min.group.size = 10,
-  clusters = 4,
+  clusters = 5,
   diss = "multi.sorensen",
   mean.median = "mean",
   show.output.on.console = FALSE,
@@ -1367,7 +1371,8 @@ header4 %>%
                          "Cirsion richterano-chodati" = "1",
                          "Cirsion richterano-chodati" = "2",
                          "Carduo carpetani-Cirsion odontolepidis" = "3",
-                         "Cirsion richterano-chodati" = "4")) %>%
+                         "Cirsion richterano-chodati" = "4",
+                         "Cirsion richterano-chodati" = "5")) %>%
   select(-Cluster) %>%
   write.csv("data/urban-header-5.1K.csv", fileEncoding = "latin1")
 
@@ -1608,7 +1613,7 @@ twinspanR::twinspan(
   modif = TRUE,
   cut.levels = c(0, 15, 25),
   min.group.size = 10,
-  clusters = 3,
+  clusters = 5,
   diss = "multi.sorensen",
   mean.median = "mean",
   show.output.on.console = FALSE,
@@ -1643,6 +1648,12 @@ df2 %>%
 
 header4 %>%
   group_by(Cluster, Alliance) %>%
+  tally %>%
+  arrange(Cluster, -n) %>%
+  data.frame
+
+header4 %>%
+  group_by(Cluster, Original) %>%
   tally %>%
   arrange(Cluster, -n) %>%
   data.frame
@@ -1696,7 +1707,9 @@ header4 %>%
   mutate(L1 = fct_recode(as.factor(Cluster),
                          "Galio valantiae-Parietarion judaicae" = "1",
                          "Galio valantiae-Parietarion judaicae" = "2",
-                         "Cymbalario-Asplenion" = "3")) %>%
+                         "Galio valantiae-Parietarion judaicae" = "3",
+                         "Galio valantiae-Parietarion judaicae" = "4",
+                         "Cymbalario-Asplenion" = "5")) %>%
   select(-Cluster) %>%
   write.csv("data/urban-header-5.1N.csv", fileEncoding = "latin1")
 

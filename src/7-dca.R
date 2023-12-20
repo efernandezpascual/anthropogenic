@@ -115,12 +115,10 @@ vegan::scores(dca1) %>%
   mutate(Cluster = as.numeric(Cluster)) -> df2
 
 aggregate(cbind(DCA1, DCA2) ~ Cluster, data = df2, FUN = mean) %>%
-  mutate(DCA1 = ifelse(Cluster == 26, DCA1-.3, DCA1)) %>%
-  mutate(DCA1 = ifelse(Cluster == 19, DCA1+.00, DCA1))%>%
-  mutate(DCA1 = ifelse(Cluster == 18, DCA1-.15, DCA1)) %>%
-  mutate(DCA1 = ifelse(Cluster == 20, DCA1+.03, DCA1))%>%
-  mutate(DCA1 = ifelse(Cluster == 24, DCA1+.2, DCA1))%>%
-  mutate(DCA1 = ifelse(Cluster == 23, DCA1-.2, DCA1)) -> cent
+  mutate(DCA1 = ifelse(Cluster == 18, DCA1+.05, DCA1)) %>%
+  mutate(DCA1 = ifelse(Cluster == 25, DCA1-.05, DCA1))%>%
+  mutate(DCA1 = ifelse(Cluster == 23, DCA1+.1, DCA1))%>%
+  mutate(DCA1 = ifelse(Cluster == 22, DCA1-.25, DCA1)) -> cent
 merge(df2, setNames(cent, c("Cluster", "oDCA1", "oDCA2")), by = "Cluster", sort = FALSE) %>%
   mutate(Group = paste(Cluster, Alliance)) %>%
   mutate(Group = fct_reorder(Group, Cluster)) -> segs
@@ -168,7 +166,6 @@ df2 %>%
                                 "darkmagenta", 
                                 "darkmagenta",  
                                 "darkmagenta",  
-                                "darkmagenta",
                                 "darkmagenta",
                                 "limegreen",
                                 "limegreen",

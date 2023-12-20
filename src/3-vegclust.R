@@ -385,10 +385,9 @@ header3 %>%
                          "Saginion procumbentis" = "F25",
                          "Scleranthion annui" = "F26",
                          "Senecionion fluviatilis" = "F27",
-                         "Silybo mariani-Urticion piluliferae" = "F28",
-                         "Sisymbrion officinalis" = "F29",
+                         "Sisymbrion officinalis" = "F28",
                          "Allion triquetri" = "F3",
-                         "Spergulo arvensis-Erodion cicutariae" = "F30",
+                         "Spergulo arvensis-Erodion cicutariae" = "F29",
                          "Arction lappae" = "F4",
                          "Balloto-Conion maculati" = "F5",
                          "Bidention tripartitae" = "F6",
@@ -418,6 +417,9 @@ read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>%
 header %>% group_by(SIVIMID) %>% filter(!SIVIMID %in% species$SIVIMID)
 species %>% group_by(SIVIMID) %>% filter(!SIVIMID %in% header$SIVIMID)
   
+header %>% filter(Alliance == "Noise") %>% group_by(SIVIMID)
+header %>% filter(Alliance != "Noise") %>% group_by(SIVIMID)
+
 # openxlsx::read.xlsx("data/urban-sintaxa.xlsx", sheet = 1) %>%
 #   rename(Original = Sintaxon) %>%
 #   select(Original, Alliance) %>%
