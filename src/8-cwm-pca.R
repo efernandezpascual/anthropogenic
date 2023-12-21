@@ -4,45 +4,45 @@ library(tidyverse)
 
 ### Reciprocal averaging
 
-read.csv("data/traits.csv", fileEncoding = "latin1") %>%
-  select(Analysis.Names,
-         EIVE1.M:Soil.Disturbance) %>%
-  gather(Trait, Value, -Analysis.Names) %>%
-  na.omit %>%
-  merge(read.csv("data/species.csv", fileEncoding = "latin1")) %>%
-  group_by(SIVIMID, Trait) %>%
-  summarise(Value = weighted.mean(Value, Cover.percent)) -> plotmeans
-
-read.csv("data/species.csv", fileEncoding = "latin1") %>%
-  merge(plotmeans) %>%
-  group_by(Analysis.Names, Trait) %>%
-  summarise(Value = weighted.mean(Value, Cover.percent)) %>%
-  rename(ravalue = Value) -> sppmeans
-
-read.csv("data/traits.csv", fileEncoding = "latin1") %>%
-  select(Analysis.Names,
-         EIVE1.M:Soil.Disturbance) %>%
-  gather(Trait, Value, -Analysis.Names) %>%
-  merge(sppmeans, all.x = TRUE) %>%
-  mutate(value = ifelse(is.na(Value), ravalue, Value)) %>%
-  select(-c(Value, ravalue)) %>%
-  spread(Trait, value) -> raspp
-
-read.csv("data/traits.csv", fileEncoding = "latin1") %>%
-  select(-c(EIVE1.M:Soil.Disturbance)) %>%
-  merge(raspp) -> traits
-
-### CwMs
-
-traits %>%
-  gather(Trait, Value, -Analysis.Names) %>%
-  merge(read.csv("data/species.csv", fileEncoding = "latin1")) %>%
-  group_by(SIVIMID, Trait) %>%
-  summarise(Value = weighted.mean(Value, Cover.percent)) %>%
-  spread(Trait, Value) %>%
-  merge(read.csv("data/header.csv", fileEncoding = "latin1")) -> cwms
-
-save(cwms, file = "results/cwms/cwms.RData")
+# read.csv("data/traits.csv", fileEncoding = "latin1") %>%
+#   select(Analysis.Names,
+#          EIVE1.M:Soil.Disturbance) %>%
+#   gather(Trait, Value, -Analysis.Names) %>%
+#   na.omit %>%
+#   merge(read.csv("data/species.csv", fileEncoding = "latin1")) %>%
+#   group_by(SIVIMID, Trait) %>%
+#   summarise(Value = weighted.mean(Value, Cover.percent)) -> plotmeans
+# 
+# read.csv("data/species.csv", fileEncoding = "latin1") %>%
+#   merge(plotmeans) %>%
+#   group_by(Analysis.Names, Trait) %>%
+#   summarise(Value = weighted.mean(Value, Cover.percent)) %>%
+#   rename(ravalue = Value) -> sppmeans
+# 
+# read.csv("data/traits.csv", fileEncoding = "latin1") %>%
+#   select(Analysis.Names,
+#          EIVE1.M:Soil.Disturbance) %>%
+#   gather(Trait, Value, -Analysis.Names) %>%
+#   merge(sppmeans, all.x = TRUE) %>%
+#   mutate(value = ifelse(is.na(Value), ravalue, Value)) %>%
+#   select(-c(Value, ravalue)) %>%
+#   spread(Trait, value) -> raspp
+# 
+# read.csv("data/traits.csv", fileEncoding = "latin1") %>%
+#   select(-c(EIVE1.M:Soil.Disturbance)) %>%
+#   merge(raspp) -> traits
+# 
+# ### CwMs
+# 
+# traits %>%
+#   gather(Trait, Value, -Analysis.Names) %>%
+#   merge(read.csv("data/species.csv", fileEncoding = "latin1")) %>%
+#   group_by(SIVIMID, Trait) %>%
+#   summarise(Value = weighted.mean(Value, Cover.percent)) %>%
+#   spread(Trait, Value) %>%
+#   merge(read.csv("data/header.csv", fileEncoding = "latin1")) -> cwms
+# 
+# save(cwms, file = "results/cwms/cwms.RData")
 
 rm(list = ls())
 
