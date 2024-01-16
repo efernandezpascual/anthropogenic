@@ -1,6 +1,9 @@
 ---
 title: "Anthropogenic plant communities of the Iberian Atlantic ecoregion"
-output: github_document
+output: 
+  bookdown::word_document2:
+    reference_docx: template.docx
+    number_sections: false
 bibliography: refs.bib
 csl: journal-of-vegetation-science.csl
 link-citations: yes
@@ -16,6 +19,14 @@ knitr::knit_hooks$set(inline = function(x) {
   prettyNum(x, big.mark = ",")
 })
 ```
+
+# Introduction
+
+Anthropogenic vegetation is the set of plant communities that occur as a direct consequence of human activities, and is chiefly composed by the weed vegetation of arable fields and the ruderal vegetation of human settlements and their surroundings [@RN5441]. The formation of anthropogenic vegetation in temperate Europe has been characterized by a constant enrichment produced by the arrival of alien species: first archaeophytes starting in the Neolithic and peaking in the Bronze Age; and then neophytes from the Modern Age to the present day [@RN5439]. Synanthropic archaeophytes include many Mediterranean taxa that started their expansion into temperate areas during the Mid-Holocene warm period, but it is difficult to disentangle to what extent this expansion was favored by human activities and/or ongoing climatic changes [@RN5432; @RN5443], especially in southern European areas close to the transition between the Mediterranean and the temperate climates [@RN5444]. Meanwhile, synanthropic neophytes include many American, African and Asian taxa that arrived as a consequence of the global trade networks established by the Western European colonial powers [@RN5451]. In the last century, anthropogenic vegetation has shown a decrease in species richness and diversity [@RN5423], as rare synanthropic species have become rarer, and neophytes have increased their abundance at the expense of natives and archaeophytes [@RN5441].
+
+The anthropogenic communities of human-made habitats make up an important part of the supply of natural elements in urban and peri-urban habitats [@RN5445]. In densely-populated city landscapes, the plant communities that colonize urban vacant lots [@RN2300] are a useful biodiversity resource with high ecological and societal potential [@RN5446]. Anthropogenic vegetation cover can also impact regional-level extreme climatic events [@RN5440]. Furthermore, many synanthropic plants can accumulate heavy metals in their biomass [@RN5433], making them valuable candidates for nature-based solutions such as bioremediation and restoration of degraded landscapes [@RN5447].
+
+The Iberian Atlantic ecoregion has had a long history of human habitation dating back to the Cantabrian Upper Paleolithic [@RN5450]. This, together with its transitional position at the border between the temperate and Mediterranean climatic zones of Europe [@RN4700], suggests a long regional history for archaeophyte-rich anthropogenic plant communities, and supports a current high diversity of anthropogenic plant communities combining temperate and Mediterranean floristic elements [@RN5008]. Historical trade links with America and Asia, together with the warm temperate climate, have made the region a hotspot for plant invasions by neophytes [@Checklist]. Recent processes of postindustrial land-use change have left large areas of brownfields whose management and restoration requires an understanding of anthropogenic communities able to colonize or restore them [@RN5448; @RN5449]. Although there is a long tradition of studying weed and ruderal communities in the ecoregion [@RN5364; @RN5361; @RN5359; @RN5360] there is a current need for a regional-level synthesis that revises the classification and updates it in accord with recent developments in European vegetation science [@RN4698] and habitat classification [@RN5061]. In this article we have performed such a synthesis with two main objectives: (1) provide an updated classification of anthropogenic plant communities in the Iberian Atlantic ecoregion, and (2) describe the main patterns of variation in terms of species traits and ecological and disturbance preferences.
 
 # Methods
 
@@ -43,7 +54,7 @@ To identify anthropogenic relevés in the SIVIM database we followed two complem
 
 [Semi-supervised classification.]{.underline} Next, we applied a semi-supervised classification to the whole dataset. Semi-supervised classification uses a training subset of *a priori* classified relevés to classify a secondary subset of unclassified relevés [@RN5383]. Our training subset included all the relevés that (1) had been classified by the authors of the relevé into any of the alliances that we had validated during the previous TWINSPANs, and (2) had also been classified by us into these alliances during our TWINSPANs. The secondary subset included all the relevés which did not meet these two criteria. Our goal was to refine and not to simply extend the classification, so we applied the semi-supervised classification to the whole dataset, i.e. we allowed relevés from the training subset to be re-assigned to other groups during the classification. In addition, semi-supervised classification can create new groups to place data points that do not match the already *a priori* groups. Furthermore, we applied a noise clustering fuzzy algorithm, which allows the relevés to be classified either into the *a priori* groups or into a 'noise' group which includes outliers and transitional relevés [@RN5382]. We set the fuzziness coefficient to a low value (m = 1) to accommodate a high number of transitional relevés; and we set the distance to the noise class to d = 1. We performed this analysis with the R package 'vegclust' [@RN5383]. We used pairwise PERMANOVA (with 100,000 iterations, Euclidean distances and Holm's p-value correction) fitted with the R package 'RVAideMemoire' [@RN5381] to test the significant of the final vegetation groups; and Detrended Correspondence Analysis (DCA) as implemented in the R package 'vegan' [@RN5386] to visualize the relationships between the groups.
 
-[Characteristic species and EUNIS habitat regionalization.]{.underline} We calculated sets of characteristic species [@RN5061] for each of the final vegetation groups. We defined dominant species as species with more than 25% cover in at least 5% of the relevés of the group; constant species as species with a frequency higher than 50% in the group; and diagnostic species as species with an 'IndVal' value with a p-value lower than 0.05, as calculated with the R package 'labdsv' [@RN2311] using 1.000.000 iterations. Additionally, we assigned to each group a regionalized level 4 EUNIS habitat code, using already codes when they existed, and creating new codes when not.
+[Characteristic species and EUNIS habitat regionalization.]{.underline} We calculated sets of characteristic species [@RN5061] for each of the final vegetation groups. We defined dominant species as species with more than 25% cover in at least 5% of the relevés of the group; constant species as species with a frequency higher than 50% in the group; and diagnostic species as species with an 'IndVal' value with a p-value lower than 0.05, as calculated with the R package 'labdsv' [@RN2311] using 1.000.000 iterations. Additionally, we assigned to each group a regionalized level 4 EUNIS habitat code, using pre-existing codes when they existed, and creating new codes when not.
 
 [Community traits and ecological requirements.]{.underline} To describe the resulting vegetation groups, we compiled a dataset of species traits and ecological preferences for the species pool of the classified relevés. For each species, we extracted from *Flora iberica* [-@RN3243] its maximum height, its median month of flowering, the length of the flowering period, and whether it was a neophyte or not. From FloraVeg.EU [-@RN5385] we extracted the species’ life forms and kept 'therophyte' and 'geophyte' for further analysis since these two categories had the largest contribution to variance as per an exploratory Principal Component Analysis (PCA) performed using the R package 'FactoMineR' [@RN3166]. We also extracted the ecological indicator values [@RN5384] and the disturbance indicator values [@RN5101] of each species. In the case of the ecological and disturbance indicators, we assigned values to species lacking them by (1) calculating weighted average values of the species with values for each plot (weighting by species cover), and (2) assigning to the missing species the weighted average values of the plots where they were present (weighting by species cover). Then, for each relevé we calculated its community-weighted mean (weighting by species cover) for each trait and ecological preference, and explored the main axes of variation using PCA, separately for species traits and ecological preferences.
 
@@ -51,9 +62,9 @@ To identify anthropogenic relevés in the SIVIM database we followed two complem
 
 ## Overview of the classification
 
-Our revision of the literature produced a provisional list of 38 anthropogenic vegetation alliances that could be present in the Iberian Atlantic ecoregion (**Supplementary 3**). In our study dataset (n = 2,508 relevés), there were 2,201 relevés that had been assigned by the authors to any of these alliances. We used these 2,201 relevés for a preliminary re-classification based on TWINSPAN, attempting to re-match the relevés into the *a priori* defined checklist of 38 alliances. This procedure allowed us to validate 28 alliances as present in the ecoregion. A total of 1,725 relevés had been classified by both the original authors and our TWINSPAN into these alliances, and these became our training subset for semi-supervised classification. Attempts by the semi-supervised classification to create new groups resulted on new groups with no ecological significance, and thus we kept the the 28 alliances as final vegetation groups (**Table 1**). Most of the alliances had a wide distribution in the ecoregion according to our dataset (**Figure 1**), although five of them (*Caucalidion lappulae*, *Linario polygalifoliae-Vulpion alopecuri*, *Convolvulo arvensis-Agropyrion repentis*, *Senecionion fluviatilis*, *Paspalo-Agrostion semiverticillati*) had only isolated occurrences in a few points towards the southern limit of the Iberian Atlantic territories. The regional literature included in our dataset recognized 72 associations (**Supplementary 4**) within these alliances. The semi-supervised classification with noise clustering resulted in the final classification of 2,081 relevés into 28 alliances and 427 relevés left in the noise group.
+Our revision of the literature produced a provisional list of 38 anthropogenic vegetation alliances that could be present in the Iberian Atlantic ecoregion (**Supplementary 3**). In our study dataset (n = 2,508 relevés), there were 2,201 relevés that had been assigned by the authors to any of these alliances. We used these 2,201 relevés for a preliminary re-classification based on TWINSPAN, attempting to re-match the relevés into the *a priori* defined checklist of 38 alliances. This procedure allowed us to validate 28 alliances as present in the ecoregion. A total of 1,725 relevés had been classified by both the original authors and our TWINSPAN into these alliances, and these became our training subset for semi-supervised classification. Attempts by the semi-supervised classification to create new groups resulted on new groups with no ecological significance, and thus we kept the 28 alliances as final vegetation groups (**Table 1**). Most of the alliances had a wide distribution in the ecoregion according to our dataset (**Figure 1**), although five of them (*Caucalidion lappulae*, *Linario polygalifoliae-Vulpion alopecuri*, *Convolvulo arvensis-Agropyrion repentis*, *Senecionion fluviatilis*, *Paspalo-Agrostion semiverticillati*) had only isolated occurrences in a few points towards the southern limit of the Iberian Atlantic territories. The regional literature included in our dataset recognized 72 associations (**Supplementary 4**) within these alliances. The semi-supervised classification with noise clustering resulted in the final classification of 2,081 relevés into 28 alliances and 427 relevés left in the noise group.
 
-Focusing on the classified plots, the dataset included 1,167 taxa or taxa aggregates. Of these, 101 were neophytes (i.e. 9% of the species pool). Regarding life forms, the species pool was dominated by hemicryptophytes (43%) and therophytes (41%). The 10 most frequent species were *Ochlopoa annua* (621 occurences), *Urtica dioica* (592), *Sonchus oleraceus* (540), *Stellaria media* (516), *Capsella bursa-pastoris* (390), *Polygonum aviculare* (375), *Dactylis glomerata* (363), *Senecio vulgaris* (332) and *Anisantha sterilis* (301). Considering only those relevés with the most frequent plot size (20 m^2^, n = 256 relevés), the average species richness per plot was 16 (minimum = 3, maximum = 37).
+Focusing on the classified plots, the dataset included 1,167 taxa or taxa aggregates. Of these, 101 were neophytes (i.e. 9% of the species pool). Regarding life forms, the species pool was dominated by hemicryptophytes (43%) and therophytes (41%). The 10 most frequent species were *Ochlopoa annua* (621 occurrences), *Urtica dioica* (592), *Sonchus oleraceus* (540), *Stellaria media* (516), *Capsella bursa-pastoris* (390), *Polygonum aviculare* (375), *Dactylis glomerata* (363), *Senecio vulgaris* (332) and *Anisantha sterilis* (301). Considering only those relevés with the most frequent plot size (20 m^2^, n = 256 relevés), the average species richness per plot was 16 (minimum = 3, maximum = 37).
 
 DCA ordination of the floristic composition of the classified relevés (**Fig. 2**) suggested a high consistency of the vegetation classes *Cymbalario-Parietarietea diffusae*, *Polygono-Poetea annuae*, *Papaveretea rhoeadis*, *Digitario sanguinalis-Eragrostietea minoris*, *Sisymbrietea* and *Bidentetea*. The alliances belonging to the two perennial ruderal vegetation classes (*Artemisietea vulgaris* and *Epilobietea angustifolii*) were mixed together. The winter-annual class *Chenopodietea* also showed high heterogeneity, specially because of the isolation of the altered dune alliance *Linario polygalifoliae-Vulpion alopecuri*.
 
@@ -61,35 +72,35 @@ DCA ordination of the floristic composition of the classified relevés (**Fig. 2
 
 PCA ordination of the community-weighted means of the species traits (**Fig. 3A**) indicated that the first two axes explained 65% of the variability. The major contributors to axis 1 (41% variance explained) were community height, proportion of geophytes, mean month of flowering and proportion of therophytes; it separated taller communities with more geophytes and later flowering (classes *Artemisietea vulgaris*, *Epilobietea angustifolii* and *Bidentetea*) from shorter communities with more therophytes and earlier flowering (classes *Polygono-Poetea annuae*, *Papaveretea rhoeadis* and *Sisymbrietea*). The major contributors to axis 2 (24% variance explained) were proportion of neophytes and width of the flowering season; it separated communities with more neophytes and longer flowering seasons (classes *Bidentetea*, *Digitario sanguinalis-Eragrostietea minoris* and *Polygono-Poetea annuae*) from communities with less neophytes and shorter flowering seasons (classes *Artemisietea vulgaris*, *Epilobietea angustifolii* and *Chenopodietea*).
 
-PCA ordination of the community-weighted means of the species ecological and disturbance preferences (**Fig. 3B**) indicated that the first two axes explained 56% of the variability. The major contributors to axis 1 (35% variance explained) were diturbance frequency, soil disturbance, mowing frequency and light requirements; it separated communities thriving with frequent disturbances in open situations (classes *Polygono-Poetea annuae*, *Sisymbrietea*, *Digitario-Eragrostietea* and *Papaveretea rhoeadis*) from communities prefering less frequent disturbances and more shade (classes *Cymbalario-Parietarietea diffusae*, *Epilobietea angustifolii* and *Bidentetea*). The major contributors to axis 2 (21% variance explained) were nutrient requirements and disturbance severity; it separated more nitrophilous communities adapted to more severe disturbances (classes *Digitario-Eragrostietea*, *Sisymbrietea* and *Epilobietea angustifolii*) from less nitrophilous communities adapted to lower intensity disturbances (classes *Cymbalario-Parietarietea diffusae*, *Artemisietea vulgaris* and *Chenopodietea*).
+PCA ordination of the community-weighted means of the species ecological and disturbance preferences (**Fig. 3B**) indicated that the first two axes explained 56% of the variability. The major contributors to axis 1 (35% variance explained) were disturbance frequency, soil disturbance, mowing frequency and light requirements; it separated communities thriving with frequent disturbances in open situations (classes *Polygono-Poetea annuae*, *Sisymbrietea*, *Digitario-Eragrostietea* and *Papaveretea rhoeadis*) from communities preferring less frequent disturbances and more shade (classes *Cymbalario-Parietarietea diffusae*, *Epilobietea angustifolii* and *Bidentetea*). The major contributors to axis 2 (21% variance explained) were nutrient requirements and disturbance severity; it separated more nitrophilous communities adapted to more severe disturbances (classes *Digitario-Eragrostietea*, *Sisymbrietea* and *Epilobietea angustifolii*) from less nitrophilous communities adapted to lower intensity disturbances (classes *Cymbalario-Parietarietea diffusae*, *Artemisietea vulgaris* and *Chenopodietea*).
 
 ## Classified anthropogenic plant communities
 
-***Cymbalario-Parietarietea diffusae*** Chasmophytic vegetation of human-made walls.
+***Cymbalario-Parietarietea diffusae*** Vegetation of human-made walls.
 
-1. *Galio valantiae-Parietarion judaicae* Vegetation of dry walls. Occupies warmer, drier and more nitriphicated situations than the other alliance in the class, has a shorter flowering season and is more adept to disturbances (**Fig. 4**). Wide distrubution in the ecoregion (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Parietaria judaica* aggr., *Centranthus ruber*, *Asplenium trichomanes*.
+1. *Galio valantiae-Parietarion judaicae* Vegetation of dry walls. Occupies warmer, drier and more nutrient-rich situations than the other alliance in the class, has a shorter flowering season and is more adapted to disturbances (**Fig. 4**). Wide distribution in the ecoregion (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Parietaria judaica* aggr., *Centranthus ruber*, *Asplenium trichomanes*.
 
-2. *Cymbalario-Asplenion* Vegetation of mesic walls. Occupies colder, wetter and less nitriphicated situations than the other alliance in the class, has a longer flowering season and is less adept to disturbances (**Fig. 4**). Wide distrubution in the ecoregion (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Cymbalaria muralis*.
+2. *Cymbalario-Asplenion* Vegetation of mesic walls. Occupies colder, wetter and less nutrient-rich situations than the other alliance in the class, has a longer flowering season and is less adapted to disturbances (**Fig. 4**). Wide distribution in the ecoregion (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Cymbalaria muralis*.
 
 ***Polygono-Poetea annuae*** Dwarf vegetation of heavily-trampled sites.
 
-3. *Polycarpion tetraphylli* Dwarf-annual trampled vegetation of warm and sunny sites. Occupies warmer, sunnier and less nitriphicated situations than the other alliances in the class and has an earlier flowering season (**Fig. 4**). Wide distrubution in the ecoregion, specially along the coast and in the more Mediterranean valleys of the interior (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Sagina apetala*, *Plantago coronopus*, *Crassula tillaea*, *Spergularia marina*.
+3. *Polycarpion tetraphylli* Dwarf-annual trampled vegetation of warm and sunny sites. Occupies warmer, sunnier and less nutrient-rich situations than the other alliances in the class and has an earlier flowering season (**Fig. 4**). Wide distribution in the ecoregion, specially along the coast and in the more Mediterranean valleys of the interior (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Sagina apetala*, *Plantago coronopus*, *Crassula tillaea*, *Spergularia marina*.
 
-4. *Polygono-Coronopodion* Dwarf-annual trampled vegetation of dry sites. Occupies colder, drier and more nitriphicated situations than the other alliances in the class, and has a higher proportion of neophytes (**Fig. 4**). Wide distrubution in the ecoregion (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Matricaria suaveolens*, *Polygonum aviculare*.
+4. *Polygono-Coronopodion* Dwarf-annual trampled vegetation of dry sites. Occupies colder, drier and more nutrient-rich situations than the other alliances in the class, and has a higher proportion of neophytes (**Fig. 4**). Wide distribution in the ecoregion (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Matricaria suaveolens*, *Polygonum aviculare*.
 
-5. *Saginion procumbentis* Dwarf trampled vegetation of mesic sites. Occupies colder, wetter and more nitriphicated situations than the other alliance in the class, and is less dominated by therophytes (**Fig. 4**). Distribution concentrated in the central part of the ecoregion (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Sagina procumbens*, *Bryum argenteum*.
+5. *Saginion procumbentis* Dwarf trampled vegetation of mesic sites. Occupies colder, wetter and more nutrient-rich situations than the other alliance in the class, and is less dominated by therophytes (**Fig. 4**). Distribution concentrated in the central part of the ecoregion (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Sagina procumbens*, *Bryum argenteum*.
 
-***Papaveretea rhoeadis*** Annual segetal vegetation of crops and gardens.
+***Papaveretea rhoeadis*** Annual weed vegetation of crops and gardens.
 
-6. *Caucalidion lappulae* Annual segetal vegetation of cereal crops on base-rich soils. Adapted to more frequent and severe disturbances than the other alliances in the class  (**Fig. 4**). Distribution mostly limited to the more Mediterranean valleys south of the Cantabrian Mountains (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Cyanus segetum*, *Papaver rhoeas*, *Trifolium arvense*, *Anacyclus clavatus*, *Valerianella eriocarpa*.
+6. *Caucalidion lappulae* Annual weed vegetation of cereal crops on base-rich soils. Adapted to more frequent and severe disturbances than the other alliances in the class  (**Fig. 4**). Distribution mostly limited to the more Mediterranean valleys south of the Cantabrian Mountains (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Cyanus segetum*, *Papaver rhoeas*, *Trifolium arvense*, *Anacyclus clavatus*, *Valerianella eriocarpa*.
 
-7. *Scleranthion annui* Annual segetal vegetation of cereal crops on base-poor soils. Occupies more acidic soils than the other alliances in the class, and flowers earlier (**Fig. 4**). Wide distribution in the ecoregion, but specially in the west, where acidic bedrocks dominate (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Mibora minima*, *Rumex acetosella*.
+7. *Scleranthion annui* Annual weed vegetation of cereal crops on base-poor soils. Occupies more acidic soils than the other alliances in the class, and flowers earlier (**Fig. 4**). Wide distribution in the ecoregion, but specially in the west, where acidic bedrocks dominate (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Mibora minima*, *Rumex acetosella*.
 
-8. *Oxalidion europeae* Annual segetal vegetation of gardens and root crops. Occupies wetter, shadier and more nitriphicated situations than the other alliances in the class,  has a longer flowering season and a higher proportion of neophytes (**Fig. 4**). Wide distribution in the ecoregion (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Stellaria media*, *Veronica persica*.
+8. *Oxalidion europeae* Annual weed vegetation of gardens and root crops. Occupies wetter, shadier and more nutrient-rich situations than the other alliances in the class, has a longer flowering season and a higher proportion of neophytes (**Fig. 4**). Wide distribution in the ecoregion (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Stellaria media*, *Veronica persica*.
 
-***Digitario sanguinalis-Eragrostietea minoris*** Summer-annual C4 segetal vegetation.
+***Digitario sanguinalis-Eragrostietea minoris*** Summer-annual C4 weed vegetation.
 
-9. *Spergulo arvensis-Erodion cicutariae* Summer-annual C4 segetal vegetation. Late-flowering alliance rich in neophytes and grasses, occurying in highly-distubed and nitriphicated soils (**Fig. 4**). Wide distribution in the ecoregion (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Digitaria sanguinalis*, *Echinochloa crus-galli*, *Chenopodium album*, *Amaranthus hybridus* aggr.
+9. *Spergulo arvensis-Erodion cicutariae* Summer-annual C4 weed vegetation. Late-flowering alliance rich in neophytes and grasses, occurring in highly-disturbed and nutrient-rich soils (**Fig. 4**). Wide distribution in the ecoregion (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Digitaria sanguinalis*, *Echinochloa crus-galli*, *Chenopodium album*, *Amaranthus hybridus* aggr.
 
 ***Chenopodietea*** Winter-annual ruderal vegetation.
 
@@ -97,7 +108,7 @@ PCA ordination of the community-weighted means of the species ecological and dis
 
 11. *Geranio pusilli-Anthriscion caucalidis* Winter-annual fringe vegetation. Occupies situations similar to the previous alliance, but in colder sites, and is dominated by therophytes instead of geophytes (**Fig. 4**). Mostly distributed in the more Mediterranean valleys south of the Cantabrian Mountains (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Geranium lucidum*, *Anthriscus caucalis*.
 
-12. *Chenopodion muralis* Low-growth winter-annual ruderal vegetation. Occupies colder situations than the other alliances in the class and more often disturbed sites, and has a longer and later flowering season (**Fig. 4**). Sparse occurencce throughout the ecoregion (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Malva neglecta*, *Urtica urens*.
+12. *Chenopodion muralis* Low-growth winter-annual ruderal vegetation. Occupies colder situations than the other alliances in the class and more often disturbed sites, and has a longer and later flowering season (**Fig. 4**). Sparse occurrence throughout the ecoregion (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Malva neglecta*, *Urtica urens*.
 
 13. *Echio-Galactition tomentosae* Tall-herb winter-annual ruderal vegetation. Occupies drier, sunnier and less nutrient-rich situations than the other alliances in the class (**Fig. 4**). Mostly distributed in the west of the ecoregion (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Galactites tomentosus*, *Coleostephus myconis*, *Anisantha rigida*.
 
@@ -109,13 +120,13 @@ PCA ordination of the community-weighted means of the species ecological and dis
 
 ***Artemisietea vulgaris*** Perennial ruderal vegetation of dry sites.
 
-16. *Convolvulo arvensis-Agropyrion repentis* Semiruderal grasslands. Occupies wetter and shadier situations than the other alliances in the class, and has a higher proportion of geophytes and grasses (**Fig. 4**). Isolated occurencce in the south of the ecoregion (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Poa compressa*, *Elytrigia repens*, *Potentilla reptans*, *Valerianella locusta*.
+16. *Convolvulo arvensis-Agropyrion repentis* Semiruderal grasslands. Occupies wetter and shadier situations than the other alliances in the class, and has a higher proportion of geophytes and grasses (**Fig. 4**). Isolated occurrence in the south of the ecoregion (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Poa compressa*, *Elytrigia repens*, *Potentilla reptans*, *Valerianella locusta*.
 
-17. *Carduo carpetani-Cirsion odontolepidis* Thistle ruderal vegetation of warm sites. Occupies warmer situations than the other thistle in the class (**Fig. 4**). Mostly distributed in the Cantabrian Mountains (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Onopordum acanthium*.
+17. *Carduo carpetani-Cirsion odontolepidis* Thistle ruderal vegetation of warm sites. Occupies warmer situations than the other thistle alliance in the class (**Fig. 4**). Mostly distributed in the Cantabrian Mountains (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Onopordum acanthium*.
 
 18. *Cirsion richterano-chodati* Thistle ruderal vegetation of cold sites. Occupies colder situations than the other thistle alliance in the class (**Fig. 4**). Mostly distributed in the Cantabrian Mountains (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Cirsium eriophorum*, *Carduus carpetanus*, *Carduus nutans* aggr.
 
-19. *Dauco-Melilotion* Biennial ruderal vegetation. Occupies wetter situations than the two thistle alliances in the class, and has a higher proportion of therophytes (**Fig. 4**). Sparse occurencce throughout the ecoregion (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Helminthotheca echioides*, *Daucus carota*, *Melilotus albus*, *Foeniculum vulgare*.
+19. *Dauco-Melilotion* Biennial ruderal vegetation. Occupies wetter situations than the two thistle alliances in the class, and has a higher proportion of therophytes (**Fig. 4**). Sparse occurrence throughout the ecoregion (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Helminthotheca echioides*, *Daucus carota*, *Melilotus albus*, *Foeniculum vulgare*.
 
 ***Epilobietea angustifolii*** Perennial ruderal vegetation of mesic to wet sites.
 
@@ -125,19 +136,39 @@ PCA ordination of the community-weighted means of the species ecological and dis
 
 22. *Balloto-Conion maculati* Tall-herb perennial ruderal vegetation. Occupies warmer situations than the other alliances in the class (**Fig. 4**). Distribution concentrated in the Cantabrian Mountains and the east of the ecoregion (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Sambucus ebulus*.
 
-23. *Aegopodion podagrariae* Tall-herb perennial vegetation of forest margins and clearings. Occupies shadier and less disturbed situations than the other alliances in the class (**Fig. 4**). Sparse occurencce throughout the ecoregion (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Anthriscus sylvestris*, *Heracleum sphondylium*, *Galium aparine*.
+23. *Aegopodion podagrariae* Tall-herb perennial vegetation of forest margins and clearings. Occupies shadier and less disturbed situations than the other alliances in the class (**Fig. 4**). Sparse occurrence throughout the ecoregion (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Anthriscus sylvestris*, *Heracleum sphondylium*, *Galium aparine*.
 
 24. *Epilobion angustifolii* Tall-herb perennial vegetation of forest margins and clearings in acidic soils. Occupies colder, nutrient-poorer, more acidic and less disturbed situations than the other alliances in the class (**Fig. 4**). Distributed towards the west of the ecoregion (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Epilobium angustifolium*, *Digitalis purpurea*, *Luzula lactea*.
 
 25. *Cynancho-Convolvulion sepium* Tall-herb vegetation of nutrient-rich riparian habitats. Occupies wetter situations and less disturbed situations than the other alliances in the class, and has a later flowering season (**Fig. 4**). Dispersed throughout the ecoregion (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Eupatorium cannabinum*, *Angelica sylvestris*, *Picris hieracioides*.
 
-26. *Senecionion fluviatilis* Tall-herb vegetation of nutrient-rich river banks and ditches. Occupies warmer and wetter situations situations than the other alliances in the class, flowers later, has taller plants and is highly dominated by neophytes and geophytes (**Fig. 4**). Isolated occurence in the western coast of the ecoregion (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Arundo donax*, *Silene latifolia*.
+26. *Senecionion fluviatilis* Tall-herb vegetation of nutrient-rich river banks and ditches. Occupies warmer and wetter situations than the other alliances in the class, flowers later, has taller plants and is highly dominated by neophytes and geophytes (**Fig. 4**). Isolated occurrence in the western coast of the ecoregion (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Arundo donax*, *Silene latifolia*.
 
 ***Bidentetea*** Summer-annual pioneer vegetation of temporarily-flooded sites.
 
 27. *Bidention tripartitae* Summer-annual pioneer vegetation of temporarily-flooded sites. Occupies nutrient-richer sites than the other alliance in the class and has a higher proportion of therophytes (**Fig. 4**). Dispersed throughout the ecoregion (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Persicaria hydropiper*, *Bidens frondosus*, *Lythrum salicaria*.
 
 28. *Paspalo-Agrostion semiverticillati* Summer-annual pioneer vegetation of temporarily-flooded and warm sites. Occupies warmer and wetter situations than the other alliance in the class, has a higher proportion of neophytes and has a longer flowering season (**Fig. 4**). Isolated occurrences in the south of the ecoregion (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Paspalum distichum*, *Cyperus longus*, *Schoenoplectus lacustris*.
+
+# Discussion
+
+The major driver of variation in trampled community composition is soil moisture [@RN5434].
+
+In medieval Switzerland, summer and winter weeds communities could not be distinguished [@RN5431].
+
+The class *Digitario sanguinalis-Eragrostietea minoris* includes thermophilic vegetation dominated by C4 plants that occupies arable land as well as trampled and ruderal sites [@RN5426].
+
+Anthropogenic vegetation composition is sensitive to micro-scale management decisions, such as the ownership of domestic dogs [@RN5438].
+
+Neophytes were more represented in early successional anthropogenic communities [@RN5423].
+
+Arable land plants were mainly therophytes and alien species; while ruderal habitats were richer in perennials and C strategists [@RN5436]. 
+
+Compare proportion of neophytes to other areas [@RN5429; @@RN5435]
+
+Neophytes have no special preferences for local habitat conditions and their highest proportion was found mainly in disturbed habitats at low elevations. [@RN5435]
+
+Therophytes and hemicryptophytes were most abundant in the life form spectra [@RN5428]
 
 # Data availability
 
@@ -150,18 +181,18 @@ The original datasets, as well as R code for analysis and creation of the manusc
 
 # Figures
 
-```{r fig4, echo = FALSE, fig.pos = "H", fig.cap = "."}
+```{r fig1, echo = FALSE, fig.pos = "H", fig.cap = "Figure 1. Distribution of the anthropogenic alliances in the Iberian Atlantic ecoregion. Each dot represents a relevé. Dots are colored by vegetation classes."}
 knitr::include_graphics("../results/figures/maps.png")
 ```
 
-```{r fig1, echo = FALSE, fig.pos = "H", fig.cap = "."}
+```{r fig2, echo = FALSE, fig.pos = "H", fig.cap = "Figure 2. Ordination of the floristic composition of the anthropogenic plant communities of the Iberian Atlantic ecoregion. The ordination is the results of a Detrended Correspondence Analysis grouped by vegetation classes (A, left) and alliances (B, right)."}
 knitr::include_graphics("../results/figures/dca.png")
 ```
 
-```{r fig2, echo = FALSE, fig.pos = "H", fig.cap = "."}
+```{r fig3, echo = FALSE, fig.pos = "H", fig.cap = "Figure 3. Ordination of the community-level species traits and ecological preferences. The ordinations are the results of a Principal Component Analysis calculated for the community-weighted means for species traits (A, left) and ecological and disturbance indicator values (B, right)."}
 knitr::include_graphics("../results/figures/cwms.png")
 ```
 
-```{r fig3, echo = FALSE, fig.pos = "H", fig.cap = "."}
+```{r fig4, echo = FALSE, fig.pos = "H", fig.cap = "Figure 4. Community-level species traits and ecological preferences by alliance. Boxplots calculated for the community-weighted means for species traits and ecological and disturbance indicator values."}
 knitr::include_graphics("../results/figures/boxplots.png")
 ```

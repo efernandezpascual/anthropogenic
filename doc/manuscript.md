@@ -1,6 +1,77 @@
 Anthropogenic plant communities of the Iberian Atlantic ecoregion
 ================
 
+# Introduction
+
+Anthropogenic vegetation is the set of plant communities that occur as a
+direct consequence of human activities, and is chiefly composed by the
+weed vegetation of arable fields and the ruderal vegetation of human
+settlements and their surroundings ([Lososova & Simonova
+2008](#ref-RN5441)). The formation of anthropogenic vegetation in
+temperate Europe has been characterized by a constant enrichment
+produced by the arrival of alien species: first archaeophytes starting
+in the Neolithic and peaking in the Bronze Age; and then neophytes from
+the Modern Age to the present day ([Brun 2009](#ref-RN5439)).
+Synanthropic archaeophytes include many Mediterranean taxa that started
+their expansion into temperate areas during the Mid-Holocene warm
+period, but it is difficult to disentangle to what extent this expansion
+was favored by human activities and/or ongoing climatic changes
+([Cayless & Tipping 2002](#ref-RN5443); [Cordova & Lehmann
+2003](#ref-RN5432)), especially in southern European areas close to the
+transition between the Mediterranean and the temperate climates
+([Celesti‐Grapow et al. 2009](#ref-RN5444)). Meanwhile, synanthropic
+neophytes include many American, African and Asian taxa that arrived as
+a consequence of the global trade networks established by the Western
+European colonial powers ([Lenzner et al. 2022](#ref-RN5451)). In the
+last century, anthropogenic vegetation has shown a decrease in species
+richness and diversity ([Pysek et al. 2004](#ref-RN5423)), as rare
+synanthropic species have become rarer, and neophytes have increased
+their abundance at the expense of natives and archaeophytes ([Lososova &
+Simonova 2008](#ref-RN5441)).
+
+The anthropogenic communities of human-made habitats make up an
+important part of the supply of natural elements in urban and peri-urban
+habitats ([Kowarik 2018](#ref-RN5445)). In densely-populated city
+landscapes, the plant communities that colonize urban vacant lots
+([Johnson et al. 2017](#ref-RN2300)) are a useful biodiversity resource
+with high ecological and societal potential ([Anderson & Minor
+2017](#ref-RN5446)). Anthropogenic vegetation cover can also impact
+regional-level extreme climatic events ([Stefanon et al.
+2014](#ref-RN5440)). Furthermore, many synanthropic plants can
+accumulate heavy metals in their biomass ([Kostryukova et al.
+2017](#ref-RN5433)), making them valuable candidates for nature-based
+solutions such as bioremediation and restoration of degraded landscapes
+([Song et al. 2019](#ref-RN5447)).
+
+The Iberian Atlantic ecoregion has had a long history of human
+habitation dating back to the Cantabrian Upper Paleolithic ([Straus
+2005](#ref-RN5450)). This, together with its transitional position at
+the border between the temperate and Mediterranean climatic zones of
+Europe ([Loidi 2017](#ref-RN4700)), suggests a long regional history for
+archaeophyte-rich anthropogenic plant communities, and supports a
+current high diversity of anthropogenic plant communities combining
+temperate and Mediterranean floristic elements ([Díaz González
+2020](#ref-RN5008)). Historical trade links with America and Asia,
+together with the warm temperate climate, have made the region a hotspot
+for plant invasions by neophytes ([**Checklist?**](#ref-Checklist)).
+Recent processes of postindustrial land-use change have left large areas
+of brownfields whose management and restoration requires an
+understanding of anthropogenic communities able to colonize or restore
+them ([Gallego et al. 2016](#ref-RN5448); [Matanzas et al.
+2021](#ref-RN5449)). Although there is a long tradition of studying weed
+and ruderal communities in the ecoregion ([Aedo et al.
+1988](#ref-RN5364); [González et al. 1988](#ref-RN5360); [Merino,
+González, González, et al. 1988](#ref-RN5359); [Merino, González,
+Morales, et al. 1988](#ref-RN5361)) there is a current need for a
+regional-level synthesis that revises the classification and updates it
+in accord with recent developments in European vegetation science
+([Mucina et al. 2016](#ref-RN4698)) and habitat classification ([Chytrý
+et al. 2020](#ref-RN5061)). In this article we have performed such a
+synthesis with two main objectives: (1) provide an updated
+classification of anthropogenic plant communities in the Iberian
+Atlantic ecoregion, and (2) describe the main patterns of variation in
+terms of species traits and ecological and disturbance preferences.
+
 # Methods
 
 We performed all data analyses with R version 4.3.1 ([R Core Team
@@ -181,7 +252,7 @@ higher than 50% in the group; and diagnostic species as species with an
 ‘IndVal’ value with a p-value lower than 0.05, as calculated with the R
 package ‘labdsv’ ([Roberts 2016](#ref-RN2311)) using 1.000.000
 iterations. Additionally, we assigned to each group a regionalized level
-4 EUNIS habitat code, using already codes when they existed, and
+4 EUNIS habitat code, using pre-existing codes when they existed, and
 creating new codes when not.
 
 <u>Community traits and ecological requirements.</u> To describe the
@@ -223,7 +294,7 @@ ecoregion. A total of 1,725 relevés had been classified by both the
 original authors and our TWINSPAN into these alliances, and these became
 our training subset for semi-supervised classification. Attempts by the
 semi-supervised classification to create new groups resulted on new
-groups with no ecological significance, and thus we kept the the 28
+groups with no ecological significance, and thus we kept the 28
 alliances as final vegetation groups (**Table 1**). Most of the
 alliances had a wide distribution in the ecoregion according to our
 dataset (**Figure 1**), although five of them (*Caucalidion lappulae*,
@@ -241,7 +312,7 @@ Focusing on the classified plots, the dataset included 1,167 taxa or
 taxa aggregates. Of these, 101 were neophytes (i.e. 9% of the species
 pool). Regarding life forms, the species pool was dominated by
 hemicryptophytes (43%) and therophytes (41%). The 10 most frequent
-species were *Ochlopoa annua* (621 occurences), *Urtica dioica* (592),
+species were *Ochlopoa annua* (621 occurrences), *Urtica dioica* (592),
 *Sonchus oleraceus* (540), *Stellaria media* (516), *Capsella
 bursa-pastoris* (390), *Polygonum aviculare* (375), *Dactylis glomerata*
 (363), *Senecio vulgaris* (332) and *Anisantha sterilis* (301).
@@ -282,11 +353,11 @@ seasons (classes *Artemisietea vulgaris*, *Epilobietea angustifolii* and
 PCA ordination of the community-weighted means of the species ecological
 and disturbance preferences (**Fig. 3B**) indicated that the first two
 axes explained 56% of the variability. The major contributors to axis 1
-(35% variance explained) were diturbance frequency, soil disturbance,
+(35% variance explained) were disturbance frequency, soil disturbance,
 mowing frequency and light requirements; it separated communities
 thriving with frequent disturbances in open situations (classes
 *Polygono-Poetea annuae*, *Sisymbrietea*, *Digitario-Eragrostietea* and
-*Papaveretea rhoeadis*) from communities prefering less frequent
+*Papaveretea rhoeadis*) from communities preferring less frequent
 disturbances and more shade (classes *Cymbalario-Parietarietea
 diffusae*, *Epilobietea angustifolii* and *Bidentetea*). The major
 contributors to axis 2 (21% variance explained) were nutrient
@@ -299,53 +370,51 @@ intensity disturbances (classes *Cymbalario-Parietarietea diffusae*,
 
 ## Classified anthropogenic plant communities
 
-***Cymbalario-Parietarietea diffusae*** Chasmophytic vegetation of
-human-made walls.
+***Cymbalario-Parietarietea diffusae*** Vegetation of human-made walls.
 
 1.  *Galio valantiae-Parietarion judaicae* Vegetation of dry walls.
-    Occupies warmer, drier and more nitriphicated situations than the
+    Occupies warmer, drier and more nutrient-rich situations than the
     other alliance in the class, has a shorter flowering season and is
-    more adept to disturbances (**Fig. 4**). Wide distrubution in the
+    more adapted to disturbances (**Fig. 4**). Wide distribution in the
     ecoregion (**Fig. 1**). Diagnostic species (**Supplementary 5**):
     *Parietaria judaica* aggr., *Centranthus ruber*, *Asplenium
     trichomanes*.
 
 2.  *Cymbalario-Asplenion* Vegetation of mesic walls. Occupies colder,
-    wetter and less nitriphicated situations than the other alliance in
-    the class, has a longer flowering season and is less adept to
-    disturbances (**Fig. 4**). Wide distrubution in the ecoregion
+    wetter and less nutrient-rich situations than the other alliance in
+    the class, has a longer flowering season and is less adapted to
+    disturbances (**Fig. 4**). Wide distribution in the ecoregion
     (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Cymbalaria
     muralis*.
 
 ***Polygono-Poetea annuae*** Dwarf vegetation of heavily-trampled sites.
 
 3.  *Polycarpion tetraphylli* Dwarf-annual trampled vegetation of warm
-    and sunny sites. Occupies warmer, sunnier and less nitriphicated
+    and sunny sites. Occupies warmer, sunnier and less nutrient-rich
     situations than the other alliances in the class and has an earlier
-    flowering season (**Fig. 4**). Wide distrubution in the ecoregion,
+    flowering season (**Fig. 4**). Wide distribution in the ecoregion,
     specially along the coast and in the more Mediterranean valleys of
     the interior (**Fig. 1**). Diagnostic species (**Supplementary 5**):
     *Sagina apetala*, *Plantago coronopus*, *Crassula tillaea*,
     *Spergularia marina*.
 
 4.  *Polygono-Coronopodion* Dwarf-annual trampled vegetation of dry
-    sites. Occupies colder, drier and more nitriphicated situations than
+    sites. Occupies colder, drier and more nutrient-rich situations than
     the other alliances in the class, and has a higher proportion of
-    neophytes (**Fig. 4**). Wide distrubution in the ecoregion (**Fig.
+    neophytes (**Fig. 4**). Wide distribution in the ecoregion (**Fig.
     1**). Diagnostic species (**Supplementary 5**): *Matricaria
     suaveolens*, *Polygonum aviculare*.
 
 5.  *Saginion procumbentis* Dwarf trampled vegetation of mesic sites.
-    Occupies colder, wetter and more nitriphicated situations than the
+    Occupies colder, wetter and more nutrient-rich situations than the
     other alliance in the class, and is less dominated by therophytes
     (**Fig. 4**). Distribution concentrated in the central part of the
     ecoregion (**Fig. 1**). Diagnostic species (**Supplementary 5**):
     *Sagina procumbens*, *Bryum argenteum*.
 
-***Papaveretea rhoeadis*** Annual segetal vegetation of crops and
-gardens.
+***Papaveretea rhoeadis*** Annual weed vegetation of crops and gardens.
 
-6.  *Caucalidion lappulae* Annual segetal vegetation of cereal crops on
+6.  *Caucalidion lappulae* Annual weed vegetation of cereal crops on
     base-rich soils. Adapted to more frequent and severe disturbances
     than the other alliances in the class (**Fig. 4**). Distribution
     mostly limited to the more Mediterranean valleys south of the
@@ -353,26 +422,26 @@ gardens.
     (**Supplementary 5**): *Cyanus segetum*, *Papaver rhoeas*,
     *Trifolium arvense*, *Anacyclus clavatus*, *Valerianella eriocarpa*.
 
-7.  *Scleranthion annui* Annual segetal vegetation of cereal crops on
+7.  *Scleranthion annui* Annual weed vegetation of cereal crops on
     base-poor soils. Occupies more acidic soils than the other alliances
     in the class, and flowers earlier (**Fig. 4**). Wide distribution in
     the ecoregion, but specially in the west, where acidic bedrocks
     dominate (**Fig. 1**). Diagnostic species (**Supplementary 5**):
     *Mibora minima*, *Rumex acetosella*.
 
-8.  *Oxalidion europeae* Annual segetal vegetation of gardens and root
-    crops. Occupies wetter, shadier and more nitriphicated situations
+8.  *Oxalidion europeae* Annual weed vegetation of gardens and root
+    crops. Occupies wetter, shadier and more nutrient-rich situations
     than the other alliances in the class, has a longer flowering season
     and a higher proportion of neophytes (**Fig. 4**). Wide distribution
     in the ecoregion (**Fig. 1**). Diagnostic species (**Supplementary
     5**): *Stellaria media*, *Veronica persica*.
 
-***Digitario sanguinalis-Eragrostietea minoris*** Summer-annual C4
-segetal vegetation.
+***Digitario sanguinalis-Eragrostietea minoris*** Summer-annual C4 weed
+vegetation.
 
-9.  *Spergulo arvensis-Erodion cicutariae* Summer-annual C4 segetal
+9.  *Spergulo arvensis-Erodion cicutariae* Summer-annual C4 weed
     vegetation. Late-flowering alliance rich in neophytes and grasses,
-    occurying in highly-distubed and nitriphicated soils (**Fig. 4**).
+    occurring in highly-disturbed and nutrient-rich soils (**Fig. 4**).
     Wide distribution in the ecoregion (**Fig. 1**). Diagnostic species
     (**Supplementary 5**): *Digitaria sanguinalis*, *Echinochloa
     crus-galli*, *Chenopodium album*, *Amaranthus hybridus* aggr.
@@ -398,7 +467,7 @@ segetal vegetation.
 12. *Chenopodion muralis* Low-growth winter-annual ruderal vegetation.
     Occupies colder situations than the other alliances in the class and
     more often disturbed sites, and has a longer and later flowering
-    season (**Fig. 4**). Sparse occurencce throughout the ecoregion
+    season (**Fig. 4**). Sparse occurrence throughout the ecoregion
     (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Malva
     neglecta*, *Urtica urens*.
 
@@ -430,16 +499,16 @@ segetal vegetation.
 16. *Convolvulo arvensis-Agropyrion repentis* Semiruderal grasslands.
     Occupies wetter and shadier situations than the other alliances in
     the class, and has a higher proportion of geophytes and grasses
-    (**Fig. 4**). Isolated occurencce in the south of the ecoregion
+    (**Fig. 4**). Isolated occurrence in the south of the ecoregion
     (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Poa
     compressa*, *Elytrigia repens*, *Potentilla reptans*, *Valerianella
     locusta*.
 
 17. *Carduo carpetani-Cirsion odontolepidis* Thistle ruderal vegetation
-    of warm sites. Occupies warmer situations than the other thistle in
-    the class (**Fig. 4**). Mostly distributed in the Cantabrian
-    Mountains (**Fig. 1**). Diagnostic species (**Supplementary 5**):
-    *Onopordum acanthium*.
+    of warm sites. Occupies warmer situations than the other thistle
+    alliance in the class (**Fig. 4**). Mostly distributed in the
+    Cantabrian Mountains (**Fig. 1**). Diagnostic species
+    (**Supplementary 5**): *Onopordum acanthium*.
 
 18. *Cirsion richterano-chodati* Thistle ruderal vegetation of cold
     sites. Occupies colder situations than the other thistle alliance in
@@ -449,7 +518,7 @@ segetal vegetation.
 
 19. *Dauco-Melilotion* Biennial ruderal vegetation. Occupies wetter
     situations than the two thistle alliances in the class, and has a
-    higher proportion of therophytes (**Fig. 4**). Sparse occurencce
+    higher proportion of therophytes (**Fig. 4**). Sparse occurrence
     throughout the ecoregion (**Fig. 1**). Diagnostic species
     (**Supplementary 5**): *Helminthotheca echioides*, *Daucus carota*,
     *Melilotus albus*, *Foeniculum vulgare*.
@@ -480,7 +549,7 @@ wet sites.
 23. *Aegopodion podagrariae* Tall-herb perennial vegetation of forest
     margins and clearings. Occupies shadier and less disturbed
     situations than the other alliances in the class (**Fig. 4**).
-    Sparse occurencce throughout the ecoregion (**Fig. 1**). Diagnostic
+    Sparse occurrence throughout the ecoregion (**Fig. 1**). Diagnostic
     species (**Supplementary 5**): *Anthriscus sylvestris*, *Heracleum
     sphondylium*, *Galium aparine*.
 
@@ -500,12 +569,12 @@ wet sites.
     cannabinum*, *Angelica sylvestris*, *Picris hieracioides*.
 
 26. *Senecionion fluviatilis* Tall-herb vegetation of nutrient-rich
-    river banks and ditches. Occupies warmer and wetter situations
-    situations than the other alliances in the class, flowers later, has
-    taller plants and is highly dominated by neophytes and geophytes
-    (**Fig. 4**). Isolated occurence in the western coast of the
-    ecoregion (**Fig. 1**). Diagnostic species (**Supplementary 5**):
-    *Arundo donax*, *Silene latifolia*.
+    river banks and ditches. Occupies warmer and wetter situations than
+    the other alliances in the class, flowers later, has taller plants
+    and is highly dominated by neophytes and geophytes (**Fig. 4**).
+    Isolated occurrence in the western coast of the ecoregion (**Fig.
+    1**). Diagnostic species (**Supplementary 5**): *Arundo donax*,
+    *Silene latifolia*.
 
 ***Bidentetea*** Summer-annual pioneer vegetation of temporarily-flooded
 sites.
@@ -525,6 +594,40 @@ sites.
     (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Paspalum
     distichum*, *Cyperus longus*, *Schoenoplectus lacustris*.
 
+# Discussion
+
+The major driver of variation in trampled community composition is soil
+moisture ([Golovanov et al. 2023](#ref-RN5434)).
+
+In medieval Switzerland, summer and winter weeds communities could not
+be distinguished ([Karg 1995](#ref-RN5431)).
+
+The class *Digitario sanguinalis-Eragrostietea minoris* includes
+thermophilic vegetation dominated by C4 plants that occupies arable land
+as well as trampled and ruderal sites ([Nemec et al.
+2011](#ref-RN5426)).
+
+Anthropogenic vegetation composition is sensitive to micro-scale
+management decisions, such as the ownership of domestic dogs ([Pal et
+al. 2013](#ref-RN5438)).
+
+Neophytes were more represented in early successional anthropogenic
+communities ([Pysek et al. 2004](#ref-RN5423)).
+
+Arable land plants were mainly therophytes and alien species; while
+ruderal habitats were richer in perennials and C strategists ([Silc
+2010](#ref-RN5436)).
+
+Compare proportion of neophytes to other areas ([Silc et al.
+2012](#ref-RN5429); @ [Simonova & Lososova 2008](#ref-RN5435))
+
+Neophytes have no special preferences for local habitat conditions and
+their highest proportion was found mainly in disturbed habitats at low
+elevations. ([Simonova & Lososova 2008](#ref-RN5435))
+
+Therophytes and hemicryptophytes were most abundant in the life form
+spectra ([Tabasevic et al. 2021](#ref-RN5428))
+
 # Data availability
 
 The original datasets, as well as R code for analysis and creation of
@@ -542,10 +645,61 @@ version of record of the repository will be deposited in Zenodo.
 
 </div>
 
+<div id="ref-RN5364" class="csl-entry">
+
+Aedo, C., Herrera, M., Prieto, J.F., & Díaz, T. 1988.
+<span class="nocase">Datos sobre la vegetación arvense de la Cornisa
+Cantábrica</span>. *Lazaroa* 9: 241–254.
+
+</div>
+
+<div id="ref-RN5446" class="csl-entry">
+
+Anderson, E.C., & Minor, E.S. 2017. [<span class="nocase">Vacant lots:
+An underexplored resource for ecological and social benefits in
+cities</span>](https://doi.org/10.1016/j.ufug.2016.11.015). *Urban
+Forestry & Urban Greening* 21: 146–152.
+
+</div>
+
+<div id="ref-RN5439" class="csl-entry">
+
+Brun, C. 2009. [<span class="nocase">Biodiversity changes in highly
+anthropogenic environments (cultivated and ruderal) since the Neolithic
+in eastern France</span>](https://doi.org/10.1177/0959683609336559).
+*Holocene* 19: 861–871.
+
+</div>
+
 <div id="ref-RN3243" class="csl-entry">
 
-Castroviejo, S. 1987. *Flora iberica*. Real Jardín Botánico, CSIC,
-Madrid.
+Castroviejo, S. 1987. *<span class="nocase">Flora iberica</span>*. Real
+Jardín Botánico, CSIC, Madrid.
+
+</div>
+
+<div id="ref-RN5443" class="csl-entry">
+
+Cayless, S.M., & Tipping, R.M. 2002. [<span class="nocase">Data on
+mid-Holocene climatic, vegetation and anthropogenic interactions at
+Stanshiel Rig, southern
+Scotland</span>](https://doi.org/10.1007/s003340200023). *Vegetation
+History and Archaeobotany* 11: 201–210.
+
+</div>
+
+<div id="ref-RN5444" class="csl-entry">
+
+Celesti‐Grapow, L., Alessandrini, A., Arrigoni, P.V., Banfi, E.,
+Bernardo, L., Bovio, M., Brundu, G., Cagiotti, M.R., Camarda, I., Carli,
+E., Conti, F., Fascetti, S., Galasso, G., Gubellini, L., La Valva, V.,
+Lucchese, F., Marchiori, S., Mazzola, P., Peccenini, S., Poldini, L.,
+Pretto, F., Prosser, F., Siniscalco, C., Villani, M.C., Viegi, L.,
+Wilhalm, T., & Blasi, C. 2009. [<span class="nocase">Inventory of the
+non‐native flora of
+Italy</span>](https://doi.org/10.1080/11263500902722824). *Plant
+Biosystems - An International Journal Dealing with all Aspects of Plant
+Biology* 143: 386–430.
 
 </div>
 
@@ -571,19 +725,29 @@ Schrautzer, J., Šibík, J., Šilc, U., Škvorc, Ž., Smagin, V.A., Stančić,
 Z., Stanisci, A., Tikhonova, E., Tonteri, T., Uogintas, D., Valachovič,
 M., Vassilev, K., Vynokurov, D., Willner, W., Yamalov, S., Evans, D.,
 Palitzsch Lund, M., Spyropoulou, R., Tryfon, E., & Schaminée, J.H.J.
-2020. [EUNIS habitat classification: Expert system, characteristic
-species combinations and distribution maps of european
-habitats](https://doi.org/10.1111/avsc.12519). *Applied Vegetation
-Science* 23: 648–675.
+2020. [<span class="nocase">EUNIS Habitat Classification: Expert system,
+characteristic species combinations and distribution maps of European
+habitats</span>](https://doi.org/10.1111/avsc.12519). *Applied
+Vegetation Science* 23: 648–675.
+
+</div>
+
+<div id="ref-RN5432" class="csl-entry">
+
+Cordova, C.E., & Lehmann, P.H. 2003.
+[<span class="nocase">Archaeopalynology of synanthropic vegetation in
+the \<i\>chora\</i\> of Chersonesos, Crimea,
+Ukraine</span>](https://doi.org/10.1016/s0305-4403(03)00044-x). *Journal
+of Archaeological Science* 30: 1483–1501.
 
 </div>
 
 <div id="ref-RN5383" class="csl-entry">
 
-De Cáceres, M., Font, X., & Oliva, F. 2010. [The management of
-vegetation classifications with fuzzy
-clustering](https://doi.org/10.1111/j.1654-1103.2010.01211.x). *Journal
-of Vegetation Science* 21: 1138–1151.
+De Cáceres, M., Font, X., & Oliva, F. 2010. [<span class="nocase">The
+management of vegetation classifications with fuzzy
+clustering</span>](https://doi.org/10.1111/j.1654-1103.2010.01211.x).
+*Journal of Vegetation Science* 21: 1138–1151.
 
 </div>
 
@@ -596,65 +760,98 @@ Batsatsashvili, K., Bita-Nicolae, C., Didukh, Y., Diekmann, M.,
 Englisch, T., Fernández-Pascual, E., Frank, D., Graf, U., Hájek, M.,
 Jelaska, S.D., Jiménez-Alfaro, B., Julve, P., Nakhutsrishvili, G.,
 Ozinga, W.A., Ruprecht, E.-K., Šilc, U., Theurillat, J.-P., & Gillet, F.
-2023. [﻿Ecological indicator values for europe (EIVE)
-1.0](https://doi.org/10.3897/vcs.98324). *Vegetation Classification and
-Survey* 4:
+2023. [<span class="nocase">﻿Ecological Indicator Values for Europe
+(EIVE) 1.0</span>](https://doi.org/10.3897/vcs.98324). *Vegetation
+Classification and Survey* 4:
 
 </div>
 
 <div id="ref-RN5008" class="csl-entry">
 
-Díaz González, T.E. 2020. La vegetación del principado de asturias
-(españa) (esquema sintaxonómico de las comunidades vegetales). *Boletín
-de Ciencias de la Naturaleza del RIDEA* 55: 339–646.
+Díaz González, T.E. 2020. <span class="nocase">La vegetación del
+Principado de Asturias (España) (esquema sintaxonómico de las
+comunidades vegetales)</span>. *Boletín de Ciencias de la Naturaleza del
+RIDEA* 55: 339–646.
 
 </div>
 
 <div id="ref-RN5372" class="csl-entry">
 
 Fernández Prieto, J.A., Amigo, J., Bueno, Á., Herrera, M.,
-Rodríguez-Guitián, M.A., & Loidi, J. 2020. Notas sobre el catálogo de
-comunidades de plantas vasculares de los territorios iberoatlánticos
-(i). *Naturalia Cantabricae* 17–37.
+Rodríguez-Guitián, M.A., & Loidi, J. 2020. <span class="nocase">Notas
+sobre el Catálogo de comunidades de plantas vasculares de los
+territorios iberoatlánticos (I)</span>. *Naturalia Cantabricae* 17–37.
 
 </div>
 
 <div id="ref-RN5385" class="csl-entry">
 
-FloraVeg.EU. 2023. FloraVeg.EU – database of european vegetation,
-habitats and flora. Www.floraveg.eu. Accessed december 2023.
+FloraVeg.EU. 2023. <span class="nocase">FloraVeg.EU – Database of
+European Vegetation, Habitats and Flora. www.floraveg.eu. Accessed
+December 2023.</span>
 
 </div>
 
 <div id="ref-RN5374" class="csl-entry">
 
 Font, X., Pérez-García, N., Biurrun, I., Fernández-González, F., &
-Lence, C. 2012. The iberian and macaronesian vegetation information
-system (SIVIM, www. Sivim. Info), five years of online vegetation’s data
-publishing. *Plant Sociology* 49: 89–95.
+Lence, C. 2012. <span class="nocase">The Iberian and Macaronesian
+Vegetation Information System (SIVIM, www. sivim. info), five years of
+online vegetation’s data publishing</span>. *Plant Sociology* 49: 89–95.
+
+</div>
+
+<div id="ref-RN5448" class="csl-entry">
+
+Gallego, J.R., Rodríguez-Valdés, E., Esquinas, N., Fernández-Braña, A.,
+& Afif, E. 2016. [<span class="nocase">Insights into a 20-ha
+multi-contaminated brownfield megasite: An environmental forensics
+approach</span>](https://doi.org/10.1016/j.scitotenv.2015.09.153).
+*Science of The Total Environment* 563-564: 683–692.
+
+</div>
+
+<div id="ref-RN5434" class="csl-entry">
+
+Golovanov, Y.M., Abramova, L.M., Arepieva, L.A., Devyatova, E.A., &
+Ovcharova, N.V. 2023. [<span class="nocase">Review of plant communities
+of the class \<i\>Polygono arenastri- Poetea annuae\</i\> in the Russian
+Federation</span>](https://doi.org/10.14258/turczaninowia.26.2.13).
+*Turczaninowia* 26: 147–169.
 
 </div>
 
 <div id="ref-RN5365" class="csl-entry">
 
-Gómez, J.A.D. 2020. Sintaxonomía de las comunidades vegetales de
-cantabria, 2020. *Flora Montiberica* 56–92.
+Gómez, J.A.D. 2020. <span class="nocase">Sintaxonomía de las comunidades
+vegetales de Cantabria, 2020</span>. *Flora Montiberica* 56–92.
+
+</div>
+
+<div id="ref-RN5360" class="csl-entry">
+
+González, T.E.D., Merino, Á.P., Cembranos, L.H., Morales, C.P., García,
+F.L., & Alfonso, A.T. 1988. <span class="nocase">Estudio de los
+herbazales nitrófilos vivaces y comunidades ruderal viarios de la
+provincia de León (NW de España). Study of vivacious nitrophilous
+grasslands and roadside communities of León province (NW of
+Spain)</span>. *Acta Botanica Barcinonensia*
 
 </div>
 
 <div id="ref-RN5381" class="csl-entry">
 
-Herve, M. 2023. RVAideMemoire: Testing and plotting procedures for
-biostatistics. R package version 0.9-83-2.
-Https://CRAN.r-project.org/package=RVAideMemoire.
+Herve, M. 2023. <span class="nocase">RVAideMemoire: Testing and Plotting
+Procedures for Biostatistics. R package version 0.9-83-2.
+https://CRAN.R-project.org/package=RVAideMemoire</span>.
 
 </div>
 
 <div id="ref-RN5363" class="csl-entry">
 
-Izco, J., Amigo, J., & García-San León, D. 2000. Análisis y
-clasificación de la vegetación de galicia (españa), II. La vegetación
-herbácea. *Lazaroa* 21:
+Izco, J., Amigo, J., & García-San León, D. 2000.
+<span class="nocase">Análisis y clasificación de la vegetación de
+Galicia (España), II. La vegetación herbácea</span>. *Lazaroa* 21:
 
 </div>
 
@@ -662,15 +859,106 @@ herbácea. *Lazaroa* 21:
 
 Jiménez-Alfaro González, F. de B., Carlón, L., Fernández Pascual, E.,
 Cires Rodríguez, E., Díaz González, T.E., & Nava Fernández, H.S. 2021.
-Checklist of the vascular plants of the cantabrian mountains.
-*Mediterranean Botany*
+<span class="nocase">Checklist of the vascular plants of the Cantabrian
+Mountains</span>. *Mediterranean Botany*
+
+</div>
+
+<div id="ref-RN2300" class="csl-entry">
+
+Johnson, A.L., Borowy, D., & Swan, C.M. 2017. <span class="nocase">Land
+use history and seed dispersal drive divergent plant community assembly
+patterns in urban vacant lots</span>. *Journal of Applied Ecology*. doi:
+[10.1111/1365-2664.12958](https://doi.org/10.1111/1365-2664.12958)
+
+</div>
+
+<div id="ref-RN5431" class="csl-entry">
+
+Karg, S. 1995. [PLANT DIVERSITY IN LATE-MEDIEVAL CORNFIELDS OF NORTHERN
+SWITZERLAND](<Go to ISI>://WOS:A1995TE00600004). *Vegetation History and
+Archaeobotany* 4: 41–50.
+
+</div>
+
+<div id="ref-RN5433" class="csl-entry">
+
+Kostryukova, A.M., Mashkova, I.V., Krupnova, T.G., & Shchelkanova, E.E.
+2017. [STUDY OF SYNANTHROPIC PLANTS OF THE SOUTH
+URAL](https://doi.org/10.21660/2017.40.3519). *International Journal of
+Geomate* 13: 60–65.
+
+</div>
+
+<div id="ref-RN5445" class="csl-entry">
+
+Kowarik, I. 2018. [<span class="nocase">Urban wilderness: Supply,
+demand, and access</span>](https://doi.org/10.1016/j.ufug.2017.05.017).
+*Urban Forestry & Urban Greening* 29: 336–347.
 
 </div>
 
 <div id="ref-RN3166" class="csl-entry">
 
-Lê, S., Josse, J., & Husson, F. 2008. FactoMineR: An r package for
-multivariate analysis. *Journal of Statistical Software* 25: 1–18.
+Lê, S., Josse, J., & Husson, F. 2008. <span class="nocase">FactoMineR:
+an R package for multivariate analysis</span>. *Journal of Statistical
+Software* 25: 1–18.
+
+</div>
+
+<div id="ref-RN5451" class="csl-entry">
+
+Lenzner, B., Latombe, G., Schertler, A., Seebens, H., Yang, Q., Winter,
+M., Weigelt, P., Kleunen, M. van, Pyšek, P., Pergl, J., Kreft, H.,
+Dawson, W., Dullinger, S., & Essl, F. 2022.
+[<span class="nocase">Naturalized alien floras still carry the legacy of
+European
+colonialism</span>](https://doi.org/10.1038/s41559-022-01865-1). *Nature
+Ecology & Evolution* 6: 1723–1732.
+
+</div>
+
+<div id="ref-RN4700" class="csl-entry">
+
+Loidi, J. 2017. *<span class="nocase">The Vegetation of the Iberian
+Peninsula</span>*. Springer.
+
+</div>
+
+<div id="ref-RN5441" class="csl-entry">
+
+Lososova, Z., & Simonova, D. 2008. [<span class="nocase">Changes during
+the 20th century in species composition of synanthropic vegetation in
+Moravia (Czech Republic)</span>](<Go to ISI>://WOS:000259902900004).
+*Preslia* 80: 291–305.
+
+</div>
+
+<div id="ref-RN5449" class="csl-entry">
+
+Matanzas, N., Afif, E., Díaz, T.E., & Gallego, J.R. 2021.
+[<span class="nocase">Phytoremediation Potential of Native Herbaceous
+Plant Species Growing on a Paradigmatic Brownfield
+Site</span>](https://doi.org/10.1007/s11270-021-05234-9). *Water, Air, &
+Soil Pollution* 232: 290.
+
+</div>
+
+<div id="ref-RN5359" class="csl-entry">
+
+Merino, A.P., González, T.E.D., González, M.E.G., Pacheco, M.J.L., &
+Puente, E. 1988. <span class="nocase">Datos sobre los cardales y tobales
+(Onopordetea acanth¡ i) en la provincia de León</span>. *Lazaroa* 10:
+987–88.
+
+</div>
+
+<div id="ref-RN5361" class="csl-entry">
+
+Merino, Á.P., González, T.E.D., Morales, C.P., García, E.P., González,
+M.E.G., & Alfonso, A.T. 1988. <span class="nocase">Aportaciones al
+conocimiento de las comunidades de malas hierbas de cultivo en la
+provincia de León</span>. *Acta Botanica Barcinonensia*
 
 </div>
 
@@ -683,18 +971,19 @@ Demina, O., Dengler, J., Dziuba, T., Fanelli, G., Garbolino, E., Giusso
 del Galdo, G., Goral, F., Güler, B., Hinojos-Mendoza, G., Jansen, F.,
 Jiménez-Alfaro, B., Lengyel, A., Lenoir, J., Pérez-Haase, A., Pielech,
 R., Prokhorov, V., Rašomavičius, V., Ruprecht, E., Rūsiņa, S., Šilc, U.,
-Škvorc, Ž., Stančić, Z., Tatarenko, I., & Chytrý, M. 2023. [Disturbance
-indicator values for european
-plants](https://doi.org/10.1111/geb.13603). *Global Ecology and
+Škvorc, Ž., Stančić, Z., Tatarenko, I., & Chytrý, M. 2023.
+[<span class="nocase">Disturbance indicator values for European
+plants</span>](https://doi.org/10.1111/geb.13603). *Global Ecology and
 Biogeography* 32: 24–34.
 
 </div>
 
 <div id="ref-RN5373" class="csl-entry">
 
-Moreno, J.M., Pineda, F.D., & Rivas‐Martinez, S. 1990. Climate and
-vegetation at the eurosiberian‐mediterranean boundary in the iberian
-peninsula. *Journal of vegetation science* 1: 233–244.
+Moreno, J.M., Pineda, F.D., & Rivas‐Martinez, S. 1990.
+<span class="nocase">Climate and vegetation at the
+Eurosiberian‐Mediterranean boundary in the Iberian Peninsula</span>.
+*Journal of vegetation science* 1: 233–244.
 
 </div>
 
@@ -706,11 +995,21 @@ Chytrý, M., Hájek, M., Di Pietro, R., Iakushenko, D., Pallas, J.,
 Daniëls, F.J.A., Bergmeier, E., Santos Guerra, A., Ermakov, N.,
 Valachovič, M., Schaminée, J.H.J., Lysenko, T., Didukh, Y.P., Pignatti,
 S., Rodwell, J.S., Capelo, J., Weber, H.E., Solomeshch, A., Dimopoulos,
-P., Aguiar, C., Hennekens, S.M., & Tichý, L. 2016. [Vegetation of
-europe: Hierarchical floristic classification system of vascular plant,
-bryophyte, lichen, and algal
-communities](https://doi.org/10.1111/avsc.12257). *Applied Vegetation
-Science* 19: 3–264.
+P., Aguiar, C., Hennekens, S.M., & Tichý, L. 2016.
+[<span class="nocase">Vegetation of Europe: hierarchical floristic
+classification system of vascular plant, bryophyte, lichen, and algal
+communities</span>](https://doi.org/10.1111/avsc.12257). *Applied
+Vegetation Science* 19: 3–264.
+
+</div>
+
+<div id="ref-RN5426" class="csl-entry">
+
+Nemec, R., Lososova, Z., Drevojan, P., & Zakova, K. 2011.
+[<span class="nocase">Synanthropic vegetation of the \<i\>Eragrostion
+cilianensi\</i\>-\<i\>minoris\</i\> alliance in the Czech
+Republic</span>](https://doi.org/10.2478/s11756-011-0108-0). *Biologia*
+66: 1019–1026.
 
 </div>
 
@@ -722,8 +1021,9 @@ H., Barbour, M., Bedward, M., Bolker, B., Borcard, D., Carvalho, G.,
 Chirico, M., De Caceres, M., Durand, S., Evangelista, H., FitzJohn, R.,
 Friendly, M., Furneaux, B., Hannigan, G., Hill, M., Lahti, L., McGlinn,
 D., Ouellette, M., Cunh, E., Smith, T., Stier, S., Ter Braak, C., &
-Weedon, J. 2022. Vegan: Community ecology package. R package version
-2.6-4. Https://CRAN.r-project.org/package=vegan.
+Weedon, J. 2022. <span class="nocase">vegan: Community Ecology Package.
+R package version 2.6-4.
+https://CRAN.R-project.org/package=vegan</span>.
 
 </div>
 
@@ -731,17 +1031,29 @@ Weedon, J. 2022. Vegan: Community ecology package. R package version
 
 Olson, D.M., Dinerstein, E., Wikramanayake, E.D., Burgess, N.D., Powell,
 G.V., Underwood, E.C., D’amico, J.A., Itoua, I., Strand, H.E., &
-Morrison, J.C. 2001. Terrestrial ecoregions of the world: A new map of
-life on earth: A new global map of terrestrial ecoregions provides an
-innovative tool for conserving biodiversity. *BioScience* 51: 933–938.
+Morrison, J.C. 2001. <span class="nocase">Terrestrial ecoregions of the
+world: a new map of life on earth: a new global map of terrestrial
+ecoregions provides an innovative tool for conserving
+biodiversity</span>. *BioScience* 51: 933–938.
+
+</div>
+
+<div id="ref-RN5438" class="csl-entry">
+
+Pal, R.W., Csete, S., Botta-Dukat, Z., & Pinke, G. 2013.
+[<span class="nocase">Composition and Diversity of Lawn Flora in
+Differently Managed Village Yards - A Case Study from Southwestern
+Hungary</span>](https://doi.org/10.1007/s12224-012-9142-0). *Folia
+Geobotanica* 48: 209–227.
 
 </div>
 
 <div id="ref-RN5376" class="csl-entry">
 
-POWO. 2023. Plants of the world online. Facilitated by the royal botanic
-gardens, kew. Published on the internet;
-http://www.plantsoftheworldonline.org/ retrieved september 2022.".
+POWO. 2023. <span class="nocase">Plants of the World Online. Facilitated
+by the Royal Botanic Gardens, Kew. Published on the Internet;
+http://www.plantsoftheworldonline.org/ Retrieved September
+2022."</span>.
 
 </div>
 
@@ -761,91 +1073,174 @@ Rodwell, J.S., Rūsiņa, S., Sánchez-Mata, D., Schaminée, J.H.J.,
 Semenishchenkov, Y., Shevchenko, N., Šibík, J., Škvorc, Ž., Smagin, V.,
 Stešević, D., Stupar, V., Šumberová, K., Theurillat, J.-P., Tikhonova,
 E., Tzonev, R., Valachovič, M., Vassilev, K., Willner, W., Yamalov, S.,
-Večeřa, M., & Chytrý, M. 2022. [Distribution maps of vegetation
-alliances in europe](https://doi.org/10.1111/avsc.12642). *Applied
-Vegetation Science* 25: e12642.
+Večeřa, M., & Chytrý, M. 2022. [<span class="nocase">Distribution maps
+of vegetation alliances in
+Europe</span>](https://doi.org/10.1111/avsc.12642). *Applied Vegetation
+Science* 25: e12642.
+
+</div>
+
+<div id="ref-RN5423" class="csl-entry">
+
+Pysek, P., Chocholousková, Z., Pysek, A., Jarosík, V., Chytry, M., &
+Tichy, L. 2004. [<span class="nocase">Trends in species diversity and
+composition of urban vegetation over three
+decades</span>](https://doi.org/10.1111/j.1654-1103.2004.tb02321.x).
+*Journal of Vegetation Science* 15: 781–788.
 
 </div>
 
 <div id="ref-RN5387" class="csl-entry">
 
-R Core Team. 2023. [R: A language and environment for statistical
-computing. Version 4.3.1](https://www.r-project.org/).
+R Core Team. 2023. [<span class="nocase">R: a language and environment
+for statistical computing. Version
+4.3.1</span>](https://www.r-project.org/).
 
 </div>
 
 <div id="ref-RN4697" class="csl-entry">
 
 Rivas-Martínez, S., Fernández-González, F., Loidi, J., Lousã, M., &
-Penas, A. 2001. Syntaxonomical checklist of vascular plant communities
-of spain and portugal to association level. *Itinera Geobotanica* 14:
-5–341.
+Penas, A. 2001. <span class="nocase">Syntaxonomical checklist of
+vascular plant communities of Spain and Portugal to association
+level</span>. *Itinera Geobotanica* 14: 5–341.
 
 </div>
 
 <div id="ref-RN4699" class="csl-entry">
 
 Rivas-Martínez, S., Penas, Á., González, T.E.D., Cantó, P., Río, S. del,
-Costa, J.C., Herrero, L., & Molero, J. 2017. Biogeographic units of the
-iberian peninsula and baelaric islands to district level. A concise
-synopsis. In *The vegetation of the iberian peninsula*, pp. 131–188.
-Springer.
+Costa, J.C., Herrero, L., & Molero, J. 2017.
+<span class="nocase">Biogeographic units of the Iberian Peninsula and
+Baelaric Islands to district level. A concise synopsis</span>. In
+*<span class="nocase">The Vegetation of the Iberian Peninsula</span>*,
+pp. 131–188. Springer.
 
 </div>
 
 <div id="ref-RN2311" class="csl-entry">
 
-Roberts, D.W. 2016. Labdsv: Ordination and multivariate analysis for
-ecology. R package version 1.8-0.
+Roberts, D.W. 2016. <span class="nocase">labdsv: Ordination and
+Multivariate Analysis for Ecology. R package version 1.8-0</span>.
 
 </div>
 
 <div id="ref-RN5379" class="csl-entry">
 
-Roleček, J., Tichý, L., Zelený, D., & Chytrý, M. 2009. [Modified
-TWINSPAN classification in which the hierarchy respects cluster
-heterogeneity](https://doi.org/10.1111/j.1654-1103.2009.01062.x).
+Roleček, J., Tichý, L., Zelený, D., & Chytrý, M. 2009.
+[<span class="nocase">Modified TWINSPAN classification in which the
+hierarchy respects cluster
+heterogeneity</span>](https://doi.org/10.1111/j.1654-1103.2009.01062.x).
 *Journal of Vegetation Science* 20: 596–602.
+
+</div>
+
+<div id="ref-RN5436" class="csl-entry">
+
+Silc, U. 2010. [<span class="nocase">Synanthropic vegetation: pattern of
+various disturbances on life history
+traits</span>](<Go to ISI>://WOS:000290511700006). *Acta Botanica
+Croatica* 69: 215–227.
+
+</div>
+
+<div id="ref-RN5429" class="csl-entry">
+
+Silc, U., Vrbnicanin, S., Bozic, D., Carni, A., & Stevanovic, Z.D. 2012.
+[<span class="nocase">Alien plant species and factors of invasiveness of
+anthropogenic vegetation in the Northwestern Balkans - a
+phytosociological
+approach</span>](https://doi.org/10.2478/s11535-012-0049-9). *Central
+European Journal of Biology* 7: 720–730.
+
+</div>
+
+<div id="ref-RN5435" class="csl-entry">
+
+Simonova, D., & Lososova, Z. 2008. [<span class="nocase">Which factors
+determine plant invasions in man-made habitats in the Czech
+Republic?</span>](https://doi.org/10.1016/j.ppees.2007.11.003)
+*Perspectives in Plant Ecology Evolution and Systematics* 10: 89–100.
+
+</div>
+
+<div id="ref-RN5447" class="csl-entry">
+
+Song, Y., Kirkwood, N., Maksimović, Č., Zheng, X., O’Connor, D., Jin,
+Y., & Hou, D. 2019. [<span class="nocase">Nature based solutions for
+contaminated land remediation and brownfield redevelopment in cities: A
+review</span>](https://doi.org/10.1016/j.scitotenv.2019.01.347).
+*Science of The Total Environment* 663: 568–579.
+
+</div>
+
+<div id="ref-RN5440" class="csl-entry">
+
+Stefanon, M., Schindler, S., Drobinski, P., Noblet-Ducoudre, N. de, &
+D’Andrea, F. 2014. [<span class="nocase">Simulating the effect of
+anthropogenic vegetation land cover on heatwave temperatures over
+central France</span>](https://doi.org/10.3354/cr01230). *Climate
+Research* 60: 133–146.
+
+</div>
+
+<div id="ref-RN5450" class="csl-entry">
+
+Straus, L.G. 2005. [<span class="nocase">The Upper Paleolithic of
+Cantabrian Spain</span>](https://doi.org/10.1002/evan.20067).
+*Evolutionary Anthropology: Issues, News, and Reviews* 14: 145–158.
+
+</div>
+
+<div id="ref-RN5428" class="csl-entry">
+
+Tabasevic, M., Lakusic, D., Kuzmanovic, N., Vukojicic, S., Glisic, M., &
+Jovanovic, S. 2021. [<span class="nocase">Ruderal vegetation in
+Serbia-diversity and floristic
+composition</span>](https://doi.org/10.2298/botserb2102251t). *Botanica
+Serbica* 45: 251–261.
 
 </div>
 
 <div id="ref-RN5378" class="csl-entry">
 
-Uría Arizaga, O. 2020. Ensamblaje de comunidades vegetales en parcelas
-urbanas abandonadas de asturias. *Trabajo Fin de Máster, Universidad de
-Oviedo*
+Uría Arizaga, O. 2020. <span class="nocase">Ensamblaje de comunidades
+vegetales en parcelas urbanas abandonadas de asturias</span>. *Trabajo
+Fin de Máster, Universidad de Oviedo*
 
 </div>
 
 <div id="ref-RN4662" class="csl-entry">
 
 Wickham, H., Averick, M., Bryan, J., Chang, W., McGowan, L., François,
-R., Grolemund, G., Hayes, A., Henry, L., & Hester, J. 2019. Welcome to
-the tidyverse. *Journal of Open Source Software* 4: 1686.
+R., Grolemund, G., Hayes, A., Henry, L., & Hester, J. 2019.
+<span class="nocase">Welcome to the Tidyverse</span>. *Journal of Open
+Source Software* 4: 1686.
 
 </div>
 
 <div id="ref-RN5382" class="csl-entry">
 
-Wiser, S.K., & De Cáceres, M. 2013. [Updating vegetation
-classifications: An example with new zealand’s woody
-vegetation](https://doi.org/10.1111/j.1654-1103.2012.01450.x). *Journal
-of Vegetation Science* 24: 80–93.
+Wiser, S.K., & De Cáceres, M. 2013. [<span class="nocase">Updating
+vegetation classifications: an example with New Zealand’s woody
+vegetation</span>](https://doi.org/10.1111/j.1654-1103.2012.01450.x).
+*Journal of Vegetation Science* 24: 80–93.
 
 </div>
 
 <div id="ref-RN5377" class="csl-entry">
 
-Zabaleta Mendizábal, I. 1990. Flora y vegetación de la felguera
-(langreo) y sus alrededores. *Tesina de Licenciatura, Universidad de
-Oviedo.*
+Zabaleta Mendizábal, I. 1990. <span class="nocase">Flora y vegetación de
+La Felguera (Langreo) y sus alrededores. </span>. *Tesina de
+Licenciatura, Universidad de Oviedo.*
 
 </div>
 
 <div id="ref-RN5380" class="csl-entry">
 
-Zelený, D. 2021. twinspanR: TWo-way INdicator SPecies ANalysis (and its
-modified version) in r. R package version 0.22.
+Zelený, D. 2021. <span class="nocase">twinspanR: TWo-way INdicator
+SPecies ANalysis (and its modified version) in R. R package version
+0.22.</span>
 
 </div>
 
@@ -855,36 +1250,47 @@ modified version) in r. R package version 0.22.
 
 <div class="figure">
 
-<img src="../results/figures/maps.png" alt="." width="4228" />
+<img src="../results/figures/maps.png" alt="Figure 1. Distribution of the anthropogenic alliances in the Iberian Atlantic ecoregion. Each dot represents a relevé. Dots are colored by vegetation classes." width="4228" />
 <p class="caption">
-.
+Figure 1. Distribution of the anthropogenic alliances in the Iberian
+Atlantic ecoregion. Each dot represents a relevé. Dots are colored by
+vegetation classes.
 </p>
 
 </div>
 
 <div class="figure">
 
-<img src="../results/figures/dca.png" alt="." width="4228" />
+<img src="../results/figures/dca.png" alt="Figure 2. Ordination of the floristic composition of the anthropogenic plant communities of the Iberian Atlantic ecoregion. The ordination is the results of a Detrended Correspondence Analysis grouped by vegetation classes (A, left) and alliances (B, right)." width="4228" />
 <p class="caption">
-.
+Figure 2. Ordination of the floristic composition of the anthropogenic
+plant communities of the Iberian Atlantic ecoregion. The ordination is
+the results of a Detrended Correspondence Analysis grouped by vegetation
+classes (A, left) and alliances (B, right).
 </p>
 
 </div>
 
 <div class="figure">
 
-<img src="../results/figures/cwms.png" alt="." width="4228" />
+<img src="../results/figures/cwms.png" alt="Figure 3. Ordination of the community-level species traits and ecological preferences. The ordinations are the results of a Principal Component Analysis calculated for the community-weighted means for species traits (A, left) and ecological and disturbance indicator values (B, right)." width="4228" />
 <p class="caption">
-.
+Figure 3. Ordination of the community-level species traits and
+ecological preferences. The ordinations are the results of a Principal
+Component Analysis calculated for the community-weighted means for
+species traits (A, left) and ecological and disturbance indicator values
+(B, right).
 </p>
 
 </div>
 
 <div class="figure">
 
-<img src="../results/figures/boxplots.png" alt="." width="4228" />
+<img src="../results/figures/boxplots.png" alt="Figure 4. Community-level species traits and ecological preferences by alliance. Boxplots calculated for the community-weighted means for species traits and ecological and disturbance indicator values." width="4228" />
 <p class="caption">
-.
+Figure 4. Community-level species traits and ecological preferences by
+alliance. Boxplots calculated for the community-weighted means for
+species traits and ecological and disturbance indicator values.
 </p>
 
 </div>
