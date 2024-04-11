@@ -121,6 +121,8 @@ cwms %>%
                                "Echio-Galactition tomentosae",
                                "Linario polygalifoliae-Vulpion alopecuri",
                                "Sisymbrion officinalis",
+                               "Bidention tripartitae",
+                               "Paspalo-Agrostion semiverticillati",
                                "Convolvulo arvensis-Agropyrion repentis",
                                "Carduo carpetani-Cirsion odontolepidis",
                                "Silybo mariani-Urticion piluliferae", 
@@ -132,9 +134,7 @@ cwms %>%
                                "Aegopodion podagrariae",
                                "Epilobion angustifolii",
                                "Cynancho-Convolvulion sepium",
-                               "Senecionion fluviatilis",
-                               "Bidention tripartitae",
-                               "Paspalo-Agrostion semiverticillati")) %>%
+                               "Senecionion fluviatilis")) %>%
   mutate(Class = fct_relevel(Class,
                              "Cymbalario-Parietarietea diffusae",
                              "Polygono-Poetea annuae",
@@ -142,9 +142,9 @@ cwms %>%
                              "Digitario sanguinalis-Eragrostietea minoris",
                              "Chenopodietea",
                              "Sisymbrietea",
+                             "Bidentetea",
                              "Artemisietea vulgaris",
-                             "Epilobietea angustifolii",
-                             "Bidentetea")) %>%
+                             "Epilobietea angustifolii")) %>%
   mutate(Class = fct_recode(Class, 
                             "Artemisietea" = "Artemisietea vulgaris",
                             "Parietarietea" = "Cymbalario-Parietarietea diffusae",
@@ -165,9 +165,9 @@ cwms %>%
                                "chocolate4",
                                "firebrick3",
                                "khaki1",
+                               "goldenrod1",
                                "darkmagenta", 
-                               "limegreen",
-                               "goldenrod1")) +
+                               "limegreen")) +
   ggthemes::theme_tufte() +
   xlab("Alliance") + ylab("Value") +
   theme(text = element_text(family = "sans"),
@@ -181,13 +181,14 @@ cwms %>%
         legend.text = element_text(size = 9, face = "italic"), 
         panel.background = element_rect(color = "black", fill = NULL),
         strip.text = element_text(size = 10, hjust = 0, margin = margin(l = 0, b = 4)),
+        panel.spacing = unit(0.25, "lines"),
         #strip.text = element_blank(),
         plot.title = element_text(size = 10),
         axis.title = element_text(size = 10),
         axis.title.y = element_blank(),
         axis.text.x = element_text(size = 6, color = "black"),
         axis.text.y = element_text(size = 8, color = "black"),
-        plot.margin = unit(c(0.25,0.5,0,0.2), "cm")) -> Fig4; Fig4
+        plot.margin = unit(c(0.1,0,0,0), "cm")) -> Fig4; Fig4
 
 ggsave(Fig4, file = "results/figures/F5 - height-flowering.png", bg = "white", 
        path = NULL, scale = 1, width = 180, height = 85, units = "mm", dpi = 600)

@@ -38,9 +38,9 @@ header %>%
                              "Digitario sanguinalis-Eragrostietea minoris",
                              "Chenopodietea",
                              "Sisymbrietea",
+                             "Bidentetea",
                              "Artemisietea vulgaris",
-                             "Epilobietea angustifolii",
-                             "Bidentetea")) %>%
+                             "Epilobietea angustifolii")) %>%
   mutate(Class = fct_recode(Class, 
                             "Artemisietea" = "Artemisietea vulgaris",
                             "Parietarietea" = "Cymbalario-Parietarietea diffusae",
@@ -58,6 +58,7 @@ df2 %>%
   geom_vline(xintercept = 0, linetype = "dashed", color = "grey40") +
   geom_segment(data = segs, mapping = aes(xend = oDCA1, yend = oDCA2, color = Class), show.legend = FALSE, alpha = 0.5) +
   ggrepel::geom_text_repel(data = cent, aes(label = Class), size = 2, fontface = "italic", min.segment.length = .25) +
+  #geom_text(data = cent, aes(label = Class), size = 2, fontface = "italic") +
   ggthemes::theme_tufte() +
   xlab("PCA1") + ylab("PCA2") +
   scale_y_continuous(labels = function(x) format(x, nsmall = 2)) +
@@ -79,16 +80,16 @@ df2 %>%
         axis.title = element_blank(),
         axis.text.x = element_text(size = 6, color = "black"),
         axis.text.y = element_text(size = 6, color = "black"),
-        plot.margin = unit(c(0.3,0.2,0,0.2), "cm")) +
+        plot.margin = unit(c(.1,.1,0,0), "cm")) +
   scale_color_manual(values = c("grey60",
                                 "cadetblue4",
                                 "chocolate1", 
                                 "chocolate4",
                                 "firebrick3",
                                 "khaki1",
+                                "goldenrod1",
                                 "darkmagenta", 
-                                "limegreen",
-                                "goldenrod1")) -> Fig1A; Fig1A
+                                "limegreen")) -> Fig1A; Fig1A
 
 ### Get legend
 
@@ -106,9 +107,9 @@ header %>%
                              "Digitario sanguinalis-Eragrostietea minoris",
                              "Chenopodietea",
                              "Sisymbrietea",
+                             "Bidentetea",
                              "Artemisietea vulgaris",
-                             "Epilobietea angustifolii",
-                             "Bidentetea")) %>%
+                             "Epilobietea angustifolii")) %>%
   mutate(Class = fct_recode(Class, 
                             "Artemisietea" = "Artemisietea vulgaris",
                             "Parietarietea" = "Cymbalario-Parietarietea diffusae",
@@ -134,7 +135,7 @@ header %>%
         axis.title = element_blank(),
         axis.text.x = element_text(size = 6, color = "black"),
         axis.text.y = element_text(size = 6, color = "black"),
-        plot.margin = unit(c(0.3,0.2,0,0.2), "cm")) +
+        plot.margin = unit(c(.1,.1,0,0), "cm")) +
   scale_fill_manual(name = "Vegetation class",
                     values = c("grey60",
                                 "cadetblue4",
@@ -142,9 +143,9 @@ header %>%
                                 "chocolate4",
                                 "firebrick3",
                                 "khaki1",
+                               "goldenrod1",
                                 "darkmagenta", 
-                                "limegreen",
-                                "goldenrod1")) -> FigLegend; FigLegend
+                                "limegreen")) -> FigLegend; FigLegend
 
 legend <- cowplot::get_legend(FigLegend + theme(legend.box.margin = margin(0, 0, 0, 12)))
 
@@ -206,7 +207,7 @@ df2 %>%
         axis.title = element_blank(),
         axis.text.x = element_text(size = 6, color = "black"),
         axis.text.y = element_text(size = 6, color = "black"),
-        plot.margin = unit(c(0.3,0.2,0,0.2), "cm")) +
+        plot.margin = unit(c(.1,.1,0,0), "cm")) +
   scale_color_manual(values = c("grey60",
                                 "grey60",
                                 "cadetblue4",
@@ -271,7 +272,7 @@ df2 %>%
         axis.title = element_blank(),
         axis.text.x = element_text(size = 6, color = "black"),
         axis.text.y = element_text(size = 6, color = "black"),
-        plot.margin = unit(c(0.3,0.2,0,0.2), "cm")) +
+        plot.margin = unit(c(.1,.1,0,0), "cm")) +
   scale_color_manual(values = c("chocolate1",
                                 "chocolate1",
                                 "chocolate1",
@@ -334,7 +335,7 @@ df2 %>%
         axis.title = element_blank(),
         axis.text.x = element_text(size = 6, color = "black"),
         axis.text.y = element_text(size = 6, color = "black"),
-        plot.margin = unit(c(0.3,0.2,0,0.2), "cm")) +
+        plot.margin = unit(c(.1,.1,0,0), "cm")) +
   scale_color_manual(values = c("firebrick3",
                                 "goldenrod1",
                                 "firebrick3",
@@ -401,7 +402,7 @@ df2 %>%
         axis.title = element_blank(),
         axis.text.x = element_text(size = 6, color = "black"),
         axis.text.y = element_text(size = 6, color = "black"),
-        plot.margin = unit(c(0.3,0.2,0,0.2), "cm")) +
+        plot.margin = unit(c(.1,.1,0,0), "cm")) +
   scale_color_manual(values = c("darkmagenta", 
                                 "darkmagenta",
                                 "darkmagenta",
@@ -466,7 +467,7 @@ df2 %>%
         axis.title = element_blank(),
         axis.text.x = element_text(size = 6, color = "black"),
         axis.text.y = element_text(size = 6, color = "black"),
-        plot.margin = unit(c(0.3,0.2,0,0.2), "cm")) +
+        plot.margin = unit(c(.1,.1,0,0), "cm")) +
   scale_color_manual(values = c("limegreen",
                                 "limegreen",
                                 "limegreen",
@@ -484,4 +485,4 @@ cowplot::plot_grid(Fig1A, Fig1B,
 cowplot::plot_grid(Fig1, legend, rel_widths = c(3, 1)) -> Figure1; Figure1
 
 ggsave(Figure1, file = "results/figures/F2 - pca.png", bg = "white", 
-       path = NULL, scale = 1, width = 180, height = 180, units = "mm", dpi = 600)
+       path = NULL, scale = 1, width = 180, height = 165, units = "mm", dpi = 600)

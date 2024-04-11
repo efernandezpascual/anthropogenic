@@ -7,306 +7,299 @@ Anthropogenic vegetation is the set of plant communities that occur as a
 direct consequence of human activities, and is chiefly composed by the
 weed vegetation of arable fields and the ruderal vegetation of human
 settlements and their surroundings ([Lososova & Simonova
-2008](#ref-RN5441)). The formation of anthropogenic vegetation in
-temperate Europe has been characterized by a constant enrichment
-produced by the arrival of alien species: first archaeophytes starting
-in the Neolithic and peaking in the Bronze Age; and then neophytes from
-the Modern Age to the present day ([Brun 2009](#ref-RN5439)).
-Synanthropic archaeophytes include many Mediterranean taxa that started
-their expansion into temperate areas during the Mid-Holocene warm
-period, but it is difficult to disentangle to what extent this expansion
-was favored by human activities and/or ongoing climatic changes
-([Cayless & Tipping 2002](#ref-RN5443); [Cordova & Lehmann
-2003](#ref-RN5432)), especially in southern European areas close to the
-transition between the Mediterranean and the temperate climates
-([Celesti‐Grapow et al. 2009](#ref-RN5444)). Meanwhile, synanthropic
-neophytes include many American, African and Asian taxa that arrived as
-a consequence of the global trade networks established by the Western
-European colonial powers ([Lenzner et al. 2022](#ref-RN5451)). In the
-last century, anthropogenic vegetation has shown a decrease in species
-richness and diversity ([Pysek et al. 2004](#ref-RN5423)), as rare
-synanthropic species have become rarer, and neophytes have increased
-their abundance at the expense of natives and archaeophytes ([Lososova &
-Simonova 2008](#ref-RN5441)).
-
-The anthropogenic communities of human-made habitats make up an
-important part of the supply of natural elements in urban and peri-urban
-habitats ([Kowarik 2018](#ref-RN5445)). In densely-populated city
-landscapes, the plant communities that colonize urban vacant lots
-([Johnson et al. 2017](#ref-RN2300)) are a useful biodiversity resource
-with high ecological and societal potential ([Anderson & Minor
-2017](#ref-RN5446)). Anthropogenic vegetation cover can also impact
-regional-level extreme climatic events ([Stefanon et al.
+2008](#ref-RN5441)). The anthropogenic communities of human-made
+habitats make up an important part of the supply of natural elements in
+urban and peri-urban habitats ([Kowarik 2018](#ref-RN5445)). In
+densely-populated city landscapes, the plant communities that colonize
+urban vacant lots ([Johnson et al. 2017](#ref-RN2300)) are a useful
+biodiversity resource with high ecological and societal potential
+([Anderson & Minor 2017](#ref-RN5446)). Anthropogenic vegetation cover
+can also impact regional-level extreme climatic events ([Stefanon et al.
 2014](#ref-RN5440)). Furthermore, many synanthropic plants can
 accumulate heavy metals in their biomass ([Kostryukova et al.
 2017](#ref-RN5433)), making them valuable candidates for nature-based
 solutions such as bioremediation and restoration of degraded landscapes
 ([Song et al. 2019](#ref-RN5447)).
 
-The Iberian Atlantic ecoregion has had a long history of human
+The anthropogenic vegetation of temperate Europe is formed by an
+original pool of native species favored by humans, but this pool has
+been constantly enriched by the arrival of alien species: first
+archaeophytes starting in the Neolithic and peaking in the Bronze Age;
+and then neophytes from the Modern Age (after 1.500 A.D.) to the present
+day ([Brun 2009](#ref-RN5439)). Synanthropic archaeophytes include many
+Mediterranean taxa that started their expansion into temperate areas
+during the Mid-Holocene warm period, but it is difficult to disentangle
+to what extent this expansion was favored by human activities and/or
+ongoing climatic changes ([Cayless & Tipping 2002](#ref-RN5443);
+[Cordova & Lehmann 2003](#ref-RN5432)), especially in southern European
+areas close to the transition between the Mediterranean and the
+temperate climates ([Celesti‐Grapow et al. 2009](#ref-RN5444)).
+Meanwhile, synanthropic neophytes include many American, African and
+Asian taxa that arrived as a consequence of the global trade networks
+established by the Western European colonial powers ([Lenzner et al.
+2022](#ref-RN5451)). In the last century, anthropogenic vegetation has
+shown a decrease in species richness and diversity ([Pysek et al.
+2004](#ref-RN5423)), as rare synanthropic species have become rarer, and
+neophytes have increased their abundance at the expense of natives and
+archaeophytes ([Lososova & Simonova 2008](#ref-RN5441)).
+
+Antropogenic vegetation is likely to be similar within ecological
+regions (ecoregions, hereafter), since they are assumed to encompass
+areas with a similar biogeographic history and recurrent local
+ecosystems ([**RN5491?**](#ref-RN5491)). However, ecoregional-scale
+studies on the diversity of antropogenic vegetation are scarce in the
+literature. The Iberian Atlantic ecoregion (a.k.a. Cantabrian Mixed
+Forests ecoregion; NW Iberian Peninsula) has a long history of human
 habitation dating back to the Cantabrian Upper Paleolithic ([Straus
 2005](#ref-RN5450)). This, together with its transitional position at
 the border between the temperate and Mediterranean climatic zones of
 Europe ([Loidi 2017](#ref-RN4700)), suggests a long regional history for
-archaeophyte-rich anthropogenic plant communities, and supports a
-current high diversity of anthropogenic plant communities combining
+archaeophyte-rich anthropogenic plant communities, likely supporting a
+current high diversity of anthropogenic plant communities with both
 temperate and Mediterranean floristic elements ([Díaz González
 2020](#ref-RN5008)). Historical trade links with America and Asia,
-together with the warm temperate climate, have made the region a hotspot
-for plant invasions by neophytes ([**Checklist?**](#ref-Checklist)).
-Recent processes of postindustrial land-use change have left large areas
-of brownfields whose management and restoration requires an
-understanding of anthropogenic communities able to colonize or restore
-them ([Gallego et al. 2016](#ref-RN5448); [Matanzas et al.
-2021](#ref-RN5449)). Although there is a long tradition of studying weed
-and ruderal communities in the ecoregion ([Aedo et al.
-1988](#ref-RN5364); [González et al. 1988](#ref-RN5360); [Merino,
-González, González, et al. 1988](#ref-RN5359); [Merino, González,
-Morales, et al. 1988](#ref-RN5361)) there is a current need for a
-regional-level synthesis that revises the classification and updates it
-in accord with recent developments in European vegetation science
-([Mucina et al. 2016](#ref-RN4698)) and habitat classification ([Chytrý
-et al. 2020](#ref-RN5061)). In this article we have performed such a
-synthesis with two main objectives: (1) provide an updated
-classification of anthropogenic plant communities in the Iberian
-Atlantic ecoregion, and (2) describe the main patterns of variation in
-terms of species traits and ecological and disturbance preferences.
+together with the warm and humid temperate climate, have made the region
+a hotspot for neophyte invasions ([**RN5492?**](#ref-RN5492);
+[**RN5493?**](#ref-RN5493)). Recent post-industrial land-use changes
+have left large areas with abandoned industrial sites (i.e. brownfields)
+whose management and restoration requires an understanding of
+anthropogenic communities able to colonize or restore them ([Gallego et
+al. 2016](#ref-RN5448); [Matanzas et al. 2021](#ref-RN5449)). Although
+there is a long tradition of studying weed and ruderal communities in
+the ecoregion ([Aedo et al. 1988](#ref-RN5364); [González et al.
+1988](#ref-RN5360); [Merino, González, González, et al.
+1988](#ref-RN5359); [Merino, González, Morales, et al.
+1988](#ref-RN5361)) there is a current need for an ecoregional-level
+synthesis that revises and updates the classification and updates in
+accord with recent developments in European vegetation science ([Mucina
+et al. 2016](#ref-RN4698)) and habitat classification ([Chytrý et al.
+2020](#ref-RN5061)). In this article we have performed such a synthesis
+with two main objectives: (1) provide an updated classification of
+anthropogenic plant communities in the Iberian Atlantic ecoregion, and
+(2) describe the main patterns of vegetation diversity in terms of
+floristic origin (natives, archaeophytes, neophytes); life forms;
+functional traits (plant height and flowering time); and ecological
+indicator values (temperature, moisture, light, nutrients, soil
+reaction, disturbance frequency and disturbance severity).
 
 # Methods
 
-We performed all data analyses with R version 4.3.1 ([R Core Team
-2023](#ref-RN5387)), using the R package ‘tidyverse’ ([Wickham et al.
-2019](#ref-RN4662)) for data processing and visualization. The original
-datasets, as well as R code for analysis and creation of the manuscript
-can be accessed at the GitHub repository
+We performed all data management and analysis with R version 4.3.1 ([R
+Core Team 2023](#ref-RN5387)), using the R package *tidyverse* ([Wickham
+et al. 2019](#ref-RN4662)) for data processing and visualization. We
+homogenized all taxon names in the analysis and the article using
+Euro+Med ([2006](#ref-RN5044)) or Plants of the World Online for taxa
+not in Euro+Med ([POWO 2023](#ref-RN5376)). For the nomenclature of
+sintaxa we follow Mucina *et al.* ([2016](#ref-RN4698)) for alliances
+and higher ranks, and Rivas-Martínez *et al.* ([2001](#ref-RN4697)) for
+associations. The original datasets, as well as R code for analysis and
+creation of the manuscript can be accessed at the GitHub repository
 <https://github.com/efernandezpascual/manmade>.
 
 ## Study ecoregion
 
 We studied the anthropogenic plant communities of the Iberian Atlantic
-ecoregion, i.e. the territories with a temperate climate in the
-north-western Iberian Peninsula. Our study ecoregion broadly corresponds
-with the Cantabrian Mixed Forests ecoregion *sensu* Olson *et al.*
-([2001](#ref-RN4667)), with the Iberian part of the European Atlantic
-province *sensu* Rivas-Martínez *et al.* ([2017](#ref-RN4699)) and with
-the Iberian section of the Atlantic biogeographical region of the
-European Environmental Agency
+ecoregion ([Fernández Prieto et al. 2020](#ref-RN5372)), i.e. the
+territories with a temperate climate in the north-western Iberian
+Peninsula. Our study ecoregion broadly corresponds with the Cantabrian
+Mixed Forests ecoregion *sensu* Olson *et al.* ([2001](#ref-RN4667)),
+with the Iberian part of the European Atlantic province *sensu*
+Rivas-Martínez *et al.* ([2017](#ref-RN4699)) and with the Iberian
+section of the Atlantic biogeographical region of the European
+Environmental Agency
 (<https://www.eea.europa.eu/data-and-maps/figures/biogeographical-regions-in-europe-2>).
-To define in detail the study ecoregion we did a fine-scale revision of
-its geographic borders at high spatial resolution using the most recent
-biogeographical map of the Iberian Atlantic territories ([Fernández
-Prieto et al. 2020](#ref-RN5372)). The revised Iberian Atlantic
-ecoregion encompasses 79,891 km<sup>2</sup> of Portugal, Spain and
-France. Its climate is temperate with average monthly temperatures
-ranging from 6 to 20°C, and with total annual precipitation between
-1,100 and 2,600 mm, with some areas having warm-dry summers but without
-the distinctive 2-month drought of the Mediterranean climate ([Moreno et
-al. 1990](#ref-RN5373)). Nonetheless, the Iberian Atlantic ecoregion is
-located at the transition between the temperate and the Mediterranean
-climates in southern Europe.
 
 ## Definition of anthropogenic vegetation
 
-To define our target vegetation, we followed the definitions of
+To circumscribe our study vegetation, we followed the definition of
 anthropogenic vegetation in the recent classification of the vegetation
 of Europe by Mucina *et al.* ([2016](#ref-RN4698)). In our study area,
 this potentially includes the vegetation classes *Polygono-Poetea
 annuae*, *Papaveretea rhoeadis*, *Digitario sanguinalis-Eragrostietea
-minoris*, *Chenopodietea*, *Sisymbrietea*, *Artemisietea vulgaris*,
-*Epilobietea angustifolii* and *Bidentetea*. For a complete synthesis,
-we added the class *Cymbalario-Parietarietea diffusae* included by
-Mucina *et al.* ([2016](#ref-RN4698)) in the vegetation of rock crevices
-and screes, since this class encompasses the vegetation of human-made
-walls in our ecoregion. For the nomenclature of sintaxa we follow Mucina
-*et al.* ([2016](#ref-RN4698)) for alliances and higher ranks, and
-Rivas-Martínez *et al.* ([2001](#ref-RN4697)) for associations.
+minoris*, *Chenopodietea*, *Sisymbrietea*, *Bidentetea*, *Artemisietea
+vulgaris* and *Epilobietea angustifolii*. To these, and for a complete
+synthesis, we added to our study the class *Cymbalario-Parietarietea
+diffusae* included by Mucina *et al.* ([2016](#ref-RN4698)) in the
+vegetation of rock crevices and screes, since this class encompasses the
+vegetation of human-made walls.
 
-## Vegetation data
+## Checklist of anthropogenic sintaxa
 
-As vegetation data for our analyses, we obtained all vegetation relevés
-(i.e. records of plant species coexisting in a given sampling plot at a
-given date) from our study ecoregion that were available in SIVIM, the
-Iberian and Macaronesian Vegetation Information System ([Font et al.
-2012](#ref-RN5374)). These were 28,775 relevés representing all
-vegetation types (i.e. anthropogenic, semi-natural and natural). Since
-these relevés were sampled by different authors throughout the decades,
-there was no taxonomical consistency among them, so we homogenized all
-taxon names for the whole dataset. We followed the methodology applied
-by Jiménez-Alfaro *et al.* ([2021](#ref-RN5375)) to the Cantabrian
-Mountains, an area within the study ecoregion which includes c. 80% of
-the ecoregional flora, to create a new taxonomical checklist for the
-ecoregion based on the Euro+Med Plantbase ([2006](#ref-RN5044)). For
-vascular plants not included in Euro+Med (e.g. several *Quercus* or
-*Salix* hybrids, non-native species, etc.), as well as for bryophytes,
-we followed Plants of the World Online ([POWO 2023](#ref-RN5376)). We
-removed Fungi and algae. For analytical purposes, we merged taxa into
-aggregates (1) when there were sets of very close species with a
-difficult identification in the field (e.g. *Viola riviniana* + *V.
-reichenbachiana* + *V. sylvestris* = *Viola riviniana* aggr.), (2) when
-the taxon was recently separated in different taxa (e.g. *Hedera
-helix* + *Hedera hibernica* + *Hedera canariensis* = *Hedera helix*
-aggr.) and (3) when it was assumed that not all authors were able to
-identify or recognize infraspecific taxa (e.g. all *Narcissus
-pseudonarcissus* subspecies and varieties = *Narcissus pseudonarcissus*
-aggr.).
+To assist in our classification, we prepared a checklist of
+anthropogenic sintaxa that could potentially be present in our study
+ecoregion (**Supplementary 1**), based on regional sintaxonomical
+checklists ([Izco et al. 2000](#ref-RN5363); [Díaz González
+2020](#ref-RN5008); [Gómez 2020](#ref-RN5365)) and recent revisions at
+the European level ([Mucina et al. 2016](#ref-RN4698); [Preislerová et
+al. 2022](#ref-RN5371)). The checklist inclused 38 anthropogenic
+vegetation alliances that could be present in the Iberian Atlantic
+ecoregion (**Supplementary 2**). A goal of our study was to validate the
+presence of these alliances in our ecoregion, and to assign to them the
+existing vegetation data.
 
-For mapping purposes, we improved the geographical information of the
-SIVIM relevés using a downscaling procedure. The original position of
-vegetation relevés in SIVIM was recorded as 10 km x 10 km (52.2%) and 1
-km x 1 km (47.8%) grid cells. We assigned more precise geographic
-coordinates to these plots using the elevation recorded originally by
-the authors and a digital elevation model (DEM) of the Iberian Peninsula
-at 200 m grid resolution. From the original 10 km x 10 km or 1 km x 1 km
-grid cell of each relevé, we (1) kept only those 200 m cells that agreed
-with the relevé’s elevation (± 50 m); (2) randomly selected one of these
-200 m cells; and (3) assigned to the relevé the coordinate of the 200 m
-cell’s centroid, in decimal degrees. By doing this, the plots were
-downscaled at higher resolution within their cells, assuming that 200 m
-cells at similar elevations within the same grid cell also have similar
-climatic conditions.
+## Vegetation data selection
 
-To identify anthropogenic relevés in the SIVIM database we followed two
-complementary approaches. Fist, we used the expert system created to
-classify vegetation plots into EUNIS pan-European habitat classification
-types ([Chytrý et al. 2020](#ref-RN5061)). The expert system uses the
-floristic composition of plots to assign them to habitat types depending
-on the presence and abundance of characteristic species. We used the
-habitats assigned by the expert system to retrieve plots that had been
-assigned to any habitat related to the vegetation classes we had
-previously defined: all habitats in the level 1 code V (vegetated
+We retrieved anthropogenic vegetation plots from SIVIM, the Iberian and
+Macaronesian Vegetation Information System ([Font et al.
+2012](#ref-RN5374)). To identify plots as anthropogenic, we selected
+those plots that had been classified by the original authors of the plot
+as belonging to any sintaxa in our sintaxonomical checklist. However,
+since not all plots in SIVIM have an assigned sintaxon, we also
+retrieved additional plots using the expert system created by Chytrý *et
+al.* ([2020](#ref-RN5061)) to classify vegetation plots into EUNIS
+pan-European habitat types. This expert system uses the floristic
+composition of plots to assign them to habitat types depending on the
+presence and abundance of characteristic species. We retrieved plots
+that had been assigned to any habitat related to the vegetation classes
+we had previously defined: all habitats in the level 1 code V (vegetated
 man-made habitats), plus level 3 codes R55 (lowland moist or wet
 tall-herb and fern fringe) and R57 (herbaceous forest clearing
-vegetation). Second, we also retrieved relevés if they had been
-classified by the original authors of the relevé into any sintaxa
-belonging to our target anthropogenic vegetation classes
-(**Supplementary 1**). This produced an initial pool of 3,160 relevés
-from SIVIM, to which we added 89 relevés of urban or peri-urban plant
-communities conducted by us or extracted by us from the local literature
-([Zabaleta Mendizábal 1990](#ref-RN5377); [Uría Arizaga
-2020](#ref-RN5378)). After initial exploration of this dataset using
-Two-Way Indicator Species Analysis (TWINSPAN) ([Roleček et al.
-2009](#ref-RN5379)), we identified 652 outlier relevés which either did
-not belong to the target anthropogenic classes or to the geographical
-area of the ecoregion. We removed these, leaving a dataset of 2,508
-relevés for the analyses of this article: 2,419 relevés from SIVIM,
-originally recorded in 89 publications see (**Supplementary 2**); plus
-89 relevés added by us.
+vegetation). It must be noted that habitats R55 and R57 include
+communities that are classified as *grasslands and lands dominated by
+forbs, mosses or lichens * by EUNIS but as *anthropogenic vegetation* by
+by Mucina *et al.* ([2016](#ref-RN4698)). The extraction from SIVIM
+produced an initial pool of 3,160 vegetation plots, to which we added 89
+vegetation plots of urban or peri-urban plant communities sampled by us
+or extracted from local literature not in SIVIM ([Zabaleta Mendizábal
+1990](#ref-RN5377); [Uría Arizaga 2020](#ref-RN5378)).
 
-## Statistical analyses
+## Vegetation data cleaning
 
-<u>Definition of target alliances and training dataset.</u> As a
-previous step before classification, we prepared a revised checklist of
-potential anthropogenic alliances that could be present in our study
-ecoregion, based on regional sintaxonomical checklists ([Izco et al.
-2000](#ref-RN5363); [Díaz González 2020](#ref-RN5008); [Gómez
-2020](#ref-RN5365)) and recent revisions at the European level ([Mucina
-et al. 2016](#ref-RN4698); [Preislerová et al. 2022](#ref-RN5371)).
-Then, we filtered our dataset to include only those relevés which had
-been assigned by the authors to any of these alliances, and used
-sequential TWINSPANs to do a preliminary re-classification of these
-filtered relevés, attempting to re-match the relevés into the *a priori*
-defined checklist of alliances. We used 3 pseudospecies cut levels (0,
-15, 25) with a minimum group size of 10 plots and Sørensen’s average
-dissimilarity, and the R package ‘twinspanR’ ([Zelený
-2021](#ref-RN5380)) to do the TWINSPANs. To start, we did a TWINSPAN
-classification into 15 clusters, followed by separate TWINSPANS within
-each cluster. This preliminary TWINSPAN allowed us to (1) validate which
-alliances were present in the study ecoregion; and (2) prepare a
-training dataset for semi-supervised classification (see below).
+We performed an exploratory analysis of these 3,249 plots using Two-Way
+Indicator Species Analysis (TWINSPAN) ([Roleček et al.
+2009](#ref-RN5379)). We used the R package *twinspanR* ([Zelený
+2021](#ref-RN5380)) to do the TWINSPANs in this article, using 3
+pseudospecies cut levels (0, 15, 25) with a minimum group size of 10
+plots and Sørensen’s average dissimilarity. During this exploratory
+analysis we identified 741 outlier plots which either did not belong to
+the target anthropogenic vegetation or to the geographical area of the
+ecoregion. The majority of these plots corresponded to coastal plant
+communities and had been misclassified by the expert system. We removed
+these, leaving a dataset of 2,508 vegetation plots for data analysis:
+2,419 plots from SIVIM, originally recorded in 89 publications
+(**Supplementary 3**); plus 89 plots added by us.
 
-<u>Semi-supervised classification.</u> Next, we applied a
-semi-supervised classification to the whole dataset. Semi-supervised
-classification uses a training subset of *a priori* classified relevés
-to classify a secondary subset of unclassified relevés ([De Cáceres et
-al. 2010](#ref-RN5383)). Our training subset included all the relevés
-that (1) had been classified by the authors of the relevé into any of
-the alliances that we had validated during the previous TWINSPANs, and
-(2) had also been classified by us into these alliances during our
-TWINSPANs. The secondary subset included all the relevés which did not
-meet these two criteria. Our goal was to refine and not to simply extend
-the classification, so we applied the semi-supervised classification to
-the whole dataset, i.e. we allowed relevés from the training subset to
-be re-assigned to other groups during the classification. In addition,
-semi-supervised classification can create new groups to place data
-points that do not match the already *a priori* groups. Furthermore, we
-applied a noise clustering fuzzy algorithm, which allows the relevés to
-be classified either into the *a priori* groups or into a ‘noise’ group
-which includes outliers and transitional relevés ([Wiser & De Cáceres
-2013](#ref-RN5382)). We set the fuzziness coefficient to a low value (m
-= 1) to accommodate a high number of transitional relevés; and we set
-the distance to the noise class to d = 1. We performed this analysis
-with the R package ‘vegclust’ ([De Cáceres et al. 2010](#ref-RN5383)).
-We used pairwise PERMANOVA (with 100,000 iterations, Euclidean distances
-and Holm’s p-value correction) fitted with the R package ‘RVAideMemoire’
-([Herve 2023](#ref-RN5381)) to test the significant of the final
-vegetation groups; and Detrended Correspondence Analysis (DCA) as
-implemented in the R package ‘vegan’ ([Oksanen et al.
-2022](#ref-RN5386)) to visualize the relationships between the groups.
+## Training dataset for semi-supervised classification and validation of alliances
 
-<u>Characteristic species and EUNIS habitat regionalization.</u> We
-calculated sets of characteristic species ([Chytrý et al.
-2020](#ref-RN5061)) for each of the final vegetation groups. We defined
-dominant species as species with more than 25% cover in at least 5% of
-the relevés of the group; constant species as species with a frequency
-higher than 50% in the group; and diagnostic species as species with an
-‘IndVal’ value with a p-value lower than 0.05, as calculated with the R
-package ‘labdsv’ ([Roberts 2016](#ref-RN2311)) using 1.000.000
-iterations. Additionally, we assigned to each group a regionalized level
-4 EUNIS habitat code, using pre-existing codes when they existed, and
+To create a training dataset for semi-supervised classification (see
+below), we started by keeping only those plots (n = 2,201) that had been
+assigned by the original authors of the plot as belonging to any of the
+38 alliances in our sintaxonomical checklist (i.e., we removed the plots
+without sintaxa, that had been retrieved solely by the expert system).
+We further cleaned this subset by subjecting it to a preliminary
+numerical classification using TWINSPAN, in which we attempted to match
+the plots into the 38 alliances our sintaxonomical checklist. This step
+allowed us to identify those plots in which there was an agreement
+between (1) our TWINSPAN-based classification and (2) the classification
+based on the original-author sintaxa; these plots (n = 1,725) became our
+training dataset for semi-supervised classification. Furthermore, this
+step allowed us to validate which alliances from our sintaxonomical
+checklist were present in the study ecoregion (n = 28) and which were
+absent (n = 10).
+
+## Semi-supervised classification
+
+Next, we conducted a semi-supervised classification of the whole dataset
+(n = 2,508 plots) into the 28 validated anthropogenic alliances.
+Semi-supervised classification uses a training subset of *a priori*
+classified vegetation plots to classify a secondary subset of
+unclassified plots ([De Cáceres et al. 2010](#ref-RN5383)). Since our
+goal was to refine the classification of the whole dataset, we allowed
+plots from the training subset to be re-assigned to other alliances
+during the classification. In addition, semi-supervised classification
+can create new groups to place data points that do not match the already
+existing *a priori* groups, but attempts to do so resulted in new groups
+with no ecological significance, and thus we kept the 28 alliances as
+final vegetation groups. Furthermore, we applied a noise clustering
+fuzzy algorithm, which allows the plots to be classified either into the
+*a priori* alliances or into a *noise* group which includes outliers and
+transitional plots ([Wiser & De Cáceres 2013](#ref-RN5382)). We set the
+fuzziness coefficient to a low value (m = 1) to accommodate a high
+number of transitional plots; and we set the distance to the noise class
+to d = 1. We performed this analysis with the R package *vegclust* ([De
+Cáceres et al. 2010](#ref-RN5383)). The semi-supervised classification
+with noise clustering resulted in the final classification of 2,081
+plots into 28 alliances and 427 plots left out in the noise group. We
+used pairwise PERMANOVA (with 100,000 iterations, Euclidean distances
+and Holm’s p-value correction) fitted with the R package *RVAideMemoire*
+([Herve 2023](#ref-RN5381)) to test the significance of the final
+vegetation alliances; along with Principal Component Analysis (PCA) as
+implemented in the R package *FactoMineR* ([Lê et al.
+2008](#ref-RN3166)) to visualize the relationships between the
+alliances.
+
+## Characteristic species and EUNIS habitat regionalization
+
+We calculated sets of characteristic species ([Chytrý et al.
+2020](#ref-RN5061)) for each of the final 28 vegetation alliances. We
+defined dominant species as species with more than 25% cover in at least
+5% of the vegetation plots of the group; constant species as species
+with a frequency higher than 50% in the group; and diagnostic species as
+species with an *IndVal* value with a p-value lower than 0.05, as
+calculated with the R package *labdsv* ([Roberts 2016](#ref-RN2311))
+using 1.000.000 iterations. Additionally, we assigned to each alliance a
+regionalized level 4 EUNIS habitat code, using pre-existing codes when
+they existed
+(<https://eunis.eea.europa.eu/habitats-code-browser-revised.jsp>), and
 creating new codes when not.
 
-<u>Community traits and ecological requirements.</u> To describe the
-resulting vegetation groups, we compiled a dataset of species traits and
-ecological preferences for the species pool of the classified relevés.
-For each species, we extracted from *Flora iberica*
-([1987](#ref-RN3243)) its maximum height, its median month of flowering,
-the length of the flowering period, and whether it was a neophyte or
-not. From FloraVeg.EU ([2023](#ref-RN5385)) we extracted the species’
-life forms and kept ‘therophyte’ and ‘geophyte’ for further analysis
-since these two categories had the largest contribution to variance as
-per an exploratory Principal Component Analysis (PCA) performed using
-the R package ‘FactoMineR’ ([Lê et al. 2008](#ref-RN3166)). We also
-extracted the ecological indicator values ([Dengler et al.
-2023](#ref-RN5384)) and the disturbance indicator values ([Midolo et al.
-2023](#ref-RN5101)) of each species. In the case of the ecological and
-disturbance indicators, we assigned values to species lacking them by
-(1) calculating weighted average values of the species with values for
-each plot (weighting by species cover), and (2) assigning to the missing
-species the weighted average values of the plots where they were present
-(weighting by species cover). Then, for each relevé we calculated its
-community-weighted mean (weighting by species cover) for each trait and
-ecological preference, and explored the main axes of variation using
-PCA, separately for species traits and ecological preferences.
+## Species origin as native, archaeophyte and neophyte
+
+We classified the species as native, archaophytes and neophytes using
+the information in *Flora iberica* ([1987](#ref-RN3243)) and catalogues
+of archaeophytes for Britain ([**RN5490?**](#ref-RN5490)) and the Czech
+Republic ([**RN5495?**](#ref-RN5495)). We must stress that identifying
+archaeophytes is southern Europe is highly problematic and our
+classification must be taken as an indication of putative archaeophyte
+character for the purposes of vegetation description, rather than a
+definitive classification of the species.
+
+## Species life form
+
+From *FloraVeg.EU* ([2023](#ref-RN5385)) we extracted the species’ life
+forms and kept *therophyte* and *geophyte* for further analysis since
+these two categories had the largest contribution to variance as per an
+exploratory Principal Component Analysis (PCA) performed using the R
+package *FactoMineR* ([Lê et al. 2008](#ref-RN3166)).
+
+## Species and vegetation height and flowering phenology
+
+From *Flora iberica* ([1987](#ref-RN3243)) we extracted the maximum
+height, median month of flowering and length of the flowering period of
+each species in the dataset. We used these to calculate plot-level
+community-weighted means (weighting by species cover) for each trait, to
+characterize the vegetation height and flowering phenology of the
+anthropogenic plant communities.
+
+## Species ecological indicator values
+
+We collected, for each species in the dataset, its ecological indicator
+values of temperature, moisture, light, nutrients and soil reaction
+([Dengler et al. 2023](#ref-RN5384)); and its disturbance frequency and
+severity indicator values ([Midolo et al. 2023](#ref-RN5101)). To those
+species lacking an indicator value in the accessed references, we
+assigned a value by reciprocal averaging, i.e. by (1) calculating
+weighted average values of the species with values for each plot
+(weighting by species cover), and (2) assigning to the missing species
+the weighted average values of the plots where they were present
+(weighting by species cover). Then, for each vegetation plot, we
+calculated the plot-level mean of each indicator value.
 
 # Results
 
 ## Overview of the classification
 
-Our revision of the literature produced a provisional list of 38
-anthropogenic vegetation alliances that could be present in the Iberian
-Atlantic ecoregion (**Supplementary 3**). In our study dataset (n =
-2,508 relevés), there were 2,201 relevés that had been assigned by the
-authors to any of these alliances. We used these 2,201 relevés for a
-preliminary re-classification based on TWINSPAN, attempting to re-match
-the relevés into the *a priori* defined checklist of 38 alliances. This
-procedure allowed us to validate 28 alliances as present in the
-ecoregion. A total of 1,725 relevés had been classified by both the
-original authors and our TWINSPAN into these alliances, and these became
-our training subset for semi-supervised classification. Attempts by the
-semi-supervised classification to create new groups resulted on new
-groups with no ecological significance, and thus we kept the 28
-alliances as final vegetation groups (**Table 1**). Most of the
-alliances had a wide distribution in the ecoregion according to our
-dataset (**Figure 1**), although five of them (*Caucalidion lappulae*,
-*Linario polygalifoliae-Vulpion alopecuri*, *Convolvulo
-arvensis-Agropyrion repentis*, *Senecionion fluviatilis*,
-*Paspalo-Agrostion semiverticillati*) had only isolated occurrences in a
-few points towards the southern limit of the Iberian Atlantic
-territories. The regional literature included in our dataset recognized
-72 associations (**Supplementary 4**) within these alliances. The
-semi-supervised classification with noise clustering resulted in the
-final classification of 2,081 relevés into 28 alliances and 427 relevés
-left in the noise group.
+The semi-supervised classification resulted in the classification of
+2,081 vegetation plots into 28 anthropogenic alliances of the Iberian
+Atlantic ecoregion (**Table 1**, **Figure 1**). Most of the alliances
+had a wide distribution in the ecoregion according to our dataset,
+although five of them (*Caucalidion lappulae*, *Linario
+polygalifoliae-Vulpion alopecuri*, *Convolvulo arvensis-Agropyrion
+repentis*, *Senecionion fluviatilis*, *Paspalo-Agrostion
+semiverticillati*) had only isolated occurrences in a few points towards
+the southern limit of the Iberian Atlantic territories. The regional
+literature included in our dataset recognized 72 associations
+(**Supplementary 4**) within these alliances.
 
 Focusing on the classified plots, the dataset included 1,167 taxa or
 taxa aggregates. Of these, 101 were neophytes (i.e. 9% of the species
@@ -316,20 +309,20 @@ species were *Ochlopoa annua* (621 occurrences), *Urtica dioica* (592),
 *Sonchus oleraceus* (540), *Stellaria media* (516), *Capsella
 bursa-pastoris* (390), *Polygonum aviculare* (375), *Dactylis glomerata*
 (363), *Senecio vulgaris* (332) and *Anisantha sterilis* (301).
-Considering only those relevés with the most frequent plot size (20
-m<sup>2</sup>, n = 256 relevés), the average species richness per plot
-was 16 (minimum = 3, maximum = 37).
+Considering only those plots with the most frequent plot size (20
+m<sup>2</sup>, n = 256 plots), the average species richness per plot was
+16 (minimum = 3, maximum = 37).
 
-DCA ordination of the floristic composition of the classified relevés
+DCA ordination of the floristic composition of the classified plots
 (**Fig. 2**) suggested a high consistency of the vegetation classes
 *Cymbalario-Parietarietea diffusae*, *Polygono-Poetea annuae*,
 *Papaveretea rhoeadis*, *Digitario sanguinalis-Eragrostietea minoris*,
 *Sisymbrietea* and *Bidentetea*. The alliances belonging to the two
 perennial ruderal vegetation classes (*Artemisietea vulgaris* and
 *Epilobietea angustifolii*) were mixed together. The winter-annual class
-*Chenopodietea* also showed high heterogeneity, specially because of the
-isolation of the altered dune alliance *Linario polygalifoliae-Vulpion
-alopecuri*.
+*Chenopodietea* also showed high heterogeneity, especially because of
+the isolation of the altered dune alliance *Linario
+polygalifoliae-Vulpion alopecuri*.
 
 ## Community-level traits and ecological preferences
 
@@ -358,7 +351,7 @@ mowing frequency and light requirements; it separated communities
 thriving with frequent disturbances in open situations (classes
 *Polygono-Poetea annuae*, *Sisymbrietea*, *Digitario-Eragrostietea* and
 *Papaveretea rhoeadis*) from communities preferring less frequent
-disturbances and more shade (classes *Cymbalario-Parietarietea
+disturbances and shadier areas (classes *Cymbalario-Parietarietea
 diffusae*, *Epilobietea angustifolii* and *Bidentetea*). The major
 contributors to axis 2 (21% variance explained) were nutrient
 requirements and disturbance severity; it separated more nitrophilous
@@ -494,9 +487,27 @@ vegetation.
     distribution in the ecoregion (**Fig. 1**). Diagnostic species
     (**Supplementary 5**): *Hordeum murinum*, *Sisymbrium officinale*.
 
+***Bidentetea*** Summer-annual pioneer vegetation of temporarily-flooded
+sites.
+
+16. *Bidention tripartitae* Summer-annual pioneer vegetation of
+    temporarily-flooded sites. Occupies nutrient-richer sites than the
+    other alliance in the class and has a higher proportion of
+    therophytes (**Fig. 4**). Dispersed throughout the ecoregion (**Fig.
+    1**). Diagnostic species (**Supplementary 5**): *Persicaria
+    hydropiper*, *Bidens frondosus*, *Lythrum salicaria*.
+
+17. *Paspalo-Agrostion semiverticillati* Summer-annual pioneer
+    vegetation of temporarily-flooded and warm sites. Occupies warmer
+    and wetter situations than the other alliance in the class, has a
+    higher proportion of neophytes and has a longer flowering season
+    (**Fig. 4**). Isolated occurrences in the south of the ecoregion
+    (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Paspalum
+    distichum*, *Cyperus longus*, *Schoenoplectus lacustris*.
+
 ***Artemisietea vulgaris*** Perennial ruderal vegetation of dry sites.
 
-16. *Convolvulo arvensis-Agropyrion repentis* Semiruderal grasslands.
+18. *Convolvulo arvensis-Agropyrion repentis* Semiruderal grasslands.
     Occupies wetter and shadier situations than the other alliances in
     the class, and has a higher proportion of geophytes and grasses
     (**Fig. 4**). Isolated occurrence in the south of the ecoregion
@@ -504,19 +515,19 @@ vegetation.
     compressa*, *Elytrigia repens*, *Potentilla reptans*, *Valerianella
     locusta*.
 
-17. *Carduo carpetani-Cirsion odontolepidis* Thistle ruderal vegetation
+19. *Carduo carpetani-Cirsion odontolepidis* Thistle ruderal vegetation
     of warm sites. Occupies warmer situations than the other thistle
     alliance in the class (**Fig. 4**). Mostly distributed in the
     Cantabrian Mountains (**Fig. 1**). Diagnostic species
     (**Supplementary 5**): *Onopordum acanthium*.
 
-18. *Cirsion richterano-chodati* Thistle ruderal vegetation of cold
+20. *Cirsion richterano-chodati* Thistle ruderal vegetation of cold
     sites. Occupies colder situations than the other thistle alliance in
     the class (**Fig. 4**). Mostly distributed in the Cantabrian
     Mountains (**Fig. 1**). Diagnostic species (**Supplementary 5**):
     *Cirsium eriophorum*, *Carduus carpetanus*, *Carduus nutans* aggr.
 
-19. *Dauco-Melilotion* Biennial ruderal vegetation. Occupies wetter
+21. *Dauco-Melilotion* Biennial ruderal vegetation. Occupies wetter
     situations than the two thistle alliances in the class, and has a
     higher proportion of therophytes (**Fig. 4**). Sparse occurrence
     throughout the ecoregion (**Fig. 1**). Diagnostic species
@@ -526,34 +537,34 @@ vegetation.
 ***Epilobietea angustifolii*** Perennial ruderal vegetation of mesic to
 wet sites.
 
-20. *Geo urbani-Alliarion officinalis* Low-herb short-lived semiruderal
+22. *Geo urbani-Alliarion officinalis* Low-herb short-lived semiruderal
     and fringe vegetation. Occupies shadier and less disturbed
     situations than the other alliances in the class, and has a higher
     proportion of therophytes and shorter plants (**Fig. 4**). Wide
     distribution in the ecoregion (**Fig. 1**). Diagnostic species
     (**Supplementary 5**): *Urtica dioica*.
 
-21. *Arction lappae* Low-herb short-lived ruderal vegetation. Occupies
+23. *Arction lappae* Low-herb short-lived ruderal vegetation. Occupies
     sunnier and more frequently-disturbed situations than the other
     alliances in the class, and has a higher proportion of therophytes
     and shorter plants (**Fig. 4**). Distribution concentrated in the
     Cantabrian Mountains (**Fig. 1**). Diagnostic species
     (**Supplementary 5**): *Oxybasis rubra*, *Senecio duriaei*.
 
-22. *Balloto-Conion maculati* Tall-herb perennial ruderal vegetation.
+24. *Balloto-Conion maculati* Tall-herb perennial ruderal vegetation.
     Occupies warmer situations than the other alliances in the class
     (**Fig. 4**). Distribution concentrated in the Cantabrian Mountains
     and the east of the ecoregion (**Fig. 1**). Diagnostic species
     (**Supplementary 5**): *Sambucus ebulus*.
 
-23. *Aegopodion podagrariae* Tall-herb perennial vegetation of forest
+25. *Aegopodion podagrariae* Tall-herb perennial vegetation of forest
     margins and clearings. Occupies shadier and less disturbed
     situations than the other alliances in the class (**Fig. 4**).
     Sparse occurrence throughout the ecoregion (**Fig. 1**). Diagnostic
     species (**Supplementary 5**): *Anthriscus sylvestris*, *Heracleum
     sphondylium*, *Galium aparine*.
 
-24. *Epilobion angustifolii* Tall-herb perennial vegetation of forest
+26. *Epilobion angustifolii* Tall-herb perennial vegetation of forest
     margins and clearings in acidic soils. Occupies colder,
     nutrient-poorer, more acidic and less disturbed situations than the
     other alliances in the class (**Fig. 4**). Distributed towards the
@@ -561,38 +572,20 @@ wet sites.
     (**Supplementary 5**): *Epilobium angustifolium*, *Digitalis
     purpurea*, *Luzula lactea*.
 
-25. *Cynancho-Convolvulion sepium* Tall-herb vegetation of nutrient-rich
+27. *Cynancho-Convolvulion sepium* Tall-herb vegetation of nutrient-rich
     riparian habitats. Occupies wetter situations and less disturbed
     situations than the other alliances in the class, and has a later
     flowering season (**Fig. 4**). Dispersed throughout the ecoregion
     (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Eupatorium
     cannabinum*, *Angelica sylvestris*, *Picris hieracioides*.
 
-26. *Senecionion fluviatilis* Tall-herb vegetation of nutrient-rich
+28. *Senecionion fluviatilis* Tall-herb vegetation of nutrient-rich
     river banks and ditches. Occupies warmer and wetter situations than
     the other alliances in the class, flowers later, has taller plants
     and is highly dominated by neophytes and geophytes (**Fig. 4**).
     Isolated occurrence in the western coast of the ecoregion (**Fig.
     1**). Diagnostic species (**Supplementary 5**): *Arundo donax*,
     *Silene latifolia*.
-
-***Bidentetea*** Summer-annual pioneer vegetation of temporarily-flooded
-sites.
-
-27. *Bidention tripartitae* Summer-annual pioneer vegetation of
-    temporarily-flooded sites. Occupies nutrient-richer sites than the
-    other alliance in the class and has a higher proportion of
-    therophytes (**Fig. 4**). Dispersed throughout the ecoregion (**Fig.
-    1**). Diagnostic species (**Supplementary 5**): *Persicaria
-    hydropiper*, *Bidens frondosus*, *Lythrum salicaria*.
-
-28. *Paspalo-Agrostion semiverticillati* Summer-annual pioneer
-    vegetation of temporarily-flooded and warm sites. Occupies warmer
-    and wetter situations than the other alliance in the class, has a
-    higher proportion of neophytes and has a longer flowering season
-    (**Fig. 4**). Isolated occurrences in the south of the ecoregion
-    (**Fig. 1**). Diagnostic species (**Supplementary 5**): *Paspalum
-    distichum*, *Cyperus longus*, *Schoenoplectus lacustris*.
 
 # Discussion
 
@@ -627,6 +620,10 @@ elevations. ([Simonova & Lososova 2008](#ref-RN5435))
 
 Therophytes and hemicryptophytes were most abundant in the life form
 spectra ([Tabasevic et al. 2021](#ref-RN5428))
+
+Segetal vegetation of Palestine ([**RN5494?**](#ref-RN5494)).
+
+History of synanthropic veg in czech ([**RN5496?**](#ref-RN5496))
 
 # Data availability
 
@@ -855,15 +852,6 @@ Galicia (España), II. La vegetación herbácea</span>. *Lazaroa* 21:
 
 </div>
 
-<div id="ref-RN5375" class="csl-entry">
-
-Jiménez-Alfaro González, F. de B., Carlón, L., Fernández Pascual, E.,
-Cires Rodríguez, E., Díaz González, T.E., & Nava Fernández, H.S. 2021.
-<span class="nocase">Checklist of the vascular plants of the Cantabrian
-Mountains</span>. *Mediterranean Botany*
-
-</div>
-
 <div id="ref-RN2300" class="csl-entry">
 
 Johnson, A.L., Borowy, D., & Swan, C.M. 2017. <span class="nocase">Land
@@ -978,15 +966,6 @@ Biogeography* 32: 24–34.
 
 </div>
 
-<div id="ref-RN5373" class="csl-entry">
-
-Moreno, J.M., Pineda, F.D., & Rivas‐Martinez, S. 1990.
-<span class="nocase">Climate and vegetation at the
-Eurosiberian‐Mediterranean boundary in the Iberian Peninsula</span>.
-*Journal of vegetation science* 1: 233–244.
-
-</div>
-
 <div id="ref-RN4698" class="csl-entry">
 
 Mucina, L., Bültmann, H., Dierßen, K., Theurillat, J.-P., Raus, T.,
@@ -1010,20 +989,6 @@ Nemec, R., Lososova, Z., Drevojan, P., & Zakova, K. 2011.
 cilianensi\</i\>-\<i\>minoris\</i\> alliance in the Czech
 Republic</span>](https://doi.org/10.2478/s11756-011-0108-0). *Biologia*
 66: 1019–1026.
-
-</div>
-
-<div id="ref-RN5386" class="csl-entry">
-
-Oksanen, J., Simpson, G., Blanchet, F., Kindt, R., Legendre, P.,
-Minchin, P., O’Hara, R., Solymos, P., Stevens, M., Szoecs, E., Wagner,
-H., Barbour, M., Bedward, M., Bolker, B., Borcard, D., Carvalho, G.,
-Chirico, M., De Caceres, M., Durand, S., Evangelista, H., FitzJohn, R.,
-Friendly, M., Furneaux, B., Hannigan, G., Hill, M., Lahti, L., McGlinn,
-D., Ouellette, M., Cunh, E., Smith, T., Stier, S., Ter Braak, C., &
-Weedon, J. 2022. <span class="nocase">vegan: Community Ecology Package.
-R package version 2.6-4.
-https://CRAN.R-project.org/package=vegan</span>.
 
 </div>
 
@@ -1250,47 +1215,96 @@ SPecies ANalysis (and its modified version) in R. R package version
 
 <div class="figure">
 
-<img src="../results/figures/maps.png" alt="Figure 1. Distribution of the anthropogenic alliances in the Iberian Atlantic ecoregion. Each dot represents a relevé. Dots are colored by vegetation classes." width="4228" />
+<img src="../results/figures/F1 - maps.png" alt="Figure 1. Anthropogenic vegetation alliances of the Iberian Atlantic ecoregion. Each dot is a vegetation plot. Dot colors indicate the vegetation class." width="4251" />
 <p class="caption">
-Figure 1. Distribution of the anthropogenic alliances in the Iberian
-Atlantic ecoregion. Each dot represents a relevé. Dots are colored by
-vegetation classes.
+<span id="fig:fig1"></span>Figure 1: Figure 1. Anthropogenic vegetation
+alliances of the Iberian Atlantic ecoregion. Each dot is a vegetation
+plot. Dot colors indicate the vegetation class.
 </p>
 
 </div>
 
 <div class="figure">
 
-<img src="../results/figures/dca.png" alt="Figure 2. Ordination of the floristic composition of the anthropogenic plant communities of the Iberian Atlantic ecoregion. The ordination is the results of a Detrended Correspondence Analysis grouped by vegetation classes (A, left) and alliances (B, right)." width="4228" />
+<img src="../results/figures/F2 - pca.png" alt="Figure 2. Floristic composition of the anthropogenic plant communities of the Iberian Atlantic ecoregion. Biplots produced by Principal Component Analysis (PCA) with Hellinger transformation. PCAs were conducted for the whole vegetation (A) and for specific subsets (B-F). Colors indicate the vegetation class." width="4251" />
 <p class="caption">
-Figure 2. Ordination of the floristic composition of the anthropogenic
-plant communities of the Iberian Atlantic ecoregion. The ordination is
-the results of a Detrended Correspondence Analysis grouped by vegetation
-classes (A, left) and alliances (B, right).
+<span id="fig:fig2"></span>Figure 2: Figure 2. Floristic composition of
+the anthropogenic plant communities of the Iberian Atlantic ecoregion.
+Biplots produced by Principal Component Analysis (PCA) with Hellinger
+transformation. PCAs were conducted for the whole vegetation (A) and for
+specific subsets (B-F). Colors indicate the vegetation class.
 </p>
 
 </div>
 
 <div class="figure">
 
-<img src="../results/figures/cwms.png" alt="Figure 3. Ordination of the community-level species traits and ecological preferences. The ordinations are the results of a Principal Component Analysis calculated for the community-weighted means for species traits (A, left) and ecological and disturbance indicator values (B, right)." width="4228" />
+<img src="../results/figures/F3 - origins.png" alt="Figure 3. Proportion of neophytes, archaeophytes and native species in the anthropogenic plant communities of the Iberian Atlantic ecoregion. Each bar represents the plot-level average proportion of neophytes (dark shade), archaeophytes (medium shade) and natives (light shade) in each vegetation alliance. Colors indicate the vegetation class." width="4251" />
 <p class="caption">
-Figure 3. Ordination of the community-level species traits and
-ecological preferences. The ordinations are the results of a Principal
-Component Analysis calculated for the community-weighted means for
-species traits (A, left) and ecological and disturbance indicator values
-(B, right).
+<span id="fig:fig3"></span>Figure 3: Figure 3. Proportion of neophytes,
+archaeophytes and native species in the anthropogenic plant communities
+of the Iberian Atlantic ecoregion. Each bar represents the plot-level
+average proportion of neophytes (dark shade), archaeophytes (medium
+shade) and natives (light shade) in each vegetation alliance. Colors
+indicate the vegetation class.
 </p>
 
 </div>
 
 <div class="figure">
 
-<img src="../results/figures/boxplots.png" alt="Figure 4. Community-level species traits and ecological preferences by alliance. Boxplots calculated for the community-weighted means for species traits and ecological and disturbance indicator values." width="4228" />
+<img src="../results/figures/F4 - lifeforms.png" alt="Figure 4. Proportion of therophytes, geophytes and other life forms in the anthropogenic plant communities of the Iberian Atlantic ecoregion. Each bar represents the plot-level average proportion of therophytes (dark shade), geophytes (medium shade) and other life forms (light shade) in each vegetation alliance. Colors indicate the vegetation class." width="4251" />
 <p class="caption">
-Figure 4. Community-level species traits and ecological preferences by
-alliance. Boxplots calculated for the community-weighted means for
-species traits and ecological and disturbance indicator values.
+<span id="fig:fig4"></span>Figure 4: Figure 4. Proportion of
+therophytes, geophytes and other life forms in the anthropogenic plant
+communities of the Iberian Atlantic ecoregion. Each bar represents the
+plot-level average proportion of therophytes (dark shade), geophytes
+(medium shade) and other life forms (light shade) in each vegetation
+alliance. Colors indicate the vegetation class.
+</p>
+
+</div>
+
+<div class="figure">
+
+<img src="../results/figures/F5 - height-flowering.png" alt="Figure 5. Vegetation heigh and flowering phenology of the anthropogenic plant communities of the Iberian Atlantic ecoregion. Boxplots show the community-weighted mean for plant heigh, month of peak flowering and length of the flowering season for each vegetation alliance. Colors indicate the vegetation class." width="4251" />
+<p class="caption">
+<span id="fig:fig5"></span>Figure 5: Figure 5. Vegetation heigh and
+flowering phenology of the anthropogenic plant communities of the
+Iberian Atlantic ecoregion. Boxplots show the community-weighted mean
+for plant heigh, month of peak flowering and length of the flowering
+season for each vegetation alliance. Colors indicate the vegetation
+class.
+</p>
+
+</div>
+
+<div class="figure">
+
+<img src="../results/figures/F6 - indicators.png" alt="Figure 6. Ecological requirements of the anthropogenic plant communities of the Iberian Atlantic ecoregion. Boxplots show the plot-level means for the ecological indicator values of temperature, moisture, light, nutrients, soil reaction, disturbance frequency and disturbance severity, calculated for each vegetation alliance. Colors indicate the vegetation class." width="4251" />
+<p class="caption">
+<span id="fig:fig6"></span>Figure 6: Figure 6. Ecological requirements
+of the anthropogenic plant communities of the Iberian Atlantic
+ecoregion. Boxplots show the plot-level means for the ecological
+indicator values of temperature, moisture, light, nutrients, soil
+reaction, disturbance frequency and disturbance severity, calculated for
+each vegetation alliance. Colors indicate the vegetation class.
+</p>
+
+</div>
+
+<div class="figure">
+
+<img src="../results/figures/F7 - pca.png" alt="Figure 7. Pattern of variation in the ecological requirements of the anthropogenic plant communities of the Iberian Atlantic ecoregion. Biplot produced by Principal Component Analysis (PCA) of the plot-level means for the ecological indicator values of temperature, moisture, light, nutrients, soil reaction, disturbance frequency and disturbance severity. Labels and arrows indicate the contribution of each indicator to the first and second principal components. Colors indicate the vegetation class." width="4228" />
+<p class="caption">
+<span id="fig:fig7"></span>Figure 7: Figure 7. Pattern of variation in
+the ecological requirements of the anthropogenic plant communities of
+the Iberian Atlantic ecoregion. Biplot produced by Principal Component
+Analysis (PCA) of the plot-level means for the ecological indicator
+values of temperature, moisture, light, nutrients, soil reaction,
+disturbance frequency and disturbance severity. Labels and arrows
+indicate the contribution of each indicator to the first and second
+principal components. Colors indicate the vegetation class.
 </p>
 
 </div>

@@ -32,8 +32,6 @@ read.csv("data/traits.csv", fileEncoding = "latin1") %>%
                              "Archaeophytes" = "archaeophyte",
                              "Neophytes" = "neophyte")) %>%
   mutate(Alliance = fct_relevel(Alliance,
-                                "Paspalo-Agrostion semiverticillati",
-                                "Bidention tripartitae",
                                 "Senecionion fluviatilis",
                                 "Cynancho-Convolvulion sepium",
                                 "Epilobion angustifolii",
@@ -46,6 +44,8 @@ read.csv("data/traits.csv", fileEncoding = "latin1") %>%
                                 "Silybo mariani-Urticion piluliferae",
                                 "Carduo carpetani-Cirsion odontolepidis",
                                 "Convolvulo arvensis-Agropyrion repentis",
+                                "Paspalo-Agrostion semiverticillati",
+                                "Bidention tripartitae",
                                 "Sisymbrion officinalis",
                                 "Linario polygalifoliae-Vulpion alopecuri",
                                 "Echio-Galactition tomentosae",
@@ -68,9 +68,9 @@ read.csv("data/traits.csv", fileEncoding = "latin1") %>%
                              "Digitario sanguinalis-Eragrostietea minoris",
                              "Chenopodietea",
                              "Sisymbrietea",
+                             "Bidentetea",
                              "Artemisietea vulgaris",
-                             "Epilobietea angustifolii",
-                             "Bidentetea")) %>%
+                             "Epilobietea angustifolii")) %>%
   mutate(Class = fct_recode(Class, 
                             "Artemisietea" = "Artemisietea vulgaris",
                             "Parietarietea" = "Cymbalario-Parietarietea diffusae",
@@ -89,9 +89,9 @@ read.csv("data/traits.csv", fileEncoding = "latin1") %>%
                                "chocolate4",
                                "firebrick3",
                                "khaki1",
+                               "goldenrod1",
                                "darkmagenta", 
-                               "limegreen",
-                               "goldenrod1")) +
+                               "limegreen")) +
   ggthemes::theme_tufte() +
   xlab("Alliance") + ylab("Proportion of therophytes, geophytes and other life forms at the plot level") +
   coord_flip() +

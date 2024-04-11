@@ -11,9 +11,9 @@ read.csv("data/header.csv", fileEncoding = "latin1") %>%
                              "Digitario sanguinalis-Eragrostietea minoris",
                              "Chenopodietea",
                              "Sisymbrietea",
+                             "Bidentetea",
                              "Artemisietea vulgaris",
-                             "Epilobietea angustifolii",
-                             "Bidentetea")) %>%
+                             "Epilobietea angustifolii")) %>%
   mutate(Class = fct_recode(Class, 
                             "Artemisietea" = "Artemisietea vulgaris",
                             "Parietarietea" = "Cymbalario-Parietarietea diffusae",
@@ -37,6 +37,8 @@ read.csv("data/header.csv", fileEncoding = "latin1") %>%
                                "Echio-Galactition tomentosae",
                                "Linario polygalifoliae-Vulpion alopecuri",
                                "Sisymbrion officinalis",
+                               "Bidention tripartitae",
+                               "Paspalo-Agrostion semiverticillati",
                                "Convolvulo arvensis-Agropyrion repentis",
                                "Carduo carpetani-Cirsion odontolepidis",
                                "Silybo mariani-Urticion piluliferae", 
@@ -48,9 +50,7 @@ read.csv("data/header.csv", fileEncoding = "latin1") %>%
                                "Aegopodion podagrariae",
                                "Epilobion angustifolii",
                                "Cynancho-Convolvulion sepium",
-                               "Senecionion fluviatilis",
-                               "Bidention tripartitae",
-                               "Paspalo-Agrostion semiverticillati")) %>%
+                               "Senecionion fluviatilis")) %>%
   mutate(Alliance = fct_recode(Alliance, 
                                "Galio valantiae-\nParietarion judaicae" = "Galio valantiae-Parietarion judaicae",
                                 # "Cymbalario-Asplenion",
@@ -104,13 +104,14 @@ header %>%
         legend.spacing.y = unit(0, "mm"),
         legend.text = element_text(size = 9, face = "italic"), 
         panel.background = element_rect(color = "black", fill = NULL),
+        panel.spacing = unit(0.05, "lines"),
         strip.text = element_text(size = 7, face = "italic"),
         # strip.text = element_blank(),
         plot.title = element_text(size = 12),
         axis.title = element_text(size = 10),
         axis.text.x = element_text(size = 8, color = "black"),
         axis.text.y = element_text(size = 8, color = "black"),
-        plot.margin = unit(c(0,0.2,0,0.2), "cm")) +
+        plot.margin = unit(c(0,0,0,0), "cm")) +
   scale_color_manual(name = "Vegetation class",
                      values = c("grey60",
                                 "cadetblue4",
@@ -118,11 +119,11 @@ header %>%
                                 "chocolate4",
                                 "firebrick3",
                                 "khaki1",
+                                "goldenrod1",
                                 "darkmagenta", 
-                                "limegreen",
-                                "goldenrod1")) +
+                                "limegreen")) +
   guides(colour = guide_legend(override.aes = list(alpha = 1))) -> Fig2; Fig2
 
 ggsave(Fig2, file = "results/figures/F1 - maps.png", bg = "white", 
-       path = NULL, scale = 1, width = 180, height = 160, units = "mm", dpi = 600)
+       path = NULL, scale = 1, width = 180, height = 152, units = "mm", dpi = 600)
 

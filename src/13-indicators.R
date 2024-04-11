@@ -112,6 +112,8 @@ plotmeans %>%
                                 "Echio-Galactition tomentosae",
                                 "Linario polygalifoliae-Vulpion alopecuri",
                                 "Sisymbrion officinalis",
+                                "Bidention tripartitae",
+                                "Paspalo-Agrostion semiverticillati",
                                 "Convolvulo arvensis-Agropyrion repentis",
                                 "Carduo carpetani-Cirsion odontolepidis",
                                 "Silybo mariani-Urticion piluliferae", 
@@ -123,9 +125,7 @@ plotmeans %>%
                                 "Aegopodion podagrariae",
                                 "Epilobion angustifolii",
                                 "Cynancho-Convolvulion sepium",
-                                "Senecionion fluviatilis",
-                                "Bidention tripartitae",
-                                "Paspalo-Agrostion semiverticillati")) %>%
+                                "Senecionion fluviatilis")) %>%
   mutate(Class = fct_relevel(Class,
                              "Cymbalario-Parietarietea diffusae",
                              "Polygono-Poetea annuae",
@@ -133,9 +133,9 @@ plotmeans %>%
                              "Digitario sanguinalis-Eragrostietea minoris",
                              "Chenopodietea",
                              "Sisymbrietea",
+                             "Bidentetea",
                              "Artemisietea vulgaris",
-                             "Epilobietea angustifolii",
-                             "Bidentetea")) %>%
+                             "Epilobietea angustifolii")) %>%
   mutate(Class = fct_recode(Class, 
                             "Artemisietea" = "Artemisietea vulgaris",
                             "Parietarietea" = "Cymbalario-Parietarietea diffusae",
@@ -156,9 +156,9 @@ plotmeans %>%
                                "chocolate4",
                                "firebrick3",
                                "khaki1",
+                               "goldenrod1",
                                "darkmagenta", 
-                               "limegreen",
-                               "goldenrod1")) +
+                               "limegreen")) +
   ggthemes::theme_tufte() +
   xlab("Alliance") + ylab("Value") +
   theme(text = element_text(family = "sans"),
@@ -173,12 +173,13 @@ plotmeans %>%
         panel.background = element_rect(color = "black", fill = NULL),
         strip.text = element_text(size = 10, hjust = 0, margin = margin(l = 0, b = 4)),
         #strip.text = element_blank(),
+        panel.spacing = unit(0.25, "lines"),
         plot.title = element_text(size = 10),
         axis.title = element_text(size = 10),
         axis.title.y = element_blank(),
         axis.text.x = element_text(size = 6, color = "black"),
         axis.text.y = element_text(size = 8, color = "black"),
-        plot.margin = unit(c(0.25,0.5,0,0.2), "cm")) -> Fig4; Fig4
+        plot.margin = unit(c(0.1,0,0,0), "cm")) -> Fig4; Fig4
 
 ggsave(Fig4, file = "results/figures/F6 - indicators.png", bg = "white", 
        path = NULL, scale = 1, width = 180, height = 185, units = "mm", dpi = 600)
@@ -217,9 +218,9 @@ plotmeans %>%
                              "Digitario sanguinalis-Eragrostietea minoris",
                              "Chenopodietea",
                              "Sisymbrietea",
+                             "Bidentetea",
                              "Artemisietea vulgaris",
-                             "Epilobietea angustifolii",
-                             "Bidentetea")) %>%
+                             "Epilobietea angustifolii")) %>%
   mutate(Class = fct_recode(Class, 
                             "Artemisietea" = "Artemisietea vulgaris",
                             "Parietarietea" = "Cymbalario-Parietarietea diffusae",
@@ -265,14 +266,14 @@ ggplot(inds, aes(Dim.1, Dim.2)) +
                                 "chocolate4",
                                 "firebrick3",
                                 "khaki1",
+                                "goldenrod1",
                                 "darkmagenta", 
-                                "limegreen",
-                                "goldenrod1")) +
+                                "limegreen")) +
   #coord_fixed() +
-  geom_segment(data = vars, aes(x = 0, y = 0, xend = Dim.1*4, yend = Dim.2*4), arrow = arrow(length = unit(1/2, "picas")), color = "black") +
+  geom_segment(data = vars, aes(x = 0, y = 0, xend = Dim.1*3.8, yend = Dim.2*3.8), arrow = arrow(length = unit(1/2, "picas")), color = "black") +
   geom_point(aes(color = Class), 
-               show.legend = TRUE, size = 1) +
-  geom_label(data = vars, aes(x = Dim.1*4, y = Dim.2*4, label = Variable),  show.legend = FALSE, size = 3) +
+               show.legend = TRUE, size = 1, alpha = 0.75) +
+  geom_label(data = vars, aes(x = Dim.1*3.8, y = Dim.2*3.8, label = Variable),  show.legend = FALSE, size = 3) +
   ggthemes::theme_tufte() +
   xlab("PCA1") + ylab("PCA2") +
   scale_y_continuous(labels = scales::label_number(accuracy = 0.1)) +
@@ -288,16 +289,17 @@ ggplot(inds, aes(Dim.1, Dim.2)) +
         panel.background = element_rect(color = "black", fill = NULL),
         # strip.text = element_text(size = 12, hjust = 0, margin = margin(l = 0, b = 4)),
         strip.text = element_blank(),
+        panel.spacing = unit(0.05, "lines"),
         plot.title = element_text(size = 12),
         axis.title = element_text(size = 10),
         axis.text.x = element_text(size = 8, color = "black"),
         axis.text.y = element_text(size = 8, color = "black"),
-        plot.margin = unit(c(0.25,0.5,0,0.2), "cm")) +
+        plot.margin = unit(c(0,0,0,0), "cm")) +
   guides(colour = guide_legend(override.aes = list(alpha = 1))) -> 
   Fig3A; Fig3A
 
 ### Merge
 
 ggsave(Fig3A, file = "results/figures/F7 - pca.png", bg = "white", 
-       path = NULL, scale = 1, width = 179, height = 100, units = "mm", dpi = 600)
+       path = NULL, scale = 1, width = 179, height = 95, units = "mm", dpi = 600)
 
