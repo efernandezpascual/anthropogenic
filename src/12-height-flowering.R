@@ -90,7 +90,7 @@ cwms %>%
                                 "Grazing.Pressure")) %>%
   mutate(Trait = fct_recode(Trait, 
                             "(A) Vegetation height (cm)" = "heightmax",
-                            "(B) Flowering peak (month)" = "floweringmean",
+                            "(B) Median flowering month" = "floweringmean",
                             "(C) Flowering length (months)" = "floweringwidth",
                             "Neophytes (% of total cover)" = "neophyte",
                             "Geophytes (% of total cover)" = "geophyte",

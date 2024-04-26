@@ -3,123 +3,45 @@ ALLUVIAL FORESTS AND SCRUB,Alno glutinosae-Populetea albae,Alno-Fraxinetalia exc
 ALLUVIAL FORESTS AND SCRUB,Alno glutinosae-Populetea albae,Populetalia albae,Osmundo-Alnion glutinosae,Carici camposii-Alnetum glutinosae,No,Not manmade,NA,NA
 ALLUVIAL FORESTS AND SCRUB,Salicetea purpureae,Salicetalia purpureae,Salicion triandrae,Comunidad de Salix alba y Salix atrocinerea,No,Not manmade,NA,NA
 ALLUVIAL FORESTS AND SCRUB,Salicetea purpureae,Salicetalia purpureae,Salicion triandrae,Comunidad de Salix angustifolia,No,Not manmade,NA,NA
-ANTHROPOGENIC VEGETATION,Bidentetea,Bidentetalia,Bidention tripartitae,Filaginello uliginosae-Bidentetum tripartitae,Yes,Yes,No relationship,Q61Z
-ANTHROPOGENIC VEGETATION,Bidentetea,Bidentetalia,Bidention tripartitae,Xanthio-Polygonetum persicariae,Yes,Yes,No relationship,Q61Z
-ANTHROPOGENIC VEGETATION,Bidentetea,Bidentetalia,Bidention tripartitae,Cypero eragrostidi-Bidentetum frondosae,Yes,Yes,No relationship,Q61Z
+ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Agropyretalia intermedio-repentis,Convolvulo arvensis-Agropyrion repentis,Comunidad de Elytrigia repens y Poa compressa,Yes,Yes,V38,V38W
+ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Carthametalia lanati,Carduo carpetani-Cirsion odontolepidis,Comunidad de Carduus platypus subsp. platypus y Onopordum acanthium,Yes,Yes,V38,V38X
+ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Carthametalia lanati,Carduo carpetani-Cirsion odontolepidis,Carduo carpetani-Onopordetum acanthii,Yes,Yes,V38,V38X
 ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Carthametalia lanati,Onopordion castellani,Onopordion acanthii,Yes,Not Cantabrian,V38,NA
 ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Carthametalia lanati,Onopordion castellani,Carlino corymbosae-Carthametum lanati,Yes,Not Cantabrian,V38,NA
 ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Carthametalia lanati,Onopordion castellani,Onopordetum acantho-nervosi,Yes,Not Cantabrian,V38,NA
+ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Onopordetalia acanthii,Cirsion richterano-chodati,Carduo nutantis-Cirsietum richterani,Yes,Yes,V38,V38Y
+ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Onopordetalia acanthii,Cirsion richterano-chodati,Cirsio chodati-Carduetum cantabrici,Yes,Yes,V38,V38Y
+ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Onopordetalia acanthii,Cirsion richterano-chodati,Comunidad de Cirsium richterianum,Yes,Yes,V38,V38Y
+ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Onopordetalia acanthii,Cirsion richterano-chodati,Cirsio chodati-Carduetum carpetani,Yes,Yes,V38,V38Y
+ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Onopordetalia acanthii,Cirsion richterano-chodati,Carduo nutantis-Cirsietum chodati,Yes,Yes,V38,V38Y
+ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Onopordetalia acanthii,Cirsion richterano-chodati,Comunidad de Carduus carpetanus,Yes,Yes,V38,V38Y
+ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Onopordetalia acanthii,Dauco-Melilotion,Echio rosulati-Picridetum echioisia,Yes,Yes,V38,V38Z
+ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Onopordetalia acanthii,Dauco-Melilotion,Picridi echioides-Melilotetum albi,Yes,Yes,V38,V38Z
+ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Onopordetalia acanthii,Dauco-Melilotion,Comunidad de Dipsacus fullonum,Yes,Yes,V38,V38Z
+ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Onopordetalia acanthii,Dauco-Melilotion,Comunidad de Daucus carota y Melilotus alba,Yes,Yes,V38,V38Z
+ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Onopordetalia acanthii,Dauco-Melilotion,Helmintio echioidis-Melilotetum albae,Yes,Yes,V38,V38Z
+ANTHROPOGENIC VEGETATION,Bidentetea,Bidentetalia,Bidention tripartitae,Filaginello uliginosae-Bidentetum tripartitae,Yes,Yes,No relationship,Q61Z
+ANTHROPOGENIC VEGETATION,Bidentetea,Bidentetalia,Bidention tripartitae,Xanthio-Polygonetum persicariae,Yes,Yes,No relationship,Q61Z
+ANTHROPOGENIC VEGETATION,Bidentetea,Bidentetalia,Bidention tripartitae,Cypero eragrostidi-Bidentetum frondosae,Yes,Yes,No relationship,Q61Z
 ANTHROPOGENIC VEGETATION,Bidentetea,Bidentetalia,Bidention tripartitae,Bidentetea tripartitae,Yes,Yes,No relationship,Q61Z
 ANTHROPOGENIC VEGETATION,Bidentetea,Bidentetalia,Bidention tripartitae,Polygono hydropiperis-Bidentetum tripartitae,Yes,Yes,No relationship,Q61Z
 ANTHROPOGENIC VEGETATION,Bidentetea,Bidentetalia,Bidention tripartitae,Bidenti tripartitae-Polygonetum lapathifolii,Yes,Yes,No relationship,Q61Z
 ANTHROPOGENIC VEGETATION,Bidentetea,Bidentetalia,Bidention tripartitae,Xanthio italici-Polygonetum persicariae,Yes,Yes,No relationship,Q61Z
 ANTHROPOGENIC VEGETATION,Bidentetea,Paspalo-Heleochloetalia,Paspalo-Agrostion semiverticillati,Paspalo-Agrostietum semiverticillatae,Yes,Yes,No relationship,R554
 ANTHROPOGENIC VEGETATION,Bidentetea,Paspalo-Heleochloetalia,Paspalo-Agrostion semiverticillati,Comunidad de Paspalum paspalodes,Yes,Yes,No relationship,R554
-VEGETATION OF ROCK CREVICES AND SCREES,Cymbalario-Parietarietea diffusae,Tortulo-Cymbalarietalia,Cymbalario-Asplenion,Cymbalarietum muralis,Yes,Yes,No relationship,U3DZ
-VEGETATION OF ROCK CREVICES AND SCREES,Cymbalario-Parietarietea diffusae,Tortulo-Cymbalarietalia,Cymbalario-Asplenion,Cymbalario-Trachelietum caerulei,Yes,Yes,No relationship,U3DZ
-VEGETATION OF ROCK CREVICES AND SCREES,Cymbalario-Parietarietea diffusae,Tortulo-Cymbalarietalia,Cymbalario-Asplenion,Comunidad de Cymbalaria muralis,Yes,Yes,No relationship,U3DZ
-ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Convolvuletalia sepium,Cynancho-Convolvulion sepium,Picridio hieracioidis-Eupatorietum cannabini,Yes,Yes,R55,R55Y
-ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Convolvuletalia sepium,Cynancho-Convolvulion sepium,Convolvulo sepium-Eupatorietum cannabini,Yes,Yes,R55,R55Y
-ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Convolvuletalia sepium,Cynancho-Convolvulion sepium,Comunidad de Convolvulus sepium y Oxalis violacea,Yes,Yes,R55,R55Y
-ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Convolvuletalia sepium,Cynancho-Convolvulion sepium,Picrido hieracioidis-Eupatorietum cannabinii,Yes,Yes,R55,R55Y
-ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Convolvuletalia sepium,Senecionion fluviatilis,Comunidad de Equisetum telmateia,Yes,Yes,R55,R55Z
-ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Convolvuletalia sepium,Senecionion fluviatilis,Arundini-Convolvuletum sepium,Yes,Yes,R55,R55Z
-ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Galeopsio-Senecionetalia sylvatici,Epilobion angustifolii,Comunidad de Epilobium angustifolium y Digitalis purpurea,Yes,Yes,R57,R571
-ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Galeopsio-Senecionetalia sylvatici,Epilobion angustifolii,Asphodelo arrondeaui-Epilobietum angustifolii,Yes,Yes,R57,R571
-ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Galeopsio-Senecionetalia sylvatici,Epilobion angustifolii,Asphodelo albi-Epilobietum angustifolii,Yes,Yes,R57,R571
-VEGETATION OF ROCK CREVICES AND SCREES,Cymbalario-Parietarietea diffusae,Tortulo-Cymbalarietalia,Galio valantiae-Parietarion judaicae,Centrantho-Hypericetum hircini,Yes,Yes,U38,U38Z
-VEGETATION OF ROCK CREVICES AND SCREES,Cymbalario-Parietarietea diffusae,Tortulo-Cymbalarietalia,Galio valantiae-Parietarion judaicae,Parietarietum judaicae,Yes,Yes,U38,U38Z
-VEGETATION OF ROCK CREVICES AND SCREES,Cymbalario-Parietarietea diffusae,Tortulo-Cymbalarietalia,Galio valantiae-Parietarion judaicae,Hedero-Polypodietum cambrici,Yes,Yes,U38,U38Z
-VEGETATION OF ROCK CREVICES AND SCREES,Cymbalario-Parietarietea diffusae,Tortulo-Cymbalarietalia,Galio valantiae-Parietarion judaicae,Polypodion serrati,Yes,Yes,U38,U38Z
-VEGETATION OF ROCK CREVICES AND SCREES,Cymbalario-Parietarietea diffusae,Tortulo-Cymbalarietalia,Galio valantiae-Parietarion judaicae,Oxali-Parietarietum diffusae,Yes,Yes,U38,U38Z
-VEGETATION OF ROCK CREVICES AND SCREES,Cymbalario-Parietarietea diffusae,Tortulo-Cymbalarietalia,Galio valantiae-Parietarion judaicae,Oxalido-Parietarietum,Yes,Yes,U38,U38Z
+ANTHROPOGENIC VEGETATION,Chenopodietea,Brometalia rubenti-tectorum,Echio-Galactition tomentosae,Coleostepho myconis-Galactitetum tomentosae,Yes,Yes,V33,V332
+ANTHROPOGENIC VEGETATION,Chenopodietea,Brometalia rubenti-tectorum,Linario polygalifoliae-Vulpion alopecuri,Scrophulario-Vulpietum alopecuroris,Yes,Yes,V32,V32Z
+ANTHROPOGENIC VEGETATION,Chenopodietea,Chenopodietalia,Chenopodion muralis,Chenopodion muralis,Yes,Yes,V37,V37X
+ANTHROPOGENIC VEGETATION,Chenopodietea,Chenopodietalia,Chenopodion muralis,Chenopodio muralis-Malvetum parviflorae,Yes,Yes,V37,V37X
 ANTHROPOGENIC VEGETATION,Chenopodietea,Brometalia rubenti-tectorum,Alysso granatensis-Brassicion barrelieri,Coincyo setigerae-Brassicetum barrelieri,Yes,Not Cantabrian,V33,NA
-ANTHROPOGENIC VEGETATION,Digitario sanguinalis-Eragrostietea minoris,Eragrostietalia,Spergulo arvensis-Erodion cicutariae,Setario verticillatae-Echinochloetum crus-galli,Yes,Yes,"V11, V12, V13",V10W
+ANTHROPOGENIC VEGETATION,Chenopodietea,Chenopodietalia,Chenopodion muralis,Chenopodio albi-Conyzetum canadensis,Yes,Yes,V37,V37X
 ANTHROPOGENIC VEGETATION,Chenopodietea,Brometalia rubenti-tectorum,Hordeion murini,Bromo scoparii-Hordeetum leporini,Yes,Not Cantabrian,V32,NA
 ANTHROPOGENIC VEGETATION,Chenopodietea,Brometalia rubenti-tectorum,Hordeion murini,Comunidad de Carduus pycnocephalus y Carduus tenuiflorus,Yes,Not Cantabrian,V32,NA
 ANTHROPOGENIC VEGETATION,Chenopodietea,Brometalia rubenti-tectorum,Hordeion murini,Asociación de Hordeum murinum-Bromus sterilis,Yes,Not Cantabrian,V32,NA
 ANTHROPOGENIC VEGETATION,Chenopodietea,Brometalia rubenti-tectorum,Hordeion murini,Carduo tenuiflori-Hordeetum leporini,Yes,Not Cantabrian,V32,NA
-ANTHROPOGENIC VEGETATION,Digitario sanguinalis-Eragrostietea minoris,Eragrostietalia,Spergulo arvensis-Erodion cicutariae,Panicum sanguinale-Mercurialis annua,Yes,Yes,"V11, V12, V13",V10W
+ANTHROPOGENIC VEGETATION,Chenopodietea,Chenopodietalia,Chenopodion muralis,Sisymbrio irionis-Malvetum parviflorae,Yes,Yes,V37,V37X
 ANTHROPOGENIC VEGETATION,Chenopodietea,Brometalia rubenti-tectorum,Taeniathero-Aegilopion geniculatae,Medicagini rigidulae-Aegilopetum geniculatae,Yes,Not Cantabrian,V32,NA
 ANTHROPOGENIC VEGETATION,Chenopodietea,Brometalia rubenti-tectorum,Taeniathero-Aegilopion geniculatae,Trifolio cherleri-Taeniatheretum capitis-medusae,Yes,Not Cantabrian,V32,NA
-ANTHROPOGENIC VEGETATION,Digitario sanguinalis-Eragrostietea minoris,Eragrostietalia,Spergulo arvensis-Erodion cicutariae,Asociación de Amaranthus hybridus-Chenopodium polyspermum,Yes,Yes,"V11, V12, V13",V10W
-ANTHROPOGENIC VEGETATION,Digitario sanguinalis-Eragrostietea minoris,Eragrostietalia,Spergulo arvensis-Erodion cicutariae,Panicum crus galli-Spergula arvensis,Yes,Yes,"V11, V12, V13",V10W
-ANTHROPOGENIC VEGETATION,Digitario sanguinalis-Eragrostietea minoris,Eragrostietalia,Spergulo arvensis-Erodion cicutariae,Amarantho hybridi-Chenopodietum polyspermi,Yes,Yes,"V11, V12, V13",V10W
-ANTHROPOGENIC VEGETATION,Digitario sanguinalis-Eragrostietea minoris,Eragrostietalia,Spergulo arvensis-Erodion cicutariae,Lamio hybridi-Echinochloetum crus-gallii,Yes,Yes,"V11, V12, V13",V10W
-ANTHROPOGENIC VEGETATION,Digitario sanguinalis-Eragrostietea minoris,Eragrostietalia,Spergulo arvensis-Erodion cicutariae,Asociación de Lamium dissectum-Panicum crus-galli,Yes,Yes,"V11, V12, V13",V10W
-ANTHROPOGENIC VEGETATION,Digitario sanguinalis-Eragrostietea minoris,Eragrostietalia,Spergulo arvensis-Erodion cicutariae,Lamio (hybridi) dissecti-Panicetum crus-galli,Yes,Yes,"V11, V12, V13",V10W
-ANTHROPOGENIC VEGETATION,Digitario sanguinalis-Eragrostietea minoris,Eragrostietalia,Spergulo arvensis-Erodion cicutariae,Panico-Setarion,Yes,Yes,"V11, V12, V13",V10W
-ANTHROPOGENIC VEGETATION,Digitario sanguinalis-Eragrostietea minoris,Eragrostietalia,Spergulo arvensis-Erodion cicutariae,Lamio dissecti-Panicetum cruris-galli,Yes,Yes,"V11, V12, V13",V10W
-ANTHROPOGENIC VEGETATION,Digitario sanguinalis-Eragrostietea minoris,Eragrostietalia,Spergulo arvensis-Erodion cicutariae,Setario-Echinochloetum colonae,Yes,Yes,"V11, V12, V13",V10W
-ANTHROPOGENIC VEGETATION,Digitario sanguinalis-Eragrostietea minoris,Eragrostietalia,Spergulo arvensis-Erodion cicutariae,Comunidad de Echinochloa crus-galli y Setaria Verticillata,Yes,Yes,"V11, V12, V13",V10W
-ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Oxalidion europeae,Fumario capreolatae-Veronicetum persicae,Yes,Yes,"V11, V12, V13",V10X
-ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Oxalidion europeae,Oxalidi latifoliae-Veronicetum persicae,Yes,Yes,"V11, V12, V13",V10X
-ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Oxalidion europeae,Chrysanthemum-Oxalidetum,Yes,Yes,"V11, V12, V13",V10X
-ANTHROPOGENIC VEGETATION,Chenopodietea,Geranio purpureae-Cardaminetalia hirsutae,Parietarion lusitanico-mauritanicae,Anogrammo leptophyllae-Parietarietum lusitanicae,Yes,Not Cantabrian,V37,NA
-ANTHROPOGENIC VEGETATION,Digitario sanguinalis-Eragrostietea minoris,Eragrostietalia,Diplotaxion erucoidis,Heliotropio-Amaranthetum albi,Yes,Not Cantabrian,NA,NA
-ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Oxalidion europeae,Polygonum capitatum community,Yes,Yes,"V11, V12, V13",V10X
-ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Oxalidion europeae,Lamio amplexicaulis-Veronicetum hederifoliae,Yes,Yes,"V11, V12, V13",V10X
-ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Oxalidion europeae,Holosteo umbellati-Veronicetum persicae,Yes,Yes,"V11, V12, V13",V10X
-ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Oxalidion europeae,Polygono-Chenopodion polyspermi,Yes,Yes,"V11, V12, V13",V10X
-ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Oxalidion europeae,Comunidad de Lamium amplexicaule y Stellaria media,Yes,Yes,"V11, V12, V13",V10X
-ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Cnico benedicti-Papaveretum argemones,Yes,Yes,"V11, V12, V13, V15",V10Y
-ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Linario eleganti-Anthoxanthetum aristati,Yes,Yes,"V11, V12, V13, V15",V10Y
-ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Linario amethysteae-Calenduletum arvensis,Yes,Yes,"V11, V12, V13, V15",V10Y
-ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Triseto ovati-Arnoseridetum minimae,Yes,Yes,"V11, V12, V13, V15",V10Y
-ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Linario elegantis-Anthoxanthetum aristati,Yes,Yes,"V11, V12, V13, V15",V10Y
-ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Chenopodietalia albi,Yes,Yes,"V11, V12, V13, V15",V10Y
-ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Comunidad de Brassica nigra,Yes,Yes,"V11, V12, V13, V15",V10Y
-ANTHROPOGENIC VEGETATION,Digitario sanguinalis-Eragrostietea minoris,Euphorbietalia prostratae,Euphorbion prostratae,Euphorbietum chamaesyco-prostratae,Yes,Not Cantabrian,V34,NA
-ANTHROPOGENIC VEGETATION,Digitario sanguinalis-Eragrostietea minoris,Euphorbietalia prostratae,Euphorbion prostratae,Gnaphaliio luteo-albi-Polycarpetum tetraphylli,Yes,Not Cantabrian,V34,NA
-ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Centaureo cyani-Raphanetum microcarpae,Yes,Yes,"V11, V12, V13, V15",V10Y
-ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Chrysanthemum segetum-Raphanetum,Yes,Yes,"V11, V12, V13, V15",V10Y
-ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Asociación de Chrysanthemum segetum-Oxalis violacea,Yes,Yes,"V11, V12, V13, V15",V10Y
-ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Comunidad de Chrysanthemum segetum y Lolium rigidum,Yes,Yes,"V11, V12, V13, V15",V10Y
-ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Comunidad de Lathyrus aphaca y Scleranthus annuus,Yes,Yes,"V11, V12, V13, V15",V10Y
-ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Aphanion arvensis,Yes,Yes,"V11, V12, V13, V15",V10Y
-ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Comunidad de Spergularia purpurea y Plantago coronopus,Yes,Yes,"V11, V12, V13, V15",V10Y
-ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Catapodietum patentis,Yes,Yes,"V11, V12, V13, V15",V10Y
-ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Secalietalia cerealis,Yes,Yes,"V11, V12, V13, V15",V10Y
-ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Comunidad de Corrigiola littoralis y Filaginella uliginosa,Yes,Yes,"V11, V12, V13, V15",V10Y
-ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Asociación de Spergularia rubra-Amaranthus deflexus,Yes,Yes,"V11, V12, V13, V15",V10Y
-ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Aperetalia spicae-venti,Yes,Yes,"V11, V12, V13, V15",V10Y
-ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Asociación de Linaria delphinoides-Anthoxanthum aristatum,Yes,Yes,"V11, V12, V13, V15",V10Y
-ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Tolpidi barbatae-Anthoxanthetum aristati,Yes,Yes,"V11, V12, V13, V15",V10Y
-ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Linaria delphinioides-Arnoseretum,Yes,Yes,"V11, V12, V13, V15",V10Y
-ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Spergulario-Arnoseretum minimae,Yes,Yes,"V11, V12, V13, V15",V10Y
-ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Miboro minimae-Arabidopsietum thalianae,Yes,Yes,"V11, V12, V13, V15",V10Y
-ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Chrysantemo segeti-Raphanetum raphanistri,Yes,Yes,"V11, V12, V13, V15",V10Y
-ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Bunio-Vicietum tetraspermae,Yes,Yes,"V11, V12, V13, V15",V10Y
-ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Circaeo lutetianae-Stachyetalia sylvaticae,Fragarion vescae,Atropetum belladonnae,Yes,Not Cantabrian,R57,NA
-ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Papaveretalia rhoeadis,Caucalidion lappulae,Centaureetum cyani,Yes,Yes,"V11, V13",V10Z
-ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Papaveretalia rhoeadis,Caucalidion lappulae,Cerutocephalo falcatae-Androsacetum maximae,Yes,Yes,"V11, V13",V10Z
-ANTHROPOGENIC VEGETATION,Sisymbrietea,Sisymbrietalia sophiae,Sisymbrion officinalis,Comunidad de Sisymbrium officinalis y Hordeum murinum supbs. leporinum,Yes,Yes,"V15, V37, V38",V37W
-ANTHROPOGENIC VEGETATION,Sisymbrietea,Sisymbrietalia sophiae,Sisymbrion officinalis,Sisymbrio officinalis-Hordeetum murini,Yes,Yes,"V15, V37, V38",V37W
-ANTHROPOGENIC VEGETATION,Sisymbrietea,Sisymbrietalia sophiae,Sisymbrion officinalis,Bromo-Hordeetum murini,Yes,Yes,"V15, V37, V38",V37W
-ANTHROPOGENIC VEGETATION,Sisymbrietea,Sisymbrietalia sophiae,Sisymbrion officinalis,Bromo diandri-Carduetum tenuiflori,Yes,Yes,"V15, V37, V38",V37W
-ANTHROPOGENIC VEGETATION,Chenopodietea,Brometalia rubenti-tectorum,Linario polygalifoliae-Vulpion alopecuri,Scrophulario-Vulpietum alopecuroris,Yes,Yes,V32,V32Z
-ANTHROPOGENIC VEGETATION,Chenopodietea,Brometalia rubenti-tectorum,Echio-Galactition tomentosae,Coleostepho myconis-Galactitetum tomentosae,Yes,Yes,V33,V332
-ANTHROPOGENIC VEGETATION,Polygono-Poetea annuae,Polygono arenastri-Poetalia annuae,Polycarpion tetraphylli,Poo annuae-Spergularietum salinae,Yes,Yes,V34,V34Y
-ANTHROPOGENIC VEGETATION,Polygono-Poetea annuae,Polygono arenastri-Poetalia annuae,Polycarpion tetraphylli,Crassulo tillaeae-Saginetum apetalae,Yes,Yes,V34,V34Y
-ANTHROPOGENIC VEGETATION,Polygono-Poetea annuae,Polygono arenastri-Poetalia annuae,Polycarpion tetraphylli,Polycarpion tetraphylli,Yes,Yes,V34,V34Y
-ANTHROPOGENIC VEGETATION,Polygono-Poetea annuae,Polygono arenastri-Poetalia annuae,Polycarpion tetraphylli,Polycarpo tetraphylli-Cotuletum australis,Yes,Yes,V34,V34Y
-ANTHROPOGENIC VEGETATION,Polygono-Poetea annuae,Polygono arenastri-Poetalia annuae,Polygono-Coronopodion,Polygono-Coronopetum squamati,Yes,Yes,V34,V34Z
-ANTHROPOGENIC VEGETATION,Polygono-Poetea annuae,Polygono arenastri-Poetalia annuae,Polygono-Coronopodion,Polygono-Matricarietum matricarioidis,Yes,Yes,V34,V34Z
-ANTHROPOGENIC VEGETATION,Polygono-Poetea annuae,Polygono arenastri-Poetalia annuae,Polygono-Coronopodion,Comunidad de Poa annua,Yes,Yes,V34,V34Z
-ANTHROPOGENIC VEGETATION,Polygono-Poetea annuae,Polygono arenastri-Poetalia annuae,Polygono-Coronopodion,Matricario-Polygonetum avicularis,Yes,Yes,V34,V34Z
-ANTHROPOGENIC VEGETATION,Polygono-Poetea annuae,Polygono arenastri-Poetalia annuae,Polygono-Coronopodion,Polygono arenastri-Matricarietum discoideae,Yes,Yes,V34,V34Z
-ANTHROPOGENIC VEGETATION,Polygono-Poetea annuae,Polygono arenastri-Poetalia annuae,Polygono-Coronopodion,Polygono arenastri-Matricarietum matricarioidis,Yes,Yes,V34,V34Z
-ANTHROPOGENIC VEGETATION,Polygono-Poetea annuae,Polygono arenastri-Poetalia annuae,Polygono-Coronopodion,Matricario-Polygonetum arenastrii,Yes,Yes,V34,V34Z
-ANTHROPOGENIC VEGETATION,Polygono-Poetea annuae,Polygono arenastri-Poetalia annuae,Polygono-Coronopodion,Polycarpo tetraphylli-Coronopodetum squamati,Yes,Yes,V34,V34Z
-ANTHROPOGENIC VEGETATION,Polygono-Poetea annuae,Polygono arenastri-Poetalia annuae,Polygono-Coronopodion,Coronopodo-Sclerochloetum durae,Yes,Yes,V34,V34Z
-ANTHROPOGENIC VEGETATION,Polygono-Poetea annuae,Polygono arenastri-Poetalia annuae,Saginion procumbentis,Sagino procumbentis-Bryetum argentei,Yes,Yes,V35,V35Z
-ANTHROPOGENIC VEGETATION,Polygono-Poetea annuae,Polygono arenastri-Poetalia annuae,Saginion procumbentis,Bryo argentei-Sagineturrz procumbentis,Yes,Yes,V35,V35Z
-ANTHROPOGENIC VEGETATION,Polygono-Poetea annuae,Polygono arenastri-Poetalia annuae,Saginion procumbentis,Sagino-Bryetum argentei,Yes,Yes,V35,V35Z
-ANTHROPOGENIC VEGETATION,Polygono-Poetea annuae,Polygono arenastri-Poetalia annuae,Saginion procumbentis,Bryo argentei-Saginetum procumbentis,Yes,Yes,V35,V35Z
-ANTHROPOGENIC VEGETATION,Chenopodietea,Chenopodietalia,Chenopodion muralis,Chenopodion muralis,Yes,Yes,V37,V37X
-ANTHROPOGENIC VEGETATION,Chenopodietea,Chenopodietalia,Chenopodion muralis,Chenopodio muralis-Malvetum parviflorae,Yes,Yes,V37,V37X
-ANTHROPOGENIC VEGETATION,Chenopodietea,Chenopodietalia,Chenopodion muralis,Chenopodio albi-Conyzetum canadensis,Yes,Yes,V37,V37X
-ANTHROPOGENIC VEGETATION,Chenopodietea,Chenopodietalia,Chenopodion muralis,Sisymbrio irionis-Malvetum parviflorae,Yes,Yes,V37,V37X
 ANTHROPOGENIC VEGETATION,Chenopodietea,Chenopodietalia,Chenopodion muralis,Urtico urentis-Malvetum neglectae,Yes,Yes,V37,V37X
 ANTHROPOGENIC VEGETATION,Chenopodietea,Geranio purpureae-Cardaminetalia hirsutae,Allion triquetri,Comunidad de Smyrnium olusatrum,Yes,Yes,V37,V37Y
 ANTHROPOGENIC VEGETATION,Chenopodietea,Geranio purpureae-Cardaminetalia hirsutae,Allion triquetri,Urtico-Smyrnietum olusatri,Yes,Yes,V37,V37Y
@@ -129,25 +51,31 @@ ANTHROPOGENIC VEGETATION,Chenopodietea,Geranio purpureae-Cardaminetalia hirsutae
 ANTHROPOGENIC VEGETATION,Chenopodietea,Geranio purpureae-Cardaminetalia hirsutae,Geranio pusilli-Anthriscion caucalidis,Galio aparinellae-Anthriscetum caucalidis,Yes,Yes,V37,V37Z
 ANTHROPOGENIC VEGETATION,Chenopodietea,Geranio purpureae-Cardaminetalia hirsutae,Geranio pusilli-Anthriscion caucalidis,Anthrisco caucalidis-Geranietum lucidi,Yes,Yes,V37,V37Z
 ANTHROPOGENIC VEGETATION,Chenopodietea,Geranio purpureae-Cardaminetalia hirsutae,Geranio pusilli-Anthriscion caucalidis,Anthrisco-Geranietum lucidi,Yes,Yes,V37,V37Z
-ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Agropyretalia intermedio-repentis,Convolvulo arvensis-Agropyrion repentis,Comunidad de Elytrigia repens y Poa compressa,Yes,Yes,V38,V38W
-ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Carthametalia lanati,Carduo carpetani-Cirsion odontolepidis,Comunidad de Carduus platypus subsp. platypus y Onopordum acanthium,Yes,Yes,V38,V38X
-ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Carthametalia lanati,Carduo carpetani-Cirsion odontolepidis,Carduo carpetani-Onopordetum acanthii,Yes,Yes,V38,V38X
-ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Carthametalia lanati,Silybo mariani-Urticion piluliferae,Echio rosulati-Silybetum mariani,Yes,Not Cantabrian,V38,
-ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Carthametalia lanati,Silybo mariani-Urticion piluliferae,Comunidad de Silybum marianum y Carduus tenuiflorus,Yes,Not Cantabrian,V38,
-ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Carthametalia lanati,Silybo mariani-Urticion piluliferae,Carduo bourgeani-Sylibetum mariani,Yes,Not Cantabrian,V38,
-ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Carthametalia lanati,Silybo mariani-Urticion piluliferae,Carduo bourgeani-Silybetum mariani,Yes,Not Cantabrian,V38,
-ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Onopordetalia acanthii,Dauco-Melilotion,Echio rosulati-Picridetum echioisia,Yes,Yes,V38,V38Z
-ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Onopordetalia acanthii,Cirsion richterano-chodati,Carduo nutantis-Cirsietum richterani,Yes,Yes,V38,V38Y
-ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Onopordetalia acanthii,Cirsion richterano-chodati,Cirsio chodati-Carduetum cantabrici,Yes,Yes,V38,V38Y
-ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Gladiolo italici-Ridolfietalia segeti,Roemerion hybridae,Veronico triphylli-Cerastietum dichotomi,Yes,Not Cantabrian,"V12, V13",NA
-ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Onopordetalia acanthii,Cirsion richterano-chodati,Comunidad de Cirsium richterianum,Yes,Yes,V38,V38Y
-ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Onopordetalia acanthii,Cirsion richterano-chodati,Cirsio chodati-Carduetum carpetani,Yes,Yes,V38,V38Y
-ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Onopordetalia acanthii,Cirsion richterano-chodati,Carduo nutantis-Cirsietum chodati,Yes,Yes,V38,V38Y
-ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Onopordetalia acanthii,Cirsion richterano-chodati,Comunidad de Carduus carpetanus,Yes,Yes,V38,V38Y
-ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Onopordetalia acanthii,Dauco-Melilotion,Picridi echioides-Melilotetum albi,Yes,Yes,V38,V38Z
-ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Onopordetalia acanthii,Dauco-Melilotion,Comunidad de Dipsacus fullonum,Yes,Yes,V38,V38Z
-ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Onopordetalia acanthii,Dauco-Melilotion,Comunidad de Daucus carota y Melilotus alba,Yes,Yes,V38,V38Z
-ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Onopordetalia acanthii,Dauco-Melilotion,Helmintio echioidis-Melilotetum albae,Yes,Yes,V38,V38Z
+VEGETATION OF ROCK CREVICES AND SCREES,Cymbalario-Parietarietea diffusae,Tortulo-Cymbalarietalia,Cymbalario-Asplenion,Cymbalarietum muralis,Yes,Yes,No relationship,J2.5 - Constructed boundaries 
+VEGETATION OF ROCK CREVICES AND SCREES,Cymbalario-Parietarietea diffusae,Tortulo-Cymbalarietalia,Cymbalario-Asplenion,Cymbalario-Trachelietum caerulei,Yes,Yes,No relationship,J2.5 - Constructed boundaries 
+VEGETATION OF ROCK CREVICES AND SCREES,Cymbalario-Parietarietea diffusae,Tortulo-Cymbalarietalia,Cymbalario-Asplenion,Comunidad de Cymbalaria muralis,Yes,Yes,No relationship,J2.5 - Constructed boundaries 
+VEGETATION OF ROCK CREVICES AND SCREES,Cymbalario-Parietarietea diffusae,Tortulo-Cymbalarietalia,Galio valantiae-Parietarion judaicae,Centrantho-Hypericetum hircini,Yes,Yes,U38,J2.5 - Constructed boundaries 
+ANTHROPOGENIC VEGETATION,Chenopodietea,Geranio purpureae-Cardaminetalia hirsutae,Parietarion lusitanico-mauritanicae,Anogrammo leptophyllae-Parietarietum lusitanicae,Yes,Not Cantabrian,V37,NA
+ANTHROPOGENIC VEGETATION,Digitario sanguinalis-Eragrostietea minoris,Eragrostietalia,Diplotaxion erucoidis,Heliotropio-Amaranthetum albi,Yes,Not Cantabrian,NA,NA
+VEGETATION OF ROCK CREVICES AND SCREES,Cymbalario-Parietarietea diffusae,Tortulo-Cymbalarietalia,Galio valantiae-Parietarion judaicae,Parietarietum judaicae,Yes,Yes,U38,J2.5 - Constructed boundaries 
+VEGETATION OF ROCK CREVICES AND SCREES,Cymbalario-Parietarietea diffusae,Tortulo-Cymbalarietalia,Galio valantiae-Parietarion judaicae,Hedero-Polypodietum cambrici,Yes,Yes,U38,J2.5 - Constructed boundaries 
+VEGETATION OF ROCK CREVICES AND SCREES,Cymbalario-Parietarietea diffusae,Tortulo-Cymbalarietalia,Galio valantiae-Parietarion judaicae,Polypodion serrati,Yes,Yes,U38,J2.5 - Constructed boundaries 
+VEGETATION OF ROCK CREVICES AND SCREES,Cymbalario-Parietarietea diffusae,Tortulo-Cymbalarietalia,Galio valantiae-Parietarion judaicae,Oxali-Parietarietum diffusae,Yes,Yes,U38,J2.5 - Constructed boundaries 
+VEGETATION OF ROCK CREVICES AND SCREES,Cymbalario-Parietarietea diffusae,Tortulo-Cymbalarietalia,Galio valantiae-Parietarion judaicae,Oxalido-Parietarietum,Yes,Yes,U38,J2.5 - Constructed boundaries 
+ANTHROPOGENIC VEGETATION,Digitario sanguinalis-Eragrostietea minoris,Eragrostietalia,Spergulo arvensis-Erodion cicutariae,Setario verticillatae-Echinochloetum crus-galli,Yes,Yes,"V11, V12, V13",V10W
+ANTHROPOGENIC VEGETATION,Digitario sanguinalis-Eragrostietea minoris,Eragrostietalia,Spergulo arvensis-Erodion cicutariae,Panicum sanguinale-Mercurialis annua,Yes,Yes,"V11, V12, V13",V10W
+ANTHROPOGENIC VEGETATION,Digitario sanguinalis-Eragrostietea minoris,Eragrostietalia,Spergulo arvensis-Erodion cicutariae,Asociación de Amaranthus hybridus-Chenopodium polyspermum,Yes,Yes,"V11, V12, V13",V10W
+ANTHROPOGENIC VEGETATION,Digitario sanguinalis-Eragrostietea minoris,Eragrostietalia,Spergulo arvensis-Erodion cicutariae,Panicum crus galli-Spergula arvensis,Yes,Yes,"V11, V12, V13",V10W
+ANTHROPOGENIC VEGETATION,Digitario sanguinalis-Eragrostietea minoris,Eragrostietalia,Spergulo arvensis-Erodion cicutariae,Amarantho hybridi-Chenopodietum polyspermi,Yes,Yes,"V11, V12, V13",V10W
+ANTHROPOGENIC VEGETATION,Digitario sanguinalis-Eragrostietea minoris,Eragrostietalia,Spergulo arvensis-Erodion cicutariae,Lamio hybridi-Echinochloetum crus-gallii,Yes,Yes,"V11, V12, V13",V10W
+ANTHROPOGENIC VEGETATION,Digitario sanguinalis-Eragrostietea minoris,Eragrostietalia,Spergulo arvensis-Erodion cicutariae,Asociación de Lamium dissectum-Panicum crus-galli,Yes,Yes,"V11, V12, V13",V10W
+ANTHROPOGENIC VEGETATION,Digitario sanguinalis-Eragrostietea minoris,Euphorbietalia prostratae,Euphorbion prostratae,Euphorbietum chamaesyco-prostratae,Yes,Not Cantabrian,V34,NA
+ANTHROPOGENIC VEGETATION,Digitario sanguinalis-Eragrostietea minoris,Euphorbietalia prostratae,Euphorbion prostratae,Gnaphaliio luteo-albi-Polycarpetum tetraphylli,Yes,Not Cantabrian,V34,NA
+ANTHROPOGENIC VEGETATION,Digitario sanguinalis-Eragrostietea minoris,Eragrostietalia,Spergulo arvensis-Erodion cicutariae,Lamio (hybridi) dissecti-Panicetum crus-galli,Yes,Yes,"V11, V12, V13",V10W
+ANTHROPOGENIC VEGETATION,Digitario sanguinalis-Eragrostietea minoris,Eragrostietalia,Spergulo arvensis-Erodion cicutariae,Panico-Setarion,Yes,Yes,"V11, V12, V13",V10W
+ANTHROPOGENIC VEGETATION,Digitario sanguinalis-Eragrostietea minoris,Eragrostietalia,Spergulo arvensis-Erodion cicutariae,Lamio dissecti-Panicetum cruris-galli,Yes,Yes,"V11, V12, V13",V10W
+ANTHROPOGENIC VEGETATION,Digitario sanguinalis-Eragrostietea minoris,Eragrostietalia,Spergulo arvensis-Erodion cicutariae,Setario-Echinochloetum colonae,Yes,Yes,"V11, V12, V13",V10W
+ANTHROPOGENIC VEGETATION,Digitario sanguinalis-Eragrostietea minoris,Eragrostietalia,Spergulo arvensis-Erodion cicutariae,Comunidad de Echinochloa crus-galli y Setaria Verticillata,Yes,Yes,"V11, V12, V13",V10W
 ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Arctio lappae-Artemisietalia,Arction lappae,Chenopodio boni-henrici-Senecionetum nebrodensis,Yes,Yes,V39,V39W
 ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Arctio lappae-Artemisietalia,Arction lappae,Chenopodio boni-henrici-Senecietum durieui,Yes,Yes,V39,V39W
 ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Arctio lappae-Artemisietalia,Arction lappae,Comunidad de Pastinaca sylvestris y Heracleum sphondylium,Yes,Yes,V39,V39W
@@ -162,7 +90,79 @@ ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Arctio lappae-Artemisietalia,A
 ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Arctio lappae-Artemisietalia,Arction lappae,Asociación de Malva mauritanica-Rumex obtusifolius,Yes,Yes,V39,V39W
 ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Arctio lappae-Artemisietalia,Balloto-Conion maculati,Balloto-Conion maculati,Yes,Yes,V39,V39X
 ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Arctio lappae-Artemisietalia,Balloto-Conion maculati,Balloto foetidae-Conion maculati,Yes,Yes,V39,V39X
+ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Circaeo lutetianae-Stachyetalia sylvaticae,Fragarion vescae,Atropetum belladonnae,Yes,Not Cantabrian,R57,NA
 ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Arctio lappae-Artemisietalia,Balloto-Conion maculati,Galio aparines-Conietum maculati,Yes,Yes,V39,V39X
+ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Arctio lappae-Artemisietalia,Balloto-Conion maculati,Urtico dioicae-Sambucetum ebuli,Yes,Yes,V39,V39X
+ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Arctio lappae-Artemisietalia,Balloto-Conion maculati,Comunidad de Chaerophyllum temulum y Urtica dioica,Yes,Yes,V39,V39X
+ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Circaeo lutetianae-Stachyetalia sylvaticae,Aegopodion podagrariae,Chaerophyllo aurei-Anthriscetum sylvestris,Yes,Yes,"V39, R55",V39Z
+ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Circaeo lutetianae-Stachyetalia sylvaticae,Aegopodion podagrariae,Galio aparines-Anthriscetum sylvestris,Yes,Yes,"V39, R55",V39Z
+ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Convolvuletalia sepium,Cynancho-Convolvulion sepium,Picridio hieracioidis-Eupatorietum cannabini,Yes,Yes,R55,R55Y
+ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Convolvuletalia sepium,Cynancho-Convolvulion sepium,Convolvulo sepium-Eupatorietum cannabini,Yes,Yes,R55,R55Y
+ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Convolvuletalia sepium,Cynancho-Convolvulion sepium,Comunidad de Convolvulus sepium y Oxalis violacea,Yes,Yes,R55,R55Y
+ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Convolvuletalia sepium,Cynancho-Convolvulion sepium,Picrido hieracioidis-Eupatorietum cannabinii,Yes,Yes,R55,R55Y
+ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Convolvuletalia sepium,Senecionion fluviatilis,Comunidad de Equisetum telmateia,Yes,Yes,R55,R55Z
+ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Convolvuletalia sepium,Senecionion fluviatilis,Arundini-Convolvuletum sepium,Yes,Yes,R55,R55Z
+ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Galeopsio-Senecionetalia sylvatici,Epilobion angustifolii,Comunidad de Epilobium angustifolium y Digitalis purpurea,Yes,Yes,R57,R571
+ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Galeopsio-Senecionetalia sylvatici,Epilobion angustifolii,Asphodelo arrondeaui-Epilobietum angustifolii,Yes,Yes,R57,R571
+ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Galeopsio-Senecionetalia sylvatici,Epilobion angustifolii,Asphodelo albi-Epilobietum angustifolii,Yes,Yes,R57,R571
+ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Galio-Alliarietalia,Geo urbani-Alliarion officinalis,Alliarion petiolatae,Yes,Yes,V39,V39Y
+ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Galio-Alliarietalia,Geo urbani-Alliarion officinalis,Geranio robertiani-Caryolophetum sempervirentis,Yes,Yes,V39,V39Y
+ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Galio-Alliarietalia,Geo urbani-Alliarion officinalis,Oxalido acetosellae-Geranietum robertiani,Yes,Yes,V39,V39Y
+ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Galio-Alliarietalia,Geo urbani-Alliarion officinalis,Geranio robertiani-Cariolophetum sempervirentis,Yes,Yes,V39,V39Y
+ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Galio-Alliarietalia,Geo urbani-Alliarion officinalis,Geranietum robertiano-lucidi,Yes,Yes,V39,V39Y
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Oxalidion europeae,Fumario capreolatae-Veronicetum persicae,Yes,Yes,"V11, V12, V13",V10X
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Oxalidion europeae,Oxalidi latifoliae-Veronicetum persicae,Yes,Yes,"V11, V12, V13",V10X
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Oxalidion europeae,Chrysanthemum-Oxalidetum,Yes,Yes,"V11, V12, V13",V10X
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Oxalidion europeae,Polygonum capitatum community,Yes,Yes,"V11, V12, V13",V10X
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Oxalidion europeae,Lamio amplexicaulis-Veronicetum hederifoliae,Yes,Yes,"V11, V12, V13",V10X
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Oxalidion europeae,Holosteo umbellati-Veronicetum persicae,Yes,Yes,"V11, V12, V13",V10X
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Oxalidion europeae,Polygono-Chenopodion polyspermi,Yes,Yes,"V11, V12, V13",V10X
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Oxalidion europeae,Comunidad de Lamium amplexicaule y Stellaria media,Yes,Yes,"V11, V12, V13",V10X
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Cnico benedicti-Papaveretum argemones,Yes,Yes,"V11, V12, V13, V15",V10Y
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Linario eleganti-Anthoxanthetum aristati,Yes,Yes,"V11, V12, V13, V15",V10Y
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Linario amethysteae-Calenduletum arvensis,Yes,Yes,"V11, V12, V13, V15",V10Y
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Triseto ovati-Arnoseridetum minimae,Yes,Yes,"V11, V12, V13, V15",V10Y
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Linario elegantis-Anthoxanthetum aristati,Yes,Yes,"V11, V12, V13, V15",V10Y
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Chenopodietalia albi,Yes,Yes,"V11, V12, V13, V15",V10Y
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Comunidad de Brassica nigra,Yes,Yes,"V11, V12, V13, V15",V10Y
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Centaureo cyani-Raphanetum microcarpae,Yes,Yes,"V11, V12, V13, V15",V10Y
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Chrysanthemum segetum-Raphanetum,Yes,Yes,"V11, V12, V13, V15",V10Y
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Asociación de Chrysanthemum segetum-Oxalis violacea,Yes,Yes,"V11, V12, V13, V15",V10Y
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Comunidad de Chrysanthemum segetum y Lolium rigidum,Yes,Yes,"V11, V12, V13, V15",V10Y
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Comunidad de Lathyrus aphaca y Scleranthus annuus,Yes,Yes,"V11, V12, V13, V15",V10Y
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Aphanion arvensis,Yes,Yes,"V11, V12, V13, V15",V10Y
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Comunidad de Spergularia purpurea y Plantago coronopus,Yes,Yes,"V11, V12, V13, V15",V10Y
+ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Carthametalia lanati,Silybo mariani-Urticion piluliferae,Echio rosulati-Silybetum mariani,Yes,Not Cantabrian,V38,
+ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Carthametalia lanati,Silybo mariani-Urticion piluliferae,Comunidad de Silybum marianum y Carduus tenuiflorus,Yes,Not Cantabrian,V38,
+ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Carthametalia lanati,Silybo mariani-Urticion piluliferae,Carduo bourgeani-Sylibetum mariani,Yes,Not Cantabrian,V38,
+ANTHROPOGENIC VEGETATION,Artemisietea vulgaris,Carthametalia lanati,Silybo mariani-Urticion piluliferae,Carduo bourgeani-Silybetum mariani,Yes,Not Cantabrian,V38,
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Catapodietum patentis,Yes,Yes,"V11, V12, V13, V15",V10Y
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Secalietalia cerealis,Yes,Yes,"V11, V12, V13, V15",V10Y
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Comunidad de Corrigiola littoralis y Filaginella uliginosa,Yes,Yes,"V11, V12, V13, V15",V10Y
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Gladiolo italici-Ridolfietalia segeti,Roemerion hybridae,Veronico triphylli-Cerastietum dichotomi,Yes,Not Cantabrian,"V12, V13",NA
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Asociación de Spergularia rubra-Amaranthus deflexus,Yes,Yes,"V11, V12, V13, V15",V10Y
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Aperetalia spicae-venti,Yes,Yes,"V11, V12, V13, V15",V10Y
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Asociación de Linaria delphinoides-Anthoxanthum aristatum,Yes,Yes,"V11, V12, V13, V15",V10Y
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Tolpidi barbatae-Anthoxanthetum aristati,Yes,Yes,"V11, V12, V13, V15",V10Y
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Linaria delphinioides-Arnoseretum,Yes,Yes,"V11, V12, V13, V15",V10Y
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Spergulario-Arnoseretum minimae,Yes,Yes,"V11, V12, V13, V15",V10Y
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Miboro minimae-Arabidopsietum thalianae,Yes,Yes,"V11, V12, V13, V15",V10Y
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Chrysantemo segeti-Raphanetum raphanistri,Yes,Yes,"V11, V12, V13, V15",V10Y
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Aperetalia spicae-venti,Scleranthion annui,Bunio-Vicietum tetraspermae,Yes,Yes,"V11, V12, V13, V15",V10Y
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Papaveretalia rhoeadis,Caucalidion lappulae,Centaureetum cyani,Yes,Yes,"V11, V13",V10Z
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Papaveretalia rhoeadis,Caucalidion lappulae,Cerutocephalo falcatae-Androsacetum maximae,Yes,Yes,"V11, V13",V10Z
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Papaveretalia rhoeadis,Caucalidion lappulae,Cerutocephalo falcatae-Androsacetum maximae,Yes,Yes,"V11, V13",V10Z
+ANTHROPOGENIC VEGETATION,Papaveretea rhoeadis,Papaveretalia rhoeadis,Caucalidion lappulae,Cerutocephalo falcatae-Androsacetum maximae,Yes,Yes,"V11, V13",V10Z
+ANTHROPOGENIC VEGETATION,Polygono-Poetea annuae,Polygono arenastri-Poetalia annuae,Polycarpion tetraphylli,Poo annuae-Spergularietum salinae,Yes,Yes,V34,V34Y
+ANTHROPOGENIC VEGETATION,Polygono-Poetea annuae,Polygono arenastri-Poetalia annuae,Polycarpion tetraphylli,Crassulo tillaeae-Saginetum apetalae,Yes,Yes,V34,V34Y
+ANTHROPOGENIC VEGETATION,Polygono-Poetea annuae,Polygono arenastri-Poetalia annuae,Polycarpion tetraphylli,Polycarpion tetraphylli,Yes,Yes,V34,V34Y
+ANTHROPOGENIC VEGETATION,Polygono-Poetea annuae,Polygono arenastri-Poetalia annuae,Polycarpion tetraphylli,Polycarpo tetraphylli-Cotuletum australis,Yes,Yes,V34,V34Y
+ANTHROPOGENIC VEGETATION,Polygono-Poetea annuae,Polygono arenastri-Poetalia annuae,Polygono-Coronopodion,Polygono-Coronopetum squamati,Yes,Yes,V34,V34Z
+ANTHROPOGENIC VEGETATION,Polygono-Poetea annuae,Polygono arenastri-Poetalia annuae,Polygono-Coronopodion,Polygono-Matricarietum matricarioidis,Yes,Yes,V34,V34Z
+ANTHROPOGENIC VEGETATION,Polygono-Poetea annuae,Polygono arenastri-Poetalia annuae,Polygono-Coronopodion,Comunidad de Poa annua,Yes,Yes,V34,V34Z
+ANTHROPOGENIC VEGETATION,Polygono-Poetea annuae,Polygono arenastri-Poetalia annuae,Polygono-Coronopodion,Matricario-Polygonetum avicularis,Yes,Yes,V34,V34Z
+ANTHROPOGENIC VEGETATION,Polygono-Poetea annuae,Polygono arenastri-Poetalia annuae,Polygono-Coronopodion,Polygono arenastri-Matricarietum discoideae,Yes,Yes,V34,V34Z
+ANTHROPOGENIC VEGETATION,Polygono-Poetea annuae,Polygono arenastri-Poetalia annuae,Polygono-Coronopodion,Polygono arenastri-Matricarietum matricarioidis,Yes,Yes,V34,V34Z
 FRESHWATER AQUATIC VEGETATION,Potamogetonetea,Callitricho hamulatae-Ranunculetalia aquatilis,Ranunculion aquatilis,Ranunculetum saniculifolii,No,Not manmade,NA,NA
 INTRAZONAL BOREO-TEMPERATE GRASSLANDS AND HEATH,Calluno-Ulicetea,Ulicetalia nani,Ulicion,Daboecio-Ulicetum cantabrici,No,Not manmade,NA,NA
 INTRAZONAL SCRUB AND WOODLANDS OF THE NEMORAL ZONE,Crataego-Prunetea,Prunetalia spinosae,Berberidion vulgaris,Comunidades de Ligustrum vulgare,No,Not manmade,NA,NA
@@ -178,15 +178,15 @@ VEGETATION OF COASTAL CLIFFS AND DUNES,Saginetea maritimae,Saginetalia maritimae
 "VEGETATION OF FRESHWATER SPRINGS, SHORELINES AND SWAMPS",Phragmito-Magnocaricetea,Phragmitetalia,Phragmition communis,Comunidad de Typha latifolia,No,Not manmade,NA,NA
 VEGETATION OF ROCK CREVICES AND SCREES,Asplenietea trichomanis,Potentilletalia caulescentis,Sedo albi-Seslerion hispanicae,Crepido asturicae-Campanuletum legionensis,No,Not manmade,NA,NA
 VEGETATION OF ROCK CREVICES AND SCREES,Asplenietea trichomanis,Potentilletalia caulescentis,Sedo albi-Seslerion hispanicae,Campanulo-Leontodetum farinosi Fdez.,No,Not manmade,NA,NA
-ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Arctio lappae-Artemisietalia,Balloto-Conion maculati,Urtico dioicae-Sambucetum ebuli,Yes,Yes,V39,V39X
-ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Arctio lappae-Artemisietalia,Balloto-Conion maculati,Comunidad de Chaerophyllum temulum y Urtica dioica,Yes,Yes,V39,V39X
-ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Galio-Alliarietalia,Geo urbani-Alliarion officinalis,Alliarion petiolatae,Yes,Yes,V39,V39Y
-ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Galio-Alliarietalia,Geo urbani-Alliarion officinalis,Geranio robertiani-Caryolophetum sempervirentis,Yes,Yes,V39,V39Y
-ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Galio-Alliarietalia,Geo urbani-Alliarion officinalis,Oxalido acetosellae-Geranietum robertiani,Yes,Yes,V39,V39Y
-ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Galio-Alliarietalia,Geo urbani-Alliarion officinalis,Geranio robertiani-Cariolophetum sempervirentis,Yes,Yes,V39,V39Y
-ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Galio-Alliarietalia,Geo urbani-Alliarion officinalis,Geranietum robertiano-lucidi,Yes,Yes,V39,V39Y
-ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Circaeo lutetianae-Stachyetalia sylvaticae,Aegopodion podagrariae,Chaerophyllo aurei-Anthriscetum sylvestris,Yes,Yes,"V39, R55",V39Z
-ANTHROPOGENIC VEGETATION,Epilobietea angustifolii,Circaeo lutetianae-Stachyetalia sylvaticae,Aegopodion podagrariae,Galio aparines-Anthriscetum sylvestris,Yes,Yes,"V39, R55",V39Z
+ANTHROPOGENIC VEGETATION,Polygono-Poetea annuae,Polygono arenastri-Poetalia annuae,Polygono-Coronopodion,Matricario-Polygonetum arenastrii,Yes,Yes,V34,V34Z
+ANTHROPOGENIC VEGETATION,Polygono-Poetea annuae,Polygono arenastri-Poetalia annuae,Polygono-Coronopodion,Polycarpo tetraphylli-Coronopodetum squamati,Yes,Yes,V34,V34Z
+ANTHROPOGENIC VEGETATION,Polygono-Poetea annuae,Polygono arenastri-Poetalia annuae,Polygono-Coronopodion,Coronopodo-Sclerochloetum durae,Yes,Yes,V34,V34Z
+ANTHROPOGENIC VEGETATION,Polygono-Poetea annuae,Polygono arenastri-Poetalia annuae,Saginion procumbentis,Sagino procumbentis-Bryetum argentei,Yes,Yes,V35,V35Z
+ANTHROPOGENIC VEGETATION,Polygono-Poetea annuae,Polygono arenastri-Poetalia annuae,Saginion procumbentis,Bryo argentei-Sagineturrz procumbentis,Yes,Yes,V35,V35Z
+ANTHROPOGENIC VEGETATION,Polygono-Poetea annuae,Polygono arenastri-Poetalia annuae,Saginion procumbentis,Sagino-Bryetum argentei,Yes,Yes,V35,V35Z
+ANTHROPOGENIC VEGETATION,Polygono-Poetea annuae,Polygono arenastri-Poetalia annuae,Saginion procumbentis,Bryo argentei-Saginetum procumbentis,Yes,Yes,V35,V35Z
+ANTHROPOGENIC VEGETATION,Sisymbrietea,Sisymbrietalia sophiae,Sisymbrion officinalis,Comunidad de Sisymbrium officinalis y Hordeum murinum supbs. leporinum,Yes,Yes,"V15, V37, V38",V37W
+ANTHROPOGENIC VEGETATION,Sisymbrietea,Sisymbrietalia sophiae,Sisymbrion officinalis,Sisymbrio officinalis-Hordeetum murini,Yes,Yes,"V15, V37, V38",V37W
 VEGETATION OF ROCK CREVICES AND SCREES,Polypodietea,Anomodonto-Polypodietalia serrati,Polypodion serrati,Comunidad de Asplenium trichomanes y Asplenium adiantum-nigrum,No,Not manmade,NA,NA
 VEGETATION OF ROCK CREVICES AND SCREES,Thlaspietea rotundifolii,Androsacetalia alpinae,Linario saxatilis-Senecionion carpetani,Triseto hispidi-Rumicetum suffruticosi,No,Not manmade,NA,NA
 VEGETATION OF ROCK CREVICES AND SCREES,Thlaspietea rotundifolii,Andryaletalia ragusinae,Scrophularion sciophilae,Scrophulario sciophilae-Iberidetum hegelmaieri,No,Not manmade,NA,NA
@@ -251,5 +251,5 @@ Vegetation of saline and brackish waters and swamps,Juncetea maritimi,Agropyreta
 Vegetation of saline and brackish waters and swamps,Juncetea maritimi,Agropyretalia pungentis,Agropyrion pungentis,Junco maritimi-Elymetum pycnanthi,No,Not manmade,NA,NA
 Vegetation of saline and brackish waters and swamps,Juncetea maritimi,Juncetalia maritimi,Juncion maritimi,Agrostio stoloniferae-Paspaletum vaginati,No,Not manmade,NA,NA
 Vegetation of saline and brackish waters and swamps,Juncetea maritimi,Juncetalia maritimi,Juncion maritimi,Spergulario marinae-Cotuletum coronopifoliae,No,Not manmade,NA,NA
-NA,NA,NA,Caucalidion,Kickxio spuriae-Nigelletum gallicae,NA,NA,NA,NA
-NA,NA,NA,Caucalidion,Asociación Caucalis lappula-Neslia apiculata,NA,NA,NA,NA
+ANTHROPOGENIC VEGETATION,Sisymbrietea,Sisymbrietalia sophiae,Sisymbrion officinalis,Bromo-Hordeetum murini,Yes,Yes,"V15, V37, V38",V37W
+ANTHROPOGENIC VEGETATION,Sisymbrietea,Sisymbrietalia sophiae,Sisymbrion officinalis,Bromo diandri-Carduetum tenuiflori,Yes,Yes,"V15, V37, V38",V37W

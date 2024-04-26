@@ -230,6 +230,9 @@ plotmeans %>%
                             "Polygono-Poetea" = "Polygono-Poetea annuae")) ->
   inds
 
+inds %>% group_by(Class) %>% summarise(PC1 = mean (Dim.1), PC2 = mean(Dim.2)) %>% arrange(PC1)
+inds %>% group_by(Class) %>% summarise(PC1 = mean (Dim.1), PC2 = mean(Dim.2)) %>% arrange(PC2)
+
 pca2$var$coord %>%
         data.frame %>%
         rownames_to_column(var = "Variable") %>%
