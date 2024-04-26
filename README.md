@@ -4,9 +4,8 @@ README.md
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6077618.svg)](https://doi.org/10.5281/zenodo.6077618)
 
 <figure>
-<img src="ceramica.JPG" alt="Antigua fábrica de La Cerámica Gijonesa" />
-<figcaption aria-hidden="true">Antigua fábrica de La Cerámica
-Gijonesa</figcaption>
+<img src="ceramica.JPG" alt="Dauco-Melilotion" />
+<figcaption aria-hidden="true"><em>Dauco-Melilotion</em></figcaption>
 </figure>
 
 # Anthropogenic plant communities of the Iberian Atlantic ecoregion

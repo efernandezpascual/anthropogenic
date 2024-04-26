@@ -9,7 +9,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6077618.svg)](https://doi.org/10.5281/zenodo.6077618)
 
-![Antigua fábrica de La Cerámica Gijonesa](ceramica.JPG)
+![*Dauco-Melilotion*](ceramica.JPG)
 
 # Anthropogenic plant communities of the Iberian Atlantic ecoregion
 
