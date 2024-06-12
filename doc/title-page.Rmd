@@ -42,4 +42,6 @@ None declared.
 
 # Data availability statement
 
-Original datasets, R code for analysis and Rmarkdown code for creation of the manuscript can be accessed at the GitHub repository <https://github.com/efernandezpascual/anthropogenic>. Upon publication, a version of record of the repository will be deposited in Zenodo.
+Original datasets, R code for analysis and Rmarkdown code for creation of the manuscript can be accessed at the GitHub repository <https://github.com/efernandezpascual/anthropogenic> stored at https://zenodo.org/doi/10.5281/zenodo.11613571.
+
+. Upon publication, a version of record of the repository will be deposited in Zenodo.
