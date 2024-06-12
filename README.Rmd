@@ -9,11 +9,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6077618.svg)](https://doi.org/10.5281/zenodo.6077618)
 
-![*Dauco-Melilotion*](ceramica.JPG)
+![](ceramica.JPG)
 
-# Anthropogenic plant communities of the Iberian Atlantic ecoregion
+# Classification and characterization of anthropogenic plant communities at the ecoregion level
 
-This repository stores all the information related to the manuscript [*Anthropogenic plant communities of the Iberian Atlantic ecoregion*](https://github.com/efernandezpascual/manmade/blob/master/doc/manuscript.md), including the raw datasets, the scripts to perform data cleaning and analysis, and the `Rmarkdown` files to create the manuscript.
+This repository stores all the information related to the manuscript [*Classification and characterization of anthropogenic plant communities at the ecoregion level*](https://github.com/efernandezpascual/manmade/blob/master/doc/manuscript.md), including the datasets, the scripts to perform data cleaning and analysis, and the `Rmarkdown` files to create the manuscript.
 
 ## Contents
 
@@ -29,18 +29,18 @@ The following materials are available in the folders of this repository:
 
 ## Abstract
 
-* *Questions* Which is the diversity of anthropogenic plant communities at the ecoregional level in a transitional territory between temperate and Mediterranean Europe? How are these communities composed by native plants, archaeophytes and neophytes? What are the main environmental and disturbance drivers of the diversity in anthropogenic vegetation? 
+* *Questions* How can we classify the diversity of anthropogenic plant communities at the ecoregion level? How are these communities characterized by species origins (native plants, archaeophytes, and neophytes), species traits (lifeforms, plant height, and flowering phenology) and ecological preferences (temperature, moisture, light, nutrients, soil reaction, disturbance frequency, and disturbance severity)? 
 
-* *Location* Iberian Atlantic ecoregion, Iberian Peninsula, south-western Europe.
+* *Location* Iberian Atlantic ecoregion (a.k.a. Cantabrian Mixed Forests); Portugal, Spain, and France; south-western Europe.
 
-* *Methods* We compiled a vegetation database of 2,508 synanthropic plots and revised the regional checklist of anthropogenic alliances. We used modified TWINSPAN and semi-supervised classification to classify the plots into the revised alliances. We determined the proportion of natives, archaeophytes and neophytes. We described the alliances in terms of vegetation height, flowering phenology and ecological requirements for temperature, moisture, light, nutrients, soil reaction, disturbance frequency and disturbance severity.
+* *Methods* We compiled a vegetation database of 2,508 synanthropic plots and revised the regional checklist of anthropogenic vegetation alliances. We used modified TWINSPAN and semi-supervised classification to classify the plots into the revised alliances. We determined the proportion of natives, archaeophytes, and neophytes. We also described the alliances in terms of species traits and ecological requirements.
 
-* *Results* We classified 2,081 vegetation plots into 28 anthropogenic alliances representing 9 vegetation classes (*Cymbalario-Parietarietea diffusae*, *Polygono-Poetea annuae*, *Papaveretea rhoeadis*, *Digitario sanguinalis-Eragrostietea minoris*, *Chenopodietea*, *Sisymbrietea*, *Bidentetea*, *Artemisietea vulgaris* and *Epilobietea angustifolii*). The plots included 1,162 plant taxa: 78% natives, 15% archaeophytes and 7% neophytes. The main ecological gradients behind this diversity went from dry-sunny to moist-shady habitats, followed by a gradient of low to high disturbance frequency and severity.
+* *Results* We classified 2,081 vegetation plots into 28 anthropogenic alliances representing 9 vegetation classes (*Cymbalario-Parietarietea diffusae*, *Polygono-Poetea annuae*, *Papaveretea rhoeadis*, *Digitario sanguinalis-Eragrostietea minoris*, *Chenopodietea*, *Sisymbrietea*, *Bidentetea*, *Artemisietea vulgaris* and *Epilobietea angustifolii*). The plots included 1,162 plant taxa: 78% natives, 15% archaeophytes, and 7% neophytes. Vegetation groups were organized along a principal axis of variation related to abiotic stress (dry-sunny to moist-shady habitats), and a second axis related to disturbance (low to high disturbance frequency and severity).
 
-* *Conclusions* The human-made habitats of the Iberian Atlantic ecoregion host one third of the ecoregional species pool and one fifth of the Iberian flora. Wet anthropogenic habitats are most affected by neophyte invasions. Annual vegetation of arable lands is a refuge for archaeophytes. Mesic perennial ruderal vegetation is specially rich in native species and can be a biodiversity asset in urban and peri-urban settings.
+* *Conclusions* Ecoregion-level synthesis detected a discrepancy between the number of anthropogenic vegetation units described in the literature (38 alliances) and the number supported by numerical classification (28). The diversity of anthropogenic vegetation can be organized into three groups: trampled, weeds, and ruderals. In the Iberian Atlantic ecoregion, anthropogenic habitats host one third of the ecoregion plant species pool and one fifth of the Iberian flora. Mesic perennial ruderal vegetation is especially rich in native species and can be a biodiversity asset in urban ecosystems. Our ecoregion-level framework can improve the assessment and management of anthropogenic plant communities within biogeographically meaningful regions.
 
 ## Citation
 
 Please cite the repository, datasets and article as: 
 
-> Fernández-Pascual E, González-García, Ivesdal G, Lázaro-Lobo A, Jiménez-Alfaro B. [*Anthropogenic plant communities of the Iberian Atlantic ecoregion*](https://github.com/efernandezpascual/manmade/blob/master/doc/manuscript.md), *in preparation*.
+> Fernández-Pascual E, González-García, Ivesdal G, Lázaro-Lobo A, Jiménez-Alfaro B. [*Classification and characterization of anthropogenic plant communities at the ecoregion level*](https://github.com/efernandezpascual/manmade/blob/master/doc/manuscript.md), *in preparation*.

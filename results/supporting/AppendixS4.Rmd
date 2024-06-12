@@ -1,0 +1,93 @@
+---
+title: "Appendix S4 Synthetic description of the 28 alliances present in the Iberian Atlantic anthropogenic vegetation."
+output: 
+  bookdown::pdf_document2:
+    number_sections: false
+    toc: false
+link-citations: yes
+always_allow_html: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r message = FALSE, echo = FALSE, warning = FALSE}
+knitr::knit_hooks$set(inline = function(x) {
+  prettyNum(x, big.mark = ",")
+})
+```
+
+***Cymbalario-Parietarietea diffusae*** Vegetation of human-made walls.
+
+1.  *Galio valantiae-Parietarion judaicae* Hemicryptophyte-rich vegetation of walls. Occupies slightly warmer and sunnier situations than the other alliance in the class and has a shorter flowering season. Wide distribution in the ecoregion. Diagnostic species in the ecoregion: *Parietaria judaica*, *Centranthus ruber*, *Asplenium trichomanes*. Correspondence with EUNIS (2012) habitat *J2.5 - Constructed boundaries*.
+
+2.  *Cymbalario-Asplenion* Fern-rich vegetation of walls. Occupies slightly colder and shadier walls than the other alliance in the class and has a longer flowering season. Wide distribution in the ecoregion. Diagnostic species in the ecoregion: *Cymbalaria muralis*. Correspondence with EUNIS (2012) habitat *J2.5 - Constructed boundaries*.
+
+***Polygono-Poetea annuae*** Dwarf-herb vegetation of heavily-trampled sites.
+
+3.  *Polycarpion tetraphylli* Dwarf-annual trampled vegetation of warm and sunny sites. Occupies warmer, sunnier and nutrient-poorer situations than the other alliances in the class and has an earlier flowering season. Wide distribution in the ecoregion, specially along the coast and in submediterranean valleys of the interior. Diagnostic species in the ecoregion: *Sagina apetala*, *Plantago coronopus*, *Crassula tillaea*, *Spergularia marina*. Correspondence with EUNIS habitat *V34 Trampled xeric grassland with annuals*.
+
+4.  *Polygono-Coronopodion* Annual trampled vegetation of dry sites. Occupies sites that are colder than those preferred by *Polycarpion tetraphylli*, but drier than those of *Saginion procumbentis*. Has a specially high proportion of neophytes. Wide distribution in the ecoregion. Diagnostic species in the ecoregion: *Matricaria suaveolens*, *Polygonum aviculare*. Correspondence with EUNIS habitat *V34 Trampled xeric grassland with annuals*.
+
+5.  *Saginion procumbentis* Bryophyte-rich trampled vegetation of mesic sites. Occupies colder and wetter situations than the other alliances in the class, is less dominated by therophytes and has a relatively high proportion of bryophytes. Distribution concentrated in the central part of the ecoregion. Diagnostic species in the ecoregion: *Sagina procumbens*, *Bryum argenteum*. Correspondence with EUNIS habitat *V35 Trampled mesophilous grassland with annuals*.
+
+***Papaveretea rhoeadis*** Annual weed vegetation of crops and gardens.
+
+6.  *Caucalidion lappulae* Annual weed vegetation of cereal crops on base-rich soils. Very high proportion of putative archaeophytes. Distribution mostly limited to the more submediterranean valleys south of the Cantabrian Mountains. Diagnostic species in the ecoregion: *Cyanus segetum*, *Papaver rhoeas*, *Trifolium arvense*, *Anacyclus clavatus*, *Valerianella eriocarpa*. Correspondence with EUNIS habitats *V11 Intensive unmixed crops* and *V13 Arable land with unmixed crops grown by low-intensity agricultural methods*.
+
+7.  *Scleranthion annui* Annual weed vegetation of cereal crops on base-poor soils. Occupies more acidic soils than the other alliances in the class, and flowers earlier. High proportion of putative archaeophytes. Wide distribution in the ecoregion, but especially in the west, where acidic bedrocks dominate. Diagnostic species in the ecoregion: *Mibora minima*, *Rumex acetosella*. Correspondence with EUNIS habitats *V11 Intensive unmixed crops*, *V12 Mixed crops of market gardens and horticulture*, *V13 Arable land with unmixed crops grown by low-intensity agricultural methods* and *V15 Bare tilled, fallow or recently abandoned arable land*.
+
+8.  *Oxalidion europeae* Annual weed vegetation of gardens and root crops. Occupies wetter, shadier and nutrient-richer situations, and has a longer flowering season, than the other alliances in the class. High proportion of putative archaeophytes, and more neophytes than the other alliances in the class. Wide distribution in the ecoregion. Diagnostic species in the ecoregion: *Stellaria media*, *Veronica persica*. Correspondence with EUNIS habitats *V11 Intensive unmixed crops*, *V12 Mixed crops of market gardens and horticulture*, *V13 Arable land with unmixed crops grown by low-intensity agricultural methods* and *V15 Bare tilled, fallow or recently abandoned arable land*.
+
+***Digitario sanguinalis-Eragrostietea minoris*** Summer-annual C4 weed vegetation.
+
+9.  *Spergulo arvensis-Erodion cicutariae* Summer-annual C4 weed vegetation. Late-flowering alliance rich in neophytes and grasses, occurring in highly-disturbed and nutrient-rich sites. Wide distribution in the ecoregion. Diagnostic species in the ecoregion: *Digitaria sanguinalis*, *Echinochloa crus-galli*, *Chenopodium album*, *Amaranthus hybridus*. Correspondence with EUNIS habitats *V11 Intensive unmixed crops*, *V12 Mixed crops of market gardens and horticulture* and *V13 Arable land with unmixed crops grown by low-intensity agricultural methods*.
+
+***Chenopodietea*** Winter-annual fringe and ruderal vegetation.
+
+10. *Allion triquetri* Geophyte-rich fringe vegetation. This vegetation occupies warmer, shadier and less frequently disturbed situations than other alliances in the class, and is comparatively taller and earlier-flowering. Has a higher proportion of geophytes and a lower proportion of therophytes. The proportion of neophytes is the highest in the class. Wide distribution in the ecoregion. Diagnostic species in the ecoregion: *Urtica membranacea*, *Smyrnium olusatrum*, *Tradescantia fluminensis*. Correspondence with EUNIS habitat *V37 Annual anthropogenic herbaceous vegetation*.
+
+11. *Geranio pusilli-Anthriscion caucalidis* Winter-annual fringe vegetation. Occupies situations similar to the previous alliance, but in colder sites, and is a shorter vegetation dominated by therophytes instead of geophytes. Mostly distributed in the submediterranean valleys south of the Cantabrian Mountains. Diagnostic species in the ecoregion: *Geranium lucidum*, *Anthriscus caucalis*. Correspondence with EUNIS habitat *V37 Annual anthropogenic herbaceous vegetation*.
+
+12. *Chenopodion muralis* Low-growth winter-annual ruderal vegetation. Short vegetation occupying colder situations than the other alliances in the class and more disturbed sites. Flowering season longer and later. Has a high proportion of archaeophytes. Sparse occurrence throughout the ecoregion. Diagnostic species in the ecoregion: *Malva neglecta*, *Urtica urens*. Correspondence with EUNIS habitat *V37 Annual anthropogenic herbaceous vegetation*.
+
+13. *Echio-Galactition tomentosae* Tall-herb winter-annual ruderal vegetation. Occupies drier, sunnier and less nutrient-rich situations than other alliances in the class. Mostly distributed in the west of the ecoregion. Diagnostic species in the ecoregion: *Galactites tomentosus*, *Coleostephus myconis*, *Anisantha rigida*. Correspondence with EUNIS habitat *V37 Annual anthropogenic herbaceous vegetation*.
+
+14. *Linario polygalifoliae-Vulpion alopecuri* Ephemeral annual vegetation of disturbed coastal dunes. Occupies warm, dry and sunny coastal sites, and has a high number of coastal dune species. Isolated occurrence in the southern coast of the ecoregion. Diagnostic species in the ecoregion: *Vulpia alopecuros*, *Malcolmia littorea*, *Crucianella maritima*, *Artemisia campestris*. Correspondence with EUNIS habitat *V32 Mediterranean subnitrophilous annual grassland*.
+
+***Sisymbrietea*** Summer-annual ruderal vegetation.
+
+15. *Sisymbrion officinalis* Summer-annual ruderal vegetation. Rich in therophytes and archaeophytes and adapted to severe disturbances. Wide distribution in the ecoregion. Diagnostic species in the ecoregion: *Hordeum murinum*, *Sisymbrium officinale*. Correspondence with EUNIS habitats *V15 Bare tilled, fallow or recently abandoned arable land* and *V37 Annual anthropogenic herbaceous vegetation*.
+
+***Bidentetea*** Summer-annual pioneer vegetation of temporarily flooded sites.
+
+16. *Bidention tripartitae* Summer-annual pioneer vegetation of temporarily flooded sites. Occupies nutrient-richer sites than the other alliance in the class and has a higher proportion of therophytes and neophytes. Dispersed throughout the ecoregion. Diagnostic species in the ecoregion: *Persicaria hydropiper*, *Bidens frondosus*, *Lythrum salicaria*. Correspondence with EUNIS habitat *Q61 Periodically exposed shore with stable, eutrophic sediments with pioneer or ephemeral vegetation*.
+
+17. *Paspalo-Agrostion semiverticillati* Summer-annual pioneer vegetation of temporarily flooded and warm sites. Occupies wetter and more frequently disturbed sites than the other alliance in the class and has a longer flowering season. Isolated occurrences in the south of the ecoregion. Diagnostic species in the ecoregion: *Paspalum distichum*, *Cyperus longus*, *Schoenoplectus lacustris*. Correspondence with EUNIS habitat *R55 Lowland moist or wet tall-herb and fern fringe*.
+
+***Artemisietea vulgaris*** Perennial ruderal vegetation of dry sites.
+
+18. *Convolvulo arvensis-Agropyrion repentis* Semiruderal grasslands. Occupies wetter, shadier and nutrient-poorer situations than the other alliances in the class, and has a higher proportion of geophytes, grasses and native species. Isolated occurrence in the south of the ecoregion. Diagnostic species in the ecoregion: *Poa compressa*, *Elytrigia repens*, *Potentilla reptans*, *Valerianella locusta*. Correspondence with EUNIS habitat *V38 Dry perennial anthropogenic herbaceous vegetation*.
+
+19. *Carduo carpetani-Cirsion odontolepidis* Thistle ruderal vegetation of warm sites. Occupies warmer situations than the other thistle alliance in the class and has a high proportion of archaeophytes. Mostly distributed in the Cantabrian Mountains. Diagnostic species in the ecoregion: *Onopordum acanthium*. Correspondence with EUNIS habitat *V38 Dry perennial anthropogenic herbaceous vegetation*.
+
+20. *Cirsion richterano-chodati* Thistle ruderal vegetation of cold sites. Occupies colder situations than the other thistle alliance in the class. Mostly distributed in the Cantabrian Mountains. Diagnostic species in the ecoregion: *Cirsium eriophorum*, *Carduus carpetanus*, *Carduus nutans*. Correspondence with EUNIS habitat *V38 Dry perennial anthropogenic herbaceous vegetation*.
+
+21. *Dauco-Melilotion* Biennial ruderal vegetation. Occupies wetter situations than the two thistle alliances in the class and has a higher proportion of neophytes. Occurrence throughout the ecoregion. Diagnostic species in the ecoregion: *Helminthotheca echioides*, *Daucus carota*, *Melilotus albus*, *Foeniculum vulgare*. Correspondence with EUNIS habitat *V38 Dry perennial anthropogenic herbaceous vegetation*.
+
+***Epilobietea angustifolii*** Perennial fringe and ruderal vegetation of mesic to wet sites.
+
+22. *Geo urbani-Alliarion officinalis* Low-herb short-lived semiruderal and fringe vegetation. Occupies shadier and less frequently disturbed situations than the other alliances in the class and has a higher proportion of therophytes and shorter plants. Wide distribution in the ecoregion. Diagnostic species in the ecoregion: *Urtica dioica*. Correspondence with EUNIS habitat *V39 Mesic perennial anthropogenic herbaceous vegetation*.
+
+23. *Arction lappae* Low-herb short-lived ruderal vegetation. Occupies sunnier and more frequently disturbed situations than the other alliances in the class, and has a higher proportion of therophytes and shorter plants. Distribution concentrated in the Cantabrian Mountains. Diagnostic species in the ecoregion: *Oxybasis rubra*, *Senecio duriaei*. Correspondence with EUNIS habitat *V39 Mesic perennial anthropogenic herbaceous vegetation*.
+
+24. *Balloto-Conion maculati* Tall-herb perennial ruderal vegetation. Occupies warmer situations than the other alliances in the class. Has a high proportion of archaeophytes. Distribution concentrated in the Cantabrian Mountains and the east of the ecoregion. Diagnostic species in the ecoregion: *Sambucus ebulus*. Correspondence with EUNIS habitat *V39 Mesic perennial anthropogenic herbaceous vegetation*.
+
+25. *Aegopodion podagrariae* Tall-herb perennial vegetation of forest margins and clearings. Occupies shadier and less disturbed situations than the other alliances in the class. Sparse occurrence throughout the ecoregion. Diagnostic species in the ecoregion: *Anthriscus sylvestris*, *Heracleum sphondylium*, *Galium aparine*. Correspondence with EUNIS habitats *R55 Lowland moist or wet tall-herb and fern fringe* and *V39 Mesic perennial anthropogenic herbaceous vegetation*.
+
+26. *Epilobion angustifolii* Tall-herb perennial vegetation of forest margins and clearings in acidic soils. Occupies colder, nutrient-poorer, more acidic and less disturbed situations than the other alliances in the class. Distributed towards the west of the ecoregion. Diagnostic species in the ecoregion: *Epilobium angustifolium*, *Digitalis purpurea*, *Luzula lactea*. Correspondence with EUNIS habitats *R54 Pteridium aquilinum vegetation* and *R57 Herbaceous forest clearing vegetation*.
+
+27. *Cynancho-Convolvulion sepium* Tall-herb fringe vegetation of nutrient-rich riparian habitats. Occupies wetter and less disturbed situations than the other alliances in the class and has a later flowering season. Dispersed throughout the ecoregion. Diagnostic species in the ecoregion: *Eupatorium cannabinum*, *Angelica sylvestris*, *Picris hieracioides*. Correspondence with EUNIS habitat *R55 Lowland moist or wet tall-herb and fern fringe*.
+
+28. *Senecionion fluviatilis* Tall-herb vegetation of nutrient-rich riverbanks and ditches. Occupies warmer and wetter situations than the other alliances in the class, flowers later, has taller plants and has a high proportion of neophytes and geophytes. Isolated occurrence in the western coast of the ecoregion. Diagnostic species in the ecoregion: *Arundo donax*, *Silene latifolia*. Correspondence with EUNIS habitat *R55 Lowland moist or wet tall-herb and fern fringe*.
