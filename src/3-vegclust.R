@@ -16,7 +16,7 @@ read.csv("data/urban-header-5.1.csv", fileEncoding = "latin1") %>%
 
 ### Prepare community composition matrices
 
-read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% 
+read.csv("data/species.csv", fileEncoding = "latin1") %>% 
   filter(SIVIMID %in% headerClassified$SIVIMID) %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
   spread(Analysis.Names, Cover.percent, fill = 0) %>%
@@ -24,7 +24,7 @@ read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>%
   decostand("normalize") -> # Chord transformation of community data
   dfClassified
 
-read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% 
+read.csv("data/species.csv", fileEncoding = "latin1") %>% 
   filter(SIVIMID %in% headerUnclassified$SIVIMID) %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
   spread(Analysis.Names, Cover.percent, fill = 0) %>%
@@ -110,7 +110,7 @@ header2 %>%
 
 ### DCA of new groups
 
-read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") -> species
+read.csv("data/species.csv", fileEncoding = "latin1") -> species
 
 species %>%
   merge(header2) %>%
@@ -190,6 +190,126 @@ data.frame(Community = indicators$maxcls, Indicator = indicators$indcls,
   slice_max(Indicator, n = 4) %>%
   data.frame
 
+### M
+
+header2 %>% filter(Cluster == "M1") -> headerM1
+
+headerM1 %>%
+  group_by(Alliance) %>% tally
+
+read.csv("data/species.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% headerM1$SIVIMID) -> speciesM1
+
+speciesM1 %>%
+  select(SIVIMID, Analysis.Names, Cover.percent) %>%
+  spread(Analysis.Names, Cover.percent, fill = 0) %>%
+  column_to_rownames(var = "SIVIMID") -> df1
+
+### Twinspan 
+
+twinspanR::twinspan(
+  df1,
+  modif = TRUE,
+  cut.levels = c(0, 15, 25),
+  min.group.size = 10,
+  clusters = 3,
+  diss = "multi.sorensen",
+  mean.median = "mean",
+  show.output.on.console = FALSE,
+  quiet = TRUE) %>%
+  cut() %>%
+  cbind(df1) %>%
+  select(".") %>%
+  rename("Cluster" = ".") %>%
+  rownames_to_column(var = "SIVIMID") -> kclusters
+
+headerM1 %>% select(-Cluster) %>% merge(kclusters, by = "SIVIMID") -> header4
+
+### DCA
+
+decorana(df1) -> dca1
+
+vegan::scores(dca1) %>%
+  data.frame() %>%
+  rownames_to_column("SIVIMID") %>%
+  merge(header4) %>%
+  mutate(Cluster = as.factor(Cluster)) -> df2
+
+cent <- aggregate(cbind(DCA1, DCA2) ~ Cluster, data = df2, FUN = mean)
+segs <- merge(df2, setNames(cent, c("Cluster", "oDCA1", "oDCA2")), by = "Cluster", sort = FALSE)
+
+df2 %>%
+  ggplot(aes(x = DCA1, y = DCA2)) + 
+  geom_segment(data = segs, mapping = aes(xend = oDCA1, yend = oDCA2, color = Cluster), show.legend = F) +
+  geom_point(data = cent, shape = 21, size = 5, aes(fill = Cluster), show.legend = T)
+
+### Sintaxa
+
+header4 %>%
+  group_by(Cluster, Alliance) %>%
+  tally %>%
+  arrange(Cluster, -n) %>%
+  data.frame
+
+### N
+
+header2 %>% filter(Cluster == "N") -> headerM1
+
+headerM1 %>%
+  group_by(Alliance) %>% tally
+
+read.csv("data/species.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% headerM1$SIVIMID) -> speciesM1
+
+speciesM1 %>%
+  select(SIVIMID, Analysis.Names, Cover.percent) %>%
+  spread(Analysis.Names, Cover.percent, fill = 0) %>%
+  column_to_rownames(var = "SIVIMID") -> df1
+
+### Twinspan 
+
+twinspanR::twinspan(
+  df1,
+  modif = TRUE,
+  cut.levels = c(0, 15, 25),
+  min.group.size = 10,
+  clusters = 8,
+  diss = "multi.sorensen",
+  mean.median = "mean",
+  show.output.on.console = FALSE,
+  quiet = TRUE) %>%
+  cut() %>%
+  cbind(df1) %>%
+  select(".") %>%
+  rename("Cluster" = ".") %>%
+  rownames_to_column(var = "SIVIMID") -> kclusters
+
+headerM1 %>% select(-Cluster) %>% merge(kclusters, by = "SIVIMID") -> header4
+
+### DCA
+
+decorana(df1) -> dca1
+
+vegan::scores(dca1) %>%
+  data.frame() %>%
+  rownames_to_column("SIVIMID") %>%
+  merge(header4) %>%
+  mutate(Cluster = as.factor(Cluster)) -> df2
+
+cent <- aggregate(cbind(DCA1, DCA2) ~ Cluster, data = df2, FUN = mean)
+segs <- merge(df2, setNames(cent, c("Cluster", "oDCA1", "oDCA2")), by = "Cluster", sort = FALSE)
+
+df2 %>%
+  ggplot(aes(x = DCA1, y = DCA2)) + 
+  geom_segment(data = segs, mapping = aes(xend = oDCA1, yend = oDCA2, color = Cluster), show.legend = F) +
+  geom_point(data = cent, shape = 21, size = 5, aes(fill = Cluster), show.legend = T)
+
+### Sintaxa
+
+header4 %>%
+  group_by(Cluster, Alliance) %>%
+  tally %>%
+  arrange(Cluster, -n) %>%
+  data.frame
+
 ### Supervised classification of M into existing groups
 
 header2 %>%
@@ -200,7 +320,7 @@ header2 %>%
   filter(Cluster %in% c("M1")) -> 
   headerUnclassifiedM
 
-read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% 
+read.csv("data/species.csv", fileEncoding = "latin1") %>% 
   filter(SIVIMID %in% headerClassifiedM$SIVIMID) %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
   spread(Analysis.Names, Cover.percent, fill = 0) %>%
@@ -208,7 +328,7 @@ read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>%
   decostand("normalize") -> # Chord transformation of community data
   dfClassifiedM
 
-read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>% 
+read.csv("data/species.csv", fileEncoding = "latin1") %>% 
   filter(SIVIMID %in% headerUnclassifiedM$SIVIMID) %>%
   select(SIVIMID, Analysis.Names, Cover.percent) %>%
   spread(Analysis.Names, Cover.percent, fill = 0) %>%
@@ -349,7 +469,7 @@ data.frame(Community = indicators$maxcls, Indicator = indicators$indcls,
 
 read.csv("results/sintaxonomy/original-sintaxonomy.csv", fileEncoding = "latin1") %>%
   filter(Anthropogenic == "Yes") %>%
-  filter(Assigned != "Not Cantabrian") %>%
+  # filter(Assigned != "Not Cantabrian") %>%
   select(Alliance, Order, Class, CANTEUNIS) %>%
   unique %>% 
   rename(Semisupervised = Alliance) -> alliances
@@ -366,51 +486,50 @@ header3 %>%
   mutate(Longitude = ifelse(Accuracy == "5 - UTMs missing from DEM", NA, Longitude)) %>%
   mutate(Latitude = ifelse(Accuracy == "5 - UTMs missing from DEM", NA, Latitude)) %>%
   mutate(Semisupervised = fct_recode(Cluster,
-                         "Cirsion richterano-chodati" = "F10",
-                         "Convolvulo arvensis-Agropyrion repentis" = "F11",
-                         "Cymbalario-Asplenion" = "F12",
-                         "Cynancho-Convolvulion sepium" = "F13",
-                         "Dauco-Melilotion" = "F14",
-                         "Echio-Galactition tomentosae" = "F15",
-                         "Epilobion angustifolii" = "F16",
-                         "Galio valantiae-Parietarion judaicae" = "F17",
-                         "Geo urbani-Alliarion officinalis" = "F18",
-                         "Geranio pusilli-Anthriscion caucalidis" = "F19",
+                         "Convolvulo arvensis-Agropyrion repentis" = "F10",
+                         "Cymbalario-Asplenion" = "F11",
+                         "Cynancho-Convolvulion sepium" = "F12",
+                         "Dauco-Melilotion" = "F13",
+                         "Echio-Galactition tomentosae" = "F14",
+                         "Epilobion angustifolii" = "F15",
+                         "Galio valantiae-Parietarion judaicae" = "F16",
+                         "Geo urbani-Alliarion officinalis" = "F17",
+                         "Geranio pusilli-Anthriscion caucalidis" = "F18",
+                         "Linario polygalifoliae-Vulpion alopecuri" = "F19",
+                         "Oxalidion europeae" = "F20",
                          "Aegopodion podagrariae" = "F2",
-                         "Linario polygalifoliae-Vulpion alopecuri" = "F20",
-                         "Oxalidion europeae" = "F21",
-                         "Paspalo-Agrostion semiverticillati" = "F22",
-                         "Polycarpion tetraphylli" = "F23",
-                         "Polygono-Coronopodion" = "F24",
-                         "Saginion procumbentis" = "F25",
-                         "Scleranthion annui" = "F26",
-                         "Senecionion fluviatilis" = "F27",
+                         "Paspalo-Agrostion semiverticillati" = "F21",
+                         "Polycarpion tetraphylli" = "F22",
+                         "Polygono-Coronopodion" = "F23",
+                         "Saginion procumbentis" = "F24",
+                         "Scleranthion annui" = "F25",
+                         "Senecionion fluviatilis" = "F26",
+                         "Silybo mariani-Urticion piluliferae" = "F27",
                          "Sisymbrion officinalis" = "F28",
-                         "Allion triquetri" = "F3",
                          "Spergulo arvensis-Erodion cicutariae" = "F29",
+                         "Allion triquetri" = "F3",
                          "Arction lappae" = "F4",
                          "Balloto-Conion maculati" = "F5",
                          "Bidention tripartitae" = "F6",
                          "Carduo carpetani-Cirsion odontolepidis" = "F7",
-                         "Caucalidion lappulae" = "F8",
-                         "Chenopodion muralis" = "F9",
+                         "Chenopodion muralis" = "F8",
+                         "Cirsion richterano-chodati" = "F9",
                          #"Unclassified" = "M1",
-                         "Noise" = "N")) %>% 
-  rename(Twinspan = L1,
-         ESEUNIS = EUNIS) %>%
-  select(-c(Cluster, L0, Alliance, Class)) %>%
+                         "Noise" = "N")) %>%  
+  rename(Twinspan = L1) %>%
+  select(-c(Cluster, Alliance, Class, Order, CANTEUNIS, Fixed)) %>% 
   merge(alliances, by = "Semisupervised", all.x = TRUE) %>%
-  select(SIVIMID, CANTEUNIS, ESEUNIS, Original, Twinspan, Semisupervised, Order, Class,
-         Area, Year, Longitude, Latitude, Accuracy, Elevation, Aspect, Slope) %>%
+  select(SIVIMID, CANTEUNIS, Original, Twinspan, Semisupervised, Order, Class,
+         Area, Year, Longitude, Latitude, Accuracy, Elevation) %>%
   write.csv("data/urban-header-5.2.csv", fileEncoding = "latin1", row.names = FALSE)
 
 ### Prepare files for manuscript stage
 
 read.csv("data/urban-header-5.2.csv", fileEncoding = "latin1") %>%
   rename(Alliance = Semisupervised) %>%
-  select(-c(ESEUNIS, Twinspan, Aspect, Slope)) -> header
+  select(-c(Twinspan)) -> header
   
-read.csv("data/urban-species-5.0.csv", fileEncoding = "latin1") %>%
+read.csv("data/species.csv", fileEncoding = "latin1") %>%
   mutate(Analysis.Names = ifelse(Analysis.Names == "Polygonum calcatum", "Polygonum arenastrum", Analysis.Names)) %>%
   filter(SIVIMID %in% header$SIVIMID) -> species
 

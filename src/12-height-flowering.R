@@ -124,7 +124,7 @@ cwms %>%
                                "Bidention tripartitae",
                                "Paspalo-Agrostion semiverticillati",
                                "Convolvulo arvensis-Agropyrion repentis",
-                               "Carduo carpetani-Cirsion odontolepidis",
+                               "Onopordion acanthii",
                                "Silybo mariani-Urticion piluliferae", 
                                "Cirsion richterano-chodati",
                                "Dauco-Melilotion",

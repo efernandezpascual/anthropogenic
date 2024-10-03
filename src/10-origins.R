@@ -36,7 +36,7 @@ read.csv("data/traits.csv", fileEncoding = "latin1") %>%
                                 "Dauco-Melilotion", 
                                 "Cirsion richterano-chodati",
                                 "Silybo mariani-Urticion piluliferae",
-                                "Carduo carpetani-Cirsion odontolepidis",
+                                "Onopordion acanthii",
                                 "Convolvulo arvensis-Agropyrion repentis",
                                 "Paspalo-Agrostion semiverticillati",
                                 "Bidention tripartitae",
