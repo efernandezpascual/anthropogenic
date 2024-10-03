@@ -857,6 +857,7 @@ header4 %>%
 
 header %>% filter(Class == "Epilobietea angustifolii" ) -> header3
 # header %>% filter(Order %in% c( "Convolvuletalia sepium") ) -> header3
+# header %>% filter(Alliance %in% c( "Aegopodion podagrariae", "Balloto-Conion maculati", "Geo urbani-Alliarion officinalis") ) -> header3
 header3 %>% group_by(Original) %>% tally %>% print(n =222)
 header3 %>% group_by(Alliance) %>% tally
 
@@ -874,7 +875,7 @@ twinspanR::twinspan(
   modif = TRUE,
   cut.levels = c(0, 15, 25),
   min.group.size = 10,
-  clusters = 11,
+  clusters = 2,
   diss = "multi.sorensen",
   mean.median = "mean",
   show.output.on.console = FALSE,
