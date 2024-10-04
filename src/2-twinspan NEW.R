@@ -3,19 +3,17 @@ library(tidyverse); library(vegan); library(labdsv)
 rm(list = ls())
 
 read.csv("results/sintaxonomy/original-sintaxonomy.csv", fileEncoding = "latin1") %>%
-  filter(Anthropogenic == "Yes") %>% 
   select(Original, Alliance, Order, Class) %>%
   unique -> syntaxonomy
 
 syntaxonomy %>% group_by(Alliance)
 
 read.csv("data/header.csv", fileEncoding = "latin1") %>%
-  select(-c(Alliance, Order, Class)) %>%
+  select(-c(Alliance, Order, Class, CANTEUNIS)) %>%
   merge(syntaxonomy)-> header
 
 header %>% group_by(Alliance)
 header %>% group_by(SIVIMID)
-
 header %>% pull(Class) %>% unique
 
 #### Cluster 1
@@ -241,7 +239,6 @@ header4 %>%
   select(-Cluster) %>%
   write.csv("data/urban-header-5.1B.csv", fileEncoding = "latin1")
 
-
 #### Cluster 3
 
 header %>% filter(Class == "Papaveretea rhoeadis") -> header3
@@ -307,7 +304,6 @@ header4 %>%
   arrange(Cluster, -n) %>%
   data.frame
 
-
 ### Dominant
 
 species %>%
@@ -360,8 +356,6 @@ header4 %>%
                          "Scleranthion annui" = "3")) %>%
   select(-Cluster) %>%
   write.csv("data/urban-header-5.1C.csv", fileEncoding = "latin1")
-
-
 
 #### Cluster 4
 
@@ -428,7 +422,6 @@ header4 %>%
   arrange(Cluster, -n) %>%
   data.frame
 
-
 ### Dominant
 
 species %>%
@@ -483,9 +476,6 @@ header4 %>%
                          "Linario polygalifoliae-Vulpion alopecuri" = "5")) %>%
   select(-Cluster) %>%
   write.csv("data/urban-header-5.1D.csv", fileEncoding = "latin1")
-
-
-
 
 #### Cluster 5
 
@@ -605,9 +595,6 @@ header4 %>%
   select(-Cluster) %>%
   write.csv("data/urban-header-5.1E.csv", fileEncoding = "latin1")
 
-
-
-
 #### Cluster 6
 
 header %>% filter(Class == "Bidentetea") -> header3
@@ -673,7 +660,6 @@ header4 %>%
   arrange(Cluster, -n) %>%
   data.frame
 
-
 ### Dominant
 
 species %>%
@@ -725,11 +711,6 @@ header4 %>%
                          "Paspalo-Agrostion semiverticillati" = "2")) %>%
   select(-Cluster) %>%
   write.csv("data/urban-header-5.1F.csv", fileEncoding = "latin1")
-
-
-
-
-
 
 #### Cluster 7
 
@@ -795,7 +776,6 @@ header4 %>%
   tally %>%
   arrange(Cluster, -n) %>%
   data.frame
-
 
 ### Dominant
 
@@ -875,7 +855,7 @@ twinspanR::twinspan(
   modif = TRUE,
   cut.levels = c(0, 15, 25),
   min.group.size = 10,
-  clusters = 2,
+  clusters = 11,
   diss = "multi.sorensen",
   mean.median = "mean",
   show.output.on.console = FALSE,
@@ -914,15 +894,14 @@ header4 %>%
   arrange(Cluster, -n) %>%
   data.frame
 
-header4 %>%
-  filter(SIVIMID %in% c("R-P23949", "R-P24668", "T-P06561", "T-P06562", "T-P06564", "T-P06571", "T-P06581", "T-P06582", "T-P06583", "T-P07926", "T-P07928", "T-P07929", "T-P13200"))
+# header4 %>%
+#   filter(SIVIMID %in% c("R-P23949", "R-P24668", "T-P06561", "T-P06562", "T-P06564", "T-P06571", "T-P06581", "T-P06582", "T-P06583", "T-P07926", "T-P07928", "T-P07929", "T-P13200"))
 
 header4 %>%
   group_by(Cluster, Original) %>%
   tally %>%
   arrange(Cluster, -n) %>%
   data.frame
-
 
 ### Dominant
 
@@ -975,8 +954,8 @@ header4 %>%
                          "NA" = "2",
                          "NA" = "3",
                          "Balloto-Conion maculati" = "4",
-                         #"NA" = "5",
-                         "Aegopodion podagrariae" = "5",
+                         "NA" = "5",
+                         #"Aegopodion podagrariae" = "5",
                          "Geo urbani-Alliarion officinalis" = "6",
                          "NA" = "7",
                          "Arction lappae" = "8",
@@ -1052,7 +1031,6 @@ header4 %>%
   arrange(Cluster, -n) %>%
   data.frame
 
-
 ### Dominant
 
 species %>%
@@ -1105,13 +1083,7 @@ header4 %>%
   select(-Cluster) %>%
   write.csv("data/urban-header-5.1I.csv", fileEncoding = "latin1")
 
-
 ### Update header with clusters
-
-read.csv("results/sintaxonomy/original-sintaxonomy.csv", fileEncoding = "latin1") %>%
-  select(Alliance, Class) %>%
-  rename(L1 = Alliance, L0 = Class) %>%
-  unique -> alliances
 
 rbind(
   read.csv("data/urban-header-5.1A.csv", fileEncoding = "latin1"),
@@ -1125,30 +1097,15 @@ rbind(
   read.csv("data/urban-header-5.1I.csv", fileEncoding = "latin1")) %>% 
   select(SIVIMID, L1) -> header7
 
-header7 %>% group_by(L1) %>% tally %>% arrange(-n) %>% print(n = 100)
-
 read.csv("data/header.csv", fileEncoding = "latin1") %>%
-  select(-c(Alliance, Order, Class)) %>%
+  select(-c(Alliance, Order, Class, CANTEUNIS)) %>%
   merge(syntaxonomy, all.x = TRUE) %>%
   merge(header7, all.x = TRUE) %>%
   mutate(Fixed = ifelse((L1 != Alliance | is.na(L1)), 0, 1)) ->
   header5.1
 
 header5.1 %>%
-  group_by(L1) %>%
-  tally %>% 
-  data.frame 
-
-header5.1 %>%
-  filter(Fixed == 1) %>%
-  group_by(L1) %>%
-  tally %>% 
-  data.frame 
-
-
-header5.1 %>%
   group_by(Fixed) %>%
   tally
-
 
 write.csv(header5.1, "data/urban-header-5.1.csv", row.names = FALSE, fileEncoding = "latin1")
