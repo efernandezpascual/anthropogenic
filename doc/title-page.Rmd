@@ -1,5 +1,5 @@
 ---
-title: "Classification and characterization of anthropogenic plant communities at the ecoregion level"
+title: "Classification and characterization of anthropogenic plant communities in the northwestern Iberian Peninsula"
 output: 
   bookdown::word_document2:
     reference_docx: template.docx

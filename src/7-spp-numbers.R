@@ -1,5 +1,10 @@
 library(tidyverse)
 
+
+read.csv("data/header.csv", fileEncoding = "latin1") %>% 
+  filter(Alliance != "Noise") %>%
+  group_by(SIVIMID)
+
 ### General species diversity
 
 read.csv("data/header.csv", fileEncoding = "latin1") %>% 
@@ -26,6 +31,24 @@ read.csv("data/header.csv", fileEncoding = "latin1") %>%
   group_by(SIVIMID) %>%
   summarise(l = length(Analysis.Names)) %>%
   pull(l) %>% mean
+
+read.csv("data/header.csv", fileEncoding = "latin1") %>% 
+  filter(Alliance != "Noise") %>% 
+  filter(Area >= 10) %>%
+  filter(Area <= 30) %>%
+  merge(read.csv("data/species.csv", fileEncoding = "latin1")) %>%
+  group_by(SIVIMID) %>%
+  summarise(l = length(Analysis.Names)) %>%
+  pull(l) %>% min
+
+read.csv("data/header.csv", fileEncoding = "latin1") %>% 
+  filter(Alliance != "Noise") %>% 
+  filter(Area >= 10) %>%
+  filter(Area <= 30) %>%
+  merge(read.csv("data/species.csv", fileEncoding = "latin1")) %>%
+  group_by(SIVIMID) %>%
+  summarise(l = length(Analysis.Names)) %>%
+  pull(l) %>% max
 
 ### Species origin
 
@@ -63,6 +86,20 @@ read.csv("data/header.csv", fileEncoding = "latin1") %>%
   select(Alliance, origin, per) %>%
   spread(origin, per) %>%
   arrange(-archaeophyte )
+
+read.csv("data/header.csv", fileEncoding = "latin1") %>% 
+  filter(Alliance != "Noise") %>%
+  merge(read.csv("data/species.csv", fileEncoding = "latin1")) %>%
+  merge(read.csv("data/traits.csv", fileEncoding = "latin1"))  %>%
+  select(Alliance, Analysis.Names, origin) %>%
+  unique %>%
+  group_by(Alliance, origin) %>% tally %>%
+  group_by(Alliance) %>%
+  mutate(T = sum(n)) %>%
+  mutate(per = n/T) %>%
+  select(Alliance, origin, per) %>%
+  spread(origin, per) %>%
+  arrange(-neophyte )
 
 read.csv("data/header.csv", fileEncoding = "latin1") %>% 
   filter(Alliance != "Noise") %>%

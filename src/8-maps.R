@@ -40,8 +40,8 @@ read.csv("data/header.csv", fileEncoding = "latin1") %>%
                                "Bidention tripartitae",
                                "Paspalo-Agrostion semiverticillati",
                                "Convolvulo arvensis-Agropyrion repentis",
-                               "Onopordion acanthii",
                                "Silybo mariani-Urticion piluliferae", 
+                               "Carduo carpetani-Cirsion odontolepidis",
                                "Cirsion richterano-chodati",
                                "Dauco-Melilotion",
                                "Geo urbani-Alliarion officinalis",
@@ -55,7 +55,7 @@ read.csv("data/header.csv", fileEncoding = "latin1") %>%
                                "Galio valantiae-\nParietarion judaicae" = "Galio valantiae-Parietarion judaicae",
                                 # "Cymbalario-Asplenion",
                                 # "Polycarpion tetraphylli",
-                                # "Polygono-Coronopodion",
+                               "Polygono-\nCoronopodion" = "Polygono-Coronopodion",
                                 # "Saginion procumbentis",
                                 # "Scleranthion annui",
                                 # "Oxalidion europeae",
@@ -67,18 +67,18 @@ read.csv("data/header.csv", fileEncoding = "latin1") %>%
                                "Echio-\nGalactition tomentosae" = "Echio-Galactition tomentosae",
                                "Linario polygalifoliae-\nVulpion alopecuri" = "Linario polygalifoliae-Vulpion alopecuri",
                                 # "Sisymbrion officinalis",
-                               "Carduo carpetani-\nCirsion odontolepidis" = "Onopordion acanthii",
+                               "Carduo carpetani-\nCirsion odontolepidis" = "Carduo carpetani-Cirsion odontolepidis",
                                "Cirsion\nrichterano-chodati" = "Cirsion richterano-chodati",
                                 # "Dauco-Melilotion",
                                "Geo urbani-\nAlliarion officinalis" = "Geo urbani-Alliarion officinalis",
                                 # "Arction lappae",
-                                # "Balloto-Conion maculati",
+                                "Balloto-\nConion maculati" = "Balloto-Conion maculati",
                                 # "Aegopodion podagrariae",
                                 # "Epilobion angustifolii",
                                "Cynancho-\nConvolvulion sepium" = "Cynancho-Convolvulion sepium",
                                 # "Senecionion fluviatilis",
                                 # "Bidention tripartitae",
-                               "Paspalo-\nAgrostion semiverticillati" = "Paspalo-Agrostion semiverticillati"))-> 
+                               "Paspalo-Agrostion\nsemiverticillati" = "Paspalo-Agrostion semiverticillati"))-> 
   header
 
 ### Map
@@ -87,7 +87,7 @@ rgdal::readOGR(dsn = "data/map", layer = "IberoAtlantic") -> Ecoregions # Map fi
 
 header %>%
   ggplot(aes(Longitude, Latitude)) +
-  facet_wrap( ~ Alliance, ncol = 4) +
+  facet_wrap( ~ Alliance, ncol = 5) +
   geom_polygon(data = Ecoregions, aes(x = long, y = lat, group = group), 
                color = "black", fill = "gainsboro", size = 0.25, show.legend = FALSE) +
   geom_point(aes(color = Class), show.legend = TRUE, alpha = 0.4) +
@@ -98,11 +98,11 @@ header %>%
         strip.background = element_blank(),
         legend.position = "right", 
         #legend.direction = "vertical",
-        legend.title = element_text(size = 10),
+        legend.title = element_text(size = 8),
         legend.margin = margin(0, 0, 0, 0),
         legend.spacing.x = unit(0, "mm"),
         legend.spacing.y = unit(0, "mm"),
-        legend.text = element_text(size = 9, face = "italic"), 
+        legend.text = element_text(size = 10, face = "italic"), 
         panel.background = element_rect(color = "black", fill = NULL),
         panel.spacing = unit(0.05, "lines"),
         strip.text = element_text(size = 7, face = "italic"),
@@ -125,5 +125,5 @@ header %>%
   guides(colour = guide_legend(override.aes = list(alpha = 1))) -> Fig2; Fig2
 
 ggsave(Fig2, file = "results/figures/F1 - maps.png", bg = "white", 
-       path = NULL, scale = 1, width = 180, height = 152, units = "mm", dpi = 600)
+       path = NULL, scale = 1, width = 180, height = 100, units = "mm", dpi = 600)
 

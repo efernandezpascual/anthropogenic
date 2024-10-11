@@ -7,6 +7,8 @@ library(tidyverse); library(indicspecies); library(labdsv)
 read.csv("data/header.csv", fileEncoding = "latin1") %>% filter(! Alliance %in% "Noise")-> 
   header
 
+header %>% group_by(Alliance)
+
 read.csv("data/species.csv", fileEncoding = "latin1") %>% 
   filter(SIVIMID %in% header$SIVIMID) -> species
 
@@ -65,6 +67,7 @@ load(file = "results/characteristic-spp/indval.RData")
 
 read.csv("data/header.csv", fileEncoding = "latin1") %>%
   select(Alliance) %>%
+  filter(Alliance != "Noise") %>%
   unique %>%
   mutate(Community = as.numeric(as.factor(Alliance))) -> communities
 
@@ -105,7 +108,8 @@ species %>%
   mutate(Species = Analysis.Names,
          Type = "Constant",
          Value = Frequency*100) %>%
-  select(Species, Alliance, Type, Value) -> constspp
+  select(Species, Alliance, Type, Value) %>%
+  arrange(Alliance, -Value) -> constspp
 
 ### Dominant
 
@@ -135,11 +139,12 @@ species %>%
   mutate(Species = Analysis.Names,
          Type = "Dominant",
          Value = Frequency*100) %>%
-  select(Species, Alliance, Type, Value) -> domispp
+  select(Species, Alliance, Type, Value) %>%
+  arrange(Alliance, -Value) -> domispp
 
 ### Merge
 
-read.csv("results/sintaxonomy/original-sintaxonomy.csv", fileEncoding = "latin1") %>%
+read.csv("results/sintaxonomy/canteunis.csv", fileEncoding = "latin1") %>%
   select(Alliance, CANTEUNIS) %>%
   na.omit %>% unique -> habitats
 

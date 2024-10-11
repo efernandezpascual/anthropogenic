@@ -1,361 +1,431 @@
 "Alliance","CANTEUNIS","Species","Type","Value"
-"Aegopodion podagrariae","V39Z","Urtica dioica","Constant",100
-"Aegopodion podagrariae","V39Z","Anthriscus sylvestris","Constant",100
-"Aegopodion podagrariae","V39Z","Galium aparine","Constant",97.0588235294118
-"Aegopodion podagrariae","V39Z","Heracleum sphondylium","Constant",79.4117647058823
-"Aegopodion podagrariae","V39Z","Anisantha sterilis","Constant",67.6470588235294
-"Aegopodion podagrariae","V39Z","Geranium pyrenaicum","Constant",58.8235294117647
-"Aegopodion podagrariae","V39Z","Lamium maculatum","Constant",50
-"Aegopodion podagrariae","V39Z","Rumex obtusifolius","Constant",50
-"Aegopodion podagrariae","V39Z","Anthriscus sylvestris","Diagnostic",97.5841483795311
-"Aegopodion podagrariae","V39Z","Heracleum sphondylium","Diagnostic",58.0597081875194
-"Aegopodion podagrariae","V39Z","Galium aparine","Diagnostic",34.1514011313246
-"Aegopodion podagrariae","V39Z","Anthriscus sylvestris","Dominant",97.0588235294118
-"Aegopodion podagrariae","V39Z","Urtica dioica","Dominant",38.2352941176471
-"Aegopodion podagrariae","V39Z","Galium aparine","Dominant",26.4705882352941
-"Allion triquetri","V37Y","Urtica membranacea","Constant",67.8571428571429
-"Allion triquetri","V37Y","Sonchus oleraceus","Constant",58.9285714285714
-"Allion triquetri","V37Y","Urtica membranacea","Diagnostic",64.4018290020234
-"Allion triquetri","V37Y","Smyrnium olusatrum","Diagnostic",45.5676468708957
-"Allion triquetri","V37Y","Tradescantia fluminensis","Diagnostic",34.7945655229827
-"Allion triquetri","V37Y","Smyrnium olusatrum","Dominant",46.4285714285714
-"Allion triquetri","V37Y","Urtica membranacea","Dominant",44.6428571428571
-"Allion triquetri","V37Y","Tradescantia fluminensis","Dominant",14.2857142857143
-"Allion triquetri","V37Y","Urtica dioica","Dominant",10.7142857142857
-"Allion triquetri","V37Y","Allium triquetrum","Dominant",7.14285714285714
-"Arction lappae","V39W","Urtica dioica","Constant",89.2857142857143
-"Arction lappae","V39W","Oxybasis rubra","Constant",64.2857142857143
-"Arction lappae","V39W","Senecio duriaei","Constant",57.1428571428571
-"Arction lappae","V39W","Oxybasis rubra","Diagnostic",63.4070676296312
-"Arction lappae","V39W","Senecio duriaei","Diagnostic",53.8427254967352
-"Arction lappae","V39W","Oxybasis rubra","Dominant",33.9285714285714
-"Arction lappae","V39W","Senecio duriaei","Dominant",14.2857142857143
-"Arction lappae","V39W","Urtica dioica","Dominant",10.7142857142857
-"Arction lappae","V39W","Blitum bonus-henricus","Dominant",7.14285714285714
-"Balloto-Conion maculati","V39X","Urtica dioica","Constant",96.0629921259843
-"Balloto-Conion maculati","V39X","Sambucus ebulus","Constant",81.8897637795276
-"Balloto-Conion maculati","V39X","Galium aparine","Constant",74.8031496062992
-"Balloto-Conion maculati","V39X","Sambucus ebulus","Diagnostic",74.4541966047562
-"Balloto-Conion maculati","V39X","Sambucus ebulus","Dominant",59.0551181102362
-"Balloto-Conion maculati","V39X","Urtica dioica","Dominant",27.5590551181102
-"Balloto-Conion maculati","V39X","Conium maculatum","Dominant",22.0472440944882
-"Balloto-Conion maculati","V39X","Galium aparine","Dominant",10.2362204724409
-"Bidention tripartitae","Q61Z","Lythrum salicaria","Constant",87.2340425531915
-"Bidention tripartitae","Q61Z","Persicaria hydropiper","Constant",80.8510638297872
-"Bidention tripartitae","Q61Z","Bidens frondosus","Constant",70.2127659574468
-"Bidention tripartitae","Q61Z","Helosciadium nodiflorum","Constant",59.5744680851064
-"Bidention tripartitae","Q61Z","Lycopus europaeus","Constant",57.4468085106383
-"Bidention tripartitae","Q61Z","Phalaroides arundinacea","Constant",55.3191489361702
-"Bidention tripartitae","Q61Z","Cyperus eragrostis","Constant",53.1914893617021
-"Bidention tripartitae","Q61Z","Echinochloa crus-galli","Constant",53.1914893617021
-"Bidention tripartitae","Q61Z","Persicaria lapathifolia","Constant",51.063829787234
-"Bidention tripartitae","Q61Z","Persicaria hydropiper","Diagnostic",80.1269500640008
-"Bidention tripartitae","Q61Z","Bidens frondosus","Diagnostic",70.1601142090159
-"Bidention tripartitae","Q61Z","Lythrum salicaria","Diagnostic",59.3277177886371
-"Bidention tripartitae","Q61Z","Helosciadium nodiflorum","Diagnostic",55.9926538855032
-"Bidention tripartitae","Q61Z","Phalaroides arundinacea","Diagnostic",53.247762096868
-"Bidention tripartitae","Q61Z","Cyperus eragrostis","Diagnostic",50.0326026710845
-"Bidention tripartitae","Q61Z","Dysphania ambrosioides","Diagnostic",38.000395961524
-"Bidention tripartitae","Q61Z","Bidens frondosus","Dominant",59.5744680851064
-"Bidention tripartitae","Q61Z","Persicaria hydropiper","Dominant",53.1914893617021
-"Bidention tripartitae","Q61Z","Persicaria lapathifolia","Dominant",27.6595744680851
-"Bidention tripartitae","Q61Z","Xanthium orientale","Dominant",19.1489361702128
-"Bidention tripartitae","Q61Z","Lythrum salicaria","Dominant",8.51063829787234
-"Bidention tripartitae","Q61Z","Artemisia verlotiorum","Dominant",8.51063829787234
-"Carduo carpetani-Cirsion odontolepidis","V38X","Onopordum acanthium","Constant",88.3720930232558
-"Carduo carpetani-Cirsion odontolepidis","V38X","Echium vulgare","Constant",67.4418604651163
-"Carduo carpetani-Cirsion odontolepidis","V38X","Carduus carpetanus","Constant",60.4651162790698
-"Carduo carpetani-Cirsion odontolepidis","V38X","Dipsacus fullonum","Constant",55.8139534883721
-"Carduo carpetani-Cirsion odontolepidis","V38X","Lactuca virosa","Constant",51.1627906976744
-"Carduo carpetani-Cirsion odontolepidis","V38X","Rumex crispus","Constant",51.1627906976744
-"Carduo carpetani-Cirsion odontolepidis","V38X","Onopordum acanthium","Diagnostic",86.2167639580935
-"Carduo carpetani-Cirsion odontolepidis","V38X","Onopordum acanthium","Dominant",48.8372093023256
-"Carduo carpetani-Cirsion odontolepidis","V38X","Echium vulgare","Dominant",11.6279069767442
-"Carduo carpetani-Cirsion odontolepidis","V38X","Carduus carpetanus","Dominant",6.97674418604651
-"Caucalidion lappulae","V10Z","Cyanus segetum","Constant",100
-"Caucalidion lappulae","V10Z","Papaver rhoeas","Constant",90
-"Caucalidion lappulae","V10Z","Anthemis arvensis","Constant",80
-"Caucalidion lappulae","V10Z","Convolvulus arvensis","Constant",60
-"Caucalidion lappulae","V10Z","Vicia sativa aggr.","Constant",60
-"Caucalidion lappulae","V10Z","Trifolium arvense","Constant",50
-"Caucalidion lappulae","V10Z","Anacyclus clavatus","Constant",50
-"Caucalidion lappulae","V10Z","Bromus hordeaceus aggr.","Constant",50
-"Caucalidion lappulae","V10Z","Chenopodium album","Constant",50
-"Caucalidion lappulae","V10Z","Trifolium campestre","Constant",50
-"Caucalidion lappulae","V10Z","Cyanus segetum","Diagnostic",96.6909505798556
-"Caucalidion lappulae","V10Z","Papaver rhoeas","Diagnostic",70.2285105666925
-"Caucalidion lappulae","V10Z","Trifolium arvense","Diagnostic",38.7434053266808
-"Caucalidion lappulae","V10Z","Anacyclus clavatus","Diagnostic",37.1785492156654
-"Caucalidion lappulae","V10Z","Valerianella eriocarpa","Diagnostic",20
-"Caucalidion lappulae","V10Z","Cyanus segetum","Dominant",30
-"Caucalidion lappulae","V10Z","Anthoxanthum ovatum","Dominant",10
-"Caucalidion lappulae","V10Z","Anacyclus clavatus","Dominant",10
-"Caucalidion lappulae","V10Z","Papaver rhoeas","Dominant",10
-"Chenopodion muralis","V37X","Malva neglecta","Constant",85.7142857142857
-"Chenopodion muralis","V37X","Polygonum aviculare","Constant",64.2857142857143
-"Chenopodion muralis","V37X","Urtica urens","Constant",64.2857142857143
-"Chenopodion muralis","V37X","Plantago lanceolata","Constant",57.1428571428571
+"Allion triquetri","V37Z","Urtica membranacea","Constant",67.8571428571429
+"Allion triquetri","V37Z","Sonchus oleraceus","Constant",58.9285714285714
+"Allion triquetri","V37Z","Urtica membranacea","Diagnostic",64.1040494797774
+"Allion triquetri","V37Z","Smyrnium olusatrum","Diagnostic",46.1551112868091
+"Allion triquetri","V37Z","Tradescantia fluminensis","Diagnostic",35.2227961264927
+"Allion triquetri","V37Z","Allium triquetrum","Diagnostic",33.9285714285714
+"Allion triquetri","V37Z","Arum italicum","Diagnostic",29.2163911575289
+"Allion triquetri","V37Z","Chelidonium majus","Diagnostic",21.5305995147632
+"Allion triquetri","V37Z","Smyrnium olusatrum","Dominant",46.4285714285714
+"Allion triquetri","V37Z","Urtica membranacea","Dominant",44.6428571428571
+"Allion triquetri","V37Z","Tradescantia fluminensis","Dominant",14.2857142857143
+"Allion triquetri","V37Z","Urtica dioica","Dominant",10.7142857142857
+"Allion triquetri","V37Z","Allium triquetrum","Dominant",7.14285714285714
+"Arction lappae","V39Y","Urtica dioica","Constant",87.5
+"Arction lappae","V39Y","Oxybasis rubra","Constant",77.5
+"Arction lappae","V39Y","Senecio duriaei","Constant",72.5
+"Arction lappae","V39Y","Oxybasis rubra","Diagnostic",76.4901081962201
+"Arction lappae","V39Y","Senecio duriaei","Diagnostic",69.1886072459625
+"Arction lappae","V39Y","Cytisus oromediterraneus","Diagnostic",17.5
+"Arction lappae","V39Y","Oxybasis rubra","Dominant",47.5
+"Arction lappae","V39Y","Senecio duriaei","Dominant",20
+"Arction lappae","V39Y","Blitum bonus-henricus","Dominant",7.5
+"Arction lappae","V39Y","Urtica dioica","Dominant",7.5
+"Balloto-Conion maculati","V39X","Urtica dioica","Constant",94.4827586206897
+"Balloto-Conion maculati","V39X","Galium aparine","Constant",75.8620689655172
+"Balloto-Conion maculati","V39X","Sambucus ebulus","Constant",71.7241379310345
+"Balloto-Conion maculati","V39X","Sambucus ebulus","Diagnostic",70.0668805052191
+"Balloto-Conion maculati","V39X","Conium maculatum","Diagnostic",30.3055327877876
+"Balloto-Conion maculati","V39X","Sambucus ebulus","Dominant",52.4137931034483
+"Balloto-Conion maculati","V39X","Conium maculatum","Dominant",29.6551724137931
+"Balloto-Conion maculati","V39X","Urtica dioica","Dominant",24.1379310344828
+"Balloto-Conion maculati","V39X","Galium aparine","Dominant",11.7241379310345
+"Bidention tripartitae","Q61Z","Lythrum salicaria","Constant",100
+"Bidention tripartitae","Q61Z","Persicaria hydropiper","Constant",100
+"Bidention tripartitae","Q61Z","Bidens frondosus","Constant",96.969696969697
+"Bidention tripartitae","Q61Z","Phalaroides arundinacea","Constant",75.7575757575758
+"Bidention tripartitae","Q61Z","Cyperus eragrostis","Constant",72.7272727272727
+"Bidention tripartitae","Q61Z","Lycopus europaeus","Constant",72.7272727272727
+"Bidention tripartitae","Q61Z","Helosciadium nodiflorum","Constant",60.6060606060606
+"Bidention tripartitae","Q61Z","Dysphania ambrosioides","Constant",57.5757575757576
+"Bidention tripartitae","Q61Z","Rumex obtusifolius","Constant",57.5757575757576
+"Bidention tripartitae","Q61Z","Persicaria hydropiper","Diagnostic",99.5958134988452
+"Bidention tripartitae","Q61Z","Bidens frondosus","Diagnostic",96.9170961034265
+"Bidention tripartitae","Q61Z","Lythrum salicaria","Diagnostic",77.4344437625358
+"Bidention tripartitae","Q61Z","Phalaroides arundinacea","Diagnostic",74.7202431697725
+"Bidention tripartitae","Q61Z","Cyperus eragrostis","Diagnostic",70.2023312311834
+"Bidention tripartitae","Q61Z","Helosciadium nodiflorum","Diagnostic",58.2360029968803
+"Bidention tripartitae","Q61Z","Dysphania ambrosioides","Diagnostic",55.4009993290231
+"Bidention tripartitae","Q61Z","Lycopus europaeus","Diagnostic",49.9705144080183
+"Bidention tripartitae","Q61Z","Xanthium orientale","Diagnostic",45.4545454545455
+"Bidention tripartitae","Q61Z","Agrostis stolonifera","Diagnostic",39.0417641601677
+"Bidention tripartitae","Q61Z","Artemisia verlotiorum","Diagnostic",39.0025915384292
+"Bidention tripartitae","Q61Z","Mentha pulegium","Diagnostic",37.0219902351356
+"Bidention tripartitae","Q61Z","Solanum chenopodioides","Diagnostic",30.3030303030303
+"Bidention tripartitae","Q61Z","Galium palustre","Diagnostic",27.2727272727273
+"Bidention tripartitae","Q61Z","Symphyotrichum squamatum","Diagnostic",26.4776280430802
+"Bidention tripartitae","Q61Z","Veronica beccabunga","Diagnostic",24.2424242424242
+"Bidention tripartitae","Q61Z","Cuscuta campestris","Diagnostic",24.2424242424242
+"Bidention tripartitae","Q61Z","Leersia oryzoides","Diagnostic",24.0143878082257
+"Bidention tripartitae","Q61Z","Setaria parviflora","Diagnostic",21.2121212121212
+"Bidention tripartitae","Q61Z","Galinsoga quadriradiata","Diagnostic",20.9517045454545
+"Bidention tripartitae","Q61Z","Setaria faberi","Diagnostic",18.1818181818182
+"Bidention tripartitae","Q61Z","Bidens frondosus","Dominant",84.8484848484848
+"Bidention tripartitae","Q61Z","Persicaria hydropiper","Dominant",75.7575757575758
+"Bidention tripartitae","Q61Z","Xanthium orientale","Dominant",27.2727272727273
+"Bidention tripartitae","Q61Z","Artemisia verlotiorum","Dominant",12.1212121212121
+"Bidention tripartitae","Q61Z","Lythrum salicaria","Dominant",12.1212121212121
+"Bidention tripartitae","Q61Z","Dysphania ambrosioides","Dominant",6.06060606060606
+"Bidention tripartitae","Q61Z","Helosciadium nodiflorum","Dominant",6.06060606060606
+"Bidention tripartitae","Q61Z","Symphyotrichum squamatum","Dominant",6.06060606060606
+"Carduo carpetani-Cirsion odontolepidis","V38Y","Onopordum acanthium","Constant",93.4782608695652
+"Carduo carpetani-Cirsion odontolepidis","V38Y","Carduus carpetanus","Constant",65.2173913043478
+"Carduo carpetani-Cirsion odontolepidis","V38Y","Echium vulgare","Constant",63.0434782608696
+"Carduo carpetani-Cirsion odontolepidis","V38Y","Dipsacus fullonum","Constant",56.5217391304348
+"Carduo carpetani-Cirsion odontolepidis","V38Y","Lactuca virosa","Constant",54.3478260869565
+"Carduo carpetani-Cirsion odontolepidis","V38Y","Rumex crispus","Constant",50
+"Carduo carpetani-Cirsion odontolepidis","V38Y","Onopordum acanthium","Diagnostic",90.0020203756832
+"Carduo carpetani-Cirsion odontolepidis","V38Y","Reseda luteola","Diagnostic",30.0418487570664
+"Carduo carpetani-Cirsion odontolepidis","V38Y","Verbascum pulverulentum","Diagnostic",28.1703252142654
+"Carduo carpetani-Cirsion odontolepidis","V38Y","Lactuca virosa","Diagnostic",25.349656086436
+"Carduo carpetani-Cirsion odontolepidis","V38Y","Echium vulgare","Diagnostic",24.5833269625092
+"Carduo carpetani-Cirsion odontolepidis","V38Y","Onopordum acanthium","Dominant",45.6521739130435
+"Carduo carpetani-Cirsion odontolepidis","V38Y","Echium vulgare","Dominant",6.52173913043478
+"Carduo carpetani-Cirsion odontolepidis","V38Y","Carduus carpetanus","Dominant",6.52173913043478
+"Chenopodion muralis","V37X","Malva neglecta","Constant",87.5
+"Chenopodion muralis","V37X","Polygonum aviculare","Constant",68.75
+"Chenopodion muralis","V37X","Plantago lanceolata","Constant",56.25
+"Chenopodion muralis","V37X","Urtica urens","Constant",56.25
 "Chenopodion muralis","V37X","Ochlopoa annua","Constant",50
-"Chenopodion muralis","V37X","Malva neglecta","Diagnostic",74.8046857409822
-"Chenopodion muralis","V37X","Urtica urens","Diagnostic",62.6446041399044
-"Chenopodion muralis","V37X","Urtica urens","Dominant",28.5714285714286
-"Chenopodion muralis","V37X","Amaranthus deflexus","Dominant",14.2857142857143
-"Chenopodion muralis","V37X","Atriplex rosea","Dominant",14.2857142857143
-"Chenopodion muralis","V37X","Artemisia absinthium","Dominant",7.14285714285714
-"Chenopodion muralis","V37X","Polygonum aviculare","Dominant",7.14285714285714
-"Chenopodion muralis","V37X","Malva neglecta","Dominant",7.14285714285714
-"Cirsion richterano-chodati","V38Y","Carduus carpetanus","Constant",64
-"Cirsion richterano-chodati","V38Y","Cirsium eriophorum","Constant",63
-"Cirsion richterano-chodati","V38Y","Jacobaea vulgaris","Constant",56
-"Cirsion richterano-chodati","V38Y","Cirsium vulgare","Constant",55
-"Cirsion richterano-chodati","V38Y","Cirsium arvense","Constant",52
-"Cirsion richterano-chodati","V38Y","Cirsium eriophorum","Diagnostic",59.986417574975
-"Cirsion richterano-chodati","V38Y","Carduus carpetanus","Diagnostic",40.5036033653584
-"Cirsion richterano-chodati","V38Y","Carduus nutans aggr.","Diagnostic",35.8072925571866
-"Cirsion richterano-chodati","V38Y","Cirsium eriophorum","Dominant",22
-"Cirsion richterano-chodati","V38Y","Cirsium richterianum","Dominant",19
-"Cirsion richterano-chodati","V38Y","Carduus carpetanus","Dominant",15
-"Cirsion richterano-chodati","V38Y","Carduus nutans aggr.","Dominant",9
-"Cirsion richterano-chodati","V38Y","Cirsium arvense","Dominant",9
-"Cirsion richterano-chodati","V38Y","Jacobaea vulgaris","Dominant",5
-"Convolvulo arvensis-Agropyrion repentis","V38W","Avenella flexuosa","Constant",100
-"Convolvulo arvensis-Agropyrion repentis","V38W","Poa compressa","Constant",100
-"Convolvulo arvensis-Agropyrion repentis","V38W","Potentilla reptans","Constant",100
-"Convolvulo arvensis-Agropyrion repentis","V38W","Rumex crispus","Constant",100
-"Convolvulo arvensis-Agropyrion repentis","V38W","Elytrigia repens","Constant",100
-"Convolvulo arvensis-Agropyrion repentis","V38W","Valerianella locusta","Constant",80
-"Convolvulo arvensis-Agropyrion repentis","V38W","Cirsium arvense","Constant",60
-"Convolvulo arvensis-Agropyrion repentis","V38W","Rumex conglomeratus","Constant",60
-"Convolvulo arvensis-Agropyrion repentis","V38W","Sisymbrella aspera","Constant",60
-"Convolvulo arvensis-Agropyrion repentis","V38W","Herniaria glabra","Constant",60
-"Convolvulo arvensis-Agropyrion repentis","V38W","Carex hirta","Constant",60
-"Convolvulo arvensis-Agropyrion repentis","V38W","Chamaemelum nobile","Constant",60
-"Convolvulo arvensis-Agropyrion repentis","V38W","Convolvulus arvensis","Constant",60
-"Convolvulo arvensis-Agropyrion repentis","V38W","Poa compressa","Diagnostic",99.8540145985401
-"Convolvulo arvensis-Agropyrion repentis","V38W","Elytrigia repens","Diagnostic",98.0941484049684
-"Convolvulo arvensis-Agropyrion repentis","V38W","Potentilla reptans","Diagnostic",88.360319502663
-"Convolvulo arvensis-Agropyrion repentis","V38W","Valerianella locusta","Diagnostic",64.6880511018368
-"Convolvulo arvensis-Agropyrion repentis","V38W","Sisymbrella aspera","Diagnostic",59.8552821997106
-"Convolvulo arvensis-Agropyrion repentis","V38W","Avenella flexuosa","Diagnostic",55.8258935334964
-"Convolvulo arvensis-Agropyrion repentis","V38W","Herniaria glabra","Diagnostic",51.774586755254
-"Convolvulo arvensis-Agropyrion repentis","V38W","Carex hirta","Diagnostic",46.4745285942454
-"Convolvulo arvensis-Agropyrion repentis","V38W","Rumex crispus","Diagnostic",42.5174035111705
-"Convolvulo arvensis-Agropyrion repentis","V38W","Carum verticillatum","Diagnostic",39.953216374269
-"Convolvulo arvensis-Agropyrion repentis","V38W","Sanguisorba officinalis","Diagnostic",39.3174061433447
-"Convolvulo arvensis-Agropyrion repentis","V38W","Elytrigia repens","Dominant",100
-"Convolvulo arvensis-Agropyrion repentis","V38W","Potentilla reptans","Dominant",40
-"Cymbalario-Asplenion","U3DZ","Cymbalaria muralis","Constant",100
-"Cymbalario-Asplenion","U3DZ","Asplenium trichomanes","Constant",67.7966101694915
-"Cymbalario-Asplenion","U3DZ","Parietaria judaica aggr.","Constant",52.5423728813559
-"Cymbalario-Asplenion","U3DZ","Cymbalaria muralis","Diagnostic",79.1038855208096
-"Cymbalario-Asplenion","U3DZ","Cymbalaria muralis","Dominant",57.6271186440678
-"Cynancho-Convolvulion sepium","R55Y","Eupatorium cannabinum","Constant",100
-"Cynancho-Convolvulion sepium","R55Y","Picris hieracioides","Constant",73.5294117647059
-"Cynancho-Convolvulion sepium","R55Y","Angelica sylvestris","Constant",67.6470588235294
-"Cynancho-Convolvulion sepium","R55Y","Mentha suaveolens","Constant",58.8235294117647
-"Cynancho-Convolvulion sepium","R55Y","Rubus ulmifolius aggr.","Constant",50
-"Cynancho-Convolvulion sepium","R55Y","Eupatorium cannabinum","Diagnostic",96.3120849410423
-"Cynancho-Convolvulion sepium","R55Y","Angelica sylvestris","Diagnostic",64.2465505799036
-"Cynancho-Convolvulion sepium","R55Y","Picris hieracioides","Diagnostic",44.4771023981644
-"Cynancho-Convolvulion sepium","R55Y","Eupatorium cannabinum","Dominant",61.7647058823529
-"Cynancho-Convolvulion sepium","R55Y","Mentha suaveolens","Dominant",17.6470588235294
-"Cynancho-Convolvulion sepium","R55Y","Angelica sylvestris","Dominant",14.7058823529412
-"Cynancho-Convolvulion sepium","R55Y","Mentha longifolia","Dominant",5.88235294117647
-"Cynancho-Convolvulion sepium","R55Y","Ranunculus repens","Dominant",5.88235294117647
-"Dauco-Melilotion","V38Z","Daucus carota","Constant",89.8550724637681
-"Dauco-Melilotion","V38Z","Helminthotheca echioides","Constant",65.2173913043478
-"Dauco-Melilotion","V38Z","Plantago lanceolata","Constant",55.0724637681159
-"Dauco-Melilotion","V38Z","Foeniculum vulgare","Constant",53.6231884057971
-"Dauco-Melilotion","V38Z","Holcus lanatus","Constant",52.1739130434783
-"Dauco-Melilotion","V38Z","Dactylis glomerata","Constant",50.7246376811594
-"Dauco-Melilotion","V38Z","Helminthotheca echioides","Diagnostic",55.3794401940357
-"Dauco-Melilotion","V38Z","Daucus carota","Diagnostic",50.5154953986445
-"Dauco-Melilotion","V38Z","Melilotus albus","Diagnostic",44.0719400011472
-"Dauco-Melilotion","V38Z","Foeniculum vulgare","Diagnostic",40.920615036697
-"Dauco-Melilotion","V38Z","Foeniculum vulgare","Dominant",24.6376811594203
-"Dauco-Melilotion","V38Z","Melilotus albus","Dominant",20.2898550724638
-"Dauco-Melilotion","V38Z","Helminthotheca echioides","Dominant",15.9420289855072
-"Dauco-Melilotion","V38Z","Dipsacus fullonum","Dominant",10.1449275362319
-"Dauco-Melilotion","V38Z","Erigeron canadensis","Dominant",5.79710144927536
-"Dauco-Melilotion","V38Z","Daucus carota","Dominant",5.79710144927536
-"Echio-Galactition tomentosae","V332","Galactites tomentosus","Constant",100
-"Echio-Galactition tomentosae","V332","Dactylis glomerata","Constant",65.8536585365854
-"Echio-Galactition tomentosae","V332","Sonchus oleraceus","Constant",65.8536585365854
-"Echio-Galactition tomentosae","V332","Daucus carota","Constant",65.8536585365854
-"Echio-Galactition tomentosae","V332","Vicia sativa aggr.","Constant",63.4146341463415
-"Echio-Galactition tomentosae","V332","Plantago lanceolata","Constant",63.4146341463415
-"Echio-Galactition tomentosae","V332","Coleostephus myconis","Constant",58.5365853658537
-"Echio-Galactition tomentosae","V332","Holcus lanatus","Constant",51.219512195122
-"Echio-Galactition tomentosae","V332","Lolium multiflorum","Constant",51.219512195122
-"Echio-Galactition tomentosae","V332","Galactites tomentosus","Diagnostic",96.2281906552857
-"Echio-Galactition tomentosae","V332","Coleostephus myconis","Diagnostic",42.5321781449232
-"Echio-Galactition tomentosae","V332","Anisantha rigida","Diagnostic",37.7659311560115
-"Echio-Galactition tomentosae","V332","Galactites tomentosus","Dominant",68.2926829268293
-"Echio-Galactition tomentosae","V332","Anisantha rigida","Dominant",21.9512195121951
-"Echio-Galactition tomentosae","V332","Coleostephus myconis","Dominant",12.1951219512195
-"Echio-Galactition tomentosae","V332","Echium vulgare","Dominant",9.75609756097561
-"Epilobion angustifolii","R571","Epilobium angustifolium","Constant",100
-"Epilobion angustifolii","R571","Digitalis purpurea","Constant",83.3333333333333
-"Epilobion angustifolii","R571","Avenella flexuosa","Constant",50
-"Epilobion angustifolii","R571","Epilobium angustifolium","Diagnostic",99.7170875272057
-"Epilobion angustifolii","R571","Digitalis purpurea","Diagnostic",68.5432224087133
-"Epilobion angustifolii","R571","Luzula lactea","Diagnostic",39.9398491912738
-"Epilobion angustifolii","R571","Helictochloa marginata","Diagnostic",25
-"Epilobion angustifolii","R571","Vaccinium myrtillus","Diagnostic",25
-"Epilobion angustifolii","R571","Peucedanum gallicum","Diagnostic",25
-"Epilobion angustifolii","R571","Eryngium duriaei","Diagnostic",24.800862927315
-"Epilobion angustifolii","R571","Epilobium angustifolium","Dominant",66.6666666666667
-"Epilobion angustifolii","R571","Avenella flexuosa","Dominant",8.33333333333333
-"Galio valantiae-Parietarion judaicae","U38Z","Parietaria judaica aggr.","Constant",95
-"Galio valantiae-Parietarion judaicae","U38Z","Cymbalaria muralis","Constant",80
-"Galio valantiae-Parietarion judaicae","U38Z","Asplenium trichomanes","Constant",60
-"Galio valantiae-Parietarion judaicae","U38Z","Centranthus ruber","Constant",51.25
-"Galio valantiae-Parietarion judaicae","U38Z","Asplenium ceterach","Constant",51.25
-"Galio valantiae-Parietarion judaicae","U38Z","Parietaria judaica aggr.","Diagnostic",72.2240128866283
-"Galio valantiae-Parietarion judaicae","U38Z","Centranthus ruber","Diagnostic",44.8009929748182
-"Galio valantiae-Parietarion judaicae","U38Z","Asplenium trichomanes","Diagnostic",38.8920085543683
-"Galio valantiae-Parietarion judaicae","U38Z","Parietaria judaica aggr.","Dominant",37.5
-"Galio valantiae-Parietarion judaicae","U38Z","Centranthus ruber","Dominant",12.5
-"Galio valantiae-Parietarion judaicae","U38Z","Asplenium trichomanes","Dominant",8.75
-"Galio valantiae-Parietarion judaicae","U38Z","Hypericum hircinum","Dominant",6.25
-"Galio valantiae-Parietarion judaicae","U38Z","Erigeron karvinskianus","Dominant",5
-"Galio valantiae-Parietarion judaicae","U38Z","Cymbalaria muralis","Dominant",5
-"Geo urbani-Alliarion officinalis","V39Y","Urtica dioica","Constant",94.6808510638298
-"Geo urbani-Alliarion officinalis","V39Y","Galium aparine","Constant",66.4893617021277
-"Geo urbani-Alliarion officinalis","V39Y","Urtica dioica","Diagnostic",31.8620495111377
-"Geo urbani-Alliarion officinalis","V39Y","Urtica dioica","Dominant",62.2340425531915
-"Geo urbani-Alliarion officinalis","V39Y","Galium aparine","Dominant",15.4255319148936
-"Geo urbani-Alliarion officinalis","V39Y","Geranium robertianum","Dominant",7.4468085106383
-"Geo urbani-Alliarion officinalis","V39Y","Pentaglottis sempervirens","Dominant",7.4468085106383
-"Geranio pusilli-Anthriscion caucalidis","V37Z","Geranium lucidum","Constant",100
-"Geranio pusilli-Anthriscion caucalidis","V37Z","Galium aparine","Constant",82.3529411764706
-"Geranio pusilli-Anthriscion caucalidis","V37Z","Anthriscus caucalis","Constant",58.8235294117647
-"Geranio pusilli-Anthriscion caucalidis","V37Z","Anisantha sterilis","Constant",55.8823529411765
-"Geranio pusilli-Anthriscion caucalidis","V37Z","Geranium lucidum","Diagnostic",87.9835962021616
-"Geranio pusilli-Anthriscion caucalidis","V37Z","Anthriscus caucalis","Diagnostic",52.5023901087007
-"Geranio pusilli-Anthriscion caucalidis","V37Z","Geranium lucidum","Dominant",70.5882352941177
-"Geranio pusilli-Anthriscion caucalidis","V37Z","Anthriscus caucalis","Dominant",23.5294117647059
+"Chenopodion muralis","V37X","Malva neglecta","Diagnostic",76.3412051755917
+"Chenopodion muralis","V37X","Urtica urens","Diagnostic",54.462860749414
+"Chenopodion muralis","V37X","Amaranthus deflexus","Diagnostic",36.3722472253695
+"Chenopodion muralis","V37X","Chenopodiastrum murale","Diagnostic",17.9813744966645
+"Chenopodion muralis","V37X","Urtica urens","Dominant",25
+"Chenopodion muralis","V37X","Amaranthus deflexus","Dominant",18.75
+"Chenopodion muralis","V37X","Atriplex rosea","Dominant",12.5
+"Chenopodion muralis","V37X","Artemisia absinthium","Dominant",6.25
+"Chenopodion muralis","V37X","Polygonum aviculare","Dominant",6.25
+"Chenopodion muralis","V37X","Malva neglecta","Dominant",6.25
+"Cirsion richterano-chodati","V38X","Cirsium eriophorum","Constant",63.6363636363636
+"Cirsion richterano-chodati","V38X","Carduus carpetanus","Constant",63.6363636363636
+"Cirsion richterano-chodati","V38X","Jacobaea vulgaris","Constant",55.5555555555556
+"Cirsion richterano-chodati","V38X","Cirsium vulgare","Constant",54.5454545454545
+"Cirsion richterano-chodati","V38X","Cirsium arvense","Constant",51.5151515151515
+"Cirsion richterano-chodati","V38X","Cirsium eriophorum","Diagnostic",60.8008512389096
+"Cirsion richterano-chodati","V38X","Carduus carpetanus","Diagnostic",38.9187571310371
+"Cirsion richterano-chodati","V38X","Carduus nutans aggr.","Diagnostic",35.6245486996835
+"Cirsion richterano-chodati","V38X","Jacobaea vulgaris","Diagnostic",33.4212693506687
+"Cirsion richterano-chodati","V38X","Cirsium richterianum","Diagnostic",27.014680882824
+"Cirsion richterano-chodati","V38X","Cirsium arvense","Diagnostic",26.6608205703291
+"Cirsion richterano-chodati","V38X","Achillea millefolium","Diagnostic",23.1713284370339
+"Cirsion richterano-chodati","V38X","Cirsium eriophorum","Dominant",22.2222222222222
+"Cirsion richterano-chodati","V38X","Cirsium richterianum","Dominant",19.1919191919192
+"Cirsion richterano-chodati","V38X","Carduus carpetanus","Dominant",15.1515151515152
+"Cirsion richterano-chodati","V38X","Carduus nutans aggr.","Dominant",9.09090909090909
+"Cirsion richterano-chodati","V38X","Cirsium arvense","Dominant",8.08080808080808
+"Cirsion richterano-chodati","V38X","Jacobaea vulgaris","Dominant",5.05050505050505
+"Cymbalario-Asplenion","J25Y","Cymbalaria muralis","Constant",100
+"Cymbalario-Asplenion","J25Y","Asplenium trichomanes","Constant",68.3333333333333
+"Cymbalario-Asplenion","J25Y","Parietaria judaica aggr.","Constant",51.6666666666667
+"Cymbalario-Asplenion","J25Y","Cymbalaria muralis","Diagnostic",79.1005891646793
+"Cymbalario-Asplenion","J25Y","Asplenium trichomanes","Diagnostic",32.3495410091428
+"Cymbalario-Asplenion","J25Y","Umbilicus rupestris","Diagnostic",17.8614081774201
+"Cymbalario-Asplenion","J25Y","Trachelium caeruleum","Diagnostic",17.0918960837534
+"Cymbalario-Asplenion","J25Y","Asplenium scolopendrium","Diagnostic",16.3170021419064
+"Cymbalario-Asplenion","J25Y","Cymbalaria muralis","Dominant",56.6666666666667
+"Dauco-Melilotion","V38W","Daucus carota","Constant",91.044776119403
+"Dauco-Melilotion","V38W","Helminthotheca echioides","Constant",65.6716417910448
+"Dauco-Melilotion","V38W","Plantago lanceolata","Constant",56.7164179104478
+"Dauco-Melilotion","V38W","Foeniculum vulgare","Constant",53.7313432835821
+"Dauco-Melilotion","V38W","Holcus lanatus","Constant",52.2388059701493
+"Dauco-Melilotion","V38W","Dactylis glomerata","Constant",50.7462686567164
+"Dauco-Melilotion","V38W","Helminthotheca echioides","Diagnostic",58.0487722755609
+"Dauco-Melilotion","V38W","Daucus carota","Diagnostic",54.0970305914593
+"Dauco-Melilotion","V38W","Melilotus albus","Diagnostic",46.6533970057481
+"Dauco-Melilotion","V38W","Foeniculum vulgare","Diagnostic",37.2182925556454
+"Dauco-Melilotion","V38W","Erigeron canadensis","Diagnostic",31.9963049958316
+"Dauco-Melilotion","V38W","Hypericum perforatum","Diagnostic",27.3481227589685
+"Dauco-Melilotion","V38W","Lotus tenuis","Diagnostic",23.3265446264548
+"Dauco-Melilotion","V38W","Dipsacus fullonum","Diagnostic",22.7557276355739
+"Dauco-Melilotion","V38W","Medicago lupulina","Diagnostic",21.1447784470821
+"Dauco-Melilotion","V38W","Verbena officinalis","Diagnostic",20.7877874850955
+"Dauco-Melilotion","V38W","Pulicaria dysenterica","Diagnostic",19.0690837366374
+"Dauco-Melilotion","V38W","Holcus lanatus","Diagnostic",16.5843645854741
+"Dauco-Melilotion","V38W","Foeniculum vulgare","Dominant",23.8805970149254
+"Dauco-Melilotion","V38W","Melilotus albus","Dominant",20.8955223880597
+"Dauco-Melilotion","V38W","Helminthotheca echioides","Dominant",16.4179104477612
+"Dauco-Melilotion","V38W","Dipsacus fullonum","Dominant",10.4477611940298
+"Dauco-Melilotion","V38W","Daucus carota","Dominant",5.97014925373134
+"Dauco-Melilotion","V38W","Erigeron canadensis","Dominant",5.97014925373134
+"Echio-Galactition tomentosae","V37W","Galactites tomentosus","Constant",100
+"Echio-Galactition tomentosae","V37W","Vicia sativa aggr.","Constant",65
+"Echio-Galactition tomentosae","V37W","Daucus carota","Constant",65
+"Echio-Galactition tomentosae","V37W","Sonchus oleraceus","Constant",65
+"Echio-Galactition tomentosae","V37W","Dactylis glomerata","Constant",65
+"Echio-Galactition tomentosae","V37W","Plantago lanceolata","Constant",62.5
+"Echio-Galactition tomentosae","V37W","Coleostephus myconis","Constant",60
+"Echio-Galactition tomentosae","V37W","Lolium multiflorum","Constant",52.5
+"Echio-Galactition tomentosae","V37W","Geranium dissectum","Constant",50
+"Echio-Galactition tomentosae","V37W","Geranium robertianum","Constant",50
+"Echio-Galactition tomentosae","V37W","Holcus lanatus","Constant",50
+"Echio-Galactition tomentosae","V37W","Galactites tomentosus","Diagnostic",94.6665184252097
+"Echio-Galactition tomentosae","V37W","Coleostephus myconis","Diagnostic",44.5414193984267
+"Echio-Galactition tomentosae","V37W","Anisantha rigida","Diagnostic",40.8100467330666
+"Echio-Galactition tomentosae","V37W","Lolium multiflorum","Diagnostic",40.245789545256
+"Echio-Galactition tomentosae","V37W","Briza maxima","Diagnostic",28.4021411806203
+"Echio-Galactition tomentosae","V37W","Vicia sativa aggr.","Diagnostic",27.6621690833513
+"Echio-Galactition tomentosae","V37W","Silene gallica","Diagnostic",18.132128915759
+"Echio-Galactition tomentosae","V37W","Crepis capillaris","Diagnostic",17.916066762301
+"Echio-Galactition tomentosae","V37W","Briza minor","Diagnostic",16.6244381573184
+"Echio-Galactition tomentosae","V37W","Galactites tomentosus","Dominant",70
+"Echio-Galactition tomentosae","V37W","Anisantha rigida","Dominant",22.5
+"Echio-Galactition tomentosae","V37W","Coleostephus myconis","Dominant",12.5
+"Echio-Galactition tomentosae","V37W","Echium vulgare","Dominant",10
+"Echio-Galactition tomentosae","V37W","Arctotheca calendula","Dominant",5
+"Echio-Galactition tomentosae","V37W","Convolvulus arvensis","Dominant",5
+"Echio-Galactition tomentosae","V37W","Medicago arabica","Dominant",5
+"Echio-Galactition tomentosae","V37W","Mentha suaveolens","Dominant",5
+"Epilobion angustifolii","R57Z","Epilobium angustifolium","Constant",100
+"Epilobion angustifolii","R57Z","Digitalis purpurea","Constant",83.3333333333333
+"Epilobion angustifolii","R57Z","Avenella flexuosa","Constant",50
+"Epilobion angustifolii","R57Z","Epilobium angustifolium","Diagnostic",99.6906153317291
+"Epilobion angustifolii","R57Z","Digitalis purpurea","Diagnostic",75.3334855188702
+"Epilobion angustifolii","R57Z","Avenella flexuosa","Diagnostic",48.6014281488993
+"Epilobion angustifolii","R57Z","Luzula lactea","Diagnostic",41.6666666666667
+"Epilobion angustifolii","R57Z","Linaria triornithophora","Diagnostic",31.0879707974599
+"Epilobion angustifolii","R57Z","Vaccinium myrtillus","Diagnostic",25
+"Epilobion angustifolii","R57Z","Helictochloa marginata","Diagnostic",25
+"Epilobion angustifolii","R57Z","Peucedanum gallicum","Diagnostic",25
+"Epilobion angustifolii","R57Z","Eryngium duriaei","Diagnostic",25
+"Epilobion angustifolii","R57Z","Asphodelus albus","Diagnostic",19.0343163184343
+"Epilobion angustifolii","R57Z","Anemone nemorosa","Diagnostic",16.6666666666667
+"Epilobion angustifolii","R57Z","Betula celtiberica","Diagnostic",16.6666666666667
+"Epilobion angustifolii","R57Z","Lilium martagon","Diagnostic",16.6666666666667
+"Epilobion angustifolii","R57Z","Hypericum richeri","Diagnostic",16.6666666666667
+"Epilobion angustifolii","R57Z","Erica arborea","Diagnostic",16.6666666666667
+"Epilobion angustifolii","R57Z","Helleborus foetidus","Diagnostic",16.5737298636927
+"Epilobion angustifolii","R57Z","Silene nutans","Diagnostic",16.4818237831177
+"Epilobion angustifolii","R57Z","Cytisus scoparius","Diagnostic",16.3877266387727
+"Epilobion angustifolii","R57Z","Epilobium angustifolium","Dominant",66.6666666666667
+"Epilobion angustifolii","R57Z","Avenella flexuosa","Dominant",8.33333333333333
+"Galio valantiae-Parietarion judaicae","J25Z","Parietaria judaica aggr.","Constant",97.3684210526316
+"Galio valantiae-Parietarion judaicae","J25Z","Cymbalaria muralis","Constant",78.9473684210526
+"Galio valantiae-Parietarion judaicae","J25Z","Asplenium trichomanes","Constant",57.8947368421053
+"Galio valantiae-Parietarion judaicae","J25Z","Centranthus ruber","Constant",53.9473684210526
+"Galio valantiae-Parietarion judaicae","J25Z","Parietaria judaica aggr.","Diagnostic",75.4700624129949
+"Galio valantiae-Parietarion judaicae","J25Z","Centranthus ruber","Diagnostic",47.6388266763303
+"Galio valantiae-Parietarion judaicae","J25Z","Polypodium cambricum","Diagnostic",30.7103566040211
+"Galio valantiae-Parietarion judaicae","J25Z","Asplenium ceterach","Diagnostic",28.4358417618451
+"Galio valantiae-Parietarion judaicae","J25Z","Hypericum hircinum","Diagnostic",19.2233193390872
+"Galio valantiae-Parietarion judaicae","J25Z","Parietaria judaica aggr.","Dominant",39.4736842105263
+"Galio valantiae-Parietarion judaicae","J25Z","Centranthus ruber","Dominant",13.1578947368421
+"Galio valantiae-Parietarion judaicae","J25Z","Hypericum hircinum","Dominant",6.57894736842105
+"Galio valantiae-Parietarion judaicae","J25Z","Cymbalaria muralis","Dominant",5.26315789473684
+"Galio valantiae-Parietarion judaicae","J25Z","Erigeron karvinskianus","Dominant",5.26315789473684
+"Geo urbani-Alliarion officinalis","V39Z","Urtica dioica","Constant",95.7943925233645
+"Geo urbani-Alliarion officinalis","V39Z","Galium aparine","Constant",68.6915887850467
+"Geo urbani-Alliarion officinalis","V39Z","Urtica dioica","Diagnostic",43.1236231443211
+"Geo urbani-Alliarion officinalis","V39Z","Pentaglottis sempervirens","Diagnostic",19.6614170587224
+"Geo urbani-Alliarion officinalis","V39Z","Galium aparine","Diagnostic",19.3924546052601
+"Geo urbani-Alliarion officinalis","V39Z","Lamium maculatum","Diagnostic",18.3053527476184
+"Geo urbani-Alliarion officinalis","V39Z","Anthriscus sylvestris","Diagnostic",18.1110790397288
+"Geo urbani-Alliarion officinalis","V39Z","Urtica dioica","Dominant",62.1495327102804
+"Geo urbani-Alliarion officinalis","V39Z","Galium aparine","Dominant",16.3551401869159
+"Geo urbani-Alliarion officinalis","V39Z","Anthriscus sylvestris","Dominant",12.6168224299065
+"Geo urbani-Alliarion officinalis","V39Z","Geranium robertianum","Dominant",6.54205607476635
+"Geo urbani-Alliarion officinalis","V39Z","Pentaglottis sempervirens","Dominant",6.54205607476635
+"Geranio pusilli-Anthriscion caucalidis","V37Y","Geranium lucidum","Constant",100
+"Geranio pusilli-Anthriscion caucalidis","V37Y","Galium aparine","Constant",77.7777777777778
+"Geranio pusilli-Anthriscion caucalidis","V37Y","Anisantha sterilis","Constant",58.3333333333333
+"Geranio pusilli-Anthriscion caucalidis","V37Y","Anthriscus caucalis","Constant",58.3333333333333
+"Geranio pusilli-Anthriscion caucalidis","V37Y","Geranium lucidum","Diagnostic",87.1132444835458
+"Geranio pusilli-Anthriscion caucalidis","V37Y","Anthriscus caucalis","Diagnostic",53.6455677293556
+"Geranio pusilli-Anthriscion caucalidis","V37Y","Geranium lucidum","Dominant",66.6666666666667
+"Geranio pusilli-Anthriscion caucalidis","V37Y","Anthriscus caucalis","Dominant",22.2222222222222
+"Geranio pusilli-Anthriscion caucalidis","V37Y","Geranium molle","Dominant",5.55555555555556
 "Linario polygalifoliae-Vulpion alopecuri","V32Z","Vulpia alopecuros","Constant",70.8333333333333
-"Linario polygalifoliae-Vulpion alopecuri","V32Z","Artemisia campestris aggr.","Constant",62.5
 "Linario polygalifoliae-Vulpion alopecuri","V32Z","Crucianella maritima","Constant",62.5
+"Linario polygalifoliae-Vulpion alopecuri","V32Z","Artemisia campestris aggr.","Constant",62.5
 "Linario polygalifoliae-Vulpion alopecuri","V32Z","Jasione montana","Constant",62.5
 "Linario polygalifoliae-Vulpion alopecuri","V32Z","Malcolmia littorea","Constant",62.5
-"Linario polygalifoliae-Vulpion alopecuri","V32Z","Ammophila arenaria aggr.","Constant",58.3333333333333
 "Linario polygalifoliae-Vulpion alopecuri","V32Z","Helichrysum italicum","Constant",58.3333333333333
+"Linario polygalifoliae-Vulpion alopecuri","V32Z","Ammophila arenaria aggr.","Constant",58.3333333333333
 "Linario polygalifoliae-Vulpion alopecuri","V32Z","Leontodon tingitanus","Constant",54.1666666666667
 "Linario polygalifoliae-Vulpion alopecuri","V32Z","Vulpia alopecuros","Diagnostic",70.8333333333333
-"Linario polygalifoliae-Vulpion alopecuri","V32Z","Malcolmia littorea","Diagnostic",62.5
 "Linario polygalifoliae-Vulpion alopecuri","V32Z","Crucianella maritima","Diagnostic",62.5
-"Linario polygalifoliae-Vulpion alopecuri","V32Z","Artemisia campestris aggr.","Diagnostic",62.3778402150012
+"Linario polygalifoliae-Vulpion alopecuri","V32Z","Malcolmia littorea","Diagnostic",62.5
+"Linario polygalifoliae-Vulpion alopecuri","V32Z","Artemisia campestris aggr.","Diagnostic",62.3857925993604
 "Linario polygalifoliae-Vulpion alopecuri","V32Z","Ammophila arenaria aggr.","Diagnostic",58.3333333333333
 "Linario polygalifoliae-Vulpion alopecuri","V32Z","Helichrysum italicum","Diagnostic",58.3333333333333
 "Linario polygalifoliae-Vulpion alopecuri","V32Z","Leontodon tingitanus","Diagnostic",54.1666666666667
-"Linario polygalifoliae-Vulpion alopecuri","V32Z","Jasione montana","Diagnostic",52.5224141417863
-"Linario polygalifoliae-Vulpion alopecuri","V32Z","Linaria polygalifolia","Diagnostic",41.6666666666667
+"Linario polygalifoliae-Vulpion alopecuri","V32Z","Jasione montana","Diagnostic",52.8412780788324
 "Linario polygalifoliae-Vulpion alopecuri","V32Z","Corynephorus canescens","Diagnostic",41.6666666666667
-"Linario polygalifoliae-Vulpion alopecuri","V32Z","Scrophularia canina aggr.","Diagnostic",39.670018183763
+"Linario polygalifoliae-Vulpion alopecuri","V32Z","Linaria polygalifolia","Diagnostic",41.6666666666667
+"Linario polygalifoliae-Vulpion alopecuri","V32Z","Scrophularia canina aggr.","Diagnostic",39.7246855021654
 "Linario polygalifoliae-Vulpion alopecuri","V32Z","Seseli tortuosum","Diagnostic",37.5
 "Linario polygalifoliae-Vulpion alopecuri","V32Z","Cistus salviifolius","Diagnostic",33.3333333333333
-"Linario polygalifoliae-Vulpion alopecuri","V32Z","Achillea maritima","Diagnostic",20.8333333333333
+"Linario polygalifoliae-Vulpion alopecuri","V32Z","Carex arenaria","Diagnostic",33.3333333333333
+"Linario polygalifoliae-Vulpion alopecuri","V32Z","Festuca juncifolia","Diagnostic",32.6278659611993
+"Linario polygalifoliae-Vulpion alopecuri","V32Z","Pinus pinaster","Diagnostic",29.1666666666667
+"Linario polygalifoliae-Vulpion alopecuri","V32Z","Lagurus ovatus","Diagnostic",29.1666666666667
+"Linario polygalifoliae-Vulpion alopecuri","V32Z","Eryngium maritimum","Diagnostic",29.1666666666667
+"Linario polygalifoliae-Vulpion alopecuri","V32Z","Calystegia soldanella","Diagnostic",25
+"Linario polygalifoliae-Vulpion alopecuri","V32Z","Filago pygmaea aggr.","Diagnostic",25
+"Linario polygalifoliae-Vulpion alopecuri","V32Z","Euphorbia portlandica","Diagnostic",25
+"Linario polygalifoliae-Vulpion alopecuri","V32Z","Anagallis monelli","Diagnostic",25
+"Linario polygalifoliae-Vulpion alopecuri","V32Z","Corema album","Diagnostic",25
+"Linario polygalifoliae-Vulpion alopecuri","V32Z","Tuberaria guttata","Diagnostic",22.7409148537513
+"Linario polygalifoliae-Vulpion alopecuri","V32Z","Herniaria ciliolata","Diagnostic",20.8333333333333
 "Linario polygalifoliae-Vulpion alopecuri","V32Z","Daphne gnidium","Diagnostic",20.8333333333333
-"Linario polygalifoliae-Vulpion alopecuri","V32Z","Pancratium maritimum","Diagnostic",20.8333333333333
 "Linario polygalifoliae-Vulpion alopecuri","V32Z","Silene portensis","Diagnostic",20.8333333333333
+"Linario polygalifoliae-Vulpion alopecuri","V32Z","Pancratium maritimum","Diagnostic",20.8333333333333
+"Linario polygalifoliae-Vulpion alopecuri","V32Z","Achillea maritima","Diagnostic",20.8333333333333
+"Linario polygalifoliae-Vulpion alopecuri","V32Z","Leontodon saxatilis aggr.","Diagnostic",20.8315713489345
+"Linario polygalifoliae-Vulpion alopecuri","V32Z","Cerastium diffusum","Diagnostic",18.2272275999007
+"Linario polygalifoliae-Vulpion alopecuri","V32Z","Sedum arenarium","Diagnostic",17.3771862139918
+"Linario polygalifoliae-Vulpion alopecuri","V32Z","Armeria pungens","Diagnostic",16.6666666666667
+"Linario polygalifoliae-Vulpion alopecuri","V32Z","Medicago marina","Diagnostic",16.6666666666667
+"Linario polygalifoliae-Vulpion alopecuri","V32Z","Iberis procumbens","Diagnostic",16.6666666666667
+"Linario polygalifoliae-Vulpion alopecuri","V32Z","Trifolium scabrum","Diagnostic",15.8986175115207
+"Linario polygalifoliae-Vulpion alopecuri","V32Z","Sedum acre","Diagnostic",15.0193798449612
+"Linario polygalifoliae-Vulpion alopecuri","V32Z","Scirpoides holoschoenus","Diagnostic",12.5
 "Linario polygalifoliae-Vulpion alopecuri","V32Z","Vulpia alopecuros","Dominant",20.8333333333333
 "Linario polygalifoliae-Vulpion alopecuri","V32Z","Artemisia campestris aggr.","Dominant",16.6666666666667
 "Linario polygalifoliae-Vulpion alopecuri","V32Z","Carex arenaria","Dominant",8.33333333333333
 "Linario polygalifoliae-Vulpion alopecuri","V32Z","Cistus salviifolius","Dominant",8.33333333333333
 "Linario polygalifoliae-Vulpion alopecuri","V32Z","Corema album","Dominant",8.33333333333333
 "Linario polygalifoliae-Vulpion alopecuri","V32Z","Crucianella maritima","Dominant",8.33333333333333
-"Oxalidion europeae","V10X","Stellaria media","Constant",96.6019417475728
-"Oxalidion europeae","V10X","Senecio vulgaris","Constant",72.3300970873786
-"Oxalidion europeae","V10X","Veronica persica","Constant",69.9029126213592
-"Oxalidion europeae","V10X","Ochlopoa annua","Constant",62.621359223301
-"Oxalidion europeae","V10X","Sonchus oleraceus","Constant",62.1359223300971
-"Oxalidion europeae","V10X","Stellaria media","Diagnostic",62.7995789084624
-"Oxalidion europeae","V10X","Veronica persica","Diagnostic",58.573875170984
-"Oxalidion europeae","V10X","Stellaria media","Dominant",54.8543689320388
-"Oxalidion europeae","V10X","Ochlopoa annua","Dominant",11.6504854368932
-"Oxalidion europeae","V10X","Veronica persica","Dominant",9.22330097087379
-"Paspalo-Agrostion semiverticillati","R554","Paspalum distichum","Constant",100
-"Paspalo-Agrostion semiverticillati","R554","Persicaria lapathifolia","Constant",75
-"Paspalo-Agrostion semiverticillati","R554","Cyperus longus","Constant",68.75
-"Paspalo-Agrostion semiverticillati","R554","Lythrum salicaria","Constant",62.5
-"Paspalo-Agrostion semiverticillati","R554","Schoenoplectus lacustris","Constant",50
-"Paspalo-Agrostion semiverticillati","R554","Lycopus europaeus","Constant",50
-"Paspalo-Agrostion semiverticillati","R554","Paspalum distichum","Diagnostic",96.5220947252916
-"Paspalo-Agrostion semiverticillati","R554","Cyperus longus","Diagnostic",58.0559469154692
-"Paspalo-Agrostion semiverticillati","R554","Schoenoplectus lacustris","Diagnostic",49.9532054281703
-"Paspalo-Agrostion semiverticillati","R554","Eleocharis palustris","Diagnostic",31.0722222222222
-"Paspalo-Agrostion semiverticillati","R554","Juncus articulatus","Diagnostic",24.7679814385151
-"Paspalo-Agrostion semiverticillati","R554","Paspalum distichum","Dominant",100
-"Paspalo-Agrostion semiverticillati","R554","Eleocharis palustris","Dominant",6.25
-"Paspalo-Agrostion semiverticillati","R554","Xanthium strumarium","Dominant",6.25
-"Polycarpion tetraphylli","V34Y","Ochlopoa annua","Constant",70.4225352112676
-"Polycarpion tetraphylli","V34Y","Plantago coronopus","Constant",56.3380281690141
-"Polycarpion tetraphylli","V34Y","Sagina apetala","Constant",54.9295774647887
-"Polycarpion tetraphylli","V34Y","Sagina apetala","Diagnostic",47.2455643308398
-"Polycarpion tetraphylli","V34Y","Plantago coronopus","Diagnostic",35.4758316154434
-"Polycarpion tetraphylli","V34Y","Crassula tillaea","Diagnostic",33.7265607450179
-"Polycarpion tetraphylli","V34Y","Spergularia marina","Diagnostic",32.3943661971831
-"Polycarpion tetraphylli","V34Y","Spergularia marina","Dominant",21.1267605633803
-"Polycarpion tetraphylli","V34Y","Ochlopoa annua","Dominant",14.0845070422535
-"Polycarpion tetraphylli","V34Y","Crassula tillaea","Dominant",5.63380281690141
-"Polycarpion tetraphylli","V34Y","Plantago coronopus","Dominant",5.63380281690141
-"Polygono-Coronopodion","V34Z","Ochlopoa annua","Constant",97.0414201183432
-"Polygono-Coronopodion","V34Z","Polygonum aviculare","Constant",94.6745562130178
-"Polygono-Coronopodion","V34Z","Matricaria suaveolens","Constant",59.7633136094675
-"Polygono-Coronopodion","V34Z","Plantago major","Constant",54.4378698224852
-"Polygono-Coronopodion","V34Z","Matricaria suaveolens","Diagnostic",55.1609989451693
-"Polygono-Coronopodion","V34Z","Polygonum aviculare","Diagnostic",53.5494447868225
-"Polygono-Coronopodion","V34Z","Polygonum aviculare","Dominant",27.2189349112426
-"Polygono-Coronopodion","V34Z","Ochlopoa annua","Dominant",18.3431952662722
-"Polygono-Coronopodion","V34Z","Matricaria suaveolens","Dominant",10.6508875739645
-"Saginion procumbentis","V35Z","Ochlopoa annua","Constant",94.8717948717949
-"Saginion procumbentis","V35Z","Sagina procumbens","Constant",82.051282051282
-"Saginion procumbentis","V35Z","Bryum argenteum","Constant",76.9230769230769
-"Saginion procumbentis","V35Z","Polygonum aviculare","Constant",58.974358974359
-"Saginion procumbentis","V35Z","Sagina procumbens","Diagnostic",79.9026058957486
-"Saginion procumbentis","V35Z","Bryum argenteum","Diagnostic",76.5223770339372
-"Saginion procumbentis","V35Z","Ochlopoa annua","Dominant",23.0769230769231
-"Saginion procumbentis","V35Z","Bryum argenteum","Dominant",17.9487179487179
-"Saginion procumbentis","V35Z","Sagina procumbens","Dominant",17.9487179487179
-"Scleranthion annui","V10Y","Anthemis arvensis","Constant",68.859649122807
-"Scleranthion annui","V10Y","Raphanus raphanistrum aggr.","Constant",57.0175438596491
-"Scleranthion annui","V10Y","Spergula arvensis","Constant",52.1929824561403
-"Scleranthion annui","V10Y","Rumex acetosella","Constant",51.7543859649123
-"Scleranthion annui","V10Y","Mibora minima","Diagnostic",40.2940850604849
-"Scleranthion annui","V10Y","Rumex acetosella","Diagnostic",32.8029366642983
-"Scleranthion annui","V10Y","Mibora minima","Dominant",9.21052631578947
-"Scleranthion annui","V10Y","Anthemis arvensis","Dominant",7.89473684210526
-"Scleranthion annui","V10Y","Anthoxanthum ovatum","Dominant",5.70175438596491
-"Scleranthion annui","V10Y","Spergula arvensis","Dominant",5.70175438596491
-"Senecionion fluviatilis","R55Z","Arundo donax","Constant",100
-"Senecionion fluviatilis","R55Z","Silene latifolia","Constant",96.6666666666667
-"Senecionion fluviatilis","R55Z","Pteridium aquilinum","Constant",80
-"Senecionion fluviatilis","R55Z","Calystegia sepium","Constant",73.3333333333333
-"Senecionion fluviatilis","R55Z","Mentha suaveolens","Constant",60
-"Senecionion fluviatilis","R55Z","Pentaglottis sempervirens","Constant",53.3333333333333
-"Senecionion fluviatilis","R55Z","Arundo donax","Diagnostic",99.9968424542551
-"Senecionion fluviatilis","R55Z","Silene latifolia","Diagnostic",51.3447405495661
-"Senecionion fluviatilis","R55Z","Arundo donax","Dominant",100
-"Sisymbrion officinalis","V37W","Hordeum murinum","Constant",100
-"Sisymbrion officinalis","V37W","Sisymbrium officinale","Constant",72.4137931034483
-"Sisymbrion officinalis","V37W","Lolium perenne","Constant",54.4827586206897
-"Sisymbrion officinalis","V37W","Anisantha sterilis","Constant",53.7931034482759
-"Sisymbrion officinalis","V37W","Hordeum murinum","Diagnostic",82.1386703579677
-"Sisymbrion officinalis","V37W","Sisymbrium officinale","Diagnostic",50.9075208391651
-"Sisymbrion officinalis","V37W","Hordeum murinum","Dominant",64.1379310344827
-"Sisymbrion officinalis","V37W","Sisymbrium officinale","Dominant",13.7931034482759
-"Spergulo arvensis-Erodion cicutariae","V10W","Chenopodium album","Constant",81.9444444444444
-"Spergulo arvensis-Erodion cicutariae","V10W","Echinochloa crus-galli","Constant",70.1388888888889
-"Spergulo arvensis-Erodion cicutariae","V10W","Persicaria maculosa","Constant",70.1388888888889
-"Spergulo arvensis-Erodion cicutariae","V10W","Digitaria sanguinalis","Constant",63.1944444444444
-"Spergulo arvensis-Erodion cicutariae","V10W","Stellaria media","Constant",56.25
-"Spergulo arvensis-Erodion cicutariae","V10W","Digitaria sanguinalis","Diagnostic",51.4147106127586
-"Spergulo arvensis-Erodion cicutariae","V10W","Echinochloa crus-galli","Diagnostic",50.3007001576072
-"Spergulo arvensis-Erodion cicutariae","V10W","Chenopodium album","Diagnostic",45.522494699025
-"Spergulo arvensis-Erodion cicutariae","V10W","Amaranthus hybridus aggr.","Diagnostic",40.2266795010088
-"Spergulo arvensis-Erodion cicutariae","V10W","Amaranthus hybridus aggr.","Dominant",13.8888888888889
-"Spergulo arvensis-Erodion cicutariae","V10W","Echinochloa crus-galli","Dominant",12.5
-"Spergulo arvensis-Erodion cicutariae","V10W","Chenopodium album","Dominant",12.5
-"Spergulo arvensis-Erodion cicutariae","V10W","Digitaria sanguinalis","Dominant",10.4166666666667
+"Oxalidion europeae","V10Y","Stellaria media","Constant",97.2375690607735
+"Oxalidion europeae","V10Y","Senecio vulgaris","Constant",71.8232044198895
+"Oxalidion europeae","V10Y","Veronica persica","Constant",69.060773480663
+"Oxalidion europeae","V10Y","Ochlopoa annua","Constant",65.7458563535912
+"Oxalidion europeae","V10Y","Sonchus oleraceus","Constant",62.4309392265193
+"Oxalidion europeae","V10Y","Stellaria media","Diagnostic",65.7661171626181
+"Oxalidion europeae","V10Y","Veronica persica","Diagnostic",57.3844232092605
+"Oxalidion europeae","V10Y","Senecio vulgaris","Diagnostic",36.349159045632
+"Oxalidion europeae","V10Y","Cardamine hirsuta","Diagnostic",28.3383978862209
+"Oxalidion europeae","V10Y","Veronica hederifolia","Diagnostic",23.8452748218203
+"Oxalidion europeae","V10Y","Euphorbia helioscopia","Diagnostic",20.4094744715661
+"Oxalidion europeae","V10Y","Lamium amplexicaule","Diagnostic",18.2614755230405
+"Oxalidion europeae","V10Y","Fumaria capreolata","Diagnostic",16.3219452500296
+"Oxalidion europeae","V10Y","Stellaria media","Dominant",62.4309392265193
+"Oxalidion europeae","V10Y","Ochlopoa annua","Dominant",13.2596685082873
+"Oxalidion europeae","V10Y","Veronica persica","Dominant",10.4972375690608
+"Paspalo-Agrostion semiverticillati","Q61Y","Paspalum distichum","Constant",100
+"Paspalo-Agrostion semiverticillati","Q61Y","Persicaria lapathifolia","Constant",75
+"Paspalo-Agrostion semiverticillati","Q61Y","Cyperus longus","Constant",68.75
+"Paspalo-Agrostion semiverticillati","Q61Y","Lythrum salicaria","Constant",62.5
+"Paspalo-Agrostion semiverticillati","Q61Y","Lycopus europaeus","Constant",50
+"Paspalo-Agrostion semiverticillati","Q61Y","Schoenoplectus lacustris","Constant",50
+"Paspalo-Agrostion semiverticillati","Q61Y","Paspalum distichum","Diagnostic",96.8630781393299
+"Paspalo-Agrostion semiverticillati","Q61Y","Cyperus longus","Diagnostic",60.2535031155656
+"Paspalo-Agrostion semiverticillati","Q61Y","Schoenoplectus lacustris","Diagnostic",50
+"Paspalo-Agrostion semiverticillati","Q61Y","Xanthium strumarium","Diagnostic",36.1572775556484
+"Paspalo-Agrostion semiverticillati","Q61Y","Persicaria lapathifolia","Diagnostic",32.3525256546213
+"Paspalo-Agrostion semiverticillati","Q61Y","Eleocharis palustris","Diagnostic",31.25
+"Paspalo-Agrostion semiverticillati","Q61Y","Juncus articulatus","Diagnostic",25
+"Paspalo-Agrostion semiverticillati","Q61Y","Rorippa sylvestris","Diagnostic",25
+"Paspalo-Agrostion semiverticillati","Q61Y","Bidens tripartitus","Diagnostic",21.0290904044555
+"Paspalo-Agrostion semiverticillati","Q61Y","Persicaria decipiens","Diagnostic",18.75
+"Paspalo-Agrostion semiverticillati","Q61Y","Paspalum distichum","Dominant",100
+"Paspalo-Agrostion semiverticillati","Q61Y","Xanthium strumarium","Dominant",6.25
+"Paspalo-Agrostion semiverticillati","Q61Y","Eleocharis palustris","Dominant",6.25
+"Polycarpion tetraphylli","V34Z","Ochlopoa annua","Constant",69.5652173913043
+"Polycarpion tetraphylli","V34Z","Plantago coronopus","Constant",57.9710144927536
+"Polycarpion tetraphylli","V34Z","Sagina apetala","Constant",56.5217391304348
+"Polycarpion tetraphylli","V34Z","Sagina apetala","Diagnostic",49.5041434161814
+"Polycarpion tetraphylli","V34Z","Plantago coronopus","Diagnostic",38.6429173695963
+"Polycarpion tetraphylli","V34Z","Crassula tillaea","Diagnostic",35.1032746178899
+"Polycarpion tetraphylli","V34Z","Spergularia marina","Diagnostic",33.3333333333333
+"Polycarpion tetraphylli","V34Z","Sagina maritima","Diagnostic",24.6376811594203
+"Polycarpion tetraphylli","V34Z","Spergularia marina","Dominant",21.7391304347826
+"Polycarpion tetraphylli","V34Z","Ochlopoa annua","Dominant",13.0434782608696
+"Polycarpion tetraphylli","V34Z","Crassula tillaea","Dominant",5.79710144927536
+"Polycarpion tetraphylli","V34Z","Plantago coronopus","Dominant",5.79710144927536
+"Polygono-Coronopodion","V34Y","Ochlopoa annua","Constant",96.969696969697
+"Polygono-Coronopodion","V34Y","Polygonum aviculare","Constant",96.3636363636364
+"Polygono-Coronopodion","V34Y","Matricaria suaveolens","Constant",60.6060606060606
+"Polygono-Coronopodion","V34Y","Plantago major","Constant",54.5454545454545
+"Polygono-Coronopodion","V34Y","Polygonum aviculare","Diagnostic",58.1849322799685
+"Polygono-Coronopodion","V34Y","Matricaria suaveolens","Diagnostic",56.1011816548406
+"Polygono-Coronopodion","V34Y","Plantago major","Diagnostic",20.2503351200809
+"Polygono-Coronopodion","V34Y","Polygonum aviculare","Dominant",27.8787878787879
+"Polygono-Coronopodion","V34Y","Ochlopoa annua","Dominant",16.969696969697
+"Polygono-Coronopodion","V34Y","Matricaria suaveolens","Dominant",10.9090909090909
+"Saginion procumbentis","V35Z","Ochlopoa annua","Constant",95.4545454545455
+"Saginion procumbentis","V35Z","Sagina procumbens","Constant",72.7272727272727
+"Saginion procumbentis","V35Z","Bryum argenteum","Constant",68.1818181818182
+"Saginion procumbentis","V35Z","Polygonum aviculare","Constant",52.2727272727273
+"Saginion procumbentis","V35Z","Plantago major","Constant",50
+"Saginion procumbentis","V35Z","Sagina procumbens","Diagnostic",70.8942393666006
+"Saginion procumbentis","V35Z","Bryum argenteum","Diagnostic",67.7698491069634
+"Saginion procumbentis","V35Z","Ochlopoa annua","Diagnostic",26.7594891451795
+"Saginion procumbentis","V35Z","Ochlopoa annua","Dominant",29.5454545454545
+"Saginion procumbentis","V35Z","Sagina procumbens","Dominant",15.9090909090909
+"Saginion procumbentis","V35Z","Bryum argenteum","Dominant",15.9090909090909
+"Scleranthion annui","V10Z","Anthemis arvensis","Constant",68.936170212766
+"Scleranthion annui","V10Z","Raphanus raphanistrum aggr.","Constant",57.4468085106383
+"Scleranthion annui","V10Z","Spergula arvensis","Constant",50.6382978723404
+"Scleranthion annui","V10Z","Mibora minima","Diagnostic",37.5184608258928
+"Scleranthion annui","V10Z","Anthemis arvensis","Diagnostic",35.9069046473418
+"Scleranthion annui","V10Z","Rumex acetosella","Diagnostic",33.3434822549761
+"Scleranthion annui","V10Z","Spergula arvensis","Diagnostic",31.6579449922224
+"Scleranthion annui","V10Z","Raphanus raphanistrum aggr.","Diagnostic",31.2962821916266
+"Scleranthion annui","V10Z","Arnoseris minima","Diagnostic",28.2608201120326
+"Scleranthion annui","V10Z","Scleranthus annuus","Diagnostic",27.1957321661189
+"Scleranthion annui","V10Z","Anthoxanthum ovatum","Diagnostic",22.6238170664219
+"Scleranthion annui","V10Z","Ornithopus compressus","Diagnostic",16.2753531401932
+"Scleranthion annui","V10Z","Mibora minima","Dominant",8.93617021276596
+"Scleranthion annui","V10Z","Anthemis arvensis","Dominant",7.65957446808511
+"Scleranthion annui","V10Z","Spergula arvensis","Dominant",5.53191489361702
+"Senecionion fluviatilis","R55Z","Pteridium aquilinum","Constant",59.6774193548387
+"Senecionion fluviatilis","R55Z","Mentha suaveolens","Constant",59.6774193548387
+"Senecionion fluviatilis","R55Z","Picris hieracioides","Constant",54.8387096774194
+"Senecionion fluviatilis","R55Z","Calystegia sepium","Constant",53.2258064516129
+"Senecionion fluviatilis","R55Z","Eupatorium cannabinum","Constant",51.6129032258064
+"Senecionion fluviatilis","R55Z","Eupatorium cannabinum","Diagnostic",49.9487993174566
+"Senecionion fluviatilis","R55Z","Arundo donax","Diagnostic",48.3870967741936
+"Senecionion fluviatilis","R55Z","Angelica sylvestris","Diagnostic",39.5478911441108
+"Senecionion fluviatilis","R55Z","Picris hieracioides","Diagnostic",27.9351752059799
+"Senecionion fluviatilis","R55Z","Mentha suaveolens","Diagnostic",19.9439609780209
+"Senecionion fluviatilis","R55Z","Pteridium aquilinum","Diagnostic",19.0831999499449
+"Senecionion fluviatilis","R55Z","Centaurea debeauxii","Diagnostic",15.7025380331178
+"Senecionion fluviatilis","R55Z","Silene latifolia","Diagnostic",15.1896905677989
+"Senecionion fluviatilis","R55Z","Arundo donax","Dominant",48.3870967741936
+"Senecionion fluviatilis","R55Z","Eupatorium cannabinum","Dominant",30.6451612903226
+"Senecionion fluviatilis","R55Z","Mentha suaveolens","Dominant",9.67741935483871
+"Senecionion fluviatilis","R55Z","Angelica sylvestris","Dominant",8.06451612903226
+"Silybo mariani-Urticion piluliferae","V38Z","Silybum marianum","Constant",100
+"Silybo mariani-Urticion piluliferae","V38Z","Anisantha diandra","Constant",73.6842105263158
+"Silybo mariani-Urticion piluliferae","V38Z","Carduus tenuiflorus","Constant",68.4210526315789
+"Silybo mariani-Urticion piluliferae","V38Z","Galium aparine","Constant",52.6315789473684
+"Silybo mariani-Urticion piluliferae","V38Z","Silybum marianum","Diagnostic",98.0555466040376
+"Silybo mariani-Urticion piluliferae","V38Z","Carduus tenuiflorus","Diagnostic",38.2266608994815
+"Silybo mariani-Urticion piluliferae","V38Z","Anisantha diandra","Diagnostic",26.0650129851999
+"Silybo mariani-Urticion piluliferae","V38Z","Silybum marianum","Dominant",94.7368421052632
+"Silybo mariani-Urticion piluliferae","V38Z","Carduus tenuiflorus","Dominant",10.5263157894737
+"Silybo mariani-Urticion piluliferae","V38Z","Anisantha diandra","Dominant",5.26315789473684
+"Silybo mariani-Urticion piluliferae","V38Z","Ballota nigra","Dominant",5.26315789473684
+"Silybo mariani-Urticion piluliferae","V38Z","Conium maculatum","Dominant",5.26315789473684
+"Silybo mariani-Urticion piluliferae","V38Z","Echium rosulatum","Dominant",5.26315789473684
+"Silybo mariani-Urticion piluliferae","V38Z","Foeniculum vulgare","Dominant",5.26315789473684
+"Silybo mariani-Urticion piluliferae","V38Z","Galium aparine","Dominant",5.26315789473684
+"Sisymbrion officinalis","V37V","Hordeum murinum","Constant",100
+"Sisymbrion officinalis","V37V","Sisymbrium officinale","Constant",73.3766233766234
+"Sisymbrion officinalis","V37V","Lolium perenne","Constant",52.5974025974026
+"Sisymbrion officinalis","V37V","Anisantha sterilis","Constant",51.9480519480519
+"Sisymbrion officinalis","V37V","Hordeum murinum","Diagnostic",78.4987771275109
+"Sisymbrion officinalis","V37V","Sisymbrium officinale","Diagnostic",50.0999973190443
+"Sisymbrion officinalis","V37V","Lolium perenne","Diagnostic",16.6600219897122
+"Sisymbrion officinalis","V37V","Hordeum murinum","Dominant",60.3896103896104
+"Sisymbrion officinalis","V37V","Sisymbrium officinale","Dominant",16.2337662337662
+"Spergulo arvensis-Erodion cicutariae","V10X","Chenopodium album","Constant",83.6158192090395
+"Spergulo arvensis-Erodion cicutariae","V10X","Persicaria maculosa","Constant",67.7966101694915
+"Spergulo arvensis-Erodion cicutariae","V10X","Echinochloa crus-galli","Constant",62.1468926553672
+"Spergulo arvensis-Erodion cicutariae","V10X","Stellaria media","Constant",60.4519774011299
+"Spergulo arvensis-Erodion cicutariae","V10X","Digitaria sanguinalis","Constant",54.8022598870056
+"Spergulo arvensis-Erodion cicutariae","V10X","Chenopodium album","Diagnostic",59.7060955586899
+"Spergulo arvensis-Erodion cicutariae","V10X","Echinochloa crus-galli","Diagnostic",45.7280279349843
+"Spergulo arvensis-Erodion cicutariae","V10X","Digitaria sanguinalis","Diagnostic",39.7402150057634
+"Spergulo arvensis-Erodion cicutariae","V10X","Solanum nigrum","Diagnostic",35.5368541095297
+"Spergulo arvensis-Erodion cicutariae","V10X","Amaranthus hybridus aggr.","Diagnostic",34.1167090406314
+"Spergulo arvensis-Erodion cicutariae","V10X","Fallopia convolvulus","Diagnostic",30.2242158849389
+"Spergulo arvensis-Erodion cicutariae","V10X","Persicaria maculosa","Diagnostic",26.5984445522663
+"Spergulo arvensis-Erodion cicutariae","V10X","Oxalis latifolia","Diagnostic",23.3652790880994
+"Spergulo arvensis-Erodion cicutariae","V10X","Portulaca oleracea","Diagnostic",19.6020696866103
+"Spergulo arvensis-Erodion cicutariae","V10X","Chenopodium album","Dominant",12.9943502824859
+"Spergulo arvensis-Erodion cicutariae","V10X","Amaranthus hybridus aggr.","Dominant",11.864406779661
+"Spergulo arvensis-Erodion cicutariae","V10X","Echinochloa crus-galli","Dominant",10.1694915254237
+"Spergulo arvensis-Erodion cicutariae","V10X","Digitaria sanguinalis","Dominant",7.34463276836158

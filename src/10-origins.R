@@ -35,8 +35,8 @@ read.csv("data/traits.csv", fileEncoding = "latin1") %>%
                                 "Geo urbani-Alliarion officinalis",
                                 "Dauco-Melilotion", 
                                 "Cirsion richterano-chodati",
+                                "Carduo carpetani-Cirsion odontolepidis",
                                 "Silybo mariani-Urticion piluliferae",
-                                "Onopordion acanthii",
                                 "Convolvulo arvensis-Agropyrion repentis",
                                 "Paspalo-Agrostion semiverticillati",
                                 "Bidention tripartitae",
@@ -110,4 +110,4 @@ read.csv("data/traits.csv", fileEncoding = "latin1") %>%
   geom_hline(yintercept = 0.5, linetype = "dashed") -> Fig4; Fig4
 
 ggsave(Fig4, file = "results/figures/F3 - origins.png", bg = "white", 
-       path = NULL, scale = 1, width = 180, height = 100, units = "mm", dpi = 600)
+       path = NULL, scale = 1, width = 180, height = 90, units = "mm", dpi = 600)

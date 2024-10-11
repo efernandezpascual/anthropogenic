@@ -35,7 +35,7 @@ library(tidyverse)
 # ### Plot means
 # 
 # traits %>%
-#   select(Analysis.Names, Disturbance.Frequency, Disturbance.Severity, 
+#   select(Analysis.Names, Disturbance.Frequency, Disturbance.Severity,
 #          EIVE1.T, EIVE1.M, EIVE1.L, EIVE1.N, EIVE1.R) %>%
 #   gather(Trait, Value, -Analysis.Names) %>%
 #   merge(read.csv("data/species.csv", fileEncoding = "latin1")) %>%
@@ -115,8 +115,8 @@ plotmeans %>%
                                 "Bidention tripartitae",
                                 "Paspalo-Agrostion semiverticillati",
                                 "Convolvulo arvensis-Agropyrion repentis",
-                                "Onopordion acanthii",
                                 "Silybo mariani-Urticion piluliferae", 
+                                "Carduo carpetani-Cirsion odontolepidis",
                                 "Cirsion richterano-chodati",
                                 "Dauco-Melilotion",
                                 "Geo urbani-Alliarion officinalis",

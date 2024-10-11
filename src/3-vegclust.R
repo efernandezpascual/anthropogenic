@@ -250,6 +250,10 @@ df2 %>%
 ### Sintaxa
 
 header4 %>%
+  group_by(Cluster) %>%
+  tally
+
+header4 %>%
   group_by(Cluster, Alliance) %>%
   tally %>%
   arrange(Cluster, -n) %>%
@@ -313,8 +317,7 @@ header2 %>%
   headerClassifiedM
 
 header2 %>%
-  filter(Cluster %in% c("M1")) %>%
-  filter(! SIVIMID %in% potentillion) -> # Cluster 1 of M1 belong to Potentillion anserinae
+  filter(Cluster %in% c("M1")) -> 
   headerUnclassifiedM
 
 read.csv("data/species.csv", fileEncoding = "latin1") %>% 
@@ -354,10 +357,71 @@ newclassesM %>%
   rownames_to_column(var = "SIVIMID") %>%
   merge(read.csv("data/urban-header-5.1.csv", fileEncoding = "latin1"), by = "SIVIMID") -> header2b
 
+header2b
+
+header2b %>%
+  group_by(Cluster) %>%
+  tally
+
+header2b %>%
+  group_by(Cluster, Alliance) %>%
+  tally %>%
+  arrange(Cluster, -n) %>%
+  data.frame
+
+header2b %>%
+  group_by(Cluster, Original) %>%
+  tally %>%
+  arrange(Cluster, -n) %>%
+  data.frame
+
+### Dominant
+
+read.csv("data/species.csv", fileEncoding = "latin1")  %>%
+  merge(header2b, by = "SIVIMID") %>%
+  group_by(Cluster, Analysis.Names) %>%
+  summarise(D = sum(Cover.percent)) %>%
+  group_by(Cluster) %>%
+  slice_max(D, n = 5) %>%
+  data.frame
+
+### Constant
+
+read.csv("data/species.csv", fileEncoding = "latin1") %>%
+  merge(header2b, by = "SIVIMID") %>%
+  group_by(Cluster, Analysis.Names) %>%
+  summarise(F = length(Analysis.Names)) %>%
+  group_by(Cluster) %>%
+  slice_max(F, n = 5) %>%
+  data.frame
+
+### Indicator spp
+
+read.csv("data/species.csv", fileEncoding = "latin1") %>%
+  merge(header2b, by = "SIVIMID") %>%
+  select(Cluster, SIVIMID, Analysis.Names, Cover.percent) %>%
+  spread(Analysis.Names, Cover.percent, fill = 0) -> plots
+
+plots %>%
+  pull(Cluster) -> groups
+
+levels(groups) -> group.labels
+
+plots %>%
+  select(-c(SIVIMID, Cluster)) %>%
+  indval(groups, numitr = 10000) -> indicators
+
+data.frame(Community = indicators$maxcls, Indicator = indicators$indcls,
+           p = indicators$pval, p_adj = p.adjust(indicators$pval, "holm")) %>%
+  rownames_to_column(var = "Species") %>%
+  group_by(Community) %>%
+  slice_max(Indicator, n = 4) %>%
+  data.frame
+
 ### Merge headers
 
 header2 %>%
-  filter(!(Cluster == "M1" & ! SIVIMID %in% potentillion)) %>%
+  filter(!Cluster == "M1") %>%
   rbind(header2b) -> header3
 
 header3 %>% group_by(SIVIMID)
@@ -444,7 +508,7 @@ species %>%
 
 ### Indicator spp
 
-species %>%
+read.csv("data/species.csv", fileEncoding = "latin1") %>%
   merge(header3, by = "SIVIMID") %>%
   select(Cluster, SIVIMID, Analysis.Names, Cover.percent) %>%
   spread(Analysis.Names, Cover.percent, fill = 0) -> plots
@@ -456,7 +520,7 @@ levels(groups) -> group.labels
 
 plots %>%
   select(-c(SIVIMID, Cluster)) %>%
-  indval(groups, numitr = 10000) -> indicators
+  indval(groups, numitr = 1000) -> indicators
 
 data.frame(Community = indicators$maxcls, Indicator = indicators$indcls,
            p = indicators$pval, p_adj = p.adjust(indicators$pval, "holm")) %>%
@@ -484,35 +548,32 @@ header3 %>%
   mutate(Longitude = ifelse(Accuracy == "5 - UTMs missing from DEM", NA, Longitude)) %>%
   mutate(Latitude = ifelse(Accuracy == "5 - UTMs missing from DEM", NA, Latitude)) %>%
   mutate(Semisupervised = fct_recode(Cluster,
-                         "Cymbalario-Asplenion" = "F10",
-                         "Cynancho-Convolvulion sepium" = "F11",
-                         "Dauco-Melilotion" = "F12",
-                         "Echio-Galactition tomentosae" = "F13",
-                         "Epilobion angustifolii" = "F14",
-                         "Galio valantiae-Parietarion judaicae" = "F15",
-                         "Geo urbani-Alliarion officinalis" = "F16",
-                         "Geranio pusilli-Anthriscion caucalidis" = "F17",
-                         "Linario polygalifoliae-Vulpion alopecuri" = "F18",
-                         "Oxalidion europeae" = "F19",
-                         "Allion triquetri" = "F2",
-                         "Paspalo-Agrostion semiverticillati" = "F20",
-                         "Polycarpion tetraphylli" = "F21",
-                         "Polygono-Coronopodion" = "F22",
-                         "Saginion procumbentis" = "F23",
-                         "Scleranthion annui" = "F24",
-                         "Senecionion fluviatilis" = "F25",
-                         "Silybo mariani-Urticion piluliferae" = "F26",
-                         "Sisymbrion officinalis" = "F27",
-                         "Spergulo arvensis-Erodion cicutariae" = "F28",
-                         "Arction lappae" = "F3",
-                         "Balloto-Conion maculati" = "F4",
-                         "Bidention tripartitae" = "F5",
-                         "Carduo carpetani-Cirsion odontolepidis" = "F6",
-                         "Chenopodion muralis" = "F7",
-                         "Cirsion richterano-chodati" = "F8",
-                         "Convolvulo arvensis-Agropyrion repentis" = "F9",
-                         "Noise" = "M1",
-                         "Noise" = "N")) %>%  
+                                     "Allion triquetri" = "F2",
+                                     "Arction lappae" = "F3",
+                                     "Balloto-Conion maculati" = "F4",
+                                     "Bidention tripartitae" = "F5",
+                                     "Carduo carpetani-Cirsion odontolepidis" = "F6",
+                                     "Chenopodion muralis" = "F7",
+                                     "Cirsion richterano-chodati" = "F8",
+                                     "Cymbalario-Asplenion" = "F9",
+                                     "Dauco-Melilotion" = "F10",
+                                     "Echio-Galactition tomentosae" = "F11",
+                                     "Epilobion angustifolii" = "F12",
+                                     "Galio valantiae-Parietarion judaicae" = "F13",
+                                     "Geo urbani-Alliarion officinalis" = "F14",
+                                     "Geranio pusilli-Anthriscion caucalidis" = "F15",
+                                     "Linario polygalifoliae-Vulpion alopecuri" = "F16",
+                                     "Oxalidion europeae" = "F17",
+                                     "Paspalo-Agrostion semiverticillati" = "F18",
+                                     "Polycarpion tetraphylli" = "F19",
+                                     "Polygono-Coronopodion" = "F20",
+                                     "Saginion procumbentis" = "F21",
+                                     "Scleranthion annui" = "F22",
+                                     "Senecionion fluviatilis" = "F23",
+                                     "Silybo mariani-Urticion piluliferae" = "F24",
+                                     "Sisymbrion officinalis" = "F25",
+                                     "Spergulo arvensis-Erodion cicutariae" = "F26",
+                                     "Noise" = "N")) %>%  
   rename(Twinspan = L1) %>%
   select(-c(Cluster, Alliance, Class, Order, Fixed)) %>% 
   merge(alliances, by = "Semisupervised", all.x = TRUE) %>%

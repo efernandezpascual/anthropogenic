@@ -275,7 +275,6 @@ df2 %>%
         plot.margin = unit(c(.1,.1,0,0), "cm")) +
   scale_color_manual(values = c("chocolate1",
                                 "chocolate1",
-                                "chocolate1",
                                 "chocolate4")) -> Fig1C; Fig1C
 
 ### Chenopodietea and Sisymbrietea
@@ -486,3 +485,4 @@ cowplot::plot_grid(Fig1, legend, rel_widths = c(3, 1)) -> Figure1; Figure1
 
 ggsave(Figure1, file = "results/figures/F2 - pca.png", bg = "white", 
        path = NULL, scale = 1, width = 180, height = 165, units = "mm", dpi = 600)
+

@@ -35,6 +35,7 @@ library(tidyverse)
 # ### CwMs
 # 
 # traits %>%
+#   select(-origin) %>%
 #   gather(Trait, Value, -Analysis.Names) %>%
 #   merge(read.csv("data/species.csv", fileEncoding = "latin1")) %>%
 #   group_by(SIVIMID, Trait) %>%
@@ -124,8 +125,8 @@ cwms %>%
                                "Bidention tripartitae",
                                "Paspalo-Agrostion semiverticillati",
                                "Convolvulo arvensis-Agropyrion repentis",
-                               "Onopordion acanthii",
                                "Silybo mariani-Urticion piluliferae", 
+                               "Carduo carpetani-Cirsion odontolepidis",
                                "Cirsion richterano-chodati",
                                "Dauco-Melilotion",
                                "Geo urbani-Alliarion officinalis",

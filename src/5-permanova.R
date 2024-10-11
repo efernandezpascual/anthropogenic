@@ -4,7 +4,7 @@ rm(list = ls())
 
 library(tidyverse); library(vegan)
 
-# read.csv("data/header.csv", fileEncoding = "latin1") %>% filter(! Alliance %in% "Noise") -> 
+# read.csv("data/header.csv", fileEncoding = "latin1") %>% filter(! Alliance %in% "Noise") ->
 #   header
 # 
 # read.csv("data/species.csv", fileEncoding = "latin1") %>% filter(SIVIMID %in% header$SIVIMID) -> species

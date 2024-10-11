@@ -1,0 +1,87 @@
+---
+title: "Appendix S3 Description of the 25 alliances present in the anthropogenic vegetation of the northwestern Iberian Peninsula, and correspondence with regionalized level 4 EUNIS habitats."
+output: 
+  bookdown::pdf_document2:
+    number_sections: false
+    toc: false
+link-citations: yes
+always_allow_html: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r message = FALSE, echo = FALSE, warning = FALSE}
+knitr::knit_hooks$set(inline = function(x) {
+  prettyNum(x, big.mark = ",")
+})
+```
+
+***Cymbalario-Parietarietea diffusae*** Chasmophytic vegetation of human-made walls.
+
+1.  *Galio valantiae-Parietarion judaicae* Hemicryptophyte-rich vegetation of sunny human-made walls. A predominantly Mediterranean alliance that occupies sunnier situations than the other alliance in the class and has a shorter flowering season. Diagnostic species: *Parietaria judaica*, *Centranthus ruber*, *Polypodium cambricum*, *Asplenium ceterach*, *Hypericum hircinum*. Regionalized level 4 EUNIS habitat: *J25Z Sunny constructed walls with hemicryptophytes - Muros construidos soleados, con hemicriptófitos*.
+
+2.  *Cymbalario-Asplenion* Fern-rich vegetation of shady human-made walls. A predominantly temperate alliance that occupies shadier situations than the other alliance in the class and has a longer flowering season. Diagnostic species: *Cymbalaria muralis*, *Asplenium trichomanes*, *Umbilicus rupestris*, *Trachelium caeruleum*, *Asplenium scolopendrium*. Regionalized level 4 EUNIS habitat: *J25Y Shady constructed walls with ferns - Muros contruidos sombríos, con helechos*.
+
+***Polygono-Poetea annuae*** Dwarf-annual vegetation of trampled sites.
+
+3.  *Polycarpion tetraphylli* Dwarf-annual vegetation of trampled sunny sites. Occupies warmer, sunnier and nutrient-poorer situations than the other alliances in the class and has an earlier flowering season. Diagnostic species: *Sagina apetala*, *Plantago coronopus*, *Crassula tillaea*, *Spergularia marina*, *Sagina maritima*. Regionalized level 4 EUNIS habitat: *V34Z Trampled sunny soils with annuals - Suelos pisoteados soleados, con céspedes anuales*.
+
+4.  *Polygono-Coronopodion* Dwarf-annual vegetation of trampled dry sites. Occupies sites that are shadier than those preferred by *Polycarpion tetraphylli*, but drier than those of *Saginion procumbentis*. Diagnostic species: *Polygonum aviculare*, *Matricaria suaveolens*, *Plantago major*. Regionalized level 4 EUNIS habitat: *V34Y Trampled dry soils with annuals - Suelos pisoteados secos, con céspedes anuales*.
+
+5.  *Saginion procumbentis* Bryophyte-rich vegetation of trampled shady sites. Occupies shadier, colder and moister sites than the other alliances in the class, is less dominated by therophytes and has a relatively high proportion of bryophytes. Diagnostic species: *Sagina procumbens*, *Bryum argenteum*, *Ochlopoa annua*. Regionalized level 4 EUNIS habitat: *V35Z Trampled shady soils with bryophytes - Suelos pisoteados sombríos, con briófitos*.
+
+***Papaveretea rhoeadis*** Annual weed vegetation of arable crops and vegetable gardens.
+
+6.  *Scleranthion annui* Annual weeds of cereal crops. Occupies more acidic soils than the other alliance in the class, and flowers earlier. Rich in putative archaeophytes. Diagnostic species: *Mibora minima*, *Anthemis arvensis*, *Rumex acetosella*, *Spergula arvensis*, *Raphanus raphanistrum*, *Arnoseris minima*, *Scleranthus annuus*, *Anthoxanthum ovatum*, *Ornithopus compressus*. Regionalized level 4 EUNIS habitat: *V10Z Cereal crops with winter-spring weeds - Cultivos de cereales, con malas hierbas de invierno y primavera*.
+
+7.  *Oxalidion europeae* Annual weeds of vegetable gardens and root crops. Occupies wetter, shadier and nutrient-richer sites, and has a longer flowering season than the other alliance in the class. Rich in putative archaeophytes, and with more neophytes than the other alliance in the class. Diagnostic species: *Stellaria media*, *Veronica persica*, *Senecio vulgaris*, *Cardamine hirsuta*, *Veronica hederifolia*, *Euphorbia helioscopia*, *Lamium amplexicaule*, *Fumaria capreolata*. Regionalized level 4 EUNIS habitat:s *V10Y Vegetable gardens and root crops with winter-spring weeds - Huertos y cultivos de raíces, con malas hierbas de invierno y primavera*.
+
+***Digitario sanguinalis-Eragrostietea minoris*** Grass-rich weed vegetation with summer-annual C4 species.
+
+8.  *Spergulo arvensis-Erodion cicutariae* Late-summer C4 weeds. Late-flowering alliance rich in neophytes and grasses, occurring in highly-disturbed and nutrient-rich sites. Diagnostic species: *Chenopodium album*, *Echinochloa crus-galli*, *Digitaria sanguinalis*,  *Solanum nigrum*, *Amaranthus hybridus*, *Fallopia convolvulus*, *Persicaria maculosa*, *Oxalis latifolia*, *Portulaca oleracea*. Regionalized level 4 EUNIS habitat: *V10X Crops with C4 summer weeds - Cultivos, con malas hierbas estivales C4*.
+
+***Chenopodietea*** Winter-annual ruderal vegetation.
+
+9. *Allion triquetri* Geophyte-rich vegetation of shady and nutrient-rich forest fringes. Occupies warmer, shadier and less frequently disturbed situations than the other alliances in the class, is comparatively taller and earlier-flowering. Has a higher proportion of geophytes and a lower proportion of therophytes. The proportion of neophytes is the highest in the class. Diagnostic species: *Urtica membranacea*, *Smyrnium olusatrum*, *Tradescantia fluminensis*, *Allium triquetrum*, *Arum italicum*, *Chelidonium majus*. Regionalized level 4 EUNIS habitat: *V37Z Shady and nutrient-rich forest fringes with geophytes - Orlas forestales escionitrófilas, con geófitos*.
+
+10. *Geranio pusilli-Anthriscion caucalidis* Winter-annual vegetation of shady and nutrient-rich forest fringes. Occupies situations similar to the previous alliance, but in colder sites, and is a shorter vegetation dominated by therophytes instead of geophytes. Diagnostic species: *Geranium lucidum*, *Anthriscus caucalis*. Regionalized level 4 EUNIS habitat: *V37Y Shady and nutrient-rich forest fringes with winter annuals - Orlas forestales escionitrófilas, con vegetación anual de invierno*.
+
+11. *Chenopodion muralis* Winter-annual vegetation of disturbed sites. Short vegetation occupying frequently disturbed sites. Flowers later and for longer than other alliances in the class. Rich in putative archaeophytes. This is a predominantly Mediterranean alliance, and has a sparse occurrence throughout the study area. Diagnostic species: *Malva neglecta*, *Urtica urens*, *Amaranthus deflexus*, *Chenopodiastrum murale*. Regionalized level 4 EUNIS habitat: *V37X Disturbed sites with winter annuals - Lugares alterados, con vegetación anual de invierno*.
+
+12. *Echio-Galactition tomentosae* Sub-nitrophilous and winter-annual pioneer vegetation of abandoned sites. Occupies drier, sunnier and less nutrient-rich situations than other alliances in the class. Diagnostic species: *Galactites tomentosus*, *Coleostephus myconis*, *Anisantha rigida*, *Lolium multiflorum*, *Briza maxima*, *Vicia sativa*, *Silene gallica*, *Crepis capillaris*, *Briza minor*. Regionalized level 4 EUNIS habitat: *V37W Subnitrophilous disturbed sites with annual pioneer vegetation - Lugares alterados subnitrófilos, con vegetación pionera anual*.
+
+13. *Linario polygalifoliae-Vulpion alopecuri* Ephemeral annual vegetation of disturbed coastal dunes. Occupies warm, dry and sunny coastal sites, and has a high number of coastal dune species. Isolated occurrence in the southern coast of the region. Diagnostic species: *Vulpia alopecuros*, *Crucianella maritima*, *Malcolmia littorea*, *Artemisia campestris* (full list in **Appendix S4**). Regionalized level 4 EUNIS habitat: *V32Z Disturbed dunes with ephemeral vegetation - Dunas alteradas, con vegetación anual efímera*.
+
+***Sisymbrietea*** Summer-annual ruderal vegetation.
+
+14. *Sisymbrion officinalis* Summer-annual ruderal vegetation. Rich in therophytes and archaeophytes and adapted to severe disturbances. Diagnostic species: *Hordeum murinum*, *Sisymbrium officinale*, *Lolium perenne*. Regionalized level 4 EUNIS habitat: *V37V Disturbed sites with summer annuals - Lugares alterados, con vegetación anual de verano*.
+
+***Bidentetea*** Summer-annual pioneer vegetation of temporarily flooded sites.
+
+15. *Bidention tripartitae* Summer-annual pioneer vegetation of temporarily flooded sites. Occupies nutrient-richer sites than the other alliance in the class and has a higher proportion of therophytes and neophytes. Diagnostic species: *Persicaria hydropiper*, *Bidens frondosus*, *Lythrum salicaria*, *Phalaroides arundinacea*, *Cyperus eragrostis* (full list in **Appendix S4**). Regionalized level 4 EUNIS habitat: *Q61Z Temporarily flooded soils, with summer-annual pioneer vegetation - Suelos temporalmente encharcados, con vegetación pionera anual*.
+
+16. *Paspalo-Agrostion semiverticillati* Mediterranean summer-annual pioneer vegetation of temporarily flooded subsaline sites. Occupies wetter and more frequently disturbed sites than the other alliance in the class and has a longer flowering season. This is a Mediterranean alliance, which in the study area is distributed mostly in the sub-Mediterranean valleys south of the Cantabrian Mountains. Diagnostic species: *Paspalum distichum*, *Cyperus longus*, *Schoenoplectus lacustris* (full list in **Appendix S4**). Regionalized level 4 EUNIS habitat: *Q61Y Submediterranean temporarily flooded soils, with summer-annual pioneer grasslands - Suelos temporalmente encharcados submediterráneos, con céspedes pioneros anuales*.
+
+***Artemisietea vulgaris*** Perennial ruderal vegetation of dry sites.
+
+17. *Silybo mariani-Urticion piluliferae* Mediterranean thistle-dominated vegetation. Occupies sites that are warmer and more severely disturbed than the other alliances in the class. Is taller and flowers earlier than the other alliances. Rich in archaeophytes and therophytes. This is a Mediterranean alliance, which in the study area is distributed mostly in the sub-Mediterranean valleys south of the Cantabrian Mountains. Diagnostic species: *Silybum marianum*, *Carduus tenuiflorus*, *Anisantha diandra*. Regionalized level 4 EUNIS habitat: *V38Z Mediterranean thistle fields - Cardales mediterráneos*.
+
+18. *Carduo carpetani-Cirsion odontolepidis* Supramediterranean thistle-dominated vegetation of the Cantabrian Mountains. Occupies warmer situations than the other alliances in the class and has a high proportion of archaeophytes. Mostly distributed in the Cantabrian Mountains. Diagnostic species: *Onopordum acanthium*, *Reseda luteola*, *Verbascum pulverulentum*, *Lactuca virosa*, *Echium vulgare*. Regionalized level 4 EUNIS habitat: *V38Y Supramediterranean thistle fields of the Cantabrian Mountains - Cardales supramediterráneos orocantábricos*.
+
+19. *Cirsion richterano-chodati* Montane thistle fields of the Cantabrian Mountains. Occupies colder situations than the other alliances in the class. Mostly distributed in the Cantabrian Mountains. Diagnostic species: *Cirsium eriophorum*, *Carduus carpetanus*, *Carduus nutans*, *Jacobaea vulgaris*, *Cirsium richterianum*, *Cirsium arvense*, *Achillea millefolium*. Regionalized level 4 EUNIS habitat: *V38X Montane thistle fields of the Cantabrian Mountains - Cardales montanos orocantábricos*.
+
+20. *Dauco-Melilotion* Biennial pioneer vegetation of abandoned sites. Occupies wetter situations than the thistle alliances in the class and has a higher proportion of neophytes. Diagnostic species: *Helminthotheca echioides*, *Daucus carota*, *Melilotus albus*, *Foeniculum vulgare*, *Erigeron canadensis* (full list in **Appendix S4**). Regionalized level 4 EUNIS habitat: *V38W Dry disturbed sites with biennal pioneer vegetation - Lugares alterados secos, con vegetación pionera bienal*.
+
+***Epilobietea angustifolii*** Perennial ruderal vegetation of mesic to wet sites.
+
+21. *Geo urbani-Alliarion officinalis* Perennial vegetation of shady and nutrient-rich forest fringes. Occupies shadier and less frequently disturbed situations than the other alliances in the class. Includes tall-herb vegetation of forest fringes, which some authors separate as *Aegopodion podagrariae*. Diagnostic species: *Urtica dioica*, *Pentaglottis sempervirens*, *Galium aparine*, *Lamium maculatum*, *Anthriscus sylvestris*. Regionalized level 4 EUNIS habitat: *V39Z Shady and nutrient-rich forest fringes with perennial vegetation - Orlas forestales escionitrófilas, con vegetación perenne*.
+
+22. *Arction lappae* Perennial vegetation of disturbed mesic sites of the Cantabrian Mountains. Occupies sunnier and more frequently disturbed situations than the other alliances in the class, and has shorter plants. Distribution concentrated in the Cantabrian Mountains. Diagnostic species: *Oxybasis rubra*, *Senecio duriaei*. Regionalized level 4 EUNIS habitat: *V39Y Mesic disturbed sites of the Cantabrian Mountains, with perennial vegetation - Lugares alterados mésicos orocantábricos, con vegetación perenne*.
+
+23. *Balloto-Conion maculati* Tall-herb perennial vegetation of mesic to moist disturbed sites. Occupies warmer situations than the other alliances in the class. Rich in archaeophytes. Diagnostic species: *Sambucus ebulus*, *Conium maculatum*. Regionalized level 4 EUNIS habitat: *V39X Mesic to moist disturbed sites, with tall-herb perennial vegetation - Lugares alterados de mésicos a húmedos, con megaforbios perennes*.
+
+24. *Epilobion angustifolii* Tall-herb perennial vegetation of forest fringes in acidic soils. Occupies colder, nutrient-poorer, more acidic and less disturbed situations than the other alliances in the class. Diagnostic species: *Epilobium angustifolium*, *Digitalis purpurea*, *Avenella flexuosa*, *Luzula lactea* (full list in **Appendix S4**). Regionalized level 4 EUNIS habitat: *R57Z Forest fringes and clearings on acid soils, with fire-loving tall-herb vegetation - Orlas y claros forestales de suelos ácidos, con megaforbios pirófitos*.
+
+25. *Senecionion fluviatilis* Tall-herb perennial vegetation of nutrient-rich riverbanks and ditches. Occupies wetter situations than the other alliances in the class, flowers later, has taller plants and has a high proportion of neophytes and geophytes. Diagnostic species: *Eupatorium cannabinum*, *Arundo donax*, *Angelica sylvestris*, *Picris hieracioides*, *Mentha suaveolens*, *Pteridium aquilinum*, *Centaurea debeauxii*, *Silene latifolia*. Regionalized level 4 EUNIS habitat: *R55Z Fringes of nutrient-rich ditches and riverbanks, with tall-herb perennial vegetation - Orlas nitrófilas de cunetas y arroyos, con megaforbios*.

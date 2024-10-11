@@ -732,7 +732,7 @@ twinspanR::twinspan(
   modif = TRUE,
   cut.levels = c(0, 15, 25),
   min.group.size = 10,
-  clusters = 6,
+  clusters = 5,
   diss = "multi.sorensen",
   mean.median = "mean",
   show.output.on.console = FALSE,
@@ -826,10 +826,9 @@ header4 %>%
   mutate(L1 = fct_recode(as.factor(Cluster),
                          "Dauco-Melilotion" = "1",
                          "Silybo mariani-Urticion piluliferae" = "2",
-                         "Convolvulo arvensis-Agropyrion repentis" = "3",
-                         "Cirsion richterano-chodati" = "4",
-                         "Carduo carpetani-Cirsion odontolepidis" = "5",
-                         "Cirsion richterano-chodati" = "6")) %>%
+                         "Cirsion richterano-chodati" = "3",
+                         "Carduo carpetani-Cirsion odontolepidis" = "4",
+                         "Cirsion richterano-chodati" = "5")) %>%
   select(-Cluster) %>%
   write.csv("data/urban-header-5.1G.csv", fileEncoding = "latin1")
 
@@ -855,7 +854,7 @@ twinspanR::twinspan(
   modif = TRUE,
   cut.levels = c(0, 15, 25),
   min.group.size = 10,
-  clusters = 11,
+  clusters = 6,
   diss = "multi.sorensen",
   mean.median = "mean",
   show.output.on.console = FALSE,
@@ -951,17 +950,11 @@ data.frame(Community = indicators$maxcls, Indicator = indicators$indcls,
 header4 %>%
   mutate(L1 = fct_recode(as.factor(Cluster),
                          "Balloto-Conion maculati" = "1",
-                         "NA" = "2",
-                         "NA" = "3",
-                         "Balloto-Conion maculati" = "4",
-                         "NA" = "5",
-                         #"Aegopodion podagrariae" = "5",
-                         "Geo urbani-Alliarion officinalis" = "6",
-                         "NA" = "7",
-                         "Arction lappae" = "8",
-                         "Senecionion fluviatilis" = "9",
-                         "Cynancho-Convolvulion sepium" = "10",
-                         "Epilobion angustifolii" = "11")) %>%
+                         "Balloto-Conion maculati" = "2",
+                         "Geo urbani-Alliarion officinalis" = "3",
+                         "Arction lappae" = "4",
+                         "Senecionion fluviatilis" = "5",
+                         "Epilobion angustifolii" = "6")) %>%
   select(-Cluster) %>%
   write.csv("data/urban-header-5.1H.csv", fileEncoding = "latin1")
 
@@ -1107,5 +1100,10 @@ read.csv("data/header.csv", fileEncoding = "latin1") %>%
 header5.1 %>%
   group_by(Fixed) %>%
   tally
+
+header5.1 %>%
+  group_by(L1) %>%
+  na.omit %>%
+  tally %>% print(n = 100)
 
 write.csv(header5.1, "data/urban-header-5.1.csv", row.names = FALSE, fileEncoding = "latin1")
