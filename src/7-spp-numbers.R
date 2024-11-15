@@ -24,9 +24,10 @@ read.csv("data/header.csv", fileEncoding = "latin1") %>%
   group_by(Class) %>% tally %>% arrange(-n)
 
 read.csv("data/header.csv", fileEncoding = "latin1") %>% 
-  filter(Alliance != "Noise") %>% 
-  filter(Area >= 10) %>%
-  filter(Area <= 30) %>%
+  filter(Alliance != "Noise") %>%
+  # filter(Area >= 10) %>%
+  # filter(Area <= 30) %>%
+  filter(Area == 20) %>%
   merge(read.csv("data/species.csv", fileEncoding = "latin1")) %>%
   group_by(SIVIMID) %>%
   summarise(l = length(Analysis.Names)) %>%
@@ -34,8 +35,9 @@ read.csv("data/header.csv", fileEncoding = "latin1") %>%
 
 read.csv("data/header.csv", fileEncoding = "latin1") %>% 
   filter(Alliance != "Noise") %>% 
-  filter(Area >= 10) %>%
-  filter(Area <= 30) %>%
+  # filter(Area >= 10) %>%
+  # filter(Area <= 30) %>%
+  filter(Area == 20) %>%
   merge(read.csv("data/species.csv", fileEncoding = "latin1")) %>%
   group_by(SIVIMID) %>%
   summarise(l = length(Analysis.Names)) %>%
@@ -43,8 +45,9 @@ read.csv("data/header.csv", fileEncoding = "latin1") %>%
 
 read.csv("data/header.csv", fileEncoding = "latin1") %>% 
   filter(Alliance != "Noise") %>% 
-  filter(Area >= 10) %>%
-  filter(Area <= 30) %>%
+  # filter(Area >= 10) %>%
+  # filter(Area <= 30) %>%
+  filter(Area == 20) %>%
   merge(read.csv("data/species.csv", fileEncoding = "latin1")) %>%
   group_by(SIVIMID) %>%
   summarise(l = length(Analysis.Names)) %>%

@@ -12,6 +12,7 @@ read.csv("data/traits.csv", fileEncoding = "latin1") %>%
   filter(Value == 1) %>%
   mutate(origin = ifelse(Trait == "therophyte", "Therophyte", "Other")) %>%
   mutate(origin = ifelse(Trait == "geophyte", "Geophyte", origin)) %>%
+    mutate(origin = ifelse(Trait == "hemicryptophyte", "Hemicryptophyte", origin)) %>%
   merge(read.csv("data/species.csv", fileEncoding = "latin1"), all.y = TRUE) %>%
   group_by(SIVIMID, origin) %>%
   summarise(y = length(Analysis.Names)) %>%
@@ -26,6 +27,7 @@ read.csv("data/traits.csv", fileEncoding = "latin1") %>%
   mutate(origin = fct_relevel(origin, 
                               "Other",
                               "Geophyte",
+                              "Hemicryptophyte",
                               "Therophyte")) %>%
   mutate(origin = fct_recode(origin, 
                              "Natives" = "native",
@@ -93,9 +95,9 @@ read.csv("data/traits.csv", fileEncoding = "latin1") %>%
                                "darkmagenta", 
                                "limegreen")) +
   ggthemes::theme_tufte() +
-  xlab("Alliance") + ylab("Proportion of therophytes, geophytes and other life forms at the plot level") +
+  xlab("Alliance") + ylab("Proportion of therophytes, hemicryptophytes, geophytes and other life forms at the plot level") +
   coord_flip() +
-  scale_alpha_manual(name = "Species origin",values = c(.35, .65, 1), guide = "none") +
+  scale_alpha_manual(name = "Species origin",values = c(0.1, .35, .65, 1), guide = "none") +
   theme(text = element_text(family = "sans"),
         strip.background = element_blank(),
         legend.position = "right", 
