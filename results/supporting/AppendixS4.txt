@@ -1,0 +1,431 @@
+Alliance	CANTEUNIS	Species	Type	Value
+Allion triquetri	V37Z	Urtica membranacea	Constant	67.85714286
+Allion triquetri	V37Z	Sonchus oleraceus	Constant	58.92857143
+Allion triquetri	V37Z	Urtica membranacea	Diagnostic	64.10404948
+Allion triquetri	V37Z	Smyrnium olusatrum	Diagnostic	46.15511129
+Allion triquetri	V37Z	Tradescantia fluminensis	Diagnostic	35.22279613
+Allion triquetri	V37Z	Allium triquetrum	Diagnostic	33.92857143
+Allion triquetri	V37Z	Arum italicum	Diagnostic	29.21639116
+Allion triquetri	V37Z	Chelidonium majus	Diagnostic	21.53059951
+Allion triquetri	V37Z	Smyrnium olusatrum	Dominant	46.42857143
+Allion triquetri	V37Z	Urtica membranacea	Dominant	44.64285714
+Allion triquetri	V37Z	Tradescantia fluminensis	Dominant	14.28571429
+Allion triquetri	V37Z	Urtica dioica	Dominant	10.71428571
+Allion triquetri	V37Z	Allium triquetrum	Dominant	7.142857143
+Arction lappae	V39Y	Urtica dioica	Constant	87.5
+Arction lappae	V39Y	Oxybasis rubra	Constant	77.5
+Arction lappae	V39Y	Senecio duriaei	Constant	72.5
+Arction lappae	V39Y	Oxybasis rubra	Diagnostic	76.4901082
+Arction lappae	V39Y	Senecio duriaei	Diagnostic	69.18860725
+Arction lappae	V39Y	Cytisus oromediterraneus	Diagnostic	17.5
+Arction lappae	V39Y	Oxybasis rubra	Dominant	47.5
+Arction lappae	V39Y	Senecio duriaei	Dominant	20
+Arction lappae	V39Y	Blitum bonus-henricus	Dominant	7.5
+Arction lappae	V39Y	Urtica dioica	Dominant	7.5
+Balloto-Conion maculati	V39X	Urtica dioica	Constant	94.48275862
+Balloto-Conion maculati	V39X	Galium aparine	Constant	75.86206897
+Balloto-Conion maculati	V39X	Sambucus ebulus	Constant	71.72413793
+Balloto-Conion maculati	V39X	Sambucus ebulus	Diagnostic	70.06688051
+Balloto-Conion maculati	V39X	Conium maculatum	Diagnostic	30.30553279
+Balloto-Conion maculati	V39X	Sambucus ebulus	Dominant	52.4137931
+Balloto-Conion maculati	V39X	Conium maculatum	Dominant	29.65517241
+Balloto-Conion maculati	V39X	Urtica dioica	Dominant	24.13793103
+Balloto-Conion maculati	V39X	Galium aparine	Dominant	11.72413793
+Bidention tripartitae	Q61Z	Lythrum salicaria	Constant	100
+Bidention tripartitae	Q61Z	Persicaria hydropiper	Constant	100
+Bidention tripartitae	Q61Z	Bidens frondosus	Constant	96.96969697
+Bidention tripartitae	Q61Z	Phalaroides arundinacea	Constant	75.75757576
+Bidention tripartitae	Q61Z	Cyperus eragrostis	Constant	72.72727273
+Bidention tripartitae	Q61Z	Lycopus europaeus	Constant	72.72727273
+Bidention tripartitae	Q61Z	Helosciadium nodiflorum	Constant	60.60606061
+Bidention tripartitae	Q61Z	Dysphania ambrosioides	Constant	57.57575758
+Bidention tripartitae	Q61Z	Rumex obtusifolius	Constant	57.57575758
+Bidention tripartitae	Q61Z	Persicaria hydropiper	Diagnostic	99.5958135
+Bidention tripartitae	Q61Z	Bidens frondosus	Diagnostic	96.9170961
+Bidention tripartitae	Q61Z	Lythrum salicaria	Diagnostic	77.43444376
+Bidention tripartitae	Q61Z	Phalaroides arundinacea	Diagnostic	74.72024317
+Bidention tripartitae	Q61Z	Cyperus eragrostis	Diagnostic	70.20233123
+Bidention tripartitae	Q61Z	Helosciadium nodiflorum	Diagnostic	58.236003
+Bidention tripartitae	Q61Z	Dysphania ambrosioides	Diagnostic	55.40099933
+Bidention tripartitae	Q61Z	Lycopus europaeus	Diagnostic	49.97051441
+Bidention tripartitae	Q61Z	Xanthium orientale	Diagnostic	45.45454545
+Bidention tripartitae	Q61Z	Agrostis stolonifera	Diagnostic	39.04176416
+Bidention tripartitae	Q61Z	Artemisia verlotiorum	Diagnostic	39.00259154
+Bidention tripartitae	Q61Z	Mentha pulegium	Diagnostic	37.02199024
+Bidention tripartitae	Q61Z	Solanum chenopodioides	Diagnostic	30.3030303
+Bidention tripartitae	Q61Z	Galium palustre	Diagnostic	27.27272727
+Bidention tripartitae	Q61Z	Symphyotrichum squamatum	Diagnostic	26.47762804
+Bidention tripartitae	Q61Z	Veronica beccabunga	Diagnostic	24.24242424
+Bidention tripartitae	Q61Z	Cuscuta campestris	Diagnostic	24.24242424
+Bidention tripartitae	Q61Z	Leersia oryzoides	Diagnostic	24.01438781
+Bidention tripartitae	Q61Z	Setaria parviflora	Diagnostic	21.21212121
+Bidention tripartitae	Q61Z	Galinsoga quadriradiata	Diagnostic	20.95170455
+Bidention tripartitae	Q61Z	Setaria faberi	Diagnostic	18.18181818
+Bidention tripartitae	Q61Z	Bidens frondosus	Dominant	84.84848485
+Bidention tripartitae	Q61Z	Persicaria hydropiper	Dominant	75.75757576
+Bidention tripartitae	Q61Z	Xanthium orientale	Dominant	27.27272727
+Bidention tripartitae	Q61Z	Artemisia verlotiorum	Dominant	12.12121212
+Bidention tripartitae	Q61Z	Lythrum salicaria	Dominant	12.12121212
+Bidention tripartitae	Q61Z	Dysphania ambrosioides	Dominant	6.060606061
+Bidention tripartitae	Q61Z	Helosciadium nodiflorum	Dominant	6.060606061
+Bidention tripartitae	Q61Z	Symphyotrichum squamatum	Dominant	6.060606061
+Carduo carpetani-Cirsion odontolepidis	V38Y	Onopordum acanthium	Constant	93.47826087
+Carduo carpetani-Cirsion odontolepidis	V38Y	Carduus carpetanus	Constant	65.2173913
+Carduo carpetani-Cirsion odontolepidis	V38Y	Echium vulgare	Constant	63.04347826
+Carduo carpetani-Cirsion odontolepidis	V38Y	Dipsacus fullonum	Constant	56.52173913
+Carduo carpetani-Cirsion odontolepidis	V38Y	Lactuca virosa	Constant	54.34782609
+Carduo carpetani-Cirsion odontolepidis	V38Y	Rumex crispus	Constant	50
+Carduo carpetani-Cirsion odontolepidis	V38Y	Onopordum acanthium	Diagnostic	90.00202038
+Carduo carpetani-Cirsion odontolepidis	V38Y	Reseda luteola	Diagnostic	30.04184876
+Carduo carpetani-Cirsion odontolepidis	V38Y	Verbascum pulverulentum	Diagnostic	28.17032521
+Carduo carpetani-Cirsion odontolepidis	V38Y	Lactuca virosa	Diagnostic	25.34965609
+Carduo carpetani-Cirsion odontolepidis	V38Y	Echium vulgare	Diagnostic	24.58332696
+Carduo carpetani-Cirsion odontolepidis	V38Y	Onopordum acanthium	Dominant	45.65217391
+Carduo carpetani-Cirsion odontolepidis	V38Y	Echium vulgare	Dominant	6.52173913
+Carduo carpetani-Cirsion odontolepidis	V38Y	Carduus carpetanus	Dominant	6.52173913
+Chenopodion muralis	V37X	Malva neglecta	Constant	87.5
+Chenopodion muralis	V37X	Polygonum aviculare	Constant	68.75
+Chenopodion muralis	V37X	Plantago lanceolata	Constant	56.25
+Chenopodion muralis	V37X	Urtica urens	Constant	56.25
+Chenopodion muralis	V37X	Ochlopoa annua	Constant	50
+Chenopodion muralis	V37X	Malva neglecta	Diagnostic	76.34120518
+Chenopodion muralis	V37X	Urtica urens	Diagnostic	54.46286075
+Chenopodion muralis	V37X	Amaranthus deflexus	Diagnostic	36.37224723
+Chenopodion muralis	V37X	Chenopodiastrum murale	Diagnostic	17.9813745
+Chenopodion muralis	V37X	Urtica urens	Dominant	25
+Chenopodion muralis	V37X	Amaranthus deflexus	Dominant	18.75
+Chenopodion muralis	V37X	Atriplex rosea	Dominant	12.5
+Chenopodion muralis	V37X	Artemisia absinthium	Dominant	6.25
+Chenopodion muralis	V37X	Polygonum aviculare	Dominant	6.25
+Chenopodion muralis	V37X	Malva neglecta	Dominant	6.25
+Cirsion richterano-chodati	V38X	Cirsium eriophorum	Constant	63.63636364
+Cirsion richterano-chodati	V38X	Carduus carpetanus	Constant	63.63636364
+Cirsion richterano-chodati	V38X	Jacobaea vulgaris	Constant	55.55555556
+Cirsion richterano-chodati	V38X	Cirsium vulgare	Constant	54.54545455
+Cirsion richterano-chodati	V38X	Cirsium arvense	Constant	51.51515152
+Cirsion richterano-chodati	V38X	Cirsium eriophorum	Diagnostic	60.80085124
+Cirsion richterano-chodati	V38X	Carduus carpetanus	Diagnostic	38.91875713
+Cirsion richterano-chodati	V38X	Carduus nutans aggr.	Diagnostic	35.6245487
+Cirsion richterano-chodati	V38X	Jacobaea vulgaris	Diagnostic	33.42126935
+Cirsion richterano-chodati	V38X	Cirsium richterianum	Diagnostic	27.01468088
+Cirsion richterano-chodati	V38X	Cirsium arvense	Diagnostic	26.66082057
+Cirsion richterano-chodati	V38X	Achillea millefolium	Diagnostic	23.17132844
+Cirsion richterano-chodati	V38X	Cirsium eriophorum	Dominant	22.22222222
+Cirsion richterano-chodati	V38X	Cirsium richterianum	Dominant	19.19191919
+Cirsion richterano-chodati	V38X	Carduus carpetanus	Dominant	15.15151515
+Cirsion richterano-chodati	V38X	Carduus nutans aggr.	Dominant	9.090909091
+Cirsion richterano-chodati	V38X	Cirsium arvense	Dominant	8.080808081
+Cirsion richterano-chodati	V38X	Jacobaea vulgaris	Dominant	5.050505051
+Cymbalario-Asplenion	J25Y	Cymbalaria muralis	Constant	100
+Cymbalario-Asplenion	J25Y	Asplenium trichomanes	Constant	68.33333333
+Cymbalario-Asplenion	J25Y	Parietaria judaica aggr.	Constant	51.66666667
+Cymbalario-Asplenion	J25Y	Cymbalaria muralis	Diagnostic	79.10058916
+Cymbalario-Asplenion	J25Y	Asplenium trichomanes	Diagnostic	32.34954101
+Cymbalario-Asplenion	J25Y	Umbilicus rupestris	Diagnostic	17.86140818
+Cymbalario-Asplenion	J25Y	Trachelium caeruleum	Diagnostic	17.09189608
+Cymbalario-Asplenion	J25Y	Asplenium scolopendrium	Diagnostic	16.31700214
+Cymbalario-Asplenion	J25Y	Cymbalaria muralis	Dominant	56.66666667
+Dauco-Melilotion	V38W	Daucus carota	Constant	91.04477612
+Dauco-Melilotion	V38W	Helminthotheca echioides	Constant	65.67164179
+Dauco-Melilotion	V38W	Plantago lanceolata	Constant	56.71641791
+Dauco-Melilotion	V38W	Foeniculum vulgare	Constant	53.73134328
+Dauco-Melilotion	V38W	Holcus lanatus	Constant	52.23880597
+Dauco-Melilotion	V38W	Dactylis glomerata	Constant	50.74626866
+Dauco-Melilotion	V38W	Helminthotheca echioides	Diagnostic	58.04877228
+Dauco-Melilotion	V38W	Daucus carota	Diagnostic	54.09703059
+Dauco-Melilotion	V38W	Melilotus albus	Diagnostic	46.65339701
+Dauco-Melilotion	V38W	Foeniculum vulgare	Diagnostic	37.21829256
+Dauco-Melilotion	V38W	Erigeron canadensis	Diagnostic	31.996305
+Dauco-Melilotion	V38W	Hypericum perforatum	Diagnostic	27.34812276
+Dauco-Melilotion	V38W	Lotus tenuis	Diagnostic	23.32654463
+Dauco-Melilotion	V38W	Dipsacus fullonum	Diagnostic	22.75572764
+Dauco-Melilotion	V38W	Medicago lupulina	Diagnostic	21.14477845
+Dauco-Melilotion	V38W	Verbena officinalis	Diagnostic	20.78778749
+Dauco-Melilotion	V38W	Pulicaria dysenterica	Diagnostic	19.06908374
+Dauco-Melilotion	V38W	Holcus lanatus	Diagnostic	16.58436459
+Dauco-Melilotion	V38W	Foeniculum vulgare	Dominant	23.88059701
+Dauco-Melilotion	V38W	Melilotus albus	Dominant	20.89552239
+Dauco-Melilotion	V38W	Helminthotheca echioides	Dominant	16.41791045
+Dauco-Melilotion	V38W	Dipsacus fullonum	Dominant	10.44776119
+Dauco-Melilotion	V38W	Daucus carota	Dominant	5.970149254
+Dauco-Melilotion	V38W	Erigeron canadensis	Dominant	5.970149254
+Echio-Galactition tomentosae	V37W	Galactites tomentosus	Constant	100
+Echio-Galactition tomentosae	V37W	Vicia sativa aggr.	Constant	65
+Echio-Galactition tomentosae	V37W	Daucus carota	Constant	65
+Echio-Galactition tomentosae	V37W	Sonchus oleraceus	Constant	65
+Echio-Galactition tomentosae	V37W	Dactylis glomerata	Constant	65
+Echio-Galactition tomentosae	V37W	Plantago lanceolata	Constant	62.5
+Echio-Galactition tomentosae	V37W	Coleostephus myconis	Constant	60
+Echio-Galactition tomentosae	V37W	Lolium multiflorum	Constant	52.5
+Echio-Galactition tomentosae	V37W	Geranium dissectum	Constant	50
+Echio-Galactition tomentosae	V37W	Geranium robertianum	Constant	50
+Echio-Galactition tomentosae	V37W	Holcus lanatus	Constant	50
+Echio-Galactition tomentosae	V37W	Galactites tomentosus	Diagnostic	94.66651843
+Echio-Galactition tomentosae	V37W	Coleostephus myconis	Diagnostic	44.5414194
+Echio-Galactition tomentosae	V37W	Anisantha rigida	Diagnostic	40.81004673
+Echio-Galactition tomentosae	V37W	Lolium multiflorum	Diagnostic	40.24578955
+Echio-Galactition tomentosae	V37W	Briza maxima	Diagnostic	28.40214118
+Echio-Galactition tomentosae	V37W	Vicia sativa aggr.	Diagnostic	27.66216908
+Echio-Galactition tomentosae	V37W	Silene gallica	Diagnostic	18.13212892
+Echio-Galactition tomentosae	V37W	Crepis capillaris	Diagnostic	17.91606676
+Echio-Galactition tomentosae	V37W	Briza minor	Diagnostic	16.62443816
+Echio-Galactition tomentosae	V37W	Galactites tomentosus	Dominant	70
+Echio-Galactition tomentosae	V37W	Anisantha rigida	Dominant	22.5
+Echio-Galactition tomentosae	V37W	Coleostephus myconis	Dominant	12.5
+Echio-Galactition tomentosae	V37W	Echium vulgare	Dominant	10
+Echio-Galactition tomentosae	V37W	Arctotheca calendula	Dominant	5
+Echio-Galactition tomentosae	V37W	Convolvulus arvensis	Dominant	5
+Echio-Galactition tomentosae	V37W	Medicago arabica	Dominant	5
+Echio-Galactition tomentosae	V37W	Mentha suaveolens	Dominant	5
+Epilobion angustifolii	R57Z	Epilobium angustifolium	Constant	100
+Epilobion angustifolii	R57Z	Digitalis purpurea	Constant	83.33333333
+Epilobion angustifolii	R57Z	Avenella flexuosa	Constant	50
+Epilobion angustifolii	R57Z	Epilobium angustifolium	Diagnostic	99.69061533
+Epilobion angustifolii	R57Z	Digitalis purpurea	Diagnostic	75.33348552
+Epilobion angustifolii	R57Z	Avenella flexuosa	Diagnostic	48.60142815
+Epilobion angustifolii	R57Z	Luzula lactea	Diagnostic	41.66666667
+Epilobion angustifolii	R57Z	Linaria triornithophora	Diagnostic	31.0879708
+Epilobion angustifolii	R57Z	Vaccinium myrtillus	Diagnostic	25
+Epilobion angustifolii	R57Z	Helictochloa marginata	Diagnostic	25
+Epilobion angustifolii	R57Z	Peucedanum gallicum	Diagnostic	25
+Epilobion angustifolii	R57Z	Eryngium duriaei	Diagnostic	25
+Epilobion angustifolii	R57Z	Asphodelus albus	Diagnostic	19.03431632
+Epilobion angustifolii	R57Z	Anemone nemorosa	Diagnostic	16.66666667
+Epilobion angustifolii	R57Z	Betula celtiberica	Diagnostic	16.66666667
+Epilobion angustifolii	R57Z	Lilium martagon	Diagnostic	16.66666667
+Epilobion angustifolii	R57Z	Hypericum richeri	Diagnostic	16.66666667
+Epilobion angustifolii	R57Z	Erica arborea	Diagnostic	16.66666667
+Epilobion angustifolii	R57Z	Helleborus foetidus	Diagnostic	16.57372986
+Epilobion angustifolii	R57Z	Silene nutans	Diagnostic	16.48182378
+Epilobion angustifolii	R57Z	Cytisus scoparius	Diagnostic	16.38772664
+Epilobion angustifolii	R57Z	Epilobium angustifolium	Dominant	66.66666667
+Epilobion angustifolii	R57Z	Avenella flexuosa	Dominant	8.333333333
+Galio valantiae-Parietarion judaicae	J25Z	Parietaria judaica aggr.	Constant	97.36842105
+Galio valantiae-Parietarion judaicae	J25Z	Cymbalaria muralis	Constant	78.94736842
+Galio valantiae-Parietarion judaicae	J25Z	Asplenium trichomanes	Constant	57.89473684
+Galio valantiae-Parietarion judaicae	J25Z	Centranthus ruber	Constant	53.94736842
+Galio valantiae-Parietarion judaicae	J25Z	Parietaria judaica aggr.	Diagnostic	75.47006241
+Galio valantiae-Parietarion judaicae	J25Z	Centranthus ruber	Diagnostic	47.63882668
+Galio valantiae-Parietarion judaicae	J25Z	Polypodium cambricum	Diagnostic	30.7103566
+Galio valantiae-Parietarion judaicae	J25Z	Asplenium ceterach	Diagnostic	28.43584176
+Galio valantiae-Parietarion judaicae	J25Z	Hypericum hircinum	Diagnostic	19.22331934
+Galio valantiae-Parietarion judaicae	J25Z	Parietaria judaica aggr.	Dominant	39.47368421
+Galio valantiae-Parietarion judaicae	J25Z	Centranthus ruber	Dominant	13.15789474
+Galio valantiae-Parietarion judaicae	J25Z	Hypericum hircinum	Dominant	6.578947368
+Galio valantiae-Parietarion judaicae	J25Z	Cymbalaria muralis	Dominant	5.263157895
+Galio valantiae-Parietarion judaicae	J25Z	Erigeron karvinskianus	Dominant	5.263157895
+Geo urbani-Alliarion officinalis	V39Z	Urtica dioica	Constant	95.79439252
+Geo urbani-Alliarion officinalis	V39Z	Galium aparine	Constant	68.69158879
+Geo urbani-Alliarion officinalis	V39Z	Urtica dioica	Diagnostic	43.12362314
+Geo urbani-Alliarion officinalis	V39Z	Pentaglottis sempervirens	Diagnostic	19.66141706
+Geo urbani-Alliarion officinalis	V39Z	Galium aparine	Diagnostic	19.39245461
+Geo urbani-Alliarion officinalis	V39Z	Lamium maculatum	Diagnostic	18.30535275
+Geo urbani-Alliarion officinalis	V39Z	Anthriscus sylvestris	Diagnostic	18.11107904
+Geo urbani-Alliarion officinalis	V39Z	Urtica dioica	Dominant	62.14953271
+Geo urbani-Alliarion officinalis	V39Z	Galium aparine	Dominant	16.35514019
+Geo urbani-Alliarion officinalis	V39Z	Anthriscus sylvestris	Dominant	12.61682243
+Geo urbani-Alliarion officinalis	V39Z	Geranium robertianum	Dominant	6.542056075
+Geo urbani-Alliarion officinalis	V39Z	Pentaglottis sempervirens	Dominant	6.542056075
+Geranio pusilli-Anthriscion caucalidis	V37Y	Geranium lucidum	Constant	100
+Geranio pusilli-Anthriscion caucalidis	V37Y	Galium aparine	Constant	77.77777778
+Geranio pusilli-Anthriscion caucalidis	V37Y	Anisantha sterilis	Constant	58.33333333
+Geranio pusilli-Anthriscion caucalidis	V37Y	Anthriscus caucalis	Constant	58.33333333
+Geranio pusilli-Anthriscion caucalidis	V37Y	Geranium lucidum	Diagnostic	87.11324448
+Geranio pusilli-Anthriscion caucalidis	V37Y	Anthriscus caucalis	Diagnostic	53.64556773
+Geranio pusilli-Anthriscion caucalidis	V37Y	Geranium lucidum	Dominant	66.66666667
+Geranio pusilli-Anthriscion caucalidis	V37Y	Anthriscus caucalis	Dominant	22.22222222
+Geranio pusilli-Anthriscion caucalidis	V37Y	Geranium molle	Dominant	5.555555556
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Vulpia alopecuros	Constant	70.83333333
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Crucianella maritima	Constant	62.5
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Artemisia campestris aggr.	Constant	62.5
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Jasione montana	Constant	62.5
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Malcolmia littorea	Constant	62.5
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Helichrysum italicum	Constant	58.33333333
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Ammophila arenaria aggr.	Constant	58.33333333
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Leontodon tingitanus	Constant	54.16666667
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Vulpia alopecuros	Diagnostic	70.83333333
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Crucianella maritima	Diagnostic	62.5
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Malcolmia littorea	Diagnostic	62.5
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Artemisia campestris aggr.	Diagnostic	62.3857926
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Ammophila arenaria aggr.	Diagnostic	58.33333333
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Helichrysum italicum	Diagnostic	58.33333333
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Leontodon tingitanus	Diagnostic	54.16666667
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Jasione montana	Diagnostic	52.84127808
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Corynephorus canescens	Diagnostic	41.66666667
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Linaria polygalifolia	Diagnostic	41.66666667
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Scrophularia canina aggr.	Diagnostic	39.7246855
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Seseli tortuosum	Diagnostic	37.5
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Cistus salviifolius	Diagnostic	33.33333333
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Carex arenaria	Diagnostic	33.33333333
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Festuca juncifolia	Diagnostic	32.62786596
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Pinus pinaster	Diagnostic	29.16666667
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Lagurus ovatus	Diagnostic	29.16666667
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Eryngium maritimum	Diagnostic	29.16666667
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Calystegia soldanella	Diagnostic	25
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Filago pygmaea aggr.	Diagnostic	25
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Euphorbia portlandica	Diagnostic	25
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Anagallis monelli	Diagnostic	25
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Corema album	Diagnostic	25
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Tuberaria guttata	Diagnostic	22.74091485
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Herniaria ciliolata	Diagnostic	20.83333333
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Daphne gnidium	Diagnostic	20.83333333
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Silene portensis	Diagnostic	20.83333333
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Pancratium maritimum	Diagnostic	20.83333333
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Achillea maritima	Diagnostic	20.83333333
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Leontodon saxatilis aggr.	Diagnostic	20.83157135
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Cerastium diffusum	Diagnostic	18.2272276
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Sedum arenarium	Diagnostic	17.37718621
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Armeria pungens	Diagnostic	16.66666667
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Medicago marina	Diagnostic	16.66666667
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Iberis procumbens	Diagnostic	16.66666667
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Trifolium scabrum	Diagnostic	15.89861751
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Sedum acre	Diagnostic	15.01937984
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Scirpoides holoschoenus	Diagnostic	12.5
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Vulpia alopecuros	Dominant	20.83333333
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Artemisia campestris aggr.	Dominant	16.66666667
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Carex arenaria	Dominant	8.333333333
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Cistus salviifolius	Dominant	8.333333333
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Corema album	Dominant	8.333333333
+Linario polygalifoliae-Vulpion alopecuri	V32Z	Crucianella maritima	Dominant	8.333333333
+Oxalidion europeae	V10Y	Stellaria media	Constant	97.23756906
+Oxalidion europeae	V10Y	Senecio vulgaris	Constant	71.82320442
+Oxalidion europeae	V10Y	Veronica persica	Constant	69.06077348
+Oxalidion europeae	V10Y	Ochlopoa annua	Constant	65.74585635
+Oxalidion europeae	V10Y	Sonchus oleraceus	Constant	62.43093923
+Oxalidion europeae	V10Y	Stellaria media	Diagnostic	65.76611716
+Oxalidion europeae	V10Y	Veronica persica	Diagnostic	57.38442321
+Oxalidion europeae	V10Y	Senecio vulgaris	Diagnostic	36.34915905
+Oxalidion europeae	V10Y	Cardamine hirsuta	Diagnostic	28.33839789
+Oxalidion europeae	V10Y	Veronica hederifolia	Diagnostic	23.84527482
+Oxalidion europeae	V10Y	Euphorbia helioscopia	Diagnostic	20.40947447
+Oxalidion europeae	V10Y	Lamium amplexicaule	Diagnostic	18.26147552
+Oxalidion europeae	V10Y	Fumaria capreolata	Diagnostic	16.32194525
+Oxalidion europeae	V10Y	Stellaria media	Dominant	62.43093923
+Oxalidion europeae	V10Y	Ochlopoa annua	Dominant	13.25966851
+Oxalidion europeae	V10Y	Veronica persica	Dominant	10.49723757
+Paspalo-Agrostion semiverticillati	Q61Y	Paspalum distichum	Constant	100
+Paspalo-Agrostion semiverticillati	Q61Y	Persicaria lapathifolia	Constant	75
+Paspalo-Agrostion semiverticillati	Q61Y	Cyperus longus	Constant	68.75
+Paspalo-Agrostion semiverticillati	Q61Y	Lythrum salicaria	Constant	62.5
+Paspalo-Agrostion semiverticillati	Q61Y	Lycopus europaeus	Constant	50
+Paspalo-Agrostion semiverticillati	Q61Y	Schoenoplectus lacustris	Constant	50
+Paspalo-Agrostion semiverticillati	Q61Y	Paspalum distichum	Diagnostic	96.86307814
+Paspalo-Agrostion semiverticillati	Q61Y	Cyperus longus	Diagnostic	60.25350312
+Paspalo-Agrostion semiverticillati	Q61Y	Schoenoplectus lacustris	Diagnostic	50
+Paspalo-Agrostion semiverticillati	Q61Y	Xanthium strumarium	Diagnostic	36.15727756
+Paspalo-Agrostion semiverticillati	Q61Y	Persicaria lapathifolia	Diagnostic	32.35252565
+Paspalo-Agrostion semiverticillati	Q61Y	Eleocharis palustris	Diagnostic	31.25
+Paspalo-Agrostion semiverticillati	Q61Y	Juncus articulatus	Diagnostic	25
+Paspalo-Agrostion semiverticillati	Q61Y	Rorippa sylvestris	Diagnostic	25
+Paspalo-Agrostion semiverticillati	Q61Y	Bidens tripartitus	Diagnostic	21.0290904
+Paspalo-Agrostion semiverticillati	Q61Y	Persicaria decipiens	Diagnostic	18.75
+Paspalo-Agrostion semiverticillati	Q61Y	Paspalum distichum	Dominant	100
+Paspalo-Agrostion semiverticillati	Q61Y	Xanthium strumarium	Dominant	6.25
+Paspalo-Agrostion semiverticillati	Q61Y	Eleocharis palustris	Dominant	6.25
+Polycarpion tetraphylli	V34Z	Ochlopoa annua	Constant	69.56521739
+Polycarpion tetraphylli	V34Z	Plantago coronopus	Constant	57.97101449
+Polycarpion tetraphylli	V34Z	Sagina apetala	Constant	56.52173913
+Polycarpion tetraphylli	V34Z	Sagina apetala	Diagnostic	49.50414342
+Polycarpion tetraphylli	V34Z	Plantago coronopus	Diagnostic	38.64291737
+Polycarpion tetraphylli	V34Z	Crassula tillaea	Diagnostic	35.10327462
+Polycarpion tetraphylli	V34Z	Spergularia marina	Diagnostic	33.33333333
+Polycarpion tetraphylli	V34Z	Sagina maritima	Diagnostic	24.63768116
+Polycarpion tetraphylli	V34Z	Spergularia marina	Dominant	21.73913043
+Polycarpion tetraphylli	V34Z	Ochlopoa annua	Dominant	13.04347826
+Polycarpion tetraphylli	V34Z	Crassula tillaea	Dominant	5.797101449
+Polycarpion tetraphylli	V34Z	Plantago coronopus	Dominant	5.797101449
+Polygono-Coronopodion	V34Y	Ochlopoa annua	Constant	96.96969697
+Polygono-Coronopodion	V34Y	Polygonum aviculare	Constant	96.36363636
+Polygono-Coronopodion	V34Y	Matricaria suaveolens	Constant	60.60606061
+Polygono-Coronopodion	V34Y	Plantago major	Constant	54.54545455
+Polygono-Coronopodion	V34Y	Polygonum aviculare	Diagnostic	58.18493228
+Polygono-Coronopodion	V34Y	Matricaria suaveolens	Diagnostic	56.10118165
+Polygono-Coronopodion	V34Y	Plantago major	Diagnostic	20.25033512
+Polygono-Coronopodion	V34Y	Polygonum aviculare	Dominant	27.87878788
+Polygono-Coronopodion	V34Y	Ochlopoa annua	Dominant	16.96969697
+Polygono-Coronopodion	V34Y	Matricaria suaveolens	Dominant	10.90909091
+Saginion procumbentis	V35Z	Ochlopoa annua	Constant	95.45454545
+Saginion procumbentis	V35Z	Sagina procumbens	Constant	72.72727273
+Saginion procumbentis	V35Z	Bryum argenteum	Constant	68.18181818
+Saginion procumbentis	V35Z	Polygonum aviculare	Constant	52.27272727
+Saginion procumbentis	V35Z	Plantago major	Constant	50
+Saginion procumbentis	V35Z	Sagina procumbens	Diagnostic	70.89423937
+Saginion procumbentis	V35Z	Bryum argenteum	Diagnostic	67.76984911
+Saginion procumbentis	V35Z	Ochlopoa annua	Diagnostic	26.75948915
+Saginion procumbentis	V35Z	Ochlopoa annua	Dominant	29.54545455
+Saginion procumbentis	V35Z	Sagina procumbens	Dominant	15.90909091
+Saginion procumbentis	V35Z	Bryum argenteum	Dominant	15.90909091
+Scleranthion annui	V10Z	Anthemis arvensis	Constant	68.93617021
+Scleranthion annui	V10Z	Raphanus raphanistrum aggr.	Constant	57.44680851
+Scleranthion annui	V10Z	Spergula arvensis	Constant	50.63829787
+Scleranthion annui	V10Z	Mibora minima	Diagnostic	37.51846083
+Scleranthion annui	V10Z	Anthemis arvensis	Diagnostic	35.90690465
+Scleranthion annui	V10Z	Rumex acetosella	Diagnostic	33.34348225
+Scleranthion annui	V10Z	Spergula arvensis	Diagnostic	31.65794499
+Scleranthion annui	V10Z	Raphanus raphanistrum aggr.	Diagnostic	31.29628219
+Scleranthion annui	V10Z	Arnoseris minima	Diagnostic	28.26082011
+Scleranthion annui	V10Z	Scleranthus annuus	Diagnostic	27.19573217
+Scleranthion annui	V10Z	Anthoxanthum ovatum	Diagnostic	22.62381707
+Scleranthion annui	V10Z	Ornithopus compressus	Diagnostic	16.27535314
+Scleranthion annui	V10Z	Mibora minima	Dominant	8.936170213
+Scleranthion annui	V10Z	Anthemis arvensis	Dominant	7.659574468
+Scleranthion annui	V10Z	Spergula arvensis	Dominant	5.531914894
+Senecionion fluviatilis	R55Z	Pteridium aquilinum	Constant	59.67741935
+Senecionion fluviatilis	R55Z	Mentha suaveolens	Constant	59.67741935
+Senecionion fluviatilis	R55Z	Picris hieracioides	Constant	54.83870968
+Senecionion fluviatilis	R55Z	Calystegia sepium	Constant	53.22580645
+Senecionion fluviatilis	R55Z	Eupatorium cannabinum	Constant	51.61290323
+Senecionion fluviatilis	R55Z	Eupatorium cannabinum	Diagnostic	49.94879932
+Senecionion fluviatilis	R55Z	Arundo donax	Diagnostic	48.38709677
+Senecionion fluviatilis	R55Z	Angelica sylvestris	Diagnostic	39.54789114
+Senecionion fluviatilis	R55Z	Picris hieracioides	Diagnostic	27.93517521
+Senecionion fluviatilis	R55Z	Mentha suaveolens	Diagnostic	19.94396098
+Senecionion fluviatilis	R55Z	Pteridium aquilinum	Diagnostic	19.08319995
+Senecionion fluviatilis	R55Z	Centaurea debeauxii	Diagnostic	15.70253803
+Senecionion fluviatilis	R55Z	Silene latifolia	Diagnostic	15.18969057
+Senecionion fluviatilis	R55Z	Arundo donax	Dominant	48.38709677
+Senecionion fluviatilis	R55Z	Eupatorium cannabinum	Dominant	30.64516129
+Senecionion fluviatilis	R55Z	Mentha suaveolens	Dominant	9.677419355
+Senecionion fluviatilis	R55Z	Angelica sylvestris	Dominant	8.064516129
+Silybo mariani-Urticion piluliferae	V38Z	Silybum marianum	Constant	100
+Silybo mariani-Urticion piluliferae	V38Z	Anisantha diandra	Constant	73.68421053
+Silybo mariani-Urticion piluliferae	V38Z	Carduus tenuiflorus	Constant	68.42105263
+Silybo mariani-Urticion piluliferae	V38Z	Galium aparine	Constant	52.63157895
+Silybo mariani-Urticion piluliferae	V38Z	Silybum marianum	Diagnostic	98.0555466
+Silybo mariani-Urticion piluliferae	V38Z	Carduus tenuiflorus	Diagnostic	38.2266609
+Silybo mariani-Urticion piluliferae	V38Z	Anisantha diandra	Diagnostic	26.06501299
+Silybo mariani-Urticion piluliferae	V38Z	Silybum marianum	Dominant	94.73684211
+Silybo mariani-Urticion piluliferae	V38Z	Carduus tenuiflorus	Dominant	10.52631579
+Silybo mariani-Urticion piluliferae	V38Z	Anisantha diandra	Dominant	5.263157895
+Silybo mariani-Urticion piluliferae	V38Z	Ballota nigra	Dominant	5.263157895
+Silybo mariani-Urticion piluliferae	V38Z	Conium maculatum	Dominant	5.263157895
+Silybo mariani-Urticion piluliferae	V38Z	Echium rosulatum	Dominant	5.263157895
+Silybo mariani-Urticion piluliferae	V38Z	Foeniculum vulgare	Dominant	5.263157895
+Silybo mariani-Urticion piluliferae	V38Z	Galium aparine	Dominant	5.263157895
+Sisymbrion officinalis	V37V	Hordeum murinum	Constant	100
+Sisymbrion officinalis	V37V	Sisymbrium officinale	Constant	73.37662338
+Sisymbrion officinalis	V37V	Lolium perenne	Constant	52.5974026
+Sisymbrion officinalis	V37V	Anisantha sterilis	Constant	51.94805195
+Sisymbrion officinalis	V37V	Hordeum murinum	Diagnostic	78.49877713
+Sisymbrion officinalis	V37V	Sisymbrium officinale	Diagnostic	50.09999732
+Sisymbrion officinalis	V37V	Lolium perenne	Diagnostic	16.66002199
+Sisymbrion officinalis	V37V	Hordeum murinum	Dominant	60.38961039
+Sisymbrion officinalis	V37V	Sisymbrium officinale	Dominant	16.23376623
+Spergulo arvensis-Erodion cicutariae	V10X	Chenopodium album	Constant	83.61581921
+Spergulo arvensis-Erodion cicutariae	V10X	Persicaria maculosa	Constant	67.79661017
+Spergulo arvensis-Erodion cicutariae	V10X	Echinochloa crus-galli	Constant	62.14689266
+Spergulo arvensis-Erodion cicutariae	V10X	Stellaria media	Constant	60.4519774
+Spergulo arvensis-Erodion cicutariae	V10X	Digitaria sanguinalis	Constant	54.80225989
+Spergulo arvensis-Erodion cicutariae	V10X	Chenopodium album	Diagnostic	59.70609556
+Spergulo arvensis-Erodion cicutariae	V10X	Echinochloa crus-galli	Diagnostic	45.72802793
+Spergulo arvensis-Erodion cicutariae	V10X	Digitaria sanguinalis	Diagnostic	39.74021501
+Spergulo arvensis-Erodion cicutariae	V10X	Solanum nigrum	Diagnostic	35.53685411
+Spergulo arvensis-Erodion cicutariae	V10X	Amaranthus hybridus aggr.	Diagnostic	34.11670904
+Spergulo arvensis-Erodion cicutariae	V10X	Fallopia convolvulus	Diagnostic	30.22421588
+Spergulo arvensis-Erodion cicutariae	V10X	Persicaria maculosa	Diagnostic	26.59844455
+Spergulo arvensis-Erodion cicutariae	V10X	Oxalis latifolia	Diagnostic	23.36527909
+Spergulo arvensis-Erodion cicutariae	V10X	Portulaca oleracea	Diagnostic	19.60206969
+Spergulo arvensis-Erodion cicutariae	V10X	Chenopodium album	Dominant	12.99435028
+Spergulo arvensis-Erodion cicutariae	V10X	Amaranthus hybridus aggr.	Dominant	11.86440678
+Spergulo arvensis-Erodion cicutariae	V10X	Echinochloa crus-galli	Dominant	10.16949153
+Spergulo arvensis-Erodion cicutariae	V10X	Digitaria sanguinalis	Dominant	7.344632768

@@ -10,9 +10,9 @@ README.md
 This repository stores all the information related to the manuscript
 [*Classification and characterization of anthropogenic plant communities
 in the northwestern Iberian
-Peninsula*](https://github.com/efernandezpascual/manmade/blob/master/doc/manuscript.md),
-including the datasets, the scripts to perform data cleaning and
-analysis, and the `Rmarkdown` files to create the manuscript.
+Peninsula*](https://doi.org/10.1111/avsc.70010), including the datasets,
+the scripts to perform data cleaning and analysis, and the `Rmarkdown`
+files to create the manuscript.
 
 ## Contents
 
@@ -77,5 +77,5 @@ Please cite the repository, datasets and article as:
 > Fernández-Pascual E, González-García, Ivesdal G, Lázaro-Lobo A,
 > Jiménez-Alfaro B. [*Classification and characterization of
 > anthropogenic plant communities in the northwestern Iberian
-> Peninsula*](https://github.com/efernandezpascual/manmade/blob/master/doc/manuscript.md),
-> *in preparation*.
+> Peninsula*](https://doi.org/10.1111/avsc.70010). *Applied Vegetation
+> Science* 28, e70010.

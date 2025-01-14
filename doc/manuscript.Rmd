@@ -2,7 +2,7 @@
 title: "Classification and characterization of anthropogenic plant communities in the northwestern Iberian Peninsula"
 
 output: 
-  bookdown::word_document2:
+  bookdown::github_document2:
     reference_docx: template.docx
     number_sections: false
 bibliography: refs.bib
@@ -20,6 +20,12 @@ knitr::knit_hooks$set(inline = function(x) {
   prettyNum(x, big.mark = ",")
 })
 ```
+
+Eduardo Fernández-Pascual^1,a^ (<https://orcid.org/0000-0002-4743-9577>), Víctor González-García^1^ (<https://orcid.org/0000-0002-8949-7943>), Greta Ivesdal^2^, Adrián Lázaro-Lobo^1^ (<https://orcid.org/0000-0002-0509-2085>), Borja Jiménez-Alfaro^1^ (<https://orcid.org/0000-0001-6601-9597>)
+
+^1^ Biodiversity Research Institute (IMIB), University of Oviedo - CSIC - Principality of Asturias, Mieres, Spain; ^2^ Jardín Botánico Atlántico, Gijón/Xixón, Spain
+
+Correspondence: Eduardo Fernández-Pascual, Instituto Mixto de Investigación en Biodiversidad, Campus de Mieres, Edificio de Investigación, 5ª planta, c/ Gonzalo Gutiérrez Quirós s/n, E-33600 Mieres, Spain. Email: [fernandezpeduardo\@uniovi.es](mailto:fernandezpeduardo@uniovi.es){.email}. Telephone: +34985104781.
 
 # Abstract (300 words max.)
 
@@ -103,9 +109,17 @@ For each species in the dataset, we collected its ecological indicator values of
 
 The semi-supervised classification resulted in the classification of 2,086 vegetation plots into 25 anthropogenic alliances (**Fig. 1**, description of the alliances and translation into EUNIS habitat types in **Appendix S3**, groups of characteristic species in **Appendix S4**, synoptic table in **Appendix S5**) representing 9 vegetation classes. Of the 34 alliances in our initial syntaxonomical checklist, nine alliances were not assigned to any cluster. Of these, eight had been assigned to a few plots by the original authors: *Onopordion castellani* (n = 6 plots), *Onopordion acanthii* (5), *Euphorbion prostratae* (4), *Caucalidion lappulae* (4), *Roemerion hybridae* (2), *Hordeion murini* (2), *Taeniathero-Aegilopion geniculatae* (1) and *Fragarion vescae* (1). The alliance *Aegopodion podagrariae* had been assigned by the original authors to 39 plots, but our TWINSPAN analysis could not separate this alliance from the alliances *Geo urbani-Alliarion officinalis* and *Balloto-Conion maculati*. The regional literature included in our dataset recognized 69 associations (**Appendix S6**) within the final 25 alliances, but exploratory analysis (not shown) indicated that the separation of these associations within the alliances had a generally weak support based on numerical classification methods.
 
+```{r fig1, echo = FALSE, fig.pos = "H", fig.cap = "Anthropogenic vegetation alliances of the Iberian Atlantic territories. Each dot is a vegetation plot. Dot colors indicate the vegetation class."}
+knitr::include_graphics("../results/figures/F1 - maps.png")
+```
+
 The classified plots included 1,149 species. The 10 most frequent species were *Ochlopoa annua* (625 occurrences), *Urtica dioica* (588), *Sonchus oleraceus* (548), *Stellaria media* (520), *Capsella bursa-pastoris* (396), *Polygonum aviculare* (373), *Dactylis glomerata* (369), *Senecio vulgaris* (336) and *Anisantha sterilis* (310). Considering only those plots with the most frequent plot size range (20 m^2^, n = 260 plots), the average species richness per plot was 16 (minimum = 3, maximum = 37). The class with the richest species pool was *Epilobietea angustifolii* (n = 605) and the poorest was *Bidentetea* (n = 132).
 
 PCA ordination of the floristic composition (**Fig. 2A**) differentiated three vegetation groups: (1) trampled vegetation of class *Polygono-Poetea annuae*; (2) crop weeds of classes *Papaveretea rhoeadis* and *Digitario sanguinalis-Eragrostietea minoris*; and (3) perennial ruderal vegetation of classes *Artemisietea vulgaris* and *Epilobietea angustifolii*. The central position of the floristic space, between these three major groups, was occupied by the annual ruderal vegetation of classes *Chenopodietea*, *Sisymbrietea* and *Bidentetea*; as well as by the wall vegetation of class *Cymbalario-Parietarietea diffusae*. Separate PCAs within the major vegetation groups indicated a coherent separation between most of the alliances, but with some cases of relatively high overlap, especially between *Galio valantiae-Parietarion judaicae* and *Cymbalario-Asplenion*.
+
+```{r fig2, echo = FALSE, fig.pos = "H", fig.cap = "Floristic diversity of the anthropogenic plant communities of the Iberian Atlantic territories. Biplots produced by Principal Component Analysis (PCA) with Hellinger transformation. PCAs were conducted for the whole vegetation (A) and for specific subsets (B-F). Colors indicate the vegetation class."}
+knitr::include_graphics("../results/figures/F2 - pca.png")
+```
 
 ## Proportion of natives, archaeophytes and neophytes
 
@@ -115,15 +129,35 @@ By vegetation class, *Epilobietea angustifolii* had the highest proportion of na
 
 At the community level, focusing on plot average proportions (**Fig. 3**), the alliances with the most archaeophytes were *Sisymbrion officinalis*, *Silybo mariani-Urticion piluliferae* and *Spergulo arvensis-Erodion cicutariae*, in which only about half of the plot-level proportion was made up of native species. The alliances with the highest plot-level proportion of neophytes were *Bidention tripartitae*, *Paspalo-Agrostion semiverticillati* and *Spergulo arvensis-Erodion cicutariae*. Some alliances had high proportions of native species, e.g. *Epilobion angustifolii*, *Linario polygalifoliae-Vulpion alopecuri* and *Arction lappae*.
 
+```{r fig3, echo = FALSE, fig.pos = "H", fig.cap = "Proportion of neophytes, archaeophytes and native species in the anthropogenic plant communities of the Iberian Atlantic territories. Each bar represents the plot-level average proportion of neophytes (dark shade), archaeophytes (medium shade) and natives (light shade) in each vegetation alliance. Colors indicate the vegetation class."}
+knitr::include_graphics("../results/figures/F3 - origins.png")
+```
+
 ## Community-level traits
 
 The most frequent life form in the species pool (n = 1,149 species) were hemicryptophytes (44%), followed by therophytes (41%), geophytes (8%), chamaephytes (6%), phanerophytes (5%), bryophytes (1%, not consistently recorded in all plots) and hydrophytes (1%). The proportion of therophytes across classes and alliances (**Fig. 4**) agreed with the traditional description of the syntaxa: therophytes dominated the annual communities of trampled-soil vegetation (*Polygono-Poetea annuae*), crops weeds (*Papaveretea rhoeadis*, *Digitario sanguinalis-Eragrostietea minoris*) and annual ruderals (*Chenopodietea*, *Sisymbrietea*, *Bidentetea*); while perennial life forms (especially hemicryptophytes) dominated walls (*Cymbalario-Parietarietea diffusae*) and perennial ruderal vegetation (*Artemisietea vulgaris*, *Epilobietea angustifolii*). Geophytes represented a relatively high proportion of the vegetation in two alliances: *Allion triquetri* and *Senecionion fluviatilis*.
 
+```{r fig4, echo = FALSE, fig.pos = "H", fig.cap = "Proportion of therophytes, hemicryptophytes, geophytes and other life forms (chamaephytes, phanerophytes, bryophytes, hydrophytes) in the anthropogenic plant communities of the Iberian Atlantic territories. Each bar represents the plot-level average proportion of therophytes (dark shade),hemicryptophytes (medium-dark shade), geophytes (medium-light shade) and other life forms (light shade) in each vegetation alliance. Colors indicate the vegetation class."}
+knitr::include_graphics("../results/figures/F4 - lifeforms.png")
+```
+
 Community-weighted means for plant height (**Fig. 5A**) also agreed with the expected description of the syntaxa: the shortest communities were the dwarf-herb vegetation of trampled sites (*Polygono-Poetea annuae*, average height = 45.2 cm) and crop weeds (*Papaveretea rhoeadis*, 55.6 cm), while the tallest were the perennial ruderal vegetation of dry (*Artemisietea vulgaris*, 131 cm) and mesic (*Epilobietea angustifolii*, 138 cm) sites. The median month of flowering (**Fig. 5B**) corresponded to May (*Sisymbrietea*, *Chenopodietea*, *Papaveretea rhoeadis*), June (*Cymbalario-Parietarietea diffusae*, *Polygono-Poetea annuae*, *Epilobietea angustifolii*, *Artemisietea vulgaris*) or July (*Digitario sanguinalis-Eragrostietea minoris*, *Bidentetea*). The length of the flowering season (**Fig. 5C**) was generally high, from 5 months (*Artemisietea vulgaris*, *Epilobietea angustifolii*) to 6 (*Chenopodietea*, *Sisymbrietea*), 7 (*Bidentetea*, *Digitario sanguinalis-Eragrostietea minoris*, *Papaveretea rhoeadis*), 8 (*Polygono-Poetea annuae*) or 9 (*Cymbalario-Parietarietea diffusae*).
+
+```{r fig5, echo = FALSE, fig.pos = "H", fig.cap = "Vegetation height and flowering phenology of the anthropogenic plant communities of the Iberian Atlantic territories. Boxplots show the community-weighted mean for plant height, median month of flowering and length of the flowering season for each vegetation alliance. Colors indicate the vegetation class. Alliances as ordered as in Figures 1 and 3-4 and alliance numbers are the same as listed in Appendix S3."}
+knitr::include_graphics("../results/figures/F5 - height-flowering.png")
+```
 
 ## Community-level ecological preferences
 
 To visualize the major patterns of variation in the ecological and disturbance preferences of the different anthropogenic communities (**Fig. 6**) we performed a PCA ordination of plot-level means (**Fig. 7**). The first two PCA axes explained 59% of the variance. The major contributors to axis 1 (36% variance explained) were light, nutrient and moisture requirements; it separated communities of open, dry and comparatively nutrient-poorer sites (classes *Papaveretea rhoeadis*, *Polygono-Poetea annuae*, *Sisymbrietea*, *Artemisietea vulgaris*, *Chenopodietea* and *Digitario sanguinalis-Eragrostietea minoris*) from communities of shady, moist and nutrient-richer sites (classes *Bidentetea* and *Epilobietea angustifolii*). The major contributors to axis 2 (23% variance explained) were disturbance severity and frequency; this axis separated communities preferring less severe and less frequent disturbances (classes *Cymbalario-Parietarietea diffusae*, *Epilobietea angustifolii*) from communities adapted to more severe and more frequent disturbances (classes *Papaveretea rhoeadis*, *Polygono-Poetea annuae*, *Sisymbrietea* and *Digitario sanguinalis-Eragrostietea minoris*).
+
+```{r fig6, echo = FALSE, fig.pos = "H", fig.cap = "Ecological requirements of the anthropogenic plant communities of the Iberian Atlantic territories. Boxplots show the plot-level means for the ecological indicator values of temperature, moisture, light, nutrients, soil reaction, disturbance frequency and disturbance severity, calculated for each vegetation alliance. Colors indicate the vegetation class. Alliances as ordered as in Figures 1 and 3-4 and alliance numbers are the same as listed in Appendix S3."}
+knitr::include_graphics("../results/figures/F6 - indicators.png")
+```
+
+```{r fig7, echo = FALSE, fig.pos = "H", fig.cap = "Ecological requirements of the anthropogenic plant communities of the Iberian Atlantic territories. Biplot produced by Principal Component Analysis (PCA) of the plot-level means for the ecological indicator values of temperature, moisture, light, nutrients, soil reaction, disturbance frequency and disturbance severity. Each dot is a plot. In the left panel, labels and arrows indicate the contribution of each indicator to the first and second principal components. The right panels show the space occupied by each vegetation class (colored dots) with respect to the whole anthropogenic vegetation (grey dots)."}
+knitr::include_graphics("../results/figures/F7 - pca.png")
+```
 
 # Discussion
 
@@ -168,32 +202,18 @@ The anthropogenic vegetation of the Iberian Atlantic territories is home to more
 
 **Appendix S6** Revised checklist of vegetation associations described in the regional literature and belonging to the 25 alliances present in the Iberian Atlantic anthropogenic vegetation.
 
-# Figures
+# Author contributions
 
-```{r fig1, echo = FALSE, fig.pos = "H", fig.cap = "Anthropogenic vegetation alliances of the Iberian Atlantic territories. Each dot is a vegetation plot. Dot colors indicate the vegetation class."}
-knitr::include_graphics("../results/figures/F1 - maps.png")
-```
+Eduardo Fernández-Pascual: Conceptualization; Methodology; Data Curation; Formal Analysis; Visualization; Writing – Original Draft Preparation; Writing – Review & Editing. Víctor González-García: Methodology; Investigation; Formal Analysis; Writing – Review & Editing. Greta Ivesdal: Investigation; Formal Analysis; Writing – Review & Editing. Adrián Lázaro-Lobo: Investigation; Writing – Review & Editing. Borja Jiménez-Alfaro: Methodology; Writing – Review & Editing.
 
-```{r fig2, echo = FALSE, fig.pos = "H", fig.cap = "Floristic diversity of the anthropogenic plant communities of the Iberian Atlantic territories. Biplots produced by Principal Component Analysis (PCA) with Hellinger transformation. PCAs were conducted for the whole vegetation (A) and for specific subsets (B-F). Colors indicate the vegetation class."}
-knitr::include_graphics("../results/figures/F2 - pca.png")
-```
+# Funding
 
-```{r fig3, echo = FALSE, fig.pos = "H", fig.cap = "Proportion of neophytes, archaeophytes and native species in the anthropogenic plant communities of the Iberian Atlantic territories. Each bar represents the plot-level average proportion of neophytes (dark shade), archaeophytes (medium shade) and natives (light shade) in each vegetation alliance. Colors indicate the vegetation class."}
-knitr::include_graphics("../results/figures/F3 - origins.png")
-```
+Ayuntamiento de Gijón/Xixón, Jardín Botánico Atlántico (SV-23-GIJON-JBA).
 
-```{r fig4, echo = FALSE, fig.pos = "H", fig.cap = "Proportion of therophytes, hemicryptophytes, geophytes and other life forms (chamaephytes, phanerophytes, bryophytes, hydrophytes) in the anthropogenic plant communities of the Iberian Atlantic territories. Each bar represents the plot-level average proportion of therophytes (dark shade),hemicryptophytes (medium-dark shade), geophytes (medium-light shade) and other life forms (light shade) in each vegetation alliance. Colors indicate the vegetation class."}
-knitr::include_graphics("../results/figures/F4 - lifeforms.png")
-```
+# Conflict of interest statement
 
-```{r fig5, echo = FALSE, fig.pos = "H", fig.cap = "Vegetation height and flowering phenology of the anthropogenic plant communities of the Iberian Atlantic territories. Boxplots show the community-weighted mean for plant height, median month of flowering and length of the flowering season for each vegetation alliance. Colors indicate the vegetation class. Alliances as ordered as in Figures 1 and 3-4 and alliance numbers are the same as listed in Appendix S3."}
-knitr::include_graphics("../results/figures/F5 - height-flowering.png")
-```
+None declared.
 
-```{r fig6, echo = FALSE, fig.pos = "H", fig.cap = "Ecological requirements of the anthropogenic plant communities of the Iberian Atlantic territories. Boxplots show the plot-level means for the ecological indicator values of temperature, moisture, light, nutrients, soil reaction, disturbance frequency and disturbance severity, calculated for each vegetation alliance. Colors indicate the vegetation class. Alliances as ordered as in Figures 1 and 3-4 and alliance numbers are the same as listed in Appendix S3."}
-knitr::include_graphics("../results/figures/F6 - indicators.png")
-```
+# Data availability statement
 
-```{r fig7, echo = FALSE, fig.pos = "H", fig.cap = "Ecological requirements of the anthropogenic plant communities of the Iberian Atlantic territories. Biplot produced by Principal Component Analysis (PCA) of the plot-level means for the ecological indicator values of temperature, moisture, light, nutrients, soil reaction, disturbance frequency and disturbance severity. Each dot is a plot. In the left panel, labels and arrows indicate the contribution of each indicator to the first and second principal components. The right panels show the space occupied by each vegetation class (colored dots) with respect to the whole anthropogenic vegetation (grey dots)."}
-knitr::include_graphics("../results/figures/F7 - pca.png")
-```
+Original datasets, R code for analysis and Rmarkdown code for creation of the manuscript can be accessed at the GitHub repository <https://github.com/efernandezpascual/anthropogenic> stored at https://zenodo.org/doi/10.5281/zenodo.11613571.

@@ -1,0 +1,133 @@
+Original_SIVIM_syntaxon	Alliance	Order	Class	Vegetation	Anthropogenic	Iberian_Atlantic	EUNIS
+Carlino corymbosae-Carthametum lanati	Onopordion castellani	Carthametalia lanati	Artemisietea vulgaris	ANTHROPOGENIC VEGETATION	Yes	No	V38
+Onopordetum acantho-nervosi	Onopordion castellani	Carthametalia lanati	Artemisietea vulgaris	ANTHROPOGENIC VEGETATION	Yes	No	V38
+Carduo bourgeani-Silybetum mariani	Silybo mariani-Urticion piluliferae	Carthametalia lanati	Artemisietea vulgaris	ANTHROPOGENIC VEGETATION	Yes	Yes	V38
+Carduo bourgeani-Sylibetum mariani	Silybo mariani-Urticion piluliferae	Carthametalia lanati	Artemisietea vulgaris	ANTHROPOGENIC VEGETATION	Yes	Yes	V38
+Echio rosulati-Silybetum mariani	Silybo mariani-Urticion piluliferae	Carthametalia lanati	Artemisietea vulgaris	ANTHROPOGENIC VEGETATION	Yes	Yes	V38
+Carduo carpetani-Onopordetum acanthii	Carduo carpetani-Cirsion odontolepidis	Onopordetalia acanthii	Artemisietea vulgaris	ANTHROPOGENIC VEGETATION	Yes	Yes	V38
+Carduo nutantis-Cirsietum chodati	Cirsion richterano-chodati	Onopordetalia acanthii	Artemisietea vulgaris	ANTHROPOGENIC VEGETATION	Yes	Yes	V38
+Carduo nutantis-Cirsietum richterani	Cirsion richterano-chodati	Onopordetalia acanthii	Artemisietea vulgaris	ANTHROPOGENIC VEGETATION	Yes	Yes	V38
+Cirsio chodati-Carduetum cantabrici	Cirsion richterano-chodati	Onopordetalia acanthii	Artemisietea vulgaris	ANTHROPOGENIC VEGETATION	Yes	Yes	V38
+Cirsio chodati-Carduetum carpetani	Cirsion richterano-chodati	Onopordetalia acanthii	Artemisietea vulgaris	ANTHROPOGENIC VEGETATION	Yes	Yes	V38
+Comunidad de Daucus carota y Melilotus alba	Dauco-Melilotion	Onopordetalia acanthii	Artemisietea vulgaris	ANTHROPOGENIC VEGETATION	Yes	Yes	V38
+Echio rosulati-Picridetum echioisia	Dauco-Melilotion	Onopordetalia acanthii	Artemisietea vulgaris	ANTHROPOGENIC VEGETATION	Yes	Yes	V38
+Helmintio echioidis-Melilotetum albae	Dauco-Melilotion	Onopordetalia acanthii	Artemisietea vulgaris	ANTHROPOGENIC VEGETATION	Yes	Yes	V38
+Picridi echioides-Melilotetum albi	Dauco-Melilotion	Onopordetalia acanthii	Artemisietea vulgaris	ANTHROPOGENIC VEGETATION	Yes	Yes	V38
+Onopordion acanthii	Onopordion acanthii	Onopordetalia acanthii	Artemisietea vulgaris	ANTHROPOGENIC VEGETATION	Yes	No	V38
+Bidentetea tripartitae	Bidention tripartitae	Bidentetalia	Bidentetea	ANTHROPOGENIC VEGETATION	Yes	Yes	No relationship
+Bidenti tripartitae-Polygonetum lapathifolii	Bidention tripartitae	Bidentetalia	Bidentetea	ANTHROPOGENIC VEGETATION	Yes	Yes	No relationship
+Cypero eragrostidi-Bidentetum frondosae	Bidention tripartitae	Bidentetalia	Bidentetea	ANTHROPOGENIC VEGETATION	Yes	Yes	No relationship
+Filaginello uliginosae-Bidentetum tripartitae	Bidention tripartitae	Bidentetalia	Bidentetea	ANTHROPOGENIC VEGETATION	Yes	Yes	No relationship
+Polygono hydropiperis-Bidentetum tripartitae	Bidention tripartitae	Bidentetalia	Bidentetea	ANTHROPOGENIC VEGETATION	Yes	Yes	No relationship
+Xanthio italici-Polygonetum persicariae	Bidention tripartitae	Bidentetalia	Bidentetea	ANTHROPOGENIC VEGETATION	Yes	Yes	No relationship
+Xanthio-Polygonetum persicariae	Bidention tripartitae	Bidentetalia	Bidentetea	ANTHROPOGENIC VEGETATION	Yes	Yes	No relationship
+Paspalo-Agrostietum semiverticillatae	Paspalo-Agrostion semiverticillati	Paspalo-Heleochloetalia	Bidentetea	ANTHROPOGENIC VEGETATION	Yes	Yes	No relationship
+Coleostepho myconis-Galactitetum tomentosae	Echio-Galactition tomentosae	Brometalia rubenti-tectorum	Chenopodietea	ANTHROPOGENIC VEGETATION	Yes	Yes	V33
+Bromo scoparii-Hordeetum leporini	Hordeion murini	Brometalia rubenti-tectorum	Chenopodietea	ANTHROPOGENIC VEGETATION	Yes	No	V32
+Scrophulario-Vulpietum alopecuroris	Linario polygalifoliae-Vulpion alopecuri	Brometalia rubenti-tectorum	Chenopodietea	ANTHROPOGENIC VEGETATION	Yes	Yes	V32
+Medicagini rigidulae-Aegilopetum geniculatae	Taeniathero-Aegilopion geniculatae	Brometalia rubenti-tectorum	Chenopodietea	ANTHROPOGENIC VEGETATION	Yes	No	V32
+Trifolio cherleri-Taeniatheretum capitis-medusae	Taeniathero-Aegilopion geniculatae	Brometalia rubenti-tectorum	Chenopodietea	ANTHROPOGENIC VEGETATION	Yes	No	V32
+Chenopodio albi-Conyzetum canadensis	Chenopodion muralis	Chenopodietalia	Chenopodietea	ANTHROPOGENIC VEGETATION	Yes	Yes	V37
+Chenopodio muralis-Malvetum parviflorae	Chenopodion muralis	Chenopodietalia	Chenopodietea	ANTHROPOGENIC VEGETATION	Yes	Yes	V37
+Chenopodion muralis	Chenopodion muralis	Chenopodietalia	Chenopodietea	ANTHROPOGENIC VEGETATION	Yes	Yes	V37
+Sisymbrio irionis-Malvetum parviflorae	Chenopodion muralis	Chenopodietalia	Chenopodietea	ANTHROPOGENIC VEGETATION	Yes	Yes	V37
+Urtico urentis-Malvetum neglectae	Chenopodion muralis	Chenopodietalia	Chenopodietea	ANTHROPOGENIC VEGETATION	Yes	Yes	V37
+Allio triquetri-Urticetum membranaceae	Allion triquetri	Geranio purpureae-Cardaminetalia hirsutae	Chenopodietea	ANTHROPOGENIC VEGETATION	Yes	Yes	V37
+Chelidonio maji-Smyrnietum olusatri	Allion triquetri	Geranio purpureae-Cardaminetalia hirsutae	Chenopodietea	ANTHROPOGENIC VEGETATION	Yes	Yes	V37
+Urtico-Smyrnietum olusatri	Allion triquetri	Geranio purpureae-Cardaminetalia hirsutae	Chenopodietea	ANTHROPOGENIC VEGETATION	Yes	Yes	V37
+Anthrisco caucalidis-Geranietum lucidi	Geranio pusilli-Anthriscion caucalidis	Geranio purpureae-Cardaminetalia hirsutae	Chenopodietea	ANTHROPOGENIC VEGETATION	Yes	Yes	V37
+Anthrisco-Geranietum lucidi	Geranio pusilli-Anthriscion caucalidis	Geranio purpureae-Cardaminetalia hirsutae	Chenopodietea	ANTHROPOGENIC VEGETATION	Yes	Yes	V37
+Galio aparinellae-Anthriscetum caucalidis	Geranio pusilli-Anthriscion caucalidis	Geranio purpureae-Cardaminetalia hirsutae	Chenopodietea	ANTHROPOGENIC VEGETATION	Yes	Yes	V37
+Cymbalarietum muralis	Cymbalario-Asplenion	Tortulo-Cymbalarietalia	Cymbalario-Parietarietea diffusae	VEGETATION OF ROCK CREVICES AND SCREES	Yes	Yes	No relationship
+Cymbalario-Trachelietum caerulei	Cymbalario-Asplenion	Tortulo-Cymbalarietalia	Cymbalario-Parietarietea diffusae	VEGETATION OF ROCK CREVICES AND SCREES	Yes	Yes	No relationship
+Centrantho-Hypericetum hircini	Galio valantiae-Parietarion judaicae	Tortulo-Cymbalarietalia	Cymbalario-Parietarietea diffusae	VEGETATION OF ROCK CREVICES AND SCREES	Yes	Yes	U38
+Hedero-Polypodietum cambrici	Galio valantiae-Parietarion judaicae	Tortulo-Cymbalarietalia	Cymbalario-Parietarietea diffusae	VEGETATION OF ROCK CREVICES AND SCREES	Yes	Yes	U38
+Oxalido-Parietarietum	Galio valantiae-Parietarion judaicae	Tortulo-Cymbalarietalia	Cymbalario-Parietarietea diffusae	VEGETATION OF ROCK CREVICES AND SCREES	Yes	Yes	U38
+Oxali-Parietarietum diffusae	Galio valantiae-Parietarion judaicae	Tortulo-Cymbalarietalia	Cymbalario-Parietarietea diffusae	VEGETATION OF ROCK CREVICES AND SCREES	Yes	Yes	U38
+Parietarietum judaicae	Galio valantiae-Parietarion judaicae	Tortulo-Cymbalarietalia	Cymbalario-Parietarietea diffusae	VEGETATION OF ROCK CREVICES AND SCREES	Yes	Yes	U38
+Amarantho hybridi-Chenopodietum polyspermi	Spergulo arvensis-Erodion cicutariae	Eragrostietalia	Digitario sanguinalis-Eragrostietea minoris	ANTHROPOGENIC VEGETATION	Yes	Yes	"V11, V12, V13"
+Asociación de Amaranthus hybridus-Chenopodium polyspermum	Spergulo arvensis-Erodion cicutariae	Eragrostietalia	Digitario sanguinalis-Eragrostietea minoris	ANTHROPOGENIC VEGETATION	Yes	Yes	"V11, V12, V13"
+Asociación de Chrysanthemum segetum-Oxalis violacea	Spergulo arvensis-Erodion cicutariae	Eragrostietalia	Digitario sanguinalis-Eragrostietea minoris	ANTHROPOGENIC VEGETATION	Yes	Yes	"V11, V12, V13"
+Asociación de Lamium dissectum-Panicum crus-galli	Spergulo arvensis-Erodion cicutariae	Eragrostietalia	Digitario sanguinalis-Eragrostietea minoris	ANTHROPOGENIC VEGETATION	Yes	Yes	"V11, V12, V13"
+Chrysanthemum-Oxalidetum	Spergulo arvensis-Erodion cicutariae	Eragrostietalia	Digitario sanguinalis-Eragrostietea minoris	ANTHROPOGENIC VEGETATION	Yes	Yes	"V11, V12, V13"
+Comunidad de Echinochloa crus-galli y Setaria Verticillata	Spergulo arvensis-Erodion cicutariae	Eragrostietalia	Digitario sanguinalis-Eragrostietea minoris	ANTHROPOGENIC VEGETATION	Yes	Yes	"V11, V12, V13"
+Lamio (hybridi) dissecti-Panicetum crus-galli	Spergulo arvensis-Erodion cicutariae	Eragrostietalia	Digitario sanguinalis-Eragrostietea minoris	ANTHROPOGENIC VEGETATION	Yes	Yes	"V11, V12, V13"
+Lamio dissecti-Panicetum cruris-galli	Spergulo arvensis-Erodion cicutariae	Eragrostietalia	Digitario sanguinalis-Eragrostietea minoris	ANTHROPOGENIC VEGETATION	Yes	Yes	"V11, V12, V13"
+Lamio hybridi-Echinochloetum crus-gallii	Spergulo arvensis-Erodion cicutariae	Eragrostietalia	Digitario sanguinalis-Eragrostietea minoris	ANTHROPOGENIC VEGETATION	Yes	Yes	"V11, V12, V13"
+Panico-Setarion	Spergulo arvensis-Erodion cicutariae	Eragrostietalia	Digitario sanguinalis-Eragrostietea minoris	ANTHROPOGENIC VEGETATION	Yes	Yes	"V11, V12, V13"
+Panicum crus galli-Spergula arvensis	Spergulo arvensis-Erodion cicutariae	Eragrostietalia	Digitario sanguinalis-Eragrostietea minoris	ANTHROPOGENIC VEGETATION	Yes	Yes	"V11, V12, V13"
+Panicum sanguinale-Mercurialis annua	Spergulo arvensis-Erodion cicutariae	Eragrostietalia	Digitario sanguinalis-Eragrostietea minoris	ANTHROPOGENIC VEGETATION	Yes	Yes	"V11, V12, V13"
+Setario verticillatae-Echinochloetum crus-galli	Spergulo arvensis-Erodion cicutariae	Eragrostietalia	Digitario sanguinalis-Eragrostietea minoris	ANTHROPOGENIC VEGETATION	Yes	Yes	"V11, V12, V13"
+Setario-Echinochloetum colonae	Spergulo arvensis-Erodion cicutariae	Eragrostietalia	Digitario sanguinalis-Eragrostietea minoris	ANTHROPOGENIC VEGETATION	Yes	Yes	"V11, V12, V13"
+Euphorbietum chamaesyco-prostratae	Euphorbion prostratae	Euphorbietalia prostratae	Digitario sanguinalis-Eragrostietea minoris	ANTHROPOGENIC VEGETATION	Yes	No	V34
+Gnaphaliio luteo-albi-Polycarpetum tetraphylli	Euphorbion prostratae	Euphorbietalia prostratae	Digitario sanguinalis-Eragrostietea minoris	ANTHROPOGENIC VEGETATION	Yes	No	V34
+Arction	Arction lappae	Arctio lappae-Artemisietalia	Epilobietea angustifolii	ANTHROPOGENIC VEGETATION	Yes	Yes	V39
+Chenopodio boni-henrici-Senecietum duriaei	Arction lappae	Arctio lappae-Artemisietalia	Epilobietea angustifolii	ANTHROPOGENIC VEGETATION	Yes	Yes	V39
+Chenopodio boni-henrici-Senecietum durieui	Arction lappae	Arctio lappae-Artemisietalia	Epilobietea angustifolii	ANTHROPOGENIC VEGETATION	Yes	Yes	V39
+Chenopodio boni-henrici-Senecionetum nebrodensis	Arction lappae	Arctio lappae-Artemisietalia	Epilobietea angustifolii	ANTHROPOGENIC VEGETATION	Yes	Yes	V39
+Galactito tomentosae-Digitaletum purpureae	Arction lappae	Arctio lappae-Artemisietalia	Epilobietea angustifolii	ANTHROPOGENIC VEGETATION	Yes	Yes	V39
+Geranio lusitanici-Scrophularietum herminii	Arction lappae	Arctio lappae-Artemisietalia	Epilobietea angustifolii	ANTHROPOGENIC VEGETATION	Yes	Yes	V39
+Malvo mauritiani-Rumicetum obtusifolii	Arction lappae	Arctio lappae-Artemisietalia	Epilobietea angustifolii	ANTHROPOGENIC VEGETATION	Yes	Yes	V39
+Senecioni duriaei-Chenopodietum boni-henrici	Arction lappae	Arctio lappae-Artemisietalia	Epilobietea angustifolii	ANTHROPOGENIC VEGETATION	Yes	Yes	V39
+Balloto foetidae-Conion maculati	Balloto-Conion maculati	Arctio lappae-Artemisietalia	Epilobietea angustifolii	ANTHROPOGENIC VEGETATION	Yes	Yes	V39
+Balloto-Conion maculati	Balloto-Conion maculati	Arctio lappae-Artemisietalia	Epilobietea angustifolii	ANTHROPOGENIC VEGETATION	Yes	Yes	V39
+Galio aparines-Conietum maculati	Balloto-Conion maculati	Arctio lappae-Artemisietalia	Epilobietea angustifolii	ANTHROPOGENIC VEGETATION	Yes	Yes	V39
+Urtico dioicae-Sambucetum ebuli	Balloto-Conion maculati	Arctio lappae-Artemisietalia	Epilobietea angustifolii	ANTHROPOGENIC VEGETATION	Yes	Yes	V39
+Chaerophyllo aurei-Anthriscetum sylvestris	Aegopodion podagrariae	Circaeo lutetianae-Stachyetalia sylvaticae	Epilobietea angustifolii	ANTHROPOGENIC VEGETATION	Yes	No	"V39, R55"
+Galio aparines-Anthriscetum sylvestris	Aegopodion podagrariae	Circaeo lutetianae-Stachyetalia sylvaticae	Epilobietea angustifolii	ANTHROPOGENIC VEGETATION	Yes	No	"V39, R55"
+Atropetum belladonnae	Fragarion vescae	Circaeo lutetianae-Stachyetalia sylvaticae	Epilobietea angustifolii	ANTHROPOGENIC VEGETATION	Yes	No	R57
+Comunidad de Convolvulus sepium y Oxalis violacea	Senecionion fluviatilis	Convolvuletalia sepium	Epilobietea angustifolii	ANTHROPOGENIC VEGETATION	Yes	Yes	R55
+Convolvulo sepium-Eupatorietum cannabini	Senecionion fluviatilis	Convolvuletalia sepium	Epilobietea angustifolii	ANTHROPOGENIC VEGETATION	Yes	Yes	R55
+Picridio hieracioidis-Eupatorietum cannabini	Senecionion fluviatilis	Convolvuletalia sepium	Epilobietea angustifolii	ANTHROPOGENIC VEGETATION	Yes	Yes	R55
+Picrido hieracioidis-Eupatorietum cannabinii	Senecionion fluviatilis	Convolvuletalia sepium	Epilobietea angustifolii	ANTHROPOGENIC VEGETATION	Yes	Yes	R55
+Arundini-Convolvuletum sepium	Senecionion fluviatilis	Convolvuletalia sepium	Epilobietea angustifolii	ANTHROPOGENIC VEGETATION	Yes	Yes	R55
+Asphodelo albi-Epilobietum angustifolii	Epilobion angustifolii	Galeopsio-Senecionetalia sylvatici	Epilobietea angustifolii	ANTHROPOGENIC VEGETATION	Yes	Yes	R57
+Asphodelo arrondeaui-Epilobietum angustifolii	Epilobion angustifolii	Galeopsio-Senecionetalia sylvatici	Epilobietea angustifolii	ANTHROPOGENIC VEGETATION	Yes	Yes	R57
+Comunidad de Epilobium angustifolium y Digitalis purpurea	Epilobion angustifolii	Galeopsio-Senecionetalia sylvatici	Epilobietea angustifolii	ANTHROPOGENIC VEGETATION	Yes	Yes	R57
+Alliarion petiolatae	Geo urbani-Alliarion officinalis	Galio-Alliarietalia	Epilobietea angustifolii	ANTHROPOGENIC VEGETATION	Yes	Yes	V39
+Geranietum robertiano-lucidi	Geo urbani-Alliarion officinalis	Galio-Alliarietalia	Epilobietea angustifolii	ANTHROPOGENIC VEGETATION	Yes	Yes	V39
+Geranio robertiani-Cariolophetum sempervirentis	Geo urbani-Alliarion officinalis	Galio-Alliarietalia	Epilobietea angustifolii	ANTHROPOGENIC VEGETATION	Yes	Yes	V39
+Geranio robertiani-Caryolophetum sempervirentis	Geo urbani-Alliarion officinalis	Galio-Alliarietalia	Epilobietea angustifolii	ANTHROPOGENIC VEGETATION	Yes	Yes	V39
+Oxalido acetosellae-Geranietum robertiani	Geo urbani-Alliarion officinalis	Galio-Alliarietalia	Epilobietea angustifolii	ANTHROPOGENIC VEGETATION	Yes	Yes	V39
+Comunidad de Lamium amplexicaule y Stellaria media	Oxalidion europeae	Aperetalia spicae-venti	Papaveretea rhoeadis	ANTHROPOGENIC VEGETATION	Yes	Yes	"V11, V12, V13"
+Fumario capreolatae-Veronicetum persicae	Oxalidion europeae	Aperetalia spicae-venti	Papaveretea rhoeadis	ANTHROPOGENIC VEGETATION	Yes	Yes	"V11, V12, V13"
+Holosteo umbellati-Veronicetum persicae	Oxalidion europeae	Aperetalia spicae-venti	Papaveretea rhoeadis	ANTHROPOGENIC VEGETATION	Yes	Yes	"V11, V12, V13"
+Lamio amplexicaulis-Veronicetum hederifoliae	Oxalidion europeae	Aperetalia spicae-venti	Papaveretea rhoeadis	ANTHROPOGENIC VEGETATION	Yes	Yes	"V11, V12, V13"
+Oxalidi latifoliae-Veronicetum persicae	Oxalidion europeae	Aperetalia spicae-venti	Papaveretea rhoeadis	ANTHROPOGENIC VEGETATION	Yes	Yes	"V11, V12, V13"
+Aphanion arvensis	Scleranthion annui	Aperetalia spicae-venti	Papaveretea rhoeadis	ANTHROPOGENIC VEGETATION	Yes	Yes	"V11, V12, V13, V15"
+Catapodietum patentis	Scleranthion annui	Aperetalia spicae-venti	Papaveretea rhoeadis	ANTHROPOGENIC VEGETATION	Yes	Yes	"V11, V12, V13, V15"
+Centaureo cyani-Raphanetum microcarpae	Scleranthion annui	Aperetalia spicae-venti	Papaveretea rhoeadis	ANTHROPOGENIC VEGETATION	Yes	Yes	"V11, V12, V13, V15"
+Cerutocephalo falcatae-Androsacetum maximae	Scleranthion annui	Aperetalia spicae-venti	Papaveretea rhoeadis	ANTHROPOGENIC VEGETATION	Yes	Yes	"V11, V12, V13, V15"
+Chrysantemo segeti-Raphanetum raphanistri	Scleranthion annui	Aperetalia spicae-venti	Papaveretea rhoeadis	ANTHROPOGENIC VEGETATION	Yes	Yes	"V11, V12, V13, V15"
+Chrysanthemum segetum-Raphanetum	Scleranthion annui	Aperetalia spicae-venti	Papaveretea rhoeadis	ANTHROPOGENIC VEGETATION	Yes	Yes	"V11, V12, V13, V15"
+Cnico benedicti-Papaveretum argemones	Scleranthion annui	Aperetalia spicae-venti	Papaveretea rhoeadis	ANTHROPOGENIC VEGETATION	Yes	Yes	"V11, V12, V13, V15"
+Linaria delphinioides-Arnoseretum	Scleranthion annui	Aperetalia spicae-venti	Papaveretea rhoeadis	ANTHROPOGENIC VEGETATION	Yes	Yes	"V11, V12, V13, V15"
+Linario amethysteae-Calenduletum arvensis	Scleranthion annui	Aperetalia spicae-venti	Papaveretea rhoeadis	ANTHROPOGENIC VEGETATION	Yes	Yes	"V11, V12, V13, V15"
+Linario eleganti-Anthoxanthetum aristati	Scleranthion annui	Aperetalia spicae-venti	Papaveretea rhoeadis	ANTHROPOGENIC VEGETATION	Yes	Yes	"V11, V12, V13, V15"
+Linario elegantis-Anthoxanthetum aristati	Scleranthion annui	Aperetalia spicae-venti	Papaveretea rhoeadis	ANTHROPOGENIC VEGETATION	Yes	Yes	"V11, V12, V13, V15"
+Miboro minimae-Arabidopsietum thalianae	Scleranthion annui	Aperetalia spicae-venti	Papaveretea rhoeadis	ANTHROPOGENIC VEGETATION	Yes	Yes	"V11, V12, V13, V15"
+Spergulario-Arnoseretum minimae	Scleranthion annui	Aperetalia spicae-venti	Papaveretea rhoeadis	ANTHROPOGENIC VEGETATION	Yes	Yes	"V11, V12, V13, V15"
+Tolpidi barbatae-Anthoxanthetum aristati	Scleranthion annui	Aperetalia spicae-venti	Papaveretea rhoeadis	ANTHROPOGENIC VEGETATION	Yes	Yes	"V11, V12, V13, V15"
+Triseto ovati-Arnoseridetum minimae	Scleranthion annui	Aperetalia spicae-venti	Papaveretea rhoeadis	ANTHROPOGENIC VEGETATION	Yes	Yes	"V11, V12, V13, V15"
+Veronico triphylli-Cerastietum dichotomi	Roemerion hybridae	Gladiolo italici-Ridolfietalia segeti	Papaveretea rhoeadis	ANTHROPOGENIC VEGETATION	Yes	No	"V12, V13"
+Centaureetum cyani	Caucalidion lappulae	Papaveretalia rhoeadis	Papaveretea rhoeadis	ANTHROPOGENIC VEGETATION	Yes	No	"V11, V13"
+Crassulo tillaeae-Saginetum apetalae	Polycarpion tetraphylli	Polygono arenastri-Poetalia annuae	Polygono-Poetea annuae	ANTHROPOGENIC VEGETATION	Yes	Yes	V34
+Polycarpion tetraphylli	Polycarpion tetraphylli	Polygono arenastri-Poetalia annuae	Polygono-Poetea annuae	ANTHROPOGENIC VEGETATION	Yes	Yes	V34
+Polycarpo tetraphylli-Cotuletum australis	Polycarpion tetraphylli	Polygono arenastri-Poetalia annuae	Polygono-Poetea annuae	ANTHROPOGENIC VEGETATION	Yes	Yes	V34
+Poo annuae-Spergularietum salinae	Polycarpion tetraphylli	Polygono arenastri-Poetalia annuae	Polygono-Poetea annuae	ANTHROPOGENIC VEGETATION	Yes	Yes	V34
+Coronopodo-Sclerochloetum durae	Polygono-Coronopodion	Polygono arenastri-Poetalia annuae	Polygono-Poetea annuae	ANTHROPOGENIC VEGETATION	Yes	Yes	V34
+Matricario-Polygonetum arenastrii	Polygono-Coronopodion	Polygono arenastri-Poetalia annuae	Polygono-Poetea annuae	ANTHROPOGENIC VEGETATION	Yes	Yes	V34
+Matricario-Polygonetum avicularis	Polygono-Coronopodion	Polygono arenastri-Poetalia annuae	Polygono-Poetea annuae	ANTHROPOGENIC VEGETATION	Yes	Yes	V34
+Polycarpo tetraphylli-Coronopodetum squamati	Polygono-Coronopodion	Polygono arenastri-Poetalia annuae	Polygono-Poetea annuae	ANTHROPOGENIC VEGETATION	Yes	Yes	V34
+Polygono arenastri-Matricarietum discoideae	Polygono-Coronopodion	Polygono arenastri-Poetalia annuae	Polygono-Poetea annuae	ANTHROPOGENIC VEGETATION	Yes	Yes	V34
+Polygono arenastri-Matricarietum matricarioidis	Polygono-Coronopodion	Polygono arenastri-Poetalia annuae	Polygono-Poetea annuae	ANTHROPOGENIC VEGETATION	Yes	Yes	V34
+Polygono-Coronopetum squamati	Polygono-Coronopodion	Polygono arenastri-Poetalia annuae	Polygono-Poetea annuae	ANTHROPOGENIC VEGETATION	Yes	Yes	V34
+Polygono-Matricarietum matricarioidis	Polygono-Coronopodion	Polygono arenastri-Poetalia annuae	Polygono-Poetea annuae	ANTHROPOGENIC VEGETATION	Yes	Yes	V34
+Bryo argentei-Saginetum procumbentis	Saginion procumbentis	Polygono arenastri-Poetalia annuae	Polygono-Poetea annuae	ANTHROPOGENIC VEGETATION	Yes	Yes	V35
+Bryo argentei-Sagineturrz procumbentis	Saginion procumbentis	Polygono arenastri-Poetalia annuae	Polygono-Poetea annuae	ANTHROPOGENIC VEGETATION	Yes	Yes	V35
+Sagino procumbentis-Bryetum argentei	Saginion procumbentis	Polygono arenastri-Poetalia annuae	Polygono-Poetea annuae	ANTHROPOGENIC VEGETATION	Yes	Yes	V35
+Sagino-Bryetum argentei	Saginion procumbentis	Polygono arenastri-Poetalia annuae	Polygono-Poetea annuae	ANTHROPOGENIC VEGETATION	Yes	Yes	V35
+Bromo diandri-Carduetum tenuiflori	Sisymbrion officinalis	Sisymbrietalia sophiae	Sisymbrietea	ANTHROPOGENIC VEGETATION	Yes	Yes	"V15, V37, V38"
+Bromo-Hordeetum murini	Sisymbrion officinalis	Sisymbrietalia sophiae	Sisymbrietea	ANTHROPOGENIC VEGETATION	Yes	Yes	"V15, V37, V38"
+Comunidad de Sisymbrium officinalis y Hordeum murinum supbs. leporinum	Sisymbrion officinalis	Sisymbrietalia sophiae	Sisymbrietea	ANTHROPOGENIC VEGETATION	Yes	Yes	"V15, V37, V38"
+Sisymbrio officinalis-Hordeetum murini	Sisymbrion officinalis	Sisymbrietalia sophiae	Sisymbrietea	ANTHROPOGENIC VEGETATION	Yes	Yes	"V15, V37, V38"
